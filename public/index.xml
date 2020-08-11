@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Course materials | Biostatistical Computing with R</title>
+    <link>/</link>
+      <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <description>Course materials</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <image>
+      <url>/media/social-image.png</url>
+      <title>Course materials</title>
+      <link>/</link>
+    </image>
+    
+    <item>
+      <title>Code 5</title>
+      <link>/assignment/05-problem-set/</link>
+      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/assignment/05-problem-set/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#in-class-deep-learning-with-r-notebooks&#34;&gt;In-class, &lt;span&gt;deep-learning-with-r-notebooks&lt;/span&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#technical-issues&#34;&gt;Technical issues&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#self-study-dl-keras-tf&#34;&gt;Self-study, &lt;span&gt;dl-keras-tf&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;in-class-deep-learning-with-r-notebooks&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;In-class, &lt;a href=&#34;https://github.com/jjallaire/deep-learning-with-r-notebooks&#34;&gt;deep-learning-with-r-notebooks&lt;/a&gt;&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;6.2-understanding-recurrent-neural-networks.Rmd&lt;/code&gt; - IMDB, RNN&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;6.3-advanced-usage-of-recurrent-neural-networks.Rmd&lt;/code&gt; - jena_climate temperature forecasting, baseline, regular RNN, LSTM, GRU, dropout, stacking layers, bidirectional RNN&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;6.4-sequence-processing-with-convnets.Rmd&lt;/code&gt; - CNN for text processing, IMDB, comparison with regular LSTM/GRU&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;8.1-text-generation-with-lstm.Rmd&lt;/code&gt; - Nietzsche text, LSTM text generation, the effect of temperature (section 8.1.3, p. 254). On GPU, each epoch takes ~5 min, demo possible&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;technical-issues&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Technical issues&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;8.2-deep-dream.Rmd&lt;/code&gt; - Deep dream&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;8.3-neural-style-transfer.Rmd&lt;/code&gt; - neural style transfer&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;8.4-generating-images-with-vaes.Rmd&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;8.5-introduction-to-gans.Rmd&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;self-study-dl-keras-tf&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Self-study, &lt;a href=&#34;https://github.com/rstudio-conf-2020/dl-keras-tf&#34;&gt;dl-keras-tf&lt;/a&gt;&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Review and run &lt;code&gt;08-NLP-LSTMs/01-intro-to-lstms.Rmd&lt;/code&gt; - IMDB, RNN, LSTM&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 5: Generative Adversarial Networks, Autoencoders, Recurrent Neural Networks, LSTM, GRU, sequence learning</title>
+      <link>/class/05-class/</link>
+      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/class/05-class/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;div id=&#34;recurrent-neural-networks-lstm-gru-sequence-learning&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Recurrent Neural Networks, LSTM, GRU, sequence learning&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;../../slides/30_RNN.html#1&#34; target=&#34;_blank&#34;&gt;Lecture slides in HTML format&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../slides/30_RNN.pdf&#34; target=&#34;_blank&#34;&gt;Lecture handouts in PDF format&lt;/a&gt;&lt;/p&gt;
+&lt;iframe src=&#34;../../slides/30_RNN.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div id=&#34;generative-adversarial-networks-autoencoders&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Generative Adversarial Networks, Autoencoders&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;../../slides/31_GAN.html#1&#34; target=&#34;_blank&#34;&gt;Lecture slides in HTML format&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../slides/31_GAN.pdf&#34; target=&#34;_blank&#34;&gt;Lecture handouts in PDF format&lt;/a&gt;&lt;/p&gt;
+&lt;iframe src=&#34;../../slides/31_GAN.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div id=&#34;glossary&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Glossary&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;../../slides/32_Glossary.html#1&#34; target=&#34;_blank&#34;&gt;Lecture slides in HTML format&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../slides/32_Glossary.pdf&#34; target=&#34;_blank&#34;&gt;Lecture handouts in PDF format&lt;/a&gt;&lt;/p&gt;
+&lt;iframe src=&#34;../../slides/32_Glossary.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Code 4</title>
+      <link>/assignment/04-problem-set/</link>
+      <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/assignment/04-problem-set/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#in-class-deep-learning-with-r-notebooks&#34;&gt;In-class, &lt;span&gt;deep-learning-with-r-notebooks&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#self-study-dl-keras-tf&#34;&gt;Self-study, &lt;span&gt;dl-keras-tf&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;in-class-deep-learning-with-r-notebooks&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;In-class, &lt;a href=&#34;https://github.com/jjallaire/deep-learning-with-r-notebooks&#34;&gt;deep-learning-with-r-notebooks&lt;/a&gt;&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;5.1-introduction-to-convnets.Rmd&lt;/code&gt; - MNIST, CNN&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;5.2-using-convnets-with-small-datasets.Rmd&lt;/code&gt; - cats_and_dogs classification, CNN&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;5.3-using-a-pretrained-convnet.Rmd&lt;/code&gt; - cats_and_dogs, VGG16 pretrained CNN, second part needs GPU&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;5.4-visualizing-what-convnets-learn.Rmd&lt;/code&gt; - CNV visualization, not working&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;self-study-dl-keras-tf&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Self-study, &lt;a href=&#34;https://github.com/rstudio-conf-2020/dl-keras-tf&#34;&gt;dl-keras-tf&lt;/a&gt;&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Review and run &lt;code&gt;dl-keras-tf/materials/04-computer-vision-CNNs/01-mnist-revisited.Rmd&lt;/code&gt; - CNN on MNIST dataset, plus small exercise&lt;/li&gt;
+&lt;li&gt;Review and run &lt;code&gt;dl-keras-tf/materials/04-computer-vision-CNNs/02-cats-vs-dogs.Rmd&lt;/code&gt; - CNN on cats and dogs, parallels &lt;code&gt;5.2-using-convnets-with-small-datasets.Rmd&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Review and run &lt;code&gt;dl-keras-tf/materials/04-computer-vision-CNNs/03-transfer-learning.Rmd&lt;/code&gt; - transfer learning using VGG16 model, cats and dogs, run until GPU part, review how GPU part works&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 4: Convolutional Neural Networks, images</title>
+      <link>/class/04-class/</link>
+      <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/class/04-class/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;div id=&#34;convolutional-neural-networks-images&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Convolutional Neural Networks, images&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;../../slides/20_CNN.html#1&#34; target=&#34;_blank&#34;&gt;Lecture slides in HTML format&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../slides/20_CNN.pdf&#34; target=&#34;_blank&#34;&gt;Lecture handouts in PDF format&lt;/a&gt;&lt;/p&gt;
+&lt;iframe src=&#34;../../slides/20_CNN.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Code 3</title>
+      <link>/assignment/03-problem-set/</link>
+      <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/assignment/03-problem-set/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#in-class-deep-learning-with-r-notebooks&#34;&gt;In-class, &lt;span&gt;deep-learning-with-r-notebooks&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#self-study-dl-keras-tf&#34;&gt;Self-study, &lt;span&gt;dl-keras-tf&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;in-class-deep-learning-with-r-notebooks&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;In-class, &lt;a href=&#34;https://github.com/jjallaire/deep-learning-with-r-notebooks&#34;&gt;deep-learning-with-r-notebooks&lt;/a&gt;&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;4.4-overfitting-and-underfitting.Rmd&lt;/code&gt; - IMDB, comparins smaller and bigger network performance&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;6.1-one-hot-encoding-of-words-or-characters.Rmd&lt;/code&gt; - One-hot-encoding toy example&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;6.1-using-word-embeddings.Rmd&lt;/code&gt; - embedding, IMDB, using pretrained Glove model&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;self-study-dl-keras-tf&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Self-study, &lt;a href=&#34;https://github.com/rstudio-conf-2020/dl-keras-tf&#34;&gt;dl-keras-tf&lt;/a&gt;&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Review and run &lt;code&gt;dl-keras-tf/materials/06-word-embeddings/01-word-embeddings.Rmd&lt;/code&gt; and &lt;code&gt;02-pretrained-word-embeddings.Rmd&lt;/code&gt;, parallels &lt;code&gt;6.1-using-word-embeddings.Rmd&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Review and run &lt;code&gt;dl-keras-tf/materials/03-recipe/01-starter-recipe.Rmd&lt;/code&gt; - MNIST example, data preparation, optimizer selection, callbacks, parameter grid search, L2 regularization, dropout, confusion matrix&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 3: Overfitting, regularization, dropout, pretrained models, word embedding</title>
+      <link>/class/03-class/</link>
+      <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/class/03-class/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;div id=&#34;overfitting&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Overfitting&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;../../slides/10_Overfitting.html#1&#34; target=&#34;_blank&#34;&gt;Lecture slides in HTML format&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../slides/10_Overfitting.pdf&#34; target=&#34;_blank&#34;&gt;Lecture handouts in PDF format&lt;/a&gt;&lt;/p&gt;
+&lt;iframe src=&#34;../../slides/10_Overfitting.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div id=&#34;text&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Text&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;../../slides/11_Text.html#1&#34; target=&#34;_blank&#34;&gt;Lecture slides in HTML format&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../slides/11_Text.pdf&#34; target=&#34;_blank&#34;&gt;Lecture handouts in PDF format&lt;/a&gt;&lt;/p&gt;
+&lt;iframe src=&#34;../../slides/11_Text.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Code 2</title>
+      <link>/assignment/02-problem-set/</link>
+      <pubDate>Tue, 09 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/assignment/02-problem-set/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#in-class-deep-learning-with-r-notebooks&#34;&gt;In-class, &lt;span&gt;deep-learning-with-r-notebooks&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;in-class-deep-learning-with-r-notebooks&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;In-class, &lt;a href=&#34;https://github.com/jjallaire/deep-learning-with-r-notebooks&#34;&gt;deep-learning-with-r-notebooks&lt;/a&gt;&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;3.4-classifying-movie-reviews.Rmd&lt;/code&gt; - IMDB, one-hot encoding, feedforward DNN, validation concept&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;3.5-classifying-newswires.Rmd&lt;/code&gt; - Reuters, 46 classes, feedforward DNN&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;3.6-predicting-house-prices.Rmd&lt;/code&gt; - Boston housing price prediction, data normalization, cross-validation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 2: Fundamentals of Deep Learning II</title>
+      <link>/class/02-class/</link>
+      <pubDate>Tue, 09 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/class/02-class/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;div id=&#34;neural-network-fundamentals&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Neural network fundamentals&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;../../slides/01_Neural_network.html#1&#34; target=&#34;_blank&#34;&gt;Lecture slides in HTML format&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../slides/01_Neural_network.pdf&#34; target=&#34;_blank&#34;&gt;Lecture handouts in PDF format&lt;/a&gt;&lt;/p&gt;
+&lt;iframe src=&#34;../../slides/01_Neural_network.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div id=&#34;hello-deep-learning-world&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Hello [Deep Learning] World&lt;/h3&gt;
+&lt;p&gt;Brad Boehmke’s lecture for the &lt;a href=&#34;https://community.rstudio.com/t/deep-learning-with-keras-and-tensorflow-in-r-workflow-rstudio-conf-2020/49099&#34;&gt;Deep Learning with Keras and TensorFlow in R Workflow&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://rstudio-conf-2020.github.io/dl-keras-tf/02-hello-dl-world.html#1&#34; target=&#34;_blank&#34;&gt;Lecture slides in HTML format&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Code 1</title>
+      <link>/assignment/01-problem-set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/assignment/01-problem-set/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Assignments will be posted here&lt;/p&gt;
+&lt;!--
+# In-class, [deep-learning-with-r-notebooks](https://github.com/jjallaire/deep-learning-with-r-notebooks)
+
+- `2.1-a-first-look-at-a-neural-network.Rmd` - MNIST, feedforward DNN
+
+# Self-study, [dl-keras-tf](https://github.com/rstudio-conf-2020/dl-keras-tf)
+
+- Review and run `dl-keras-tf/materials/02-main-ingredients/01-main-ingredients.Rmd` - neural network introduction, main ingredients, activation function, gradient descent, learning rate, ReLU, train-test-validation, prediction
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 1. Introduction to R and RStudio</title>
+      <link>/class/01-class/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/class/01-class/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;div id=&#34;getting-started-with-r&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Getting started with R&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;../../slides/00_Getting_started_with_R.html#1&#34; target=&#34;_blank&#34;&gt;Lecture slides in HTML format&lt;/a&gt;&lt;/p&gt;
+&lt;iframe src=&#34;../../slides/00_Getting_started_with_R.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div id=&#34;rstudio-introduction&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;RStudio introduction&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;../../slides/01_RStudio.html#1&#34; target=&#34;_blank&#34;&gt;Lecture slides in HTML format&lt;/a&gt;&lt;/p&gt;
+&lt;iframe src=&#34;../../slides/01_RStudio.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Final project</title>
+      <link>/class/final_project/</link>
+      <pubDate>Sat, 11 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/class/final_project/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;overview&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Overview&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Review the project requirements. Project is required for credit-seeking students and optional for guests&lt;/li&gt;
+&lt;li&gt;Sign up for the final project at the &lt;a href=&#34;https://docs.google.com/forms/d/e/1FAIpQLSdP7FmBU97n78NjjUmZAPbiUmKBUUsqlE8HT87e_Fi1vyeLKQ/viewform?usp=pp_url&amp;amp;entry.1371427453=Yes,+I+am+a+student&amp;amp;entry.1100386697=Yes,+I+have+a+teammate&#34;&gt;BIOS691 Final project sign-up&lt;/a&gt; form, due &lt;strong&gt;06/19/2020&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Teams of two are encouraged - both teammates should agree and sign up&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Project proposal submission due &lt;strong&gt;06/26/2020&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Final project submission due &lt;strong&gt;07/12/2020&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Ask questions by e-mail&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;data&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Data&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Register on &lt;a href=&#34;https://www.kaggle.com/&#34;&gt;kaggle.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Select and enter one of the completed &lt;a href=&#34;https://www.kaggle.com/competitions&#34;&gt;Kaggle competitions&lt;/a&gt; based on topics/code learned in-class. Examples:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.kaggle.com/c/Kannada-MNIST&#34;&gt;Kannada MNIST&lt;/a&gt; - handwritten digit recognition written using the Kannada script&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.kaggle.com/c/kuzushiji-recognition&#34;&gt;Kuzushiji Recognition&lt;/a&gt; - transcribe ancient Kuzushiji into contemporary Japanese characters&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.kaggle.com/c/aerial-cactus-identification&#34;&gt;Aerial Cactus Identification&lt;/a&gt; - determine whether an image contains a columnar cactus&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.kaggle.com/c/movie-review-sentiment-analysis-kernels-only&#34;&gt;Movie Review Sentiment Analysis&lt;/a&gt; - classify the sentiment of sentences from the Rotten Tomatoes dataset&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.kaggle.com/c/dog-breed-identification&#34;&gt;Dog Breed Identification&lt;/a&gt; - determine the breed of a dog in an image&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Explore &lt;a href=&#34;https://www.kaggle.com/datasets&#34;&gt;Kaggle datasets&lt;/a&gt; for other interesting projects&lt;/li&gt;
+&lt;li&gt;Consult with the instructor if you would like to use your own data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;proposal-submission-due-06262020&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Proposal Submission (due 06/26/2020)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Register on &lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;. Learn about GitHub in the section &lt;a href=&#34;https://mdozmorov.github.io/BIOS691.2018/syllabus/&#34;&gt;4 - Git and GitHub&lt;/a&gt; of the &lt;a href=&#34;https://mdozmorov.github.io/BIOS691.2018/&#34;&gt;Reproducible research tools&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Create a repository for your project
+&lt;ul&gt;
+&lt;li&gt;If teamwork, add your teammate as a collaborator&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Add README file describing the selected project. Address the following points:
+&lt;ul&gt;
+&lt;li&gt;Data type (numerical, text, or images), link to the data source&lt;/li&gt;
+&lt;li&gt;Problem type (binary or multiclass classification, regression)&lt;/li&gt;
+&lt;li&gt;Proposed network architecture (feed-forward, CNN, RNN, etc.), testing multiple architectures encouraged&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;solution&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Solution&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Create your code in RMarkdown&lt;/li&gt;
+&lt;li&gt;Describe and implement data download and processing&lt;/li&gt;
+&lt;li&gt;Select, justify, and implement a network architecture suitable for the data&lt;/li&gt;
+&lt;li&gt;Train and evaluate the performance of the network&lt;/li&gt;
+&lt;li&gt;Tweak network architecture, add regularization, if needed, to improve model performance&lt;/li&gt;
+&lt;li&gt;Explain all steps, describe the achieved performance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many Kaggle competitions allow for late submissions in the form of text files with, e.g., samples and predicted classes. Such submissions will be benchmarked against previous submissions, and you will be able to compare how your model performs with respect to previous solutions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;final-submission-due-07122020&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Final Submission (due 07/12/2020)&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Add your code solving the selected competition to your GitHub repository
+&lt;ul&gt;
+&lt;li&gt;Your code should run (knit) with minimal modifications, e.g., adjusting path&lt;/li&gt;
+&lt;li&gt;If teamwork, ensure that both participants committed to the repository&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 5: Generative Adversarial Networks, Autoencoders, Recurrent Neural Networks, LSTM, GRU, sequence learning</title>
+      <link>/reading/05-reading/</link>
+      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/reading/05-reading/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.manning.com/books/deep-learning-with-r&#34;&gt;Deep learning with R: Chapter 6.2&lt;/a&gt; - Understanding RNN, LSTM, GRU layers&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://youtu.be/SEnXr6v2ifU&#34;&gt;Recurrent Neural Networks | MIT 6.S191&lt;/a&gt; - RNN and LSTM overview&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.manning.com/books/deep-learning-with-r&#34;&gt;Deep learning with R: Chapter 8&lt;/a&gt; - Generarive deep learning&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://youtu.be/rZufA635dq4&#34;&gt;Deep Generative Modeling | MIT 6.S191&lt;/a&gt; - GAN, Autoencoder, Variational autoencoder&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://openai.com/blog/generative-models/&#34;&gt;Generative Models&lt;/a&gt; - This post describes four projects that share a common theme of enhancing or using generative models, a branch of unsupervised learning techniques in machine learning&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://youtu.be/8L11aMN5KY8&#34;&gt;A Friendly Introduction to Generative Adversarial Networks (GANs)&lt;/a&gt; - 20m video by Luis Serrano. &lt;a href=&#34;https://github.com/luisguiserrano/gans&#34;&gt;GitHub repo&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Goodfellow, Ian J., Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, and Yoshua Bengio. “&lt;a href=&#34;http://arxiv.org/abs/1406.2661&#34;&gt;Generative Adversarial Networks&lt;/a&gt;.” ArXiv:1406.2661 [Cs, Stat], June 10, 2014&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Goodfellow, Ian. “&lt;a href=&#34;http://arxiv.org/abs/1701.00160&#34;&gt;NIPS 2016 Tutorial: Generative Adversarial Networks&lt;/a&gt;.” ArXiv:1701.00160 [Cs], April 3, 2017&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Pierre Baldi. “&lt;a href=&#34;http://proceedings.mlr.press/v27/baldi12a.html&#34;&gt;Autoencoders, Unsupervised Learning, and Deep Architectures&lt;/a&gt;.” In Proceedings of ICML Workshop on Unsupervised and Transfer Learning, edited by Isabelle Guyon, Gideon Dror, Vincent Lemaire, Graham Taylor, and Daniel Silver, 37–49. PMLR, 2012 - Mathematical framework of autoencoders.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 4: Convolutional Neural Networks, images</title>
+      <link>/reading/04-reading/</link>
+      <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/reading/04-reading/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.manning.com/books/deep-learning-with-r&#34;&gt;Deep learning with R: Chapter 5&lt;/a&gt; - Deep learning for computer vision&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/convolution.html&#34;&gt;Artificial Intelligence book: Convolution&lt;/a&gt; - Explaining 1D and 2D convolution, padding, stride. &lt;a href=&#34;https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/convolutional_neural_networks.html&#34;&gt;Convolutional Neural Networks&lt;/a&gt; provide further details on CNNs, references, and Youtube videos&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://towardsdatascience.com/covolutional-neural-network-cb0883dd6529&#34;&gt;Convolutional Neural Network&lt;/a&gt; - Learn Convolutional Neural Network from basic and its implementation in Keras. Animated illustrations, definitions, Python code&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://neuralnetworksanddeeplearning.com/chap6.html&#34;&gt;Neural Networks and Deep Learning book, Chapter 6: Deep convolutional networks&lt;/a&gt; - Illustrated principles of image learning, Python/Theano implementation&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.analyticsvidhya.com/blog/2020/02/mathematics-behind-convolutional-neural-network/&#34;&gt;Analytics Vidhya: Demystifying the Mathematics Behind Convolutional Neural Networks (CNNs)&lt;/a&gt; - A good description of CNN network, filters, convolution layers, and the math of forward and backward propagation&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.analyticsvidhya.com/blog/2018/12/guide-convolutional-neural-network-cnn/&#34;&gt;Analytics Vidhya: A Comprehensive Tutorial to learn Convolutional Neural Networks from Scratch&lt;/a&gt; - Illustrated theory of CNNs&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://medium.com/@ksusorokina/image-classification-with-convolutional-neural-networks-496815db12a8&#34;&gt;Image Classification with Convolutional Neural Networks&lt;/a&gt; - Medium blog post about theory, definitions, and Keras/Tensorflow model construction in Python&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://youtu.be/iaSUYvmCekI&#34;&gt;Convolutional Neural Networks | MIT 6.S191&lt;/a&gt; - CNN explained&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://deeplizard.com/learn/video/YRhxdVk_sIs&#34;&gt;DeepLizard: Convolutional Neural Networks (CNNs) Explained&lt;/a&gt; - 9min video and illustrated text about CNNs&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 3: Overfitting, regularization, dropout, pretrained models, word embedding</title>
+      <link>/reading/03-reading/</link>
+      <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/reading/03-reading/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.manning.com/books/deep-learning-with-r&#34;&gt;Deep learning with R: Chapter 4.4&lt;/a&gt; - Overfitting and underfitting&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.manning.com/books/deep-learning-with-r&#34;&gt;Deep learning with R: Chapter 4.5&lt;/a&gt; - The universal Deep Learning workflow&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://machinelearningmastery.com/what-are-word-embeddings/&#34;&gt;What Are Word Embeddings for Text?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 2: Fundamentals of Deep Learning II</title>
+      <link>/reading/02-reading/</link>
+      <pubDate>Tue, 09 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/reading/02-reading/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://medium.com/tensorflow/mit-deep-learning-basics-introduction-and-overview-with-tensorflow-355bcd26baf0&#34;&gt;MIT Deep Learning Basics: Introduction and Overview with TensorFlow&lt;/a&gt; - a blog post with infografics and brief description of each type of neural network, links to Lex Fridman’s video lectures&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/d2l-ai/berkeley-stat-157/tree/master/slides/1_31&#34;&gt;Dive into Deep Learning book: 4-Linear-Methods.pdf&lt;/a&gt; - Linear regression and gradient descent&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.deeplearningbook.org/contents/numerical.html&#34;&gt;Deep Learning book: 4 Numerical Computation&lt;/a&gt; - Gradiend descent, optimization. Full &lt;a href=&#34;https://www.deeplearningbook.org/&#34;&gt;Part I: Applied Math and Machine Learning Basics&lt;/a&gt; is recommended&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://neuralnetworksanddeeplearning.com/chap2.html&#34;&gt;Neural Networks and Deep Learning book: Chapter 2&lt;/a&gt; - details the math of backpropagation&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Zou, James, Mikael Huss, Abubakar Abid, Pejman Mohammadi, Ali Torkamani, and Amalio Telenti. “&lt;a href=&#34;https://doi.org/10.1038/s41588-018-0295-5&#34;&gt;A Primer on Deep Learning in Genomics&lt;/a&gt;.” Nature Genetics, 2018 - Deep learning in genomics overview (feed-forward, convolutional, recurrent) and a Python tutorial on detecting DNA motifs. Box 1 and 2 - concepts and definitions. Box 3 - online resources (cloud platforms, GPU services, software libraries, educational resources, more). &lt;a href=&#34;https://github.com/abidlabs/deep-learning-genomics-primer&#34; class=&#34;uri&#34;&gt;https://github.com/abidlabs/deep-learning-genomics-primer&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Topol, Eric J. “&lt;a href=&#34;https://doi.org/10.1038/s41591-018-0300-7&#34;&gt;High-Performance Medicine: The Convergence of Human and Artificial Intelligence&lt;/a&gt;.” Nature Medicine, 2019 - AI and deep learning examples in medicine. Publications comparing AI with doctors, FDA-approved AI algorithms. Pathology (cancer, dermatology, ophtalmology, gastroenterology, mental health). Benefits and biases&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=6BMwisTZFr4&#34;&gt;How Backpropagation Works&lt;/a&gt; - 18min video by Brandon Rohrer explaining backpropagation using shower heads&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://ruder.io/optimizing-gradient-descent/&#34;&gt;An overview of gradient descent optimization algorithms&lt;/a&gt; by Sebastian Ruder. Details and math of individual algorithms&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 1: Introduction to R and RStudio</title>
+      <link>/reading/01-reading/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/reading/01-reading/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;r&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;R&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://cran.r-project.org/doc/contrib/Torfs+Brauer-Short-R-Intro.pdf&#34;&gt;A very short R introduction&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://swirlstats.com/&#34;&gt;swirl&lt;/a&gt; - R package for interactive R leaning&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/matloff/fasteR&#34;&gt;FasteR&lt;/a&gt; - Fast Lane to Learning R, learn R language in R console by following examples, by Norm Matloff&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://rstudio-education.github.io/hopr&#34;&gt;Hands-On Programming with R&lt;/a&gt; - introductory book how to program in R, with hands-on examples, by Garrett Grolemund&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://r4ds.had.co.nz/&#34;&gt;R for Data Science&lt;/a&gt; - a Tidyverse-oriented introduction to R online book, by Garrett Grolemund and Hadley Wickham&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://adv-r.hadley.nz/&#34;&gt;Advanced R&lt;/a&gt; and &lt;a href=&#34;https://advanced-r-solutions.rbind.io&#34;&gt;Advanced R Solutions&lt;/a&gt; - Advanced R programming, book and solutions, by Hadley Wickham and others&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://rc2e.com&#34;&gt;R Cookbook, 2nd Edition&lt;/a&gt; - statistics-oriented R introduction, by James Long and Paul Teetor&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://bookdown.org/csgillespie/efficientR/&#34;&gt;Efficient R programming&lt;/a&gt; - advanced concepts for efficient (R) programming, by Colin Gillespie &amp;amp; Robin Lovelace&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ucb-stat133/stat133-cheatsheets&#34;&gt;ucb-stat133/stat133-cheatsheets&lt;/a&gt; - Cheat sheets on R, tidyverse, shiny, git, and more&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/rsquaredacademy-education/online-courses/&#34;&gt;Free Online R Courses&lt;/a&gt; - video and course materials, by rsquaredacademy.com&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/rstudio-education/rstats-ed&#34;&gt;List of courses teaching R&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.r-bloggers.com/how-to-learn-r-2/&#34;&gt;Tutorials for learning R&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/c/marinstatlectures/playlists&#34;&gt;MarinStatsLectures-R Programming &amp;amp; Statistics&lt;/a&gt; - collections of short (~5min) video tutorials on statistics and data analysis in R, by Mike Marin&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;rstudio&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;RStudio&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://drdoane.com/my-rstudio-configuration/&#34;&gt;Tips how to configure RStudio&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Schedule</title>
+      <link>/schedule/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Class materials (references, code examples, slides, etc.) will be added on the day of class&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-book-reader&#34;&gt;&lt;/i&gt; Review references&lt;/li&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Review and run code examples for each class&lt;/li&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-chalkboard-teacher&#34;&gt;&lt;/i&gt; Review slides and links in them&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The schedule is currently work in progress.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;table class=&#34;table schedule&#34; style=&#34;max-width:100%&#34;&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
+            &lt;td style=&#34;width:50%;text-align:left&#34;&gt;&lt;span class=&#34;fake-header-table&#34;&gt;Introduction to Deep Learning with R&lt;/span&gt;&lt;/td&gt;
+
+            &lt;td style=&#34;width:10%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Reading&lt;/td&gt;
+            &lt;td style=&#34;width:10%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Assignment&lt;/td&gt;
+            &lt;td style=&#34;width:10%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Class&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;August 13&lt;/td&gt;
+            &lt;td style=&#34;width:50%;text-align:left&#34;&gt;&lt;strong&gt;Day 1: Introduction to R and RStudio&lt;/strong&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
+                    href=&#34;/reading/01-reading/&#34;&gt;
+                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
+                    href=&#34;/assignment/01-problem-set/&#34;&gt;
+                    &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;/class/01-class/&#34;&gt;
+                    &lt;i class=&#34;fas fa-chalkboard-teacher fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+
+    &lt;/tbody&gt;
+
+&lt;/table&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Syllabus</title>
+      <link>/syllabus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/syllabus/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#course-description&#34;&gt;Course Description&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#topics&#34;&gt;Topics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#prerequisites&#34;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#learning-objectives&#34;&gt;Learning Objectives&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#about-the-class&#34;&gt;About the class&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#attendance&#34;&gt;Attendance&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#homework&#34;&gt;Homework&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#final-project&#34;&gt;Final project&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#grading-policy&#34;&gt;Grading Policy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#copyright&#34;&gt;Copyright&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#diversity-and-inclusivity&#34;&gt;Diversity and inclusivity&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#policies-and-resources&#34;&gt;Policies and resources&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;row&#34;&gt;
+    &lt;div class=&#34;col-md-4&#34;&gt;
+        &lt;h3&gt;Instructor&lt;/h3&gt;
+
+        &lt;ul class=&#34;icon-list&#34;&gt;
+            &lt;li&gt;&lt;i class=&#34;fas fa-user&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://dozmorovlab.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt; Dr. Mikhail Dozmorov&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;i class=&#34;fas fa-university&#34;&gt;&lt;/i&gt; One Capitol Square 738&lt;/li&gt;
+            &lt;li&gt;&lt;i class=&#34;fas fa-envelope&#34;&gt;&lt;/i&gt; &lt;a href=&#34;mailto:mdozmorov@vcu.edu&#34;&gt; mdozmorov@vcu.edu&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;i class=&#34;fab fa-twitter&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://twitter.com/mikhaildozmorov&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt; @mikhaildozmorov&lt;/a&gt;&lt;/li&gt;
+            
+        &lt;/ul&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&#34;col-md-4&#34;&gt;
+        &lt;h3&gt;Course details&lt;/h3&gt;
+
+        &lt;ul class=&#34;icon-list&#34;&gt;
+            &lt;li&gt;&lt;i class=&#34;far fa-calendar&#34;&gt;&lt;/i&gt; Tuesday, Thursday&lt;/li&gt;
+            &lt;li&gt;&lt;i class=&#34;far fa-calendar-alt&#34;&gt;&lt;/i&gt; September 21 – October 23, 2020&lt;/li&gt;
+            &lt;li&gt;&lt;i class=&#34;far fa-clock&#34;&gt;&lt;/i&gt; 1:00pm – 2:20pm&lt;/li&gt;
+            &lt;li&gt;&lt;i class=&#34;fas fa-university&#34;&gt;&lt;/i&gt; Online&lt;/li&gt;
+            
+        &lt;/ul&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&#34;col-md-4 contact-policy&#34;&gt;
+        &lt;h3&gt;Contacting me&lt;/h3&gt;
+
+        &lt;p&gt;E-mail is preferred. I will try to respond to all course-related e-mails within 1 business day.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;course-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Course Description&lt;/h2&gt;
+&lt;p&gt;This is a first-year graduate level course in biostatistical computing. This course is designed to provide an introduction to R programming. We will cover the data management/manipulation, common graphical and statistical procedures both in R. No knowledge of calculus/algebra is required although some vector/matrix operations will be discussed.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;topics&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Topics&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;R/RStudio&lt;/li&gt;
+&lt;li&gt;RMarkdown, GitHub&lt;/li&gt;
+&lt;li&gt;Functions, Packages&lt;/li&gt;
+&lt;li&gt;Data management, tidyverse&lt;/li&gt;
+&lt;li&gt;R graphics, data visualization&lt;/li&gt;
+&lt;li&gt;Vector/matrix operations&lt;/li&gt;
+&lt;li&gt;Probability distributions and random number generation&lt;/li&gt;
+&lt;li&gt;Statistical functions&lt;/li&gt;
+&lt;li&gt;Interactive web apps with Shiny&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;prerequisites&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Prerequisites&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;No formal course requirements, but basic knowledge of the following will help
+&lt;ul&gt;
+&lt;li&gt;Basic linear algebra: vectors, matrices, determinants&lt;/li&gt;
+&lt;li&gt;Simple calculus: derivatives, integrals, gradients&lt;/li&gt;
+&lt;li&gt;Some probability theory: probability, random variables, distributions&lt;/li&gt;
+&lt;li&gt;Basic statistics knowledge: descriptive statistics, estimators.&lt;/li&gt;
+&lt;li&gt;(Linear) modeling&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Hardware
+&lt;ul&gt;
+&lt;li&gt;A laptop, Mac or Linux OSs are recommended.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;learning-objectives&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Learning Objectives&lt;/h2&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Learn&lt;/strong&gt; advanced R programming and reproducible research practices&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Understand&lt;/strong&gt; principles and tools for R data analysis and visualization&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Implement&lt;/strong&gt; basic types of neural networks using Keras/TensorFlow R interface&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;about-the-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;About the class&lt;/h2&gt;
+&lt;p&gt;This course is a part of 3-credit hour course. The class will be conducted via Zoom and include lecture and coding parts. Classes will not be recorded. Course material will be publicly available. The syllabus is subject to change.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Course Website: &lt;a href=&#34;https://bios524-biostatistical-computing-R.netlify.com&#34; class=&#34;uri&#34;&gt;https://bios524-biostatistical-computing-R.netlify.com&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Office Hours: contact the Instructor with questions and on-demand Zoom meeting requests&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;attendance&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Attendance&lt;/h2&gt;
+&lt;p&gt;Attendance is not checked, but students are responsible for all announcements made in class.&lt;/p&gt;
+&lt;div id=&#34;homework&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Homework&lt;/h3&gt;
+&lt;p&gt;Homework will consist of problem sets for material covered. Homework will need to be submitted via a GitHub repository named as &lt;code&gt;BIOS524_R_2020_&amp;lt;student last name&amp;gt;&lt;/code&gt;. Files should be named, e.g., &lt;code&gt;HW01.Rmd&lt;/code&gt;. Homework due date is one week after the lecture. Late homework will NOT be accepted unless permission was given by the instructor. Assignments that are not well organized/documented will receive no credit. Working in small groups is allowed. However, you must do the final writing-up of solutions entirely by yourself. Any two assignments which are word-for-word exactly the same or highly similar in coding style will both receive zero credit. There will be no extra credit projects available.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;final-project&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Final project&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A take-home final project&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Final project should be submitted as a fully reproducible GitHub repository&lt;/li&gt;
+&lt;li&gt;The due date to be determined. &lt;a href=&#34;../class/final_project&#34;&gt;Final project page&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--
+### Class evaluation
+
+Please, evaluate the course Friday afternoon, June 12, 2020. All evaluations are anonymous
+
+- [Student Course evaluation](https://courseeval.vcu.edu/Blue/svg.aspx?pid=05df79ed-c934-48ae-aa39-72d70fdfd940&amp;sid=62affb957f6d70bbd79f9c2865d00a8bf1e232837e630381dc1095289ecfcd37&amp;tid=f796bf54e5287c0376fde9485d74a0d8&amp;uid=e9c5910f23ceae63a3abaa9bc1f1b34b96eebb7ae0b9c163efc27fccff992a1d&amp;regl=en-us)
+- [Guest Course evaluation](https://docs.google.com/forms/d/1aiSdoZoDKki6N5J0bvjI7duG-WAG7C1Oq-X4WoKyDTs/prefill) 
+--&gt;
+&lt;/div&gt;
+&lt;div id=&#34;grading-policy&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Grading Policy&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Homework: 60% of grade&lt;/li&gt;
+&lt;li&gt;Final Project: 40% of grade&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This course will be graded on a Pass/Fail basis. Pass is defined as a grade of at least 70%&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;copyright&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Copyright&lt;/h2&gt;
+&lt;p&gt;Every reasonable effort has been made to protect the copyright requirements of materials used in this course by referring to the original sources.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;diversity-and-inclusivity&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Diversity and inclusivity&lt;/h2&gt;
+&lt;p&gt;A primary goal of this course is to be inclusive and of value to the largest number of contributors, with the most varied and diverse backgrounds possible. All participants in this course are encouraged to help to provide a friendly, safe and welcoming environment for all, regardless of age, gender, gender identity or expression, culture, ethnicity, language, national origin, political beliefs, profession, race, religion, sexual orientation, socioeconomic status, and technical ability.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;policies-and-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Policies and resources&lt;/h2&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/n198LbGnflc&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;p&gt;Students should visit &lt;a href=&#34;http://go.vcu.edu/syllabus&#34;&gt;http://go.vcu.edu/syllabus&lt;/a&gt; and review all syllabus statement information. The full university syllabus statement includes information on safety, registration, the VCU Honor Code, student conduct, withdrawal and more&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://conduct.students.vcu.edu/vcu-honor-system/&#34;&gt;VCU Honor System&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Observe the &lt;a href=&#34;https://students.vcu.edu/studentconduct/vcu-honor-system/academic-misconduct-/honor-pledge/&#34;&gt;VCU Honor Pledge&lt;/a&gt; in any class- and homework activities&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://conduct.students.vcu.edu/student-code-of-conduct/&#34;&gt;Student Code of Conduct&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://together.vcu.edu/&#34;&gt;Guidelines for a productive return to VCU&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://medschool.vcu.edu/about/deans-office/graduate/&#34;&gt;The Office of Graduate Education&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://altlab.vcu.edu/rapid-response/&#34;&gt;Keep on Teaching&lt;/a&gt; and &lt;a href=&#34;https://keeplearning.vcu.edu/&#34;&gt;Keep on Learning&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For emergencies, contact VCU Police 804-828-1234&lt;/p&gt;
+&lt;!--
+### Late Policy
+
+Students get 1 free assignment to submit late without penalties. Please email us through Sakai that you need more time. If you need accommodation, please email us so we can figure out a way to help you.
+
+Graduate Studies in the OHSU School of Medicine is committed to providing grades to students in a timely manner. Course instructors will provide students with information in writing at the beginning of each course that describes the grading policies and procedures, including but not limited to evaluation criteria, expected time needed to grade individual student examinations and type of feedback they will provide.
+
+Class grades are due to the Registrar by the Friday following the week of finals. However, on those occasions when a grade has not been submitted by the deadline, the following procedure shall be followed:
+
+1)  The Department/Program Coordinator will immediately contact the Instructor requesting the missing grade, with a copy to the Program Director and Registrar.
+
+2)  If the grade is still overdue by the end of next week, the Department/Program Coordinator will email the Department Chair directly, with a copy to the Instructor and Program Director requesting resolution of the missing grade.
+
+3)  If, after an additional week the grade is still outstanding, the student or Department/Program Coordinator may petition the Office of Graduate students for final resolution.
+
+1.  *For courses that are run by a specific department.*
+
+2.  *For the conjoined courses (course number is preceded by CON\_ that
+    are run by Graduate Studies.*
+
+--&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

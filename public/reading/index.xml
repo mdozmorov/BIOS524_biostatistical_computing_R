@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>References | Biostatistical Computing with R</title>
+    <link>/reading/</link>
+      <atom:link href="/reading/index.xml" rel="self" type="application/rss+xml" />
+    <description>References</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <image>
+      <url>/media/social-image.png</url>
+      <title>References</title>
+      <link>/reading/</link>
+    </image>
+    
+    <item>
+      <title>Day 5: Generative Adversarial Networks, Autoencoders, Recurrent Neural Networks, LSTM, GRU, sequence learning</title>
+      <link>/reading/05-reading/</link>
+      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/reading/05-reading/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.manning.com/books/deep-learning-with-r&#34;&gt;Deep learning with R: Chapter 6.2&lt;/a&gt; - Understanding RNN, LSTM, GRU layers&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://youtu.be/SEnXr6v2ifU&#34;&gt;Recurrent Neural Networks | MIT 6.S191&lt;/a&gt; - RNN and LSTM overview&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.manning.com/books/deep-learning-with-r&#34;&gt;Deep learning with R: Chapter 8&lt;/a&gt; - Generarive deep learning&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://youtu.be/rZufA635dq4&#34;&gt;Deep Generative Modeling | MIT 6.S191&lt;/a&gt; - GAN, Autoencoder, Variational autoencoder&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://openai.com/blog/generative-models/&#34;&gt;Generative Models&lt;/a&gt; - This post describes four projects that share a common theme of enhancing or using generative models, a branch of unsupervised learning techniques in machine learning&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://youtu.be/8L11aMN5KY8&#34;&gt;A Friendly Introduction to Generative Adversarial Networks (GANs)&lt;/a&gt; - 20m video by Luis Serrano. &lt;a href=&#34;https://github.com/luisguiserrano/gans&#34;&gt;GitHub repo&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Goodfellow, Ian J., Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, and Yoshua Bengio. “&lt;a href=&#34;http://arxiv.org/abs/1406.2661&#34;&gt;Generative Adversarial Networks&lt;/a&gt;.” ArXiv:1406.2661 [Cs, Stat], June 10, 2014&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Goodfellow, Ian. “&lt;a href=&#34;http://arxiv.org/abs/1701.00160&#34;&gt;NIPS 2016 Tutorial: Generative Adversarial Networks&lt;/a&gt;.” ArXiv:1701.00160 [Cs], April 3, 2017&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Pierre Baldi. “&lt;a href=&#34;http://proceedings.mlr.press/v27/baldi12a.html&#34;&gt;Autoencoders, Unsupervised Learning, and Deep Architectures&lt;/a&gt;.” In Proceedings of ICML Workshop on Unsupervised and Transfer Learning, edited by Isabelle Guyon, Gideon Dror, Vincent Lemaire, Graham Taylor, and Daniel Silver, 37–49. PMLR, 2012 - Mathematical framework of autoencoders.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 4: Convolutional Neural Networks, images</title>
+      <link>/reading/04-reading/</link>
+      <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/reading/04-reading/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.manning.com/books/deep-learning-with-r&#34;&gt;Deep learning with R: Chapter 5&lt;/a&gt; - Deep learning for computer vision&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/convolution.html&#34;&gt;Artificial Intelligence book: Convolution&lt;/a&gt; - Explaining 1D and 2D convolution, padding, stride. &lt;a href=&#34;https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/convolutional_neural_networks.html&#34;&gt;Convolutional Neural Networks&lt;/a&gt; provide further details on CNNs, references, and Youtube videos&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://towardsdatascience.com/covolutional-neural-network-cb0883dd6529&#34;&gt;Convolutional Neural Network&lt;/a&gt; - Learn Convolutional Neural Network from basic and its implementation in Keras. Animated illustrations, definitions, Python code&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://neuralnetworksanddeeplearning.com/chap6.html&#34;&gt;Neural Networks and Deep Learning book, Chapter 6: Deep convolutional networks&lt;/a&gt; - Illustrated principles of image learning, Python/Theano implementation&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.analyticsvidhya.com/blog/2020/02/mathematics-behind-convolutional-neural-network/&#34;&gt;Analytics Vidhya: Demystifying the Mathematics Behind Convolutional Neural Networks (CNNs)&lt;/a&gt; - A good description of CNN network, filters, convolution layers, and the math of forward and backward propagation&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.analyticsvidhya.com/blog/2018/12/guide-convolutional-neural-network-cnn/&#34;&gt;Analytics Vidhya: A Comprehensive Tutorial to learn Convolutional Neural Networks from Scratch&lt;/a&gt; - Illustrated theory of CNNs&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://medium.com/@ksusorokina/image-classification-with-convolutional-neural-networks-496815db12a8&#34;&gt;Image Classification with Convolutional Neural Networks&lt;/a&gt; - Medium blog post about theory, definitions, and Keras/Tensorflow model construction in Python&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://youtu.be/iaSUYvmCekI&#34;&gt;Convolutional Neural Networks | MIT 6.S191&lt;/a&gt; - CNN explained&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://deeplizard.com/learn/video/YRhxdVk_sIs&#34;&gt;DeepLizard: Convolutional Neural Networks (CNNs) Explained&lt;/a&gt; - 9min video and illustrated text about CNNs&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 3: Overfitting, regularization, dropout, pretrained models, word embedding</title>
+      <link>/reading/03-reading/</link>
+      <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/reading/03-reading/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.manning.com/books/deep-learning-with-r&#34;&gt;Deep learning with R: Chapter 4.4&lt;/a&gt; - Overfitting and underfitting&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.manning.com/books/deep-learning-with-r&#34;&gt;Deep learning with R: Chapter 4.5&lt;/a&gt; - The universal Deep Learning workflow&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://machinelearningmastery.com/what-are-word-embeddings/&#34;&gt;What Are Word Embeddings for Text?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 2: Fundamentals of Deep Learning II</title>
+      <link>/reading/02-reading/</link>
+      <pubDate>Tue, 09 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/reading/02-reading/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://medium.com/tensorflow/mit-deep-learning-basics-introduction-and-overview-with-tensorflow-355bcd26baf0&#34;&gt;MIT Deep Learning Basics: Introduction and Overview with TensorFlow&lt;/a&gt; - a blog post with infografics and brief description of each type of neural network, links to Lex Fridman’s video lectures&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/d2l-ai/berkeley-stat-157/tree/master/slides/1_31&#34;&gt;Dive into Deep Learning book: 4-Linear-Methods.pdf&lt;/a&gt; - Linear regression and gradient descent&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.deeplearningbook.org/contents/numerical.html&#34;&gt;Deep Learning book: 4 Numerical Computation&lt;/a&gt; - Gradiend descent, optimization. Full &lt;a href=&#34;https://www.deeplearningbook.org/&#34;&gt;Part I: Applied Math and Machine Learning Basics&lt;/a&gt; is recommended&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://neuralnetworksanddeeplearning.com/chap2.html&#34;&gt;Neural Networks and Deep Learning book: Chapter 2&lt;/a&gt; - details the math of backpropagation&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Zou, James, Mikael Huss, Abubakar Abid, Pejman Mohammadi, Ali Torkamani, and Amalio Telenti. “&lt;a href=&#34;https://doi.org/10.1038/s41588-018-0295-5&#34;&gt;A Primer on Deep Learning in Genomics&lt;/a&gt;.” Nature Genetics, 2018 - Deep learning in genomics overview (feed-forward, convolutional, recurrent) and a Python tutorial on detecting DNA motifs. Box 1 and 2 - concepts and definitions. Box 3 - online resources (cloud platforms, GPU services, software libraries, educational resources, more). &lt;a href=&#34;https://github.com/abidlabs/deep-learning-genomics-primer&#34; class=&#34;uri&#34;&gt;https://github.com/abidlabs/deep-learning-genomics-primer&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Topol, Eric J. “&lt;a href=&#34;https://doi.org/10.1038/s41591-018-0300-7&#34;&gt;High-Performance Medicine: The Convergence of Human and Artificial Intelligence&lt;/a&gt;.” Nature Medicine, 2019 - AI and deep learning examples in medicine. Publications comparing AI with doctors, FDA-approved AI algorithms. Pathology (cancer, dermatology, ophtalmology, gastroenterology, mental health). Benefits and biases&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=6BMwisTZFr4&#34;&gt;How Backpropagation Works&lt;/a&gt; - 18min video by Brandon Rohrer explaining backpropagation using shower heads&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://ruder.io/optimizing-gradient-descent/&#34;&gt;An overview of gradient descent optimization algorithms&lt;/a&gt; by Sebastian Ruder. Details and math of individual algorithms&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 1: Introduction to R and RStudio</title>
+      <link>/reading/01-reading/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/reading/01-reading/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;r&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;R&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://cran.r-project.org/doc/contrib/Torfs+Brauer-Short-R-Intro.pdf&#34;&gt;A very short R introduction&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://swirlstats.com/&#34;&gt;swirl&lt;/a&gt; - R package for interactive R leaning&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/matloff/fasteR&#34;&gt;FasteR&lt;/a&gt; - Fast Lane to Learning R, learn R language in R console by following examples, by Norm Matloff&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://rstudio-education.github.io/hopr&#34;&gt;Hands-On Programming with R&lt;/a&gt; - introductory book how to program in R, with hands-on examples, by Garrett Grolemund&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://r4ds.had.co.nz/&#34;&gt;R for Data Science&lt;/a&gt; - a Tidyverse-oriented introduction to R online book, by Garrett Grolemund and Hadley Wickham&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://adv-r.hadley.nz/&#34;&gt;Advanced R&lt;/a&gt; and &lt;a href=&#34;https://advanced-r-solutions.rbind.io&#34;&gt;Advanced R Solutions&lt;/a&gt; - Advanced R programming, book and solutions, by Hadley Wickham and others&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://rc2e.com&#34;&gt;R Cookbook, 2nd Edition&lt;/a&gt; - statistics-oriented R introduction, by James Long and Paul Teetor&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://bookdown.org/csgillespie/efficientR/&#34;&gt;Efficient R programming&lt;/a&gt; - advanced concepts for efficient (R) programming, by Colin Gillespie &amp;amp; Robin Lovelace&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ucb-stat133/stat133-cheatsheets&#34;&gt;ucb-stat133/stat133-cheatsheets&lt;/a&gt; - Cheat sheets on R, tidyverse, shiny, git, and more&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/rsquaredacademy-education/online-courses/&#34;&gt;Free Online R Courses&lt;/a&gt; - video and course materials, by rsquaredacademy.com&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/rstudio-education/rstats-ed&#34;&gt;List of courses teaching R&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.r-bloggers.com/how-to-learn-r-2/&#34;&gt;Tutorials for learning R&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/c/marinstatlectures/playlists&#34;&gt;MarinStatsLectures-R Programming &amp;amp; Statistics&lt;/a&gt; - collections of short (~5min) video tutorials on statistics and data analysis in R, by Mike Marin&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;rstudio&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;RStudio&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://drdoane.com/my-rstudio-configuration/&#34;&gt;Tips how to configure RStudio&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
