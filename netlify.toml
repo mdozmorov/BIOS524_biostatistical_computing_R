@@ -1,7 +1,7 @@
 [build]
   command = "hugo --gc --minify -b $URL --themesDir ."
-  base    = "bios524-biostatistical-computing-r"
-  publish = "bios524-biostatistical-computing-r/public"
+  base    = "."
+  publish = "./public"
 
 [build.environment]
   HUGO_THEME = "repo"
