@@ -222,6 +222,20 @@ if (require(ggplot2)) {
 ```
 
 ---
+## Getting help
+
+- Get an overview of all functions in a package: `help(package = "dplyr")`
+    - Bioconductor packages have vignettes, short tutorials on package-specific tasks. Browse them, e.g., `browseVignettes(package = "limma")`
+
+- Use `?function_name` to get help on a function from a _loaded_ package. E.g., `?boxplot`
+
+- Use `??function_name` to search for the function across all installed packages, even not loaded. E.g., `??ggplotly`
+
+- Use `apropos("part_of_function_name")` if you forgot the exact name, to get suggestions. E.g., `apropos("cos")`
+
+- Search engine is your best friend on many things
+
+---
 ## Useful ways of getting data in and out of R
 
 - Base functions: `read.table`, `read.csv`, `write.table`, `write.csv`

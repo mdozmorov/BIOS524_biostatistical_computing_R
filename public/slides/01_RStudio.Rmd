@@ -38,6 +38,8 @@ mono_light(
 
 * RStudio is open-source software (and therefore is free)
     * Available for download at: http://rstudio.com
+
+<img src="https://rstudio.com/wp-content/uploads/2018/10/RStudio-Logo.png" height=100>
     
 ---
 ## Why RStudio
@@ -95,20 +97,6 @@ mono_light(
 ## Plots tab
 
 .center[<img src="img/RStudioConsole8.png" height=600 >]
-
----
-## Getting help
-
-- Get an overview of all functions in a package: `help(package = "dplyr")`
-    - Bioconductor packages have vignettes, short tutorials on package-specific tasks. Browse them, e.g., `browseVignettes(package = "limma")`
-
-- Use `?function_name` to get help on a function from a _loaded_ package. E.g., `?boxplot`
-
-- Use `??function_name` to search for the function across all installed packages, even not loaded. E.g., `??ggplotly`
-
-- Use `apropos("part_of_function_name")` if you forgot the exact name, to get suggestions. E.g., `apropos("cos")`
-
-- Search engine is your best friend on many things
 
 ---
 ## RStudio keyboard shortcuts
