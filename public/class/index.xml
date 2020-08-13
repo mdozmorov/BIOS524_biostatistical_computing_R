@@ -23,16 +23,16 @@
 
 &lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Slides&lt;/h2&gt;
-&lt;div id=&#34;getting-started-with-r&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Getting started with R&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;../../slides/00_Getting_started_with_R.html#1&#34; target=&#34;_blank&#34;&gt;Lecture slides in HTML format&lt;/a&gt;&lt;/p&gt;
-&lt;iframe src=&#34;../../slides/00_Getting_started_with_R.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;div id=&#34;getting-started-with-r-and-rstudio&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Getting started with R and RStudio&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;../../slides/00_Getting_started_with_R_Rstudio.html#1&#34; target=&#34;_blank&#34;&gt;Lecture slides in HTML format&lt;/a&gt;&lt;/p&gt;
+&lt;iframe src=&#34;../../slides/00_Getting_started_with_R_Rstudio.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
 &lt;/iframe&gt;
 &lt;/div&gt;
-&lt;div id=&#34;rstudio-introduction&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;RStudio introduction&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;../../slides/01_RStudio.html#1&#34; target=&#34;_blank&#34;&gt;Lecture slides in HTML format&lt;/a&gt;&lt;/p&gt;
-&lt;iframe src=&#34;../../slides/01_RStudio.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;div id=&#34;r-basics&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;R basics&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;../../slides/01_R_basics.html#1&#34; target=&#34;_blank&#34;&gt;Lecture slides in HTML format&lt;/a&gt;&lt;/p&gt;
+&lt;iframe src=&#34;../../slides/01_R_basics.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
 &lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;

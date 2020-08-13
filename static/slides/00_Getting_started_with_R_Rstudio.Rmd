@@ -1,5 +1,5 @@
 ---
-title: "Getting started with R"
+title: "Getting started with R and RStudio"
 # subtitle: "Getting started"
 author: "Mikhail Dozmorov"
 institute: "Virginia Commonwealth University"
@@ -141,133 +141,115 @@ https://blog.revolutionanalytics.com/2017/10/updated-history-of-r.html ]
 - RStudio. Integrated development environment for basic and advanced R operations
 ]
 
+## RStudio
+
+* RStudio is a program that allows you to run R in a more user-friendly environment
+    * RStudio offers some GUI (graphical user interface) features for R
+
+* RStudio is a very flexible IDE (Integrated development environment)
+    * The same R program is running underneath the interface
+
+* RStudio is open-source software (and therefore is free)
+    * Available for download at: http://rstudio.com
+
+<img src="https://rstudio.com/wp-content/uploads/2018/10/RStudio-Logo.png" height=100>
+    
 ---
-## `R` basics - functions
+## Why RStudio
 
-- `R` uses *functions* to do things
+- Project-centric work - scripts and data are organized in one folder (project), easily accessible 
 
-- Functions take *arguments* to specify how to do those things
+- Single workspace with four (rearrangeable, zoomable) panels
 
-* Example:
-```
-read.csv(file="scores.csv")
-```
+- Work on multiple projects simultaneously in several instances of RStudio
 
-`read.csv` is a function to import a CSV file and `file` is an argument that specifies which file to import
+- Work on multiple (types of) scripts
 
----
-## `R` basics - running functions
+- See all variables in R environment, easily visualize them
 
-- From the R console - type the function and hit Enter
-    - One function at a time, not efficient
+- Easy access to help, plots, packages
 
-- Using an `R` script - a text file that contains all your `R` functions/code
-    - `R` scripts allow you to save, edit, reproduce and share your code
-    - R scripts stored in files with `.R` extension
-    - Run the whole script as `source("script_name.R")`, or, from command line, `Rscript script_name.R`
-
-
----
-## `R` basics - assignment
-
-- We often need to save a function's result or output. For this we use the assignment operator: ` <- `, preferred over ` = `  
-- For example, when you import a CSV file you need to give it a name: 
-```
-scores <- read.csv(file="scores.csv")
-``` 
- 
-Now we can use `scores` as an argument to other functions. For example, compute summary statistics for each column in the data:
-
-```
-summary(scores)
-```
-
-.small[**Note**: Use `Alt + -` (Win) or `Option + -` (Mac) in RStudio to quickly insert ` <- `. You can also use `=` for assignment.]
+- Simple integration with Git version control system
 
 ---
-## `R` basics - packages
+## RStudio main window
 
-- All functions belong to *packages*. The `read.csv` function is in the `utils` package.
-
-- `R` comes with about 30 packages (called "base `R`"), but as of August 2020 there are over 16,000 CRAN packages and over 1,900 Bioconductor packages
-
-- Example: `ggplot2` is a popular package that adds functions for creating graphs in a different way than what base `R` provides
-
-- To use functions in a package, the package must be installed and loaded. (They're free)
-- You only _install_ a package once
-- You _load_ a package whenever you want to use its functions
+.center[<img src="img/RStudioConsole.png" height=600 >]
 
 ---
-## Installing packages
+## R Console
 
-- `install.packages` - installs packages from CRAN, e.g., `install.packages("BiocManager")`
-
-- `remotes` package - installs R packages from GitHub, GitLab, Bitbucket, Bioconductor, or plain 'subversion' or 'git' repositories. E.g., `remotes::install_github("tidyverse/ggplot2")`
-
-- `BiocManager::install()` - Install or update Bioconductor, CRAN, or GitHub packages
-
-- RStudio point-and-click interface
+.center[<img src="img/RStudioConsole2.png" height=600 >]
 
 ---
-## Loading packages
+## Create/open new script or other file
 
-- `library()` will load the package, e.g., `library(readxl)` or `library("readxl")`
-
-- `require()` will load the package, and, if success, return TRUE. Useful in `if` statement, e.g.
-
-```
-if (require(ggplot2)) {
-  install.packages("ggplot2")
-}
-```
+.center[<img src="img/RStudioConsole3.png" height=600 >]
 
 ---
-## Getting help
+## Open an existing script:
 
-- Get an overview of all functions in a package: `help(package = "dplyr")`
-    - Bioconductor packages have vignettes, short tutorials on package-specific tasks. Browse them, e.g., `browseVignettes(package = "limma")`
-
-- Use `?function_name` to get help on a function from a _loaded_ package. E.g., `?boxplot`
-
-- Use `??function_name` to search for the function across all installed packages, even not loaded. E.g., `??ggplotly`
-
-- Use `apropos("part_of_function_name")` if you forgot the exact name, to get suggestions. E.g., `apropos("cos")`
-
-- Search engine is your best friend on many things
+.center[<img src="img/RStudioConsole4.png" height=600 >]
 
 ---
-## Useful ways of getting data in and out of R
+## Rearrangeable tabbed interface 
 
-- Base functions: `read.table`, `read.csv`, `write.table`, `write.csv`
-
-- Tidyverse way, `readr` package: `read_table`, `read_csv`, `read_tsv`, `write_csv` ...
-
-- For fixed-width files, use `read.fwf` or `readr::read_fwf` funcitons
-
-- For reading/writing Excel files, use `readxl` and `writexl` packages, `read_xlsx`, `write_xlsx` functions
-    - Remember that `.csv` is the preferred text-based format that opens in Excel
-
-.small[https://readr.tidyverse.org/
-
-https://readxl.tidyverse.org/
-
-https://CRAN.R-project.org/package=writexl]
+.center[<img src="img/RStudioConsole5.png" height=600 >]
 
 ---
-## R is more than a programming language
+## History of commands
 
-Numerous packages are available to extend R functionality
+.center[<img src="img/RStudioConsole6.png" height=600 >]
 
-- Publication-quality figures, documents in Word, PDF, and HTML formats (Rmarkdown)
-    - Templates for journal articles are available
+---
+## Environment tab 
 
-- Presentations, from basic (`ioslides`, `beamer`) to advanced (`xaringan`)
+.center[<img src="img/RStudioConsole7.png" height=600 >]
 
-- Web sites for blogs (`blogdown`), books (`bookdown`), packages (`pkgdown`)
-    - Templates for CV, resume, thesis are available
+---
+## Plots tab
 
-- Dynamic web applications using Shiny
+.center[<img src="img/RStudioConsole8.png" height=600 >]
 
-- Interface with other programming languages, like C (`Rcpp`), Python (`reticulate`)
+---
+## RStudio keyboard shortcuts
 
-- Many more cool usages...
+- Command (Ctrl) + Enter - Run current line/selection, go to the next line  
+- Alt + Enter - Run current line/selection, stay on the current line
+- Ctrl + 1 - Move cursor to source  
+- Ctrl + 2 - Move cursor to console  
+- Ctrl + L - Clear console
+- Ctrl + Alt + I - Create new code chunk
+- Ctrl + Alt + c - Run current code chunk
+- All the usual - Ctrl + Z, C, X, V, S, O
+
+See more via menu "Tools > Keyboard Shortcuts Help"
+
+.small[https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts]
+
+---
+## RStudio is more than IDE
+
+RStudio PBC develops many now-gold-standard R packages
+
+- `Tidyverse` – R packages for data science, including ggplot2, dplyr, tidyr, and purrr
+
+- `Shiny` – An interactive web technology
+
+- `RMarkdown` – Insert R code into markdown documents
+
+- `TensorFlow` - open-source software library for Machine Intelligence
+
+- `Reticulate` - provides a comprehensive set of - `knitr` – Dynamic reports combining R, TeX, Markdown & HTML
+
+- `devtools` – Package development tool
+
+---
+## RSstudio analogs
+
+Rodeo - A Native Python IDE for Data Science
+
+.center[<img src="img/rodeo-overview-01.png" height=400 >]
+
+.small[https://rodeo.yhat.com/]
+

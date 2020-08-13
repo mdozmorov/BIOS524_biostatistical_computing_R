@@ -22,19 +22,19 @@ editor_options:
 
 ## Slides
 
-### Getting started with R
+### Getting started with R and RStudio
 
-<a href="../../slides/00_Getting_started_with_R.html#1" target="_blank">Lecture slides in HTML format</a>
+<a href="../../slides/00_Getting_started_with_R_Rstudio.html#1" target="_blank">Lecture slides in HTML format</a>
 
 ```{r echo=FALSE}
-knitr::include_url('../../slides/00_Getting_started_with_R.html#1')
+knitr::include_url('../../slides/00_Getting_started_with_R_Rstudio.html#1')
 ```
 
-### RStudio introduction
+### R basics
 
-<a href="../../slides/01_RStudio.html#1" target="_blank">Lecture slides in HTML format</a>
+<a href="../../slides/01_R_basics.html#1" target="_blank">Lecture slides in HTML format</a>
 
 ```{r echo=FALSE}
-knitr::include_url('../../slides/01_RStudio.html#1')
+knitr::include_url('../../slides/01_R_basics.html#1')
 ```
 
