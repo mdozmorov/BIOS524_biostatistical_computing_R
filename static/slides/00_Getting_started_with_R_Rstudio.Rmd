@@ -232,15 +232,17 @@ See more via menu "Tools > Keyboard Shortcuts Help"
 
 RStudio PBC develops many now-gold-standard R packages
 
-- `Tidyverse` – R packages for data science, including ggplot2, dplyr, tidyr, and purrr
+- `tidyverse` – R packages for data science, including ggplot2, dplyr, tidyr, and purrr
 
-- `Shiny` – An interactive web technology
+- `shiny` – An interactive web technology
 
-- `RMarkdown` – Insert R code into markdown documents
+- `rmarkdown` – Insert R code into markdown documents
 
-- `TensorFlow` - open-source software library for Machine Intelligence
+- `knitr` – Dynamic reports combining R, TeX, Markdown & HTML
 
-- `Reticulate` - provides a comprehensive set of - `knitr` – Dynamic reports combining R, TeX, Markdown & HTML
+- `tensorflow` - open-source software library for Machine Intelligence
+
+- `reticulate` - provides a comprehensive set of 
 
 - `devtools` – Package development tool
 
