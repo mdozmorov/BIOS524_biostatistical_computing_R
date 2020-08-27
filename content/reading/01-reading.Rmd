@@ -14,6 +14,8 @@ type: docs
 
 - [A very short R introduction](https://cran.r-project.org/doc/contrib/Torfs+Brauer-Short-R-Intro.pdf)
 
+- [Big Book of R](https://bigbookofr.netlify.app/), by Oscar Baruffa. A bookdown bookmarking links to everything R for data science, from basics, visualization, tidyverse to distributed computing, spatial data science, machine learning, and more. [GitHub](https://github.com/oscarbaruffa/BigBookofR)
+
 - [swirl](http://swirlstats.com/) - R package for interactive R leaning
 
 - [FasteR](https://github.com/matloff/fasteR) - Fast Lane to Learning R, learn R language in R console by following examples, by Norm Matloff
@@ -28,6 +30,8 @@ type: docs
 
 - [Efficient R programming](https://bookdown.org/csgillespie/efficientR/) - advanced concepts for efficient (R) programming, by Colin Gillespie & Robin Lovelace
 
+- [Mastering Software Development in R](https://bookdown.org/rdpeng/RProgDA/), book by Roger D. Peng, Sean Kross, and Brooke Anderson. From R basics to package development
+
 - [ucb-stat133/stat133-cheatsheets](https://github.com/ucb-stat133/stat133-cheatsheets) - Cheat sheets on R, tidyverse, shiny, git, and more
 
 - [Free Online R Courses](https://github.com/rsquaredacademy-education/online-courses/) - video and course materials, by rsquaredacademy.com
@@ -38,8 +42,35 @@ type: docs
 
 - [MarinStatsLectures-R Programming & Statistics](https://www.youtube.com/c/marinstatlectures/playlists) - collections of short (~5min) video tutorials on statistics and data analysis in R, by Mike Marin
 
+- [R course](https://pagepiccinini.com/r-course/) by Page Piccinini. Six lessons with lecture notes and videos, introduction to R statistical computing
 
 ## RStudio
 
+- [rstudio.cloud](https://rstudio.cloud) - a web-based instance of R/RStudio. [RStudio cloud cheatsheet and notes](https://docs.google.com/presentation/d/1Lc0_hLgLUh0KSS5DIEZBUfE4KzeU8kH25nGY4w2kE1o/edit#slide=id.g606317e658_0_167), from [Twitter](https://twitter.com/lobrowR/status/1295114281428684806?s=20) source. [RStudio Cloud for education - Mel Gregory](https://youtu.be/PviVimazpz8) - 24 min video with all the essense of using RStudio cloud for education
+
 - [Tips how to configure RStudio](https://drdoane.com/my-rstudio-configuration/)
+
+## Best practices
+
+- [Tips for organizing projects](http://kbroman.org/steps2rr/pages/organize.html), [Organizing data in spreadsheets](http://kbroman.org/dataorg/) by Karl Broman
+
+- [Data Organization in Spreadsheets, common mistakes](http://www.datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/)
+
+- [Software Carpentry reading material on software engineering and scientific computing](http://software-carpentry.org/reading/) 
+
+- [Software development skills for data scientists](http://treycausey.com/software_dev_skills.html) by Trey Causey
+
+- [ProjectTemplate](http://projecttemplate.net/) - an R package for advanced project management, [GitHub](https://github.com/johnmyleswhite/ProjectTemplate)
+
+- Seemann, Torsten. “[Ten Recommendations for Creating Usable Bioinformatics Command Line Software](https://doi.org/10.1186/2047-217X-2-15).” GigaScience 2, no. 1 (December 2013)
+
+- List, Markus, Peter Ebert, and Felipe Albrecht. “[Ten Simple Rules for Developing Usable Software in Computational Biology](https://doi.org/10.1371/journal.pcbi.1005265).” PLoS Computational Biology 13, no. 1 (January 2017)
+
+- Taschuk, Morgan, and Greg Wilson. “[Ten Simple Rules for Making Research Software More Robust](https://doi.org/10.1371/journal.pcbi.1005412).” PLOS Computational Biology 13, no. 4 (April 13, 2017). [GitHub](https://github.com/oicr-gsi/robust-paper) 
+
+- [Code and Data for the Social Sciences: A Practitioner’s Guide](https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf) book by Matthew Gentzkow and Jesse Shapiro, PDF
+
+- Wilson, Greg, D. A. Aruliah, C. Titus Brown, Neil P. Chue Hong, Matt Davis, Richard T. Guy, Steven H. D. Haddock, et al. "[Best Practices for Scientific Computing](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745) ." PLoS Biology 2014
+
+- Noble, William Stafford. “[A Quick Guide to Organizing Computational Biology Projects](https://doi.org/10.1371/journal.pcbi.1000424).” PLoS Computational Biology 5, no. 7 (July 2009) - Computational projects organization, folder structure, command line scripts, version control
 
