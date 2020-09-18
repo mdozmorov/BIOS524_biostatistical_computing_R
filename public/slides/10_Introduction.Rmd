@@ -1,0 +1,126 @@
+---
+title: "BIOS 524 course introduction"
+subtitle: "Biostatistical Computing with R"
+author: "Mikhail Dozmorov"
+institute: "Virginia Commonwealth University"
+# date: "`r Sys.Date()`"
+date: "09-22-2020"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["xaringan-themer.css", "xaringan-my.css"]
+    nature:
+      ratio: '16:9'
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r xaringan-themer, include = FALSE}
+library(xaringanthemer)
+mono_light(
+  base_color = "midnightblue",
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Montserrat", "500", "500i"),
+  code_font_google   = google_font("Droid Mono"),
+  link_color = "#8B1A1A", #firebrick4, "deepskyblue1"
+  text_font_size = "28px",
+  code_font_size = "26px"
+)
+```
+
+class: center, middle
+
+# Welcome
+
+---
+## Mikhail Dozmorov, PhD
+
+- Associate professor, Department of Biostatistics, VCU
+
+- Bioinformatics
+- Genomics
+- Data Science
+- Computational Biology
+
+.small[ https://medschool.vcu.edu/expertise/detail.html?id=mdozmorov ]
+
+---
+## Class facilitator/TA
+
+- **Joseph Boyle**
+    - Ph.D. Student, Second Year
+    - Student Representative
+    
+- He will be helping with homework assignments and online sessions
+
+---
+## Biostatistical Computing with R
+
+- This is a brand new course for me
+- I expect to make mistakes or forget something
+
+- Let's maintain a welcoming and supportive environment
+    - Ask as many questions during the class as necessary! Worst case - I'll address them later, if not covered during the class
+    - Respect each other
+
+- Please keep your video on. I won't face your directly but will keep the participants' window on a second screen
+
+- Lectures won't be recorded, so make all efforts to attend each class
+    - Joseph will keep track of attendance
+
+---
+## Teaching style
+
+- Learning through practice - this means you will always do something hands-on
+
+- While doing, you will need to google for help - you will learn a lot from other resources
+
+- Always ask questions!
+
+---
+## Learning Objectives
+
+By the end of this course, you will be able to:
+
+- Understand and utilize R/RStudio
+
+- Share your code on GitHub
+
+- Understand basic data types and data structures in R
+
+- Execute and interpret some basic statistics in R
+
+- Familiarize and load data files (Excel, Comma Separated Value files) into R/Rstudio, with tips on formatting and data organization
+
+- Filter and format data in R for use with various routines
+
+- Visualize datasets using ggplot2 and understand how to build basic plots using ggplot2 syntax
+
+---
+## Rules for interaction
+
+- Post questions in a chat
+    - If anyone knows answers, please, post them there
+    - I'll try to allocate time at the end of each class to review the chat
+    - Note chat history is gone as soon as the lecture is ended
+
+- [Slack](https://slack.com/)
+    - Install [Slack](https://slack.com/) (desktop version available). See [Slack 101](https://slack.com/resources/slack-101)
+    - I will send invites using your VCU e-mail addresses - use them to join the [#bios524 channel](https://dozmorovlab.slack.com/archives/C01AZANCZR9)
+    - Omit formalities, but be respectful and polite
+    - Questions and answers posted there will be available for everyone - answer them, or I'll address them
+    - Direct messages are possible - use them to ask private questions or schedule a meeting
+    - I'll try to answer your questions asap, typically, within 24 hours
+
+---
+## Class Assignments
+
+- Homeworks should be submitted via Blackboard, or as instructed
+
+- Homeworks are due 1 week after the class. E.g., homework for September 22 class is due September 29, 5:00pm Eastern time
+
+- A final project will conclude the course
+
+- Office hours. I'll end the class sessions at 2:20pm, and will be available at https://zoom.us/my/mdozmorov, 2:30-3:30pm unless unexpected meetings
+
