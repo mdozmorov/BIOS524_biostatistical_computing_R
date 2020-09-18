@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Code details | Biostatistical Computing with R</title>
+    <title>Assignment details | Biostatistical Computing with R</title>
     <link>/assignment/</link>
       <atom:link href="/assignment/index.xml" rel="self" type="application/rss+xml" />
-    <description>Code details</description>
+    <description>Assignment details</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <image>
       <url>/media/social-image.png</url>
-      <title>Code details</title>
+      <title>Assignment details</title>
       <link>/assignment/</link>
     </image>
     
     <item>
-      <title>Code 1</title>
+      <title>Assignment 1</title>
       <link>/assignment/01-problem-set/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/assignment/01-problem-set/</guid>
@@ -21,7 +21,22 @@
 &lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;Assignments will be posted here&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Introduce yourself. Write a few sentences:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Your Name&lt;/li&gt;
+&lt;li&gt;Your Department/Program&lt;/li&gt;
+&lt;li&gt;What you hope to learn from this course&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Download/install R, RStudio&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Explore “Help” menu, “RStudio Docs”, “RStudio Community Forum”, “Cheatsheets -&amp;gt; RStudio IDE CHeat Sheet”, “Browse cheatsheets…”, “Keyboard Shortcut Help”&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Read selected articles on &lt;a href=&#34;https://support.rstudio.com/hc/en-us/sections/200107586-Using-the-RStudio-IDE&#34;&gt;RStudio Docs&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Need prioritizing, most are advanced&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Subscribe to Cheatsheet updates at &lt;a href=&#34;https://rstudio.com/resources/cheatsheets/&#34;&gt;RStudio Cheatsheets&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Read sections “2 Why R?” and “3 R and RStudio Basics” at &lt;a href=&#34;https://ismayc.github.io/rbasics-book/3-rstudiobasics.html&#34; class=&#34;uri&#34;&gt;https://ismayc.github.io/rbasics-book/3-rstudiobasics.html&lt;/a&gt;. Make sure to watch the videos&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!--
 # In-class, [deep-learning-with-r-notebooks](https://github.com/jjallaire/deep-learning-with-r-notebooks)
 
