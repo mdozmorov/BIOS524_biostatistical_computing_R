@@ -1,38 +1,63 @@
 lessons:
-  - title: '<span class="fake-header-table">Introduction to Deep Learning with R</span>'
+  - title: '<span class="fake-header-table">Biostatistical computing with R</span>'
     header: True
 
-  - title: '**Day 1: Introduction to R and RStudio**'
-    date: "August 13"
-    reading: "01-reading"
-    assignment: "01-problem-set"
-    class: "01-class"
+  - title: '**Lecture 1: Introduction to R and RStudio**'
+    date: "September 22"
+    # reading: "01-reading"
+    # assignment: "01-problem-set"
+    # class: "01-class"
 
-  # - title: '**Day 2: Fundamentals of Deep Learning II**'
-  #   date: "June 9"
-  #   reading: "02-reading"
-  #   assignment: "02-problem-set"
-  #   class: "02-class"
-  # 
-  # - title: '**Day 3: Overfitting, regularization, dropout, pretrained models, word embedding**'
-  #   date: "June 10"
-  #   reading: "03-reading"
-  #   assignment: "03-problem-set"
-  #   class: "03-class"
-  # 
-  # - title: '**Day 4: Convolutional Neural Networks, images**'
-  #   date: "June 11"
-  #   reading: "04-reading"
-  #   assignment: "04-problem-set"
-  #   class: "04-class"
-  # 
-  # - title: "**Day 5: Generative Adversarial Networks, Autoencoders, Recurrent Neural Networks, LSTM, GRU, sequence learning**"
-  #   date: "June 12"
-  #   reading: "05-reading"
-  #   assignment: "05-problem-set"
-  #   class: "05-class"
+  - title: '**Lecture 2: R preliminaries**'
+    date: "September 24"
+    # reading: "02-reading"
+    # assignment: "02-problem-set"
+    # class: "02-class"
 
-#  - title: "**Notebook 2 due**"
-#    date: "April 16"
-#  - title: '<span class="fake-header-table">Part 2: Spatial Statistics</span>'
-#    header: true
+  - title: '**Lecture 3: R base graphics, statistical functions**'
+    date: "September 29"
+    # reading: "03-reading"
+    # assignment: "03-problem-set"
+    # class: "03-class"
+
+  - title: '**Lecture 4: RMarkdown**'
+    date: "October 1"
+    # reading: "04-reading"
+    # assignment: "04-problem-set"
+    # class: "04-class"
+
+  - title: "**Lecture 5: Data management/code best practices**"
+    date: "October 6"
+    # reading: "05-reading"
+    # assignment: "05-problem-set"
+    # class: "05-class"
+
+  - title: "**Lecture 6: Packages**"
+    date: "October 8"
+    # reading: "05-reading"
+    # assignment: "05-problem-set"
+    # class: "05-class"
+
+  - title: "**Lecture 7: Tidyverse, data manipulation**"
+    date: "October 13"
+    # reading: "05-reading"
+    # assignment: "05-problem-set"
+    # class: "05-class"
+
+  - title: "**Lecture 8: Tidyverse, data visualization**"
+    date: "October 15"
+    # reading: "05-reading"
+    # assignment: "05-problem-set"
+    # class: "05-class"
+
+  - title: "**Lecture 9: Git/GitHub**"
+    date: "October 20"
+    # reading: "05-reading"
+    # assignment: "05-problem-set"
+    # class: "05-class"
+
+  - title: "**Lecture 10: Interactive web apps with Shiny**"
+    date: "October 22"
+    # reading: "05-reading"
+    # assignment: "05-problem-set"
+    # class: "05-class"

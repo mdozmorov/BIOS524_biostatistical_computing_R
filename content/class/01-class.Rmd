@@ -1,5 +1,5 @@
 ---
-title: "Day 1. Introduction to R and RStudio"
+title: "Lecture 1. Introduction to R and RStudio"
 # linktitle: "1. Introduction to RStudio and Images"
 # date: "2020-06-08"
 # class_date: "2020-06-08"
@@ -11,7 +11,7 @@ menu:
     parent: Class sessions
     weight: 1
 type: docs
-weight: 1
+# weight: 1
 # pdf: 
 # thumb: 
 editor_options: 
@@ -19,7 +19,7 @@ editor_options:
 ---
 
 
-
+<!--
 ## Slides
 
 ### Getting started with R and RStudio
@@ -29,12 +29,5 @@ editor_options:
 ```{r echo=FALSE}
 knitr::include_url('../../slides/00_Getting_started_with_R_Rstudio.html#1')
 ```
-
-### R basics
-
-<a href="../../slides/01_R_basics.html#1" target="_blank">Lecture slides in HTML format</a>
-
-```{r echo=FALSE}
-knitr::include_url('../../slides/01_R_basics.html#1')
-```
+-->
 

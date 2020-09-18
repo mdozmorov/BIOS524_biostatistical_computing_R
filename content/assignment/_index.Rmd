@@ -1,8 +1,8 @@
 ---
-title: Code details
+title: Assignment details
 menu:
   assignment:
-    parent: Code
+    parent: Assignments
     weight: 1
 type: docs
 weight: 1
@@ -11,4 +11,4 @@ output:
     toc: true
 ---
 
-Class-specific code will be posted following each class session
+Code and Assignments will be posted following each class session

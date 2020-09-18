@@ -17,13 +17,13 @@ This is a first-year graduate level course in biostatistical computing. This cou
 ## Topics
 
 - R/RStudio
+- Vector/matrix operations
+- Probability distributions and random number generation
+- Statistical functions
 - RMarkdown, GitHub
 - Functions, Packages
 - Data management, tidyverse
 - R graphics, data visualization
-- Vector/matrix operations
-- Probability distributions and random number generation
-- Statistical functions
 - Interactive web apps with Shiny
 
 ## Prerequisites
