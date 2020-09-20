@@ -31,14 +31,15 @@ editor_options:
 
 # To submit on blackboard, due 09-29-2020, 5:00pm
 
-- Introduce yourself. Write a few sentences:
+1) Introduce yourself. Write a few sentences:
     - Your Name
     - Your Department/Program
     - What are your programming skills
     - What you hope to learn from this part of the course
 
-- Describe all ways how to find:
+2) Describe all ways how to find:
     - R version
     - R installation path
     - Copy-paste selected output and describe your observations
 
+3) Submit your homework as a text or Word document. Name your file as "<last_name>_<first_name>_Hw01"

@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>R preliminaries</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Mikhail Dozmorov" />
+    <script src="libs/header-attrs-2.3/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="xaringan-my.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# R preliminaries
+### Mikhail Dozmorov
+### Virginia Commonwealth University
+### 09-29-2020
+
+---
+
+
+
+
+## R expressions, function calls, and objects
+
+According to John Chambers, one of the creators of R’s precursor S:
+
+- Everything that exists in R is an **object**
+- Everything that happens in R is a **call to a function**
+
+---
+## Assignment operator
+
+- We often need to save a function's result or output. For this we use the assignment operator: ` &lt;- `, preferred over ` = `  
+
+```r
+scores &lt;- mtcars
+```
+ 
+Now we can use `scores` as an argument to other functions. For example, compute summary statistics for each column in the data:
+
+
+```r
+summary(scores[1:4]) # First four elements
+```
+
+```
+##       mpg             cyl             disp             hp       
+##  Min.   :10.40   Min.   :4.000   Min.   : 71.1   Min.   : 52.0  
+##  1st Qu.:15.43   1st Qu.:4.000   1st Qu.:120.8   1st Qu.: 96.5  
+##  Median :19.20   Median :6.000   Median :196.3   Median :123.0  
+##  Mean   :20.09   Mean   :6.188   Mean   :230.7   Mean   :146.7  
+##  3rd Qu.:22.80   3rd Qu.:8.000   3rd Qu.:326.0   3rd Qu.:180.0  
+##  Max.   :33.90   Max.   :8.000   Max.   :472.0   Max.   :335.0
+```
+
+Use `Alt + -` (Win) or `Option + -` (Mac) in RStudio to quickly insert ` &lt;- `
+
+---
+## Variables
+
+- **Scalars** (0-dimensional): `a = 42`, `b = a / 7`
+
+- **Vectors** (1-dimensional): `b = c(12, 14, 16)`
+    - Access vector element as `b[2]` (returns 14)
+
+- **Matrices** (2-dimensional):
+
+
+```r
+mtx = matrix(data = c(3, 1, 3, 2, 3, 2), ncol = 2)
+mtx
+```
+
+```
+##      [,1] [,2]
+## [1,]    3    2
+## [2,]    1    3
+## [3,]    3    2
+```
+
+---
+## Variable names
+
+- Be careful not to name your variables as function names. E.g., `c` is a bad variable name because `c()` is a function for combining variables. Check `?c`
+
+- With auto-completion in RStudio, you don't need to worry about variable name length - make names that are self-explanatory
+
+Follow [Hadley Wickham's Tidyverse Style Guide](http://adv-r.had.co.nz/Style.html)
+
+---
+## Data frames
+
+- **Data frames**: tables or 2-dimensional arrays. Think matrices that can hold different data types
+    - The column names should be non-empty
+    - The row names should be unique
+    - The data stored in a data frame can be of numeric, factor or character
+
+
+```r
+dat = data.frame(Column.1 = c(3, 1, 3), Column.2 = c("2", "3", "2"))
+dat
+```
+
+```
+##   Column.1 Column.2
+## 1        3        2
+## 2        1        3
+## 3        3        2
+```
+
+---
+## Addressing elements in a data frame
+
+
+```r
+dat[3, 2]          # [] contain row/column indices. 
+```
+
+```
+## [1] "2"
+```
+
+```r
+dat[3, "Column.2"] # Address by column name 
+```
+
+```
+## [1] "2"
+```
+
+```r
+dat$Column.2[3]    # Use $ shortcut to access column by name
+```
+
+```
+## [1] "2"
+```
+
+
+```r
+# Compare column classes
+class(dat$Column.1)
+```
+
+```
+## [1] "numeric"
+```
+
+```r
+class(dat$Column.2)
+```
+
+```
+## [1] "character"
+```
+
+``` r
+# Top or bottom of a data frame
+head(dat)
+tail(dat)
+```
+
+---
+## Lists
+
+- **Lists**: objects containing elements of different types
+    - Each list element can be of different length
+    
+
+```r
+lst = list(A = rep(2, 5), B = seq(1:10), C = letters)
+lst
+```
+
+```
+## $A
+## [1] 2 2 2 2 2
+## 
+## $B
+##  [1]  1  2  3  4  5  6  7  8  9 10
+## 
+## $C
+##  [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "n" "o" "p" "q" "r" "s"
+## [20] "t" "u" "v" "w" "x" "y" "z"
+```
+
+---
+## Addressing elements in a list
+
+- Address any element as `lst[1]` (or, `lst["A"]`)
+
+
+```r
+lst[1]
+```
+
+```
+## $A
+## [1] 2 2 2 2 2
+```
+
+- Address _the content of any element_ as `lst[[1]]` (or, `lst[["A"]]`, `lts$A`)
+
+
+```r
+lst[[1]]
+```
+
+```
+## [1] 2 2 2 2 2
+```
+
+---
+## Comments
+
+R ignores everything after the `#` sign
+
+
+```r
+# This line is a comment
+print("Hello, World!") # This will print the message, but the comment will be ignored
+```
+
+```
+## [1] "Hello, World!"
+```
+
+---
+## Functions
+
+- A function is a set of statements organized together to perform a specific task
+    - **Name** - the actual name of the function, e.g., `summary()`, `mean()`
+    - **Arguments** - values passed to the functions. Argument-less functions exist
+    - **Code** - actual code of the function
+    - **Return value** - the result of the function's code execution
+
+``` r
+read.csv(file="scores.csv")
+```
+
+`read.csv` is a function to import a CSV file and `file` is an argument that specifies which file to import
+
+R has a large number of built-in functions, and the user can create their own functions
+
+---
+## Running functions
+
+- From the R console - type the function and hit Enter
+    - One function at a time, not efficient
+
+- Using an `R` script - a text file that contains all your `R` functions/code
+    - `R` scripts allow you to save, edit, reproduce and share your code
+    - R scripts stored in files with `.R` extension
+    - Run the whole script as `source("script_name.R")`, or, from command line, `Rscript script_name.R`
+    - In RStudio, you can run individual lines, code chunks, or source whole scripts. Keyboard shortcuts are available
+
+---
+## Packages
+
+- All functions belong to *packages*. The `read.csv` function is in the `utils` package.
+
+- `R` comes with about 30 packages (called "base `R`"), but as of August 2020 there are over 16,000 CRAN packages and over 1,900 Bioconductor packages
+
+- Example: `ggplot2` is a popular package that adds functions for creating graphs in a different way than what base `R` provides
+
+- To use functions in a package, the package must be installed and loaded. (They're free)
+- You only _install_ a package once
+- You _load_ a package whenever you want to use its functions
+
+---
+## Package repositories
+
+- `CRAN` - Comprehensive R Archive Network – a collection of &gt; 16,000 (September 2020) packages
+
+- `Bioconductor` – genomics-oriented free and open source project hosting &gt; 1,900 specialized R packages (September 2020)
+
+- `MRAN` - Microsoft R Application Network, includes CRAN packages and more
+
+- `GitHub` – code hosting repository, packages for everyone and by everyone
+
+.small[ https://cran.r-project.org/web/packages/ 
+
+https://www.bioconductor.org/
+
+https://mran.microsoft.com/
+
+https://github.com/  ]
+
+---
+## Installing packages
+
+- `install.packages` - installs packages from CRAN, e.g., `install.packages("BiocManager")`
+
+- `remotes` package - installs R packages from GitHub, GitLab, Bitbucket, Bioconductor, or plain 'subversion' or 'git' repositories. E.g., `remotes::install_github("tidyverse/ggplot2")`
+
+- `BiocManager::install()` - Install or update Bioconductor, CRAN, or GitHub packages
+
+- RStudio point-and-click interface
+
+---
+## Loading packages
+
+- `library()` will load the package, e.g., `library(readxl)` or `library("readxl")`
+    - But, when installing packages, always use parentheses, e.g., `install.packages("readxl")`
+
+- `require()` will load the package, and, if success, return TRUE. Useful in `if` statement, e.g.
+
+``` r
+if (require(ggplot2)) {
+  install.packages("ggplot2")
+}
+```
+
+---
+## Installing packages
+
+- `install.packages(“&lt;package_name&gt;”)` – install from CRAN
+
+- `install.packages(“&lt;package_name.tar.gz&gt;”, repos = NULL)` – install from a tarball archive
+
+- `R CMD INSTALL &lt;package_name.tar.gz&gt;` - install from a command line
+
+- `devtools::install_github('mdozmorov/MDmisc')` – install from GitHub
+
+- `BiocManager::install()` - install Bioconductor, CRAN, and GitHub packages
+
+.small[ https://CRAN.R-project.org/package=BiocManager ]
+
+---
+## Loading packages
+
+- `library(package_name)` – load library to use its functions
+
+- `library()` vs. `require()`
+    - `require()` _tries_ to load the package, returns TRUE or FALSE
+    - `library()` just loads the package, fails if the package is not available
+
+- Use only `library(package_name)`
+
+.small[ https://yihui.name/en/2014/07/library-vs-require/ ]
+
+---
+## Using functions from other packages
+
+- You can access functions without loading the package using the `::` operator, e.g., `Hmisc::rcorr()`
+
+- Entering function name without parentheses will output its code
+
+``` r
+&gt; data.frame
+function (..., row.names = NULL, check.rows = FALSE, check.names = TRUE, 
+    fix.empty.names = TRUE, stringsAsFactors = default.stringsAsFactors()) 
+{
+    data.row.names &lt;- if (check.rows &amp;&amp; is.null(row.names)) 
+...
+```
+
+- You can access internal functions of a package with the `:::` operator, if you know their name
+
+---
+## Getting help
+
+- Get an overview of all functions in a package: `help(package = "dplyr")`
+    - Bioconductor packages have vignettes, short tutorials on package-specific tasks. Browse them, e.g., `browseVignettes(package = "limma")`
+
+- Use `?function_name` to get help on a function from a _loaded_ package. E.g., `?boxplot` (same as `help(boxplot)`)
+    - Use `example(boxplot)` to see how the function can be used
+
+- Use `??function_name` to search for the function across all installed packages, even not loaded. E.g., `??ggplotly`
+
+- Search engine is your best friend on many things
+
+---
+## R datasets
+
+R contains many datasets (stored as data frames) that are built-in to the software
+
+
+```r
+data() # All built-in datasets
+# ?trees
+data(trees) # Load a particular one
+head(trees)
+```
+
+```
+##   Girth Height Volume
+## 1   8.3     70   10.3
+## 2   8.6     65   10.3
+## 3   8.8     63   10.2
+## 4  10.5     72   16.4
+## 5  10.7     81   18.8
+## 6  10.8     83   19.7
+```
+
+---
+## Accessing data in datasets
+
+
+```r
+attach(trees)   # You can make R find variables in any data frame by adding the data frame to the search path
+search()        # .GlobalEnv is your workspace and the package quantities are libraries
+```
+
+```
+##  [1] ".GlobalEnv"             "trees"                  "package:xaringanthemer"
+##  [4] "package:stats"          "package:graphics"       "package:grDevices"     
+##  [7] "package:utils"          "package:datasets"       "package:methods"       
+## [10] "Autoloads"              "package:base"
+```
+
+```r
+detach(trees)   # To remove an object from the search path, use the detach()
+with(trees, mean(Height)) # Evaluate an R expression in an environment constructed from data, possibly modifying (a copy of) the original data
+```
+
+```
+## [1] 76
+```
+
+`attach()` can cause name overloads and other serious issues. Avoid it
+
+---
+## Summary statistics
+
+- Simple statistical functions: `count()`, `min()`, `max()`, `mean()`, `median()`, `sd()`, `cor()`, `summary()`)
+
+- These, and many other functions, have settings to properly handle NAs, e.g., `mean(x, trim = 0, na.rm = FALSE, ...)`
+
+- `unique()` - unique elements in a vector. Combine with `length()` to get the number of unique elements
+
+- `table()` - contingency table for a vector (the number of elements per unique level)
+
+---
+## Summary statistics
+
+
+```r
+data(mtcars)    # simple summary 
+# ?mtcars
+head(mtcars)
+```
+
+```
+##                    mpg cyl disp  hp drat    wt  qsec vs am gear carb
+## Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
+## Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
+## Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
+## Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+## Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
+## Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1
+```
+
+
+```r
+mean(mtcars$mpg)
+```
+
+```
+## [1] 20.09062
+```
+
+```r
+var(mtcars$mpg)
+```
+
+```
+## [1] 36.3241
+```
+
+```r
+summary(mtcars$mpg)
+```
+
+```
+##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##   10.40   15.43   19.20   20.09   22.80   33.90
+```
+
+---
+## Summary statistics
+
+
+```r
+quantile(mtcars$mpg, probs = c(.20, .80))
+```
+
+```
+##   20%   80% 
+## 15.20 24.08
+```
+
+```r
+cor(mtcars$mpg, mtcars$hp) # sample correlation coeficient
+```
+
+```
+## [1] -0.7761684
+```
+
+
+```r
+table(mtcars$cyl)
+```
+
+```
+## 
+##  4  6  8 
+## 11  7 14
+```
+
+```r
+table(mtcars$cyl)/length(mtcars$cyl) # normalized by the total number of observations = 32
+```
+
+```
+## 
+##       4       6       8 
+## 0.34375 0.21875 0.43750
+```
+
+---
+## Control structures inside R/functions
+
+- `if, else`
+- `for`
+- `while`
+- `repeat`
+- `break`
+- `next`
+
+---
+## If-else statement
+
+Conditional code execution
+
+``` r
+if (condition) {
+  # do something
+} else {
+  # do something else
+}
+```
+
+
+```r
+x &lt;- 1:15
+if (sample(x, 1) &lt;= 10) {
+  print("x is less than 10")
+} else {
+  print("x is greater than 10")
+}
+```
+
+```
+## [1] "x is less than 10"
+```
+
+---
+## For loop
+
+Repetitive code execution
+
+
+```r
+for (i in 1:5) {
+  cat(i)
+}
+```
+
+```
+## 12345
+```
+
+Compare with
+
+
+```r
+for (i in 1:5) {
+  print(i)
+}
+```
+
+```
+## [1] 1
+## [1] 2
+## [1] 3
+## [1] 4
+## [1] 5
+```
+
+---
+## More uses of For loops
+
+
+```r
+x &lt;- c("apples", "oranges", "bananas", "strawberries")
+
+for (i in x) {
+  cat(i); cat(" ")
+}
+```
+
+```
+## apples oranges bananas strawberries
+```
+
+
+```r
+for (i in 1:4) {
+  cat(x[i]); cat(" ")
+}
+```
+
+```
+## apples oranges bananas strawberries
+```
+
+
+```r
+for (i in seq(x)) {
+  cat(x[i]); cat(" ")
+}
+```
+
+```
+## apples oranges bananas strawberries
+```
+
+---
+## Nested For loops
+
+
+```r
+m &lt;- matrix(1:10, 2)
+m
+```
+
+```
+##      [,1] [,2] [,3] [,4] [,5]
+## [1,]    1    3    5    7    9
+## [2,]    2    4    6    8   10
+```
+
+```r
+for (i in seq(nrow(m))) {
+  for (j in seq(ncol(m))) {
+    print(m[i, j])
+  }
+}
+```
+
+```
+## [1] 1
+## [1] 3
+## [1] 5
+## [1] 7
+## [1] 9
+## [1] 2
+## [1] 4
+## [1] 6
+## [1] 8
+## [1] 10
+```
+
+---
+## while, repeat loops
+
+
+```r
+i &lt;- 1
+while (i &lt; 10) {
+  print(i)
+  i &lt;- i + 1
+} # Be sure there is a way to exit out of a while loop
+```
+
+```
+## [1] 1
+## [1] 2
+## [1] 3
+## [1] 4
+## [1] 5
+## [1] 6
+## [1] 7
+## [1] 8
+## [1] 9
+```
+
+``` r
+repeat {
+  # simulations; generate some value have an expectation if within some range,
+  # then exit the loop
+  if ((value - expectation) &lt;= threshold) {
+    break
+  }
+}
+```
+
+---
+## Combine any statements/functions
+
+
+```r
+for (i in 1:20) {           
+  if (i%%2 == 1) {
+    next                # skip printing over odd numbers
+  } else {
+    print(i)
+  }
+}
+```
+
+```
+## [1] 2
+## [1] 4
+## [1] 6
+## [1] 8
+## [1] 10
+## [1] 12
+## [1] 14
+## [1] 16
+## [1] 18
+## [1] 20
+```
+
+---
+## Vectorized operation
+
+Many operations in R are already vectorized making code more efficient, concise, and easier to read
+
+
+```r
+x &lt;- 1:4; y &lt;- 6:9
+x
+```
+
+```
+## [1] 1 2 3 4
+```
+
+```r
+y
+```
+
+```
+## [1] 6 7 8 9
+```
+
+```r
+x * y
+```
+
+```
+## [1]  6 14 24 36
+```
+
+```r
+x / y
+```
+
+```
+## [1] 0.1666667 0.2857143 0.3750000 0.4444444
+```
+
+---
+## `apply` family of functions 
+
+Writing for, while loops in R are inefficient, and we want to vectorize computation in R.
+
+- `apply()` - apply a function over the margins of an array
+
+- `lapply()` - loop over a list and evaluate a function on each element
+
+- `sapply()` - same as lapply but try to simplify results, if the result is a list where every element is length 1, then a vector is returned
+
+- `mapply()` - multivariate version of lapply
+
+- `tapply()` -  apply a function over subsets of a vector
+
+---
+## apply examples
+
+
+```r
+x &lt;- 1:4
+lapply(x, runif)
+```
+
+```
+## [[1]]
+## [1] 0.5368848
+## 
+## [[2]]
+## [1] 0.02833187 0.22181556
+## 
+## [[3]]
+## [1] 0.06370175 0.95582980 0.54192197
+## 
+## [[4]]
+## [1] 0.60251543 0.98530771 0.86646539 0.02145299
+```
+
+
+```r
+x &lt;- list(a = 1:4, b = rnorm(10), c = rnorm(20, 1))
+sapply(x, mean)
+```
+
+```
+##          a          b          c 
+##  2.5000000 -0.1123588  0.9691803
+```
+
+---
+## apply examples
+
+
+```r
+#If the result is a list where every element is a vector of the same length (&gt; 1), a matrix is returned.
+x &lt;- list(rnorm(100), runif(100), rpois(100, 1))
+sapply(x, quantile, probs = c(0.25, 0.75))
+```
+
+```
+##           [,1]      [,2] [,3]
+## 25% -0.8331993 0.2573559 0.00
+## 75%  0.8002781 0.7421747 1.25
+```
+
+
+```r
+x &lt;- matrix(rnorm(200), 20, 10)
+apply(x, 1, sum)
+```
+
+```
+##  [1]  1.5748214  0.7736929 -1.2805916 -0.4901051 -2.8900040 -5.4232744
+##  [7]  2.6519607  5.7537895 -5.0933012  4.3289836  4.1094679 -0.7450842
+## [13]  2.2937353  2.9760893  3.6221860 -3.7610797  1.4614568 -4.5172788
+## [19]  0.6383210  0.8470099
+```
+
+```r
+apply(x, 2, mean)
+```
+
+```
+##  [1]  0.23974811  0.07521581 -0.06815141 -0.11287725  0.07527063 -0.14836203
+##  [7]  0.15193794 -0.52339240  0.35818104  0.29396930
+```
+
+---
+## apply examples
+
+For sums and means of matrix dimensions, we have some shortcuts
+
+
+```r
+rowSums  = apply(x, 1, sum)
+rowMeans = apply(x, 1, mean)
+colSums  = apply(x, 2, sum)
+colMeans = apply(x, 2, mean)
+```
+
+Check `?rowSums` help on these base R functions
+
+---
+## tapply
+
+Apply a function to each cell of a ragged array, that is to each (non-empty) group of values given by a unique combination of the levels of certain factors.
+
+``` r
+function (X, INDEX, FUN = NULL, ..., default = NA, simplify = TRUE)
+X is a vector
+INDEX is a factor or a list of factors (or else they are coerced to factors)
+FUN is a function to be applied
+... contains other arguments to be passed FUN
+simplify, should we simplify the result?
+```
+
+
+```r
+x &lt;- c(rnorm(10), runif(10), rnorm(10, 1))
+f &lt;- gl(3, 10)
+tapply(x, f, mean)
+```
+
+```
+##         1         2         3 
+## 0.7356471 0.4394123 1.4448363
+```
+
+---
+## mapply
+
+mapply is a multivariate version of sapply. mapply applies FUN to the first elements of each ... argument, the second elements, the third elements, and so on. Arguments are recycled if necessary.
+
+``` r
+function (FUN, ..., MoreArgs = NULL, SIMPLIFY = TRUE, USE.NAMES = TRUE)
+FUN is a function to apply
+... contains arguments to apply over
+MoreArgs is a list of other arguments to FUN.
+SIMPLIFY indicates whether the result should be simplified
+```
+
+
+
+```r
+mapply(rep, 1:4, 4:1)
+mapply(rnorm,mean=1:3,sd=1:3,n=seq(5,15,by=5))
+```
+
+---
+## Regression models
+
+Regression models can be used to estimate how the expected value of a dependent variable changes as independent variables change.
+
+In R, regression formulas take this structure:
+
+```
+## Generic code
+[response variable] ~ [indep. var. 1] +  [indep. var. 2] + ...
+```
+
+Notice that a tilde, ~, is used to separate the independent and dependent variables and that a plus sign, +, is used to join independent variables. This format mimics the statistical notation:
+
+`\(Y_i \sim X_1 + X_2 + X_3\)`
+
+---
+## Conventions for linear models
+
+| Convention	| Meaning |
+|:-----------:|:-------:|
+| I()	| evaluate the formula inside I() before fitting (e.g., I(x1 + x2)) |
+| :	| fit the interaction between x1 and x2 variables |
+| *	| fit the main effects and interaction for both variables (e.g., x1*x2 equals x1 + x2 + x1:x2)|
+| .	| include as independent variables all variables other than the response (e.g., y ~ .) |
+| 1	| intercept (e.g., y ~ 1 for an intercept-only model) | 
+| -	|do not include a variable in the data frame as an independent variables (e.g., y ~ . - x1); usually used in conjunction with . or 1 | 
+
+---
+## Linear models
+
+To fit a linear model, you can use the function `lm()`. This function is part of the `stats` package, which comes installed with base R
+
+
+```r
+mod &lt;- lm(mpg ~ hp, data = mtcars)
+# Check class() and str() of the mod object
+```
+
+This previous call fits the model:
+
+`\(Y_{i} = \beta_{0} + \beta_{1}X_{1,i} + \epsilon_{i}\)`
+
+---
+## Manipulating the `lm` object
+
+| Function	| Description |
+|:---------:|:-----------:|
+| summary	  | Get a variety of information on the model, including coefficients and p-values for the coefficients |
+| coefficients	| Pull out just the coefficients for a model |
+| fitted	| Get the fitted values from the model (for the data used to fit the model) | 
+| plot	| Create plots to help assess model assumptions
+residuals	Get the model residuals |
+
+---
+## Manipulating the `lm` object
+
+
+```r
+class(mod)
+```
+
+```
+## [1] "lm"
+```
+
+```r
+plot(mod)
+```
+
+![](21_R_basics_files/figure-html/unnamed-chunk-35-1.png)&lt;!-- --&gt;![](21_R_basics_files/figure-html/unnamed-chunk-35-2.png)&lt;!-- --&gt;![](21_R_basics_files/figure-html/unnamed-chunk-35-3.png)&lt;!-- --&gt;![](21_R_basics_files/figure-html/unnamed-chunk-35-4.png)&lt;!-- --&gt;
+
+---
+## Manipulating the `lm` object
+
+
+```r
+mod_coef &lt;- coefficients(mod)
+library(ggplot2)
+ggplot(mtcars, aes(x = hp, y = mpg)) + 
+  geom_point(size = 1) + 
+  xlab("Miles/(US) gallon") + ylab("Gross horsepower") + 
+  geom_abline(aes(intercept = mod_coef[1],
+                  slope = mod_coef[2]), col = "red")
+```
+
+![](21_R_basics_files/figure-html/unnamed-chunk-36-1.png)&lt;!-- --&gt;
+
+---
+## Basic plotting
+
+R graphic regions
+
+![](21_R_basics_files/figure-html/unnamed-chunk-37-1.png)&lt;!-- --&gt;
+
+---
+## R graphic regions
+
+`par(mar=c(5.1, 4.1, 4.1, 2.1), mgp=c(3, 1, 0), las=0)`
+
+- `par` sets or adjusts plotting parameters. Here we consider the following three parameters: margin size (`mar`), axis label locations (`mgp`), and axis label orientation (`las`).
+    - `mar` – A numeric vector of length 4, which sets the margin sizes in the following order: bottom, left, top, and right. The default is `c(5.1, 4.1, 4.1, 2.1)`.
+    - `mgp` – A numeric vector of length 3, which sets the axis label locations relative to the edge of the inner plot window. The first value represents the location the labels (i.e. xlab and ylab in plot), the second the tick-mark labels, and third the tick marks. The default is `c(3, 1, 0)`.
+    - `las` – A numeric value indicating the orientation of the tick mark labels and any other text added to a plot after its initialization. The options are as follows: always parallel to the axis (the default, 0), always horizontal (1), always perpendicular to the axis (2), and always vertical (3). [Source](http://rfunction.com/archives/1302)
+
+---
+# Save and restore graphic parameters
+
+
+```r
+old.par &lt;- par("mar")
+par(mar = c(1, 1, 1, 1))
+plot(iris$Sepal.Length)
+```
+
+![](21_R_basics_files/figure-html/unnamed-chunk-38-1.png)&lt;!-- --&gt;
+
+```r
+par(old.par)
+```
+
+```
+## NULL
+```
+
+---
+# Multiple plots in one region
+
+
+```r
+par(mfrow = c(1, 2))
+plot(iris$Sepal.Length)
+plot(iris$Sepal.Width)
+```
+
+![](21_R_basics_files/figure-html/unnamed-chunk-39-1.png)&lt;!-- --&gt;
+
+```r
+par(mfrow = c(1, 1))
+```
+
+---
+## Some functions used in plot region
+
+``` r
+text() 
+points() 
+lines()
+arrows()
+box()
+abline()
+```
+
+Some common plot settings
+
+``` r
+col: colour of lines, text, ...
+lwd: line width
+lty: line type
+font: font face (plain, bold, italic)
+pch: type of plotting symbol
+srt: string rotation
+```
+
+---
+Plot examples
+
+
+```r
+data(cars)
+# ?cars
+plot(cars$dist) # if a single vector object is given to plot(), the values are plotted on the y-axis against the row numbers or index
+```
+
+![](21_R_basics_files/figure-html/unnamed-chunk-40-1.png)&lt;!-- --&gt;
+
+```r
+# plot(cars) # bivariate scatterplot
+# plot(cars$speed, type="o", col="blue") # graph cars using blue points overlayed by a line 
+# plot(cars$dist,cars$speed, xlab="x axis", ylab="y axis", main="my plot", ylim=c(0,20), xlim=c(0,20), pch=15, col="blue") # Set a bunch of parameters
+```
+
+---
+
+```r
+x &lt;- seq(0,20,by=2)
+y &lt;- seq(0,10,by=1)
+plot(x,y,col="blue") 
+# lines and points add graphics to the existing plot
+lines(x,y,col="green",lty="dashed")
+
+x2 &lt;- c(0.5, 3, 5, 8, 12) 
+y2 &lt;- c(0.8, 1, 2, 4, 6) 
+points(x2, y2, pch=16, col="green")
+```
+
+![](21_R_basics_files/figure-html/unnamed-chunk-41-1.png)&lt;!-- --&gt;
+
+---
+
+```r
+# curve(expr, from, to, add = FALSE, ...)
+#       expr: an expression written as a function of 'x?
+#       from, to: the range over which the function will be plotted.
+#       add: logical; if 'TRUE' add to already existing plot.
+curve(sin(x), from = 0, to = 2*pi)        
+```
+
+![](21_R_basics_files/figure-html/unnamed-chunk-42-1.png)&lt;!-- --&gt;
+
+```r
+# curve(x^3 - 3*x, -2, 2)
+# curve(x^2 - 2, add = TRUE, col = "violet")
+```
+
+---
+
+```r
+# barplot(as.matrix(mtcars), main="Autos", ylab= "Total", beside=TRUE, col=rainbow(5))
+# barplot(mtcars$cyl)
+barplot(mtcars$cyl,col=rainbow(3))
+```
+
+![](21_R_basics_files/figure-html/unnamed-chunk-43-1.png)&lt;!-- --&gt;
+
+---
+
+```r
+data(faithful)
+attach(faithful)
+hist(eruptions, main = "Old Faithful data", prob = T)
+```
+
+![](21_R_basics_files/figure-html/unnamed-chunk-44-1.png)&lt;!-- --&gt;
+
+```r
+# hist(eruptions, main = "Old Faithful data", prob = T, breaks=18)
+
+# boxplot(faithful)                      # same as boxplot(eruptions, waiting)
+```
+
+---
+## Add legends to plots
+
+
+```r
+with(iris,
+     plot(Sepal.Length, Sepal.Width, 
+          pch=as.numeric(Species), cex=1.2,ylim=c(1,6)))
+legend("topright", c("setosa", "versicolor", "virginica"), cex=1.5, pch=1:3)
+```
+
+![](21_R_basics_files/figure-html/unnamed-chunk-45-1.png)&lt;!-- --&gt;
+
+---
+## Useful functions in stats
+
+
+```r
+data(trees) # load data to global environment
+attach(trees)
+qqnorm(Height) # A normal QQ plot 
+```
+
+![](21_R_basics_files/figure-html/unnamed-chunk-46-1.png)&lt;!-- --&gt;
+
+---
+## Useful functions in stats
+
+
+```r
+# ?ecdf() # Empirical CDF(x)
+Fn &lt;- ecdf(x &lt;- rnorm(12))
+# plot(Fn)
+curve(Fn)
+```
+
+![](21_R_basics_files/figure-html/unnamed-chunk-47-1.png)&lt;!-- --&gt;
+
+---
+## Useful functions in stats
+
+Prefix each R distribution name with + ‘d’ for the density or mass function, + ‘p’ for the CDF, + ‘q’ for the percentile function (also called the quantile), + ‘r’ for the generation of pseudorandom variables
+
+``` r
+dchisq()
+pchisq()
+qchisq()
+rchisq()
+```
+
+---
+## Examples of density functions
+
+| Function | Distribution |
+|:--------:|:------------:|
+| dnorm    | Normal       |
+| dpois    | Poisson      |
+| dbinom   | Binomial     |
+| dchisq   | Chi-squared  |
+| dt       | Student’s t  |
+| dunif    | Uniform      |
+
+
+---
+
+```r
+x=rnorm(100)
+y=rnorm(100)
+plot(x, y)
+```
+
+![](21_R_basics_files/figure-html/unnamed-chunk-48-1.png)&lt;!-- --&gt;
+
+
+
+```r
+qnorm(.75,mean=10,sd=2) # 3rd quartile of N(mu = 10,sigma = 2)
+```
+
+```
+## [1] 11.34898
+```
+
+```r
+qnorm(c(0.05, 0.10, 0.20, 0.95),mean=10,sd=2)
+```
+
+```
+## [1]  6.710293  7.436897  8.316758 13.289707
+```
+
+```r
+qt(.95,df=20) # 95th percentile of t(20)
+```
+
+```
+## [1] 1.724718
+```
+
+---
+
+```r
+x&lt;-rchisq(100,1)
+plot(x)
+```
+
+![](21_R_basics_files/figure-html/unnamed-chunk-50-1.png)&lt;!-- --&gt;
+
+```r
+hist(x)
+```
+
+![](21_R_basics_files/figure-html/unnamed-chunk-50-2.png)&lt;!-- --&gt;
+
+
+```r
+x&lt;-dbinom(3:10,size=10,prob=.25)   # P(X=3) for X ~ Bin(n=10, p=.25)
+
+barplot(x)
+```
+
+![](21_R_basics_files/figure-html/unnamed-chunk-51-1.png)&lt;!-- --&gt;
+
+```r
+plot(x) 
+```
+
+![](21_R_basics_files/figure-html/unnamed-chunk-51-2.png)&lt;!-- --&gt;
+
+```r
+plot(0:10, dbinom(0:10, size=10, prob=.25), type = "h", lwd = 30)
+```
+
+![](21_R_basics_files/figure-html/unnamed-chunk-51-3.png)&lt;!-- --&gt;
+
+```r
+plot(3:10, x, type = "h", lwd = 30, main = "Binomial Probabilities w/ n = 10, p = .25", ylab = "p(x)") # which is gives the histogram-like vertical lines 
+```
+
+![](21_R_basics_files/figure-html/unnamed-chunk-51-4.png)&lt;!-- --&gt;
+
+```r
+# lwd option (the default width is 1) controls line thickness
+```
+
+---
+
+```r
+dpois(0:2, lambda=4) # P(X=0), P(X=1), P(X=2) for X ~ Poisson
+```
+
+```
+## [1] 0.01831564 0.07326256 0.14652511
+```
+
+```r
+x&lt;- dpois(0:20, lambda=4)
+barplot(x)
+```
+
+![](21_R_basics_files/figure-html/unnamed-chunk-52-1.png)&lt;!-- --&gt;
+
+```r
+# plot(x)
+```
+
+---
+
+```r
+pbinom(3,size=10,prob=.25) # P(X &lt;=3) in the above distribution
+```
+
+```
+## [1] 0.7758751
+```
+
+```r
+x&lt;- pbinom(3:10,size=10,prob=.25)
+plot(x)
+```
+
+![](21_R_basics_files/figure-html/unnamed-chunk-53-1.png)&lt;!-- --&gt;
+
+---
+## More useful stats functions
+
+
+```r
+lm(Sepal.Length~Sepal.Width, data=iris) # simple linear regression
+```
+
+```
+## 
+## Call:
+## lm(formula = Sepal.Length ~ Sepal.Width, data = iris)
+## 
+## Coefficients:
+## (Intercept)  Sepal.Width  
+##      6.5262      -0.2234
+```
+
+
+```r
+glm(ifelse(Species=="setosa",1,0)~Sepal.Width, family="binomial",data=iris)  # logistic regression
+```
+
+```
+## 
+## Call:  glm(formula = ifelse(Species == "setosa", 1, 0) ~ Sepal.Width, 
+##     family = "binomial", data = iris)
+## 
+## Coefficients:
+## (Intercept)  Sepal.Width  
+##      -15.72         4.79  
+## 
+## Degrees of Freedom: 149 Total (i.e. Null);  148 Residual
+## Null Deviance:	    191 
+## Residual Deviance: 123.8 	AIC: 127.8
+```
+
+---
+## More useful stats functions
+
+
+```r
+t.test(iris$Sepal.Length,iris$Petal.Length)
+```
+
+```
+## 
+## 	Welch Two Sample t-test
+## 
+## data:  iris$Sepal.Length and iris$Petal.Length
+## t = 13.098, df = 211.54, p-value &lt; 2.2e-16
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  1.771500 2.399166
+## sample estimates:
+## mean of x mean of y 
+##  5.843333  3.758000
+```
+
+
+```r
+aov(Sepal.Length~Species,data=iris)
+```
+
+```
+## Call:
+##    aov(formula = Sepal.Length ~ Species, data = iris)
+## 
+## Terms:
+##                  Species Residuals
+## Sum of Squares  63.21213  38.95620
+## Deg. of Freedom        2       147
+## 
+## Residual standard error: 0.5147894
+## Estimated effects may be unbalanced
+```
+
+---
+## More useful stats functions
+
+
+```r
+chisq.test(iris$Petal.Length,iris$Species)
+```
+
+```
+## Warning in chisq.test(iris$Petal.Length, iris$Species): Chi-squared
+## approximation may be incorrect
+```
+
+```
+## 
+## 	Pearson's Chi-squared test
+## 
+## data:  iris$Petal.Length and iris$Species
+## X-squared = 271.8, df = 84, p-value &lt; 2.2e-16
+```
+
+
+```r
+fisher.test(mtcars$gear, mtcars$carb)
+```
+
+```
+## 
+## 	Fisher's Exact Test for Count Data
+## 
+## data:  mtcars$gear and mtcars$carb
+## p-value = 0.2434
+## alternative hypothesis: two.sided
+```
+
+---
+## Useful ways of getting data in and out of R
+
+- Base functions: `read.table`, `read.csv`, `write.table`, `write.csv`
+
+- Tidyverse way, `readr` package: `read_table`, `read_csv`, `read_tsv`, `write_csv` ...
+
+- For fixed-width files, use `read.fwf` or `readr::read_fwf` funcitons
+
+- For reading/writing Excel files, use `readxl` and `writexl` packages, `read_xlsx`, `write_xlsx` functions
+    - Remember that `.csv` is the preferred text-based format that opens in Excel
+
+.small[https://readr.tidyverse.org/
+
+https://readxl.tidyverse.org/
+
+https://CRAN.R-project.org/package=writexl]
+
+---
+## Working with text
+
+- `grep`, `grepl`
+
+Some useful regular expression operators include:
+
+| Operator	| Meaning |
+|:---------:|:--------|
+| .	        | Any character |
+| *	        | Match 0 or more times (greedy) |
+| *?	      | Match 0 or more times (non-greedy) |
+| +	        | Match 1 or more times (greedy) |
+| +?	      | Match 1 or more times (non-greedy) |
+| ^	        | Starts with (in brackets, negates) |
+| $	        | Ends with |
+| [...]	    | Character classes |
+
+
+---
+## R is more than a programming language
+
+Numerous packages are available to extend R functionality
+
+- Publication-quality figures, documents in Word, PDF, and HTML formats (Rmarkdown). Templates for journal articles
+
+- Presentations, from basic (`ioslides`, `beamer`) to advanced (`xaringan`)
+
+- Web sites for blogs (`blogdown`), books (`bookdown`), packages (`pkgdown`)
+    - Templates for CV, resume, thesis are available
+
+- Dynamic web applications using Shiny
+
+- Interface with other languages, like C (`Rcpp`), Python (`reticulate`)
+
+- Many more cool usages...
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

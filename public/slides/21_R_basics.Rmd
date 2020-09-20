@@ -1,0 +1,976 @@
+---
+title: "R preliminaries"
+# subtitle: "Getting started"
+author: "Mikhail Dozmorov"
+institute: "Virginia Commonwealth University"
+# date: "`r Sys.Date()`"
+date: "09-29-2020"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["xaringan-themer.css", "xaringan-my.css"]
+    nature:
+      ratio: '16:9'
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r xaringan-themer, include = FALSE}
+library(xaringanthemer)
+mono_light(
+  base_color = "midnightblue",
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Montserrat", "500", "500i"),
+  code_font_google   = google_font("Droid Mono"),
+  link_color = "#8B1A1A", #firebrick4, "deepskyblue1"
+  text_font_size = "28px"
+)
+```
+
+## R expressions, function calls, and objects
+
+According to John Chambers, one of the creators of R’s precursor S:
+
+- Everything that exists in R is an **object**
+- Everything that happens in R is a **call to a function**
+
+---
+## Assignment operator
+
+- We often need to save a function's result or output. For this we use the assignment operator: ` <- `, preferred over ` = `  
+```{r}
+scores <- mtcars
+``` 
+ 
+Now we can use `scores` as an argument to other functions. For example, compute summary statistics for each column in the data:
+
+```{r}
+summary(scores[1:4]) # First four elements
+```
+
+Use `Alt + -` (Win) or `Option + -` (Mac) in RStudio to quickly insert ` <- `
+
+---
+## Variables
+
+- **Scalars** (0-dimensional): `a = 42`, `b = a / 7`
+
+- **Vectors** (1-dimensional): `b = c(12, 14, 16)`
+    - Access vector element as `b[2]` (returns 14)
+
+- **Matrices** (2-dimensional):
+
+```{r}
+mtx = matrix(data = c(3, 1, 3, 2, 3, 2), ncol = 2)
+mtx
+```
+
+---
+## Variable names
+
+- Be careful not to name your variables as function names. E.g., `c` is a bad variable name because `c()` is a function for combining variables. Check `?c`
+
+- With auto-completion in RStudio, you don't need to worry about variable name length - make names that are self-explanatory
+
+Follow [Hadley Wickham's Tidyverse Style Guide](http://adv-r.had.co.nz/Style.html)
+
+---
+## Data frames
+
+- **Data frames**: tables or 2-dimensional arrays. Think matrices that can hold different data types
+    - The column names should be non-empty
+    - The row names should be unique
+    - The data stored in a data frame can be of numeric, factor or character
+
+```{r}
+dat = data.frame(Column.1 = c(3, 1, 3), Column.2 = c("2", "3", "2"))
+dat
+```
+
+---
+## Addressing elements in a data frame
+
+```{r}
+dat[3, 2]          # [] contain row/column indices. 
+dat[3, "Column.2"] # Address by column name 
+dat$Column.2[3]    # Use $ shortcut to access column by name
+```
+
+```{r}
+# Compare column classes
+class(dat$Column.1)
+class(dat$Column.2)
+```
+
+``` r
+# Top or bottom of a data frame
+head(dat)
+tail(dat)
+```
+
+---
+## Lists
+
+- **Lists**: objects containing elements of different types
+    - Each list element can be of different length
+    
+```{r}
+lst = list(A = rep(2, 5), B = seq(1:10), C = letters)
+lst
+```
+
+---
+## Addressing elements in a list
+
+- Address any element as `lst[1]` (or, `lst["A"]`)
+
+```{r}
+lst[1]
+```
+
+- Address _the content of any element_ as `lst[[1]]` (or, `lst[["A"]]`, `lts$A`)
+
+```{r}
+lst[[1]]
+```
+
+---
+## Comments
+
+R ignores everything after the `#` sign
+
+```{r}
+# This line is a comment
+print("Hello, World!") # This will print the message, but the comment will be ignored
+```
+
+---
+## Functions
+
+- A function is a set of statements organized together to perform a specific task
+    - **Name** - the actual name of the function, e.g., `summary()`, `mean()`
+    - **Arguments** - values passed to the functions. Argument-less functions exist
+    - **Code** - actual code of the function
+    - **Return value** - the result of the function's code execution
+
+``` r
+read.csv(file="scores.csv")
+```
+
+`read.csv` is a function to import a CSV file and `file` is an argument that specifies which file to import
+
+R has a large number of built-in functions, and the user can create their own functions
+
+---
+## Running functions
+
+- From the R console - type the function and hit Enter
+    - One function at a time, not efficient
+
+- Using an `R` script - a text file that contains all your `R` functions/code
+    - `R` scripts allow you to save, edit, reproduce and share your code
+    - R scripts stored in files with `.R` extension
+    - Run the whole script as `source("script_name.R")`, or, from command line, `Rscript script_name.R`
+    - In RStudio, you can run individual lines, code chunks, or source whole scripts. Keyboard shortcuts are available
+
+---
+## Packages
+
+- All functions belong to *packages*. The `read.csv` function is in the `utils` package.
+
+- `R` comes with about 30 packages (called "base `R`"), but as of August 2020 there are over 16,000 CRAN packages and over 1,900 Bioconductor packages
+
+- Example: `ggplot2` is a popular package that adds functions for creating graphs in a different way than what base `R` provides
+
+- To use functions in a package, the package must be installed and loaded. (They're free)
+- You only _install_ a package once
+- You _load_ a package whenever you want to use its functions
+
+---
+## Package repositories
+
+- `CRAN` - Comprehensive R Archive Network – a collection of > 16,000 (September 2020) packages
+
+- `Bioconductor` – genomics-oriented free and open source project hosting > 1,900 specialized R packages (September 2020)
+
+- `MRAN` - Microsoft R Application Network, includes CRAN packages and more
+
+- `GitHub` – code hosting repository, packages for everyone and by everyone
+
+.small[ https://cran.r-project.org/web/packages/ 
+
+https://www.bioconductor.org/
+
+https://mran.microsoft.com/
+
+https://github.com/  ]
+
+---
+## Installing packages
+
+- `install.packages` - installs packages from CRAN, e.g., `install.packages("BiocManager")`
+
+- `remotes` package - installs R packages from GitHub, GitLab, Bitbucket, Bioconductor, or plain 'subversion' or 'git' repositories. E.g., `remotes::install_github("tidyverse/ggplot2")`
+
+- `BiocManager::install()` - Install or update Bioconductor, CRAN, or GitHub packages
+
+- RStudio point-and-click interface
+
+---
+## Loading packages
+
+- `library()` will load the package, e.g., `library(readxl)` or `library("readxl")`
+    - But, when installing packages, always use parentheses, e.g., `install.packages("readxl")`
+
+- `require()` will load the package, and, if success, return TRUE. Useful in `if` statement, e.g.
+
+``` r
+if (require(ggplot2)) {
+  install.packages("ggplot2")
+}
+```
+
+---
+## Installing packages
+
+- `install.packages(“<package_name>”)` – install from CRAN
+
+- `install.packages(“<package_name.tar.gz>”, repos = NULL)` – install from a tarball archive
+
+- `R CMD INSTALL <package_name.tar.gz>` - install from a command line
+
+- `devtools::install_github('mdozmorov/MDmisc')` – install from GitHub
+
+- `BiocManager::install()` - install Bioconductor, CRAN, and GitHub packages
+
+.small[ https://CRAN.R-project.org/package=BiocManager ]
+
+---
+## Loading packages
+
+- `library(package_name)` – load library to use its functions
+
+- `library()` vs. `require()`
+    - `require()` _tries_ to load the package, returns TRUE or FALSE
+    - `library()` just loads the package, fails if the package is not available
+
+- Use only `library(package_name)`
+
+.small[ https://yihui.name/en/2014/07/library-vs-require/ ]
+
+---
+## Using functions from other packages
+
+- You can access functions without loading the package using the `::` operator, e.g., `Hmisc::rcorr()`
+
+- Entering function name without parentheses will output its code
+
+``` r
+> data.frame
+function (..., row.names = NULL, check.rows = FALSE, check.names = TRUE, 
+    fix.empty.names = TRUE, stringsAsFactors = default.stringsAsFactors()) 
+{
+    data.row.names <- if (check.rows && is.null(row.names)) 
+...
+```
+
+- You can access internal functions of a package with the `:::` operator, if you know their name
+
+---
+## Getting help
+
+- Get an overview of all functions in a package: `help(package = "dplyr")`
+    - Bioconductor packages have vignettes, short tutorials on package-specific tasks. Browse them, e.g., `browseVignettes(package = "limma")`
+
+- Use `?function_name` to get help on a function from a _loaded_ package. E.g., `?boxplot` (same as `help(boxplot)`)
+    - Use `example(boxplot)` to see how the function can be used
+
+- Use `??function_name` to search for the function across all installed packages, even not loaded. E.g., `??ggplotly`
+
+- Search engine is your best friend on many things
+
+---
+## R datasets
+
+R contains many datasets (stored as data frames) that are built-in to the software
+
+```{r}
+data() # All built-in datasets
+# ?trees
+data(trees) # Load a particular one
+head(trees)
+```
+
+---
+## Accessing data in datasets
+
+```{r}
+attach(trees)   # You can make R find variables in any data frame by adding the data frame to the search path
+search()        # .GlobalEnv is your workspace and the package quantities are libraries
+detach(trees)   # To remove an object from the search path, use the detach()
+with(trees, mean(Height)) # Evaluate an R expression in an environment constructed from data, possibly modifying (a copy of) the original data
+```
+
+`attach()` can cause name overloads and other serious issues. Avoid it
+
+---
+## Summary statistics
+
+- Simple statistical functions: `count()`, `min()`, `max()`, `mean()`, `median()`, `sd()`, `cor()`, `summary()`)
+
+- These, and many other functions, have settings to properly handle NAs, e.g., `mean(x, trim = 0, na.rm = FALSE, ...)`
+
+- `unique()` - unique elements in a vector. Combine with `length()` to get the number of unique elements
+
+- `table()` - contingency table for a vector (the number of elements per unique level)
+
+---
+## Summary statistics
+
+```{r}
+data(mtcars)    # simple summary 
+# ?mtcars
+head(mtcars)
+```
+
+```{r}
+mean(mtcars$mpg)
+var(mtcars$mpg)
+summary(mtcars$mpg)
+```
+
+---
+## Summary statistics
+
+```{r}
+quantile(mtcars$mpg, probs = c(.20, .80))
+cor(mtcars$mpg, mtcars$hp) # sample correlation coeficient
+```
+
+```{r}
+table(mtcars$cyl)
+table(mtcars$cyl)/length(mtcars$cyl) # normalized by the total number of observations = 32
+```
+
+---
+## Control structures inside R/functions
+
+- `if, else`
+- `for`
+- `while`
+- `repeat`
+- `break`
+- `next`
+
+---
+## If-else statement
+
+Conditional code execution
+
+``` r
+if (condition) {
+  # do something
+} else {
+  # do something else
+}
+```
+
+```{r}
+x <- 1:15
+if (sample(x, 1) <= 10) {
+  print("x is less than 10")
+} else {
+  print("x is greater than 10")
+}
+```
+
+---
+## For loop
+
+Repetitive code execution
+
+```{r}
+for (i in 1:5) {
+  cat(i)
+}
+```
+
+Compare with
+
+```{r}
+for (i in 1:5) {
+  print(i)
+}
+```
+
+---
+## More uses of For loops
+
+```{r}
+x <- c("apples", "oranges", "bananas", "strawberries")
+
+for (i in x) {
+  cat(i); cat(" ")
+}
+```
+
+```{r}
+for (i in 1:4) {
+  cat(x[i]); cat(" ")
+}
+```
+
+```{r}
+for (i in seq(x)) {
+  cat(x[i]); cat(" ")
+}
+```
+
+---
+## Nested For loops
+
+```{r}
+m <- matrix(1:10, 2)
+m
+for (i in seq(nrow(m))) {
+  for (j in seq(ncol(m))) {
+    print(m[i, j])
+  }
+}
+```
+
+---
+## while, repeat loops
+
+```{r}
+i <- 1
+while (i < 10) {
+  print(i)
+  i <- i + 1
+} # Be sure there is a way to exit out of a while loop
+```
+
+``` r
+repeat {
+  # simulations; generate some value have an expectation if within some range,
+  # then exit the loop
+  if ((value - expectation) <= threshold) {
+    break
+  }
+}
+```
+
+---
+## Combine any statements/functions
+
+```{r}
+for (i in 1:20) {           
+  if (i%%2 == 1) {
+    next                # skip printing over odd numbers
+  } else {
+    print(i)
+  }
+}
+```
+
+---
+## Vectorized operation
+
+Many operations in R are already vectorized making code more efficient, concise, and easier to read
+
+```{r}
+x <- 1:4; y <- 6:9
+x
+y
+x * y
+x / y
+```
+
+---
+## `apply` family of functions 
+
+Writing for, while loops in R are inefficient, and we want to vectorize computation in R.
+
+- `apply()` - apply a function over the margins of an array
+
+- `lapply()` - loop over a list and evaluate a function on each element
+
+- `sapply()` - same as lapply but try to simplify results, if the result is a list where every element is length 1, then a vector is returned
+
+- `mapply()` - multivariate version of lapply
+
+- `tapply()` -  apply a function over subsets of a vector
+
+---
+## apply examples
+
+```{r}
+x <- 1:4
+lapply(x, runif)
+```
+
+```{r}
+x <- list(a = 1:4, b = rnorm(10), c = rnorm(20, 1))
+sapply(x, mean)
+```
+
+---
+## apply examples
+
+```{r}
+#If the result is a list where every element is a vector of the same length (> 1), a matrix is returned.
+x <- list(rnorm(100), runif(100), rpois(100, 1))
+sapply(x, quantile, probs = c(0.25, 0.75))
+```
+
+```{r}
+x <- matrix(rnorm(200), 20, 10)
+apply(x, 1, sum)
+apply(x, 2, mean)
+```
+
+---
+## apply examples
+
+For sums and means of matrix dimensions, we have some shortcuts
+
+```{r}
+rowSums  = apply(x, 1, sum)
+rowMeans = apply(x, 1, mean)
+colSums  = apply(x, 2, sum)
+colMeans = apply(x, 2, mean)
+```
+
+Check `?rowSums` help on these base R functions
+
+---
+## tapply
+
+Apply a function to each cell of a ragged array, that is to each (non-empty) group of values given by a unique combination of the levels of certain factors.
+
+``` r
+function (X, INDEX, FUN = NULL, ..., default = NA, simplify = TRUE)
+X is a vector
+INDEX is a factor or a list of factors (or else they are coerced to factors)
+FUN is a function to be applied
+... contains other arguments to be passed FUN
+simplify, should we simplify the result?
+```
+
+```{r}
+x <- c(rnorm(10), runif(10), rnorm(10, 1))
+f <- gl(3, 10)
+tapply(x, f, mean)
+```
+
+---
+## mapply
+
+mapply is a multivariate version of sapply. mapply applies FUN to the first elements of each ... argument, the second elements, the third elements, and so on. Arguments are recycled if necessary.
+
+``` r
+function (FUN, ..., MoreArgs = NULL, SIMPLIFY = TRUE, USE.NAMES = TRUE)
+FUN is a function to apply
+... contains arguments to apply over
+MoreArgs is a list of other arguments to FUN.
+SIMPLIFY indicates whether the result should be simplified
+```
+
+
+```{r eval = FALSE}
+mapply(rep, 1:4, 4:1)
+mapply(rnorm,mean=1:3,sd=1:3,n=seq(5,15,by=5))
+```
+
+---
+## Regression models
+
+Regression models can be used to estimate how the expected value of a dependent variable changes as independent variables change.
+
+In R, regression formulas take this structure:
+
+```
+## Generic code
+[response variable] ~ [indep. var. 1] +  [indep. var. 2] + ...
+```
+
+Notice that a tilde, ~, is used to separate the independent and dependent variables and that a plus sign, +, is used to join independent variables. This format mimics the statistical notation:
+
+$Y_i \sim X_1 + X_2 + X_3$
+
+---
+## Conventions for linear models
+
+| Convention	| Meaning |
+|:-----------:|:-------:|
+| I()	| evaluate the formula inside I() before fitting (e.g., I(x1 + x2)) |
+| :	| fit the interaction between x1 and x2 variables |
+| *	| fit the main effects and interaction for both variables (e.g., x1*x2 equals x1 + x2 + x1:x2)|
+| .	| include as independent variables all variables other than the response (e.g., y ~ .) |
+| 1	| intercept (e.g., y ~ 1 for an intercept-only model) | 
+| -	|do not include a variable in the data frame as an independent variables (e.g., y ~ . - x1); usually used in conjunction with . or 1 | 
+
+---
+## Linear models
+
+To fit a linear model, you can use the function `lm()`. This function is part of the `stats` package, which comes installed with base R
+
+```{r}
+mod <- lm(mpg ~ hp, data = mtcars)
+# Check class() and str() of the mod object
+```
+
+This previous call fits the model:
+
+$Y_{i} = \beta_{0} + \beta_{1}X_{1,i} + \epsilon_{i}$
+
+---
+## Manipulating the `lm` object
+
+| Function	| Description |
+|:---------:|:-----------:|
+| summary	  | Get a variety of information on the model, including coefficients and p-values for the coefficients |
+| coefficients	| Pull out just the coefficients for a model |
+| fitted	| Get the fitted values from the model (for the data used to fit the model) | 
+| plot	| Create plots to help assess model assumptions
+residuals	Get the model residuals |
+
+---
+## Manipulating the `lm` object
+
+```{r fig.height=5}
+class(mod)
+plot(mod)
+```
+
+---
+## Manipulating the `lm` object
+
+```{r fig.height=4}
+mod_coef <- coefficients(mod)
+library(ggplot2)
+ggplot(mtcars, aes(x = hp, y = mpg)) + 
+  geom_point(size = 1) + 
+  xlab("Miles/(US) gallon") + ylab("Gross horsepower") + 
+  geom_abline(aes(intercept = mod_coef[1],
+                  slope = mod_coef[2]), col = "red")
+```
+
+---
+## Basic plotting
+
+R graphic regions
+
+```{r echo=FALSE}
+par(oma=rep(3, 4), bg="grey80")     # permanent settings, oma: outer margin defined in line spaces
+plot(c(0, 1), c(0, 1), type="n", ann=FALSE, axes=FALSE)
+box("outer", col="grey")
+
+par(xpd=TRUE)                       # set clipping to figure region   
+
+rect(-1, -1, 2, 2, col="white")     # draw a large rectangle
+box("figure")                       # set clipping back to plot region
+
+par(xpd=FALSE)                      # draw a large rectangle
+rect(-1, -1, 2, 2, col="cornsilk")
+box("plot", lty="dashed")
+
+text(.5, .5, "Plot Region")
+mtext("Figure Region/Margin", side=3, line=2)
+for (i in 1:4)   mtext(paste("Outer margin", i), side=i, line=1, outer=TRUE)
+```
+
+---
+## R graphic regions
+
+`par(mar=c(5.1, 4.1, 4.1, 2.1), mgp=c(3, 1, 0), las=0)`
+
+- `par` sets or adjusts plotting parameters. Here we consider the following three parameters: margin size (`mar`), axis label locations (`mgp`), and axis label orientation (`las`).
+    - `mar` – A numeric vector of length 4, which sets the margin sizes in the following order: bottom, left, top, and right. The default is `c(5.1, 4.1, 4.1, 2.1)`.
+    - `mgp` – A numeric vector of length 3, which sets the axis label locations relative to the edge of the inner plot window. The first value represents the location the labels (i.e. xlab and ylab in plot), the second the tick-mark labels, and third the tick marks. The default is `c(3, 1, 0)`.
+    - `las` – A numeric value indicating the orientation of the tick mark labels and any other text added to a plot after its initialization. The options are as follows: always parallel to the axis (the default, 0), always horizontal (1), always perpendicular to the axis (2), and always vertical (3). [Source](http://rfunction.com/archives/1302)
+
+---
+# Save and restore graphic parameters
+
+```{r fig.height=4}
+old.par <- par("mar")
+par(mar = c(1, 1, 1, 1))
+plot(iris$Sepal.Length)
+par(old.par)
+```
+
+---
+# Multiple plots in one region
+
+```{r fig.height=4}
+par(mfrow = c(1, 2))
+plot(iris$Sepal.Length)
+plot(iris$Sepal.Width)
+par(mfrow = c(1, 1))
+```
+
+---
+## Some functions used in plot region
+
+``` r
+text() 
+points() 
+lines()
+arrows()
+box()
+abline()
+```
+
+Some common plot settings
+
+``` r
+col: colour of lines, text, ...
+lwd: line width
+lty: line type
+font: font face (plain, bold, italic)
+pch: type of plotting symbol
+srt: string rotation
+```
+
+---
+Plot examples
+
+```{r fig.height=4}
+data(cars)
+# ?cars
+plot(cars$dist) # if a single vector object is given to plot(), the values are plotted on the y-axis against the row numbers or index
+# plot(cars) # bivariate scatterplot
+# plot(cars$speed, type="o", col="blue") # graph cars using blue points overlayed by a line 
+# plot(cars$dist,cars$speed, xlab="x axis", ylab="y axis", main="my plot", ylim=c(0,20), xlim=c(0,20), pch=15, col="blue") # Set a bunch of parameters
+```
+
+---
+```{r fig.height=5}
+x <- seq(0,20,by=2)
+y <- seq(0,10,by=1)
+plot(x,y,col="blue") 
+# lines and points add graphics to the existing plot
+lines(x,y,col="green",lty="dashed")
+
+x2 <- c(0.5, 3, 5, 8, 12) 
+y2 <- c(0.8, 1, 2, 4, 6) 
+points(x2, y2, pch=16, col="green")
+```
+
+---
+```{r fig.height=5}
+# curve(expr, from, to, add = FALSE, ...)
+#       expr: an expression written as a function of 'x?
+#       from, to: the range over which the function will be plotted.
+#       add: logical; if 'TRUE' add to already existing plot.
+curve(sin(x), from = 0, to = 2*pi)        
+# curve(x^3 - 3*x, -2, 2)
+# curve(x^2 - 2, add = TRUE, col = "violet")
+```
+
+---
+```{r fig.height=5}
+# barplot(as.matrix(mtcars), main="Autos", ylab= "Total", beside=TRUE, col=rainbow(5))
+# barplot(mtcars$cyl)
+barplot(mtcars$cyl,col=rainbow(3))
+```
+
+---
+```{r fig.height=5}
+data(faithful)
+attach(faithful)
+hist(eruptions, main = "Old Faithful data", prob = T)
+# hist(eruptions, main = "Old Faithful data", prob = T, breaks=18)
+
+# boxplot(faithful)                      # same as boxplot(eruptions, waiting)
+```
+
+---
+## Add legends to plots
+
+```{r fig.height=5}
+with(iris,
+     plot(Sepal.Length, Sepal.Width, 
+          pch=as.numeric(Species), cex=1.2,ylim=c(1,6)))
+legend("topright", c("setosa", "versicolor", "virginica"), cex=1.5, pch=1:3)
+```
+
+---
+## Useful functions in stats
+
+```{r fig.height=5}
+data(trees) # load data to global environment
+attach(trees)
+qqnorm(Height) # A normal QQ plot 
+```
+
+---
+## Useful functions in stats
+
+```{r fig.height=5}
+# ?ecdf() # Empirical CDF(x)
+Fn <- ecdf(x <- rnorm(12))
+# plot(Fn)
+curve(Fn)
+```
+
+---
+## Useful functions in stats
+
+Prefix each R distribution name with + ‘d’ for the density or mass function, + ‘p’ for the CDF, + ‘q’ for the percentile function (also called the quantile), + ‘r’ for the generation of pseudorandom variables
+
+``` r
+dchisq()
+pchisq()
+qchisq()
+rchisq()
+```
+
+---
+## Examples of density functions
+
+| Function | Distribution |
+|:--------:|:------------:|
+| dnorm    | Normal       |
+| dpois    | Poisson      |
+| dbinom   | Binomial     |
+| dchisq   | Chi-squared  |
+| dt       | Student’s t  |
+| dunif    | Uniform      |
+
+
+---
+```{r}
+x=rnorm(100)
+y=rnorm(100)
+plot(x, y)
+```
+
+
+```{r}
+qnorm(.75,mean=10,sd=2) # 3rd quartile of N(mu = 10,sigma = 2)
+qnorm(c(0.05, 0.10, 0.20, 0.95),mean=10,sd=2)
+qt(.95,df=20) # 95th percentile of t(20)
+```
+
+---
+```{r}
+x<-rchisq(100,1)
+plot(x)
+hist(x)
+```
+
+```{r}
+x<-dbinom(3:10,size=10,prob=.25)   # P(X=3) for X ~ Bin(n=10, p=.25)
+
+barplot(x)
+plot(x) 
+plot(0:10, dbinom(0:10, size=10, prob=.25), type = "h", lwd = 30)
+plot(3:10, x, type = "h", lwd = 30, main = "Binomial Probabilities w/ n = 10, p = .25", ylab = "p(x)") # which is gives the histogram-like vertical lines 
+# lwd option (the default width is 1) controls line thickness
+```
+
+---
+```{r fig.height=5}
+dpois(0:2, lambda=4) # P(X=0), P(X=1), P(X=2) for X ~ Poisson
+x<- dpois(0:20, lambda=4)
+barplot(x)
+# plot(x)
+```
+
+---
+```{r fig.height=5}
+pbinom(3,size=10,prob=.25) # P(X <=3) in the above distribution
+x<- pbinom(3:10,size=10,prob=.25)
+plot(x)
+```
+
+---
+## More useful stats functions
+
+```{r}
+lm(Sepal.Length~Sepal.Width, data=iris) # simple linear regression
+```
+
+```{r}
+glm(ifelse(Species=="setosa",1,0)~Sepal.Width, family="binomial",data=iris)  # logistic regression
+```
+
+---
+## More useful stats functions
+
+```{r}
+t.test(iris$Sepal.Length,iris$Petal.Length)
+```
+
+```{r}
+aov(Sepal.Length~Species,data=iris)
+```
+
+---
+## More useful stats functions
+
+```{r}
+chisq.test(iris$Petal.Length,iris$Species)
+```
+
+```{r}
+fisher.test(mtcars$gear, mtcars$carb)
+```
+
+---
+## Useful ways of getting data in and out of R
+
+- Base functions: `read.table`, `read.csv`, `write.table`, `write.csv`
+
+- Tidyverse way, `readr` package: `read_table`, `read_csv`, `read_tsv`, `write_csv` ...
+
+- For fixed-width files, use `read.fwf` or `readr::read_fwf` funcitons
+
+- For reading/writing Excel files, use `readxl` and `writexl` packages, `read_xlsx`, `write_xlsx` functions
+    - Remember that `.csv` is the preferred text-based format that opens in Excel
+
+.small[https://readr.tidyverse.org/
+
+https://readxl.tidyverse.org/
+
+https://CRAN.R-project.org/package=writexl]
+
+---
+## Working with text
+
+- `grep`, `grepl`
+
+Some useful regular expression operators include:
+
+| Operator	| Meaning |
+|:---------:|:--------|
+| .	        | Any character |
+| *	        | Match 0 or more times (greedy) |
+| *?	      | Match 0 or more times (non-greedy) |
+| +	        | Match 1 or more times (greedy) |
+| +?	      | Match 1 or more times (non-greedy) |
+| ^	        | Starts with (in brackets, negates) |
+| $	        | Ends with |
+| [...]	    | Character classes |
+
+
+---
+## R is more than a programming language
+
+Numerous packages are available to extend R functionality
+
+- Publication-quality figures, documents in Word, PDF, and HTML formats (Rmarkdown). Templates for journal articles
+
+- Presentations, from basic (`ioslides`, `beamer`) to advanced (`xaringan`)
+
+- Web sites for blogs (`blogdown`), books (`bookdown`), packages (`pkgdown`)
+    - Templates for CV, resume, thesis are available
+
+- Dynamic web applications using Shiny
+
+- Interface with other languages, like C (`Rcpp`), Python (`reticulate`)
+
+- Many more cool usages...
