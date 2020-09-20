@@ -20,32 +20,60 @@
       <description>
 &lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
-
+&lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Introduce yourself. Write a few sentences:&lt;/p&gt;
+&lt;li&gt;&lt;a href=&#34;#to-do-yourself-due-before-09-24-2020-class&#34;&gt;To do yourself, due before 09-24-2020 class&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-09-29-2020-500pm&#34;&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;to-do-yourself-due-before-09-24-2020-class&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To do yourself, due before 09-24-2020 class&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Join &lt;a href=&#34;https://dozmorovlab.slack.com/archives/C01AZANCZR9&#34;&gt;Slack #bios524 channel&lt;/a&gt;, invite to be sent&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Download/install R, RStudio&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Explore the “Help” menu, “RStudio Docs”, “RStudio Community Forum”, “Cheatsheets -&amp;gt; RStudio IDE Cheat Sheet”, “Browse cheatsheets…”, “Keyboard Shortcut Help”&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Subscribe to Cheatsheet updates at &lt;a href=&#34;https://rstudio.com/resources/cheatsheets/&#34;&gt;RStudio Cheatsheets&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Read sections “&lt;a href=&#34;https://ismayc.github.io/rbasics-book/2-whyR.html&#34;&gt;2 Why R?&lt;/a&gt;” and “&lt;a href=&#34;https://ismayc.github.io/rbasics-book/3-rstudiobasics.html&#34;&gt;3 R and RStudio Basics&lt;/a&gt;”. Make sure to watch the videos&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;to-submit-on-blackboard-due-09-29-2020-500pm&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduce yourself. Write a few sentences:
 &lt;ul&gt;
 &lt;li&gt;Your Name&lt;/li&gt;
 &lt;li&gt;Your Department/Program&lt;/li&gt;
-&lt;li&gt;What you hope to learn from this course&lt;/li&gt;
+&lt;li&gt;What are your programming skills&lt;/li&gt;
+&lt;li&gt;What you hope to learn from this part of the course&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Download/install R, RStudio&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Explore “Help” menu, “RStudio Docs”, “RStudio Community Forum”, “Cheatsheets -&amp;gt; RStudio IDE CHeat Sheet”, “Browse cheatsheets…”, “Keyboard Shortcut Help”&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Read selected articles on &lt;a href=&#34;https://support.rstudio.com/hc/en-us/sections/200107586-Using-the-RStudio-IDE&#34;&gt;RStudio Docs&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;Describe all ways how to find:
 &lt;ul&gt;
-&lt;li&gt;Need prioritizing, most are advanced&lt;/li&gt;
+&lt;li&gt;R version&lt;/li&gt;
+&lt;li&gt;R installation path&lt;/li&gt;
+&lt;li&gt;Copy-paste selected output and describe your observations&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Subscribe to Cheatsheet updates at &lt;a href=&#34;https://rstudio.com/resources/cheatsheets/&#34;&gt;RStudio Cheatsheets&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Read sections “2 Why R?” and “3 R and RStudio Basics” at &lt;a href=&#34;https://ismayc.github.io/rbasics-book/3-rstudiobasics.html&#34; class=&#34;uri&#34;&gt;https://ismayc.github.io/rbasics-book/3-rstudiobasics.html&lt;/a&gt;. Make sure to watch the videos&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;!--
-# In-class, [deep-learning-with-r-notebooks](https://github.com/jjallaire/deep-learning-with-r-notebooks)
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Assignment 2</title>
+      <link>/assignment/02-problem-set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/assignment/02-problem-set/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
-- `2.1-a-first-look-at-a-neural-network.Rmd` - MNIST, feedforward DNN
 
-# Self-study, [dl-keras-tf](https://github.com/rstudio-conf-2020/dl-keras-tf)
-
-- Review and run `dl-keras-tf/materials/02-main-ingredients/01-main-ingredients.Rmd` - neural network introduction, main ingredients, activation function, gradient descent, learning rate, ReLU, train-test-validation, prediction
---&gt;
+&lt;ul&gt;
+&lt;li&gt;Install &lt;a href=&#34;https://swirlstats.com/students.html&#34;&gt;swirl&lt;/a&gt; R package, the &lt;a href=&#34;https://github.com/swirldev/R_Programming_E&#34;&gt;R Programming&lt;/a&gt; course, and run through it. Screenshot when the course is complete.
+&lt;ul&gt;
+&lt;li&gt;For statistical functions, install and run “Mathematical_Biostatistics_Boot_Camp”, “Statistical_Inference”, “Regression_Models” courses&lt;/li&gt;
+&lt;li&gt;Explore &lt;a href=&#34;https://github.com/swirldev/swirl_courses&#34;&gt;other swirl courses&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
