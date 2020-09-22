@@ -15,17 +15,11 @@
     <item>
       <title>Assignment 1</title>
       <link>/assignment/01-problem-set/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 22 Sep 2020 00:00:00 +0000</pubDate>
       <guid>/assignment/01-problem-set/</guid>
       <description>
 &lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
-&lt;div id=&#34;TOC&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#to-do-yourself-due-before-09-24-2020-class&#34;&gt;To do yourself, due before 09-24-2020 class&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-09-29-2020-500pm&#34;&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
 
 &lt;div id=&#34;to-do-yourself-due-before-09-24-2020-class&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;To do yourself, due before 09-24-2020 class&lt;/h1&gt;
@@ -53,7 +47,7 @@
 &lt;li&gt;R installation path&lt;/li&gt;
 &lt;li&gt;Copy-paste selected output and describe your observations&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Submit your homework as a text or Word document. Name your file as &#34;&lt;last_name&gt;_&lt;first_name&gt;_Hw01&#34;&lt;/li&gt;
+&lt;li&gt;Submit your homework as a text or Word document. Files should be named, e.g., &lt;code&gt;LASTNAME-FIRSTNAME-HW01&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 </description>
@@ -87,7 +81,7 @@
 &lt;div id=&#34;to-submit-on-blackboard-due-09-29-2020-500pm&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/h1&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;&lt;p&gt;Use the help functions or R documentation to look up a function that you think you will use in one of your courses this year. Provide (in words) a description of what the function is and does, the arguments that takes, and anything else that might be relevant about this function. Then, using a sample dataset in R (i.e., mtcars, iris, ToothGrowth), demonstrate (in code) the use of this function.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Use the help functions or R documentation to look up a function that you think you will use in one of your courses this year. Provide (in words) a description of what the function is and does, the arguments that takes, and anything else that might be relevant about this function. Then, using a sample dataset in R (i.e., &lt;code&gt;mtcars&lt;/code&gt;, &lt;code&gt;iris&lt;/code&gt;, &lt;code&gt;ToothGrowth&lt;/code&gt;), demonstrate (in code) the use of this function&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Create two numeric, two character, and two logical objects/variables in R. Give them descriptive names. Provide code examples&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Use some function that operates on the two numeric objects, another that operates on the two character objects, and another that operates on the two logical objects.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Look up an R package that you think might be useful to you this year. Provide all code for installing it and loading it into your R workspace for use&lt;/p&gt;&lt;/li&gt;
@@ -96,10 +90,281 @@
 &lt;li&gt;Path(s) where R packages are installed&lt;/li&gt;
 &lt;li&gt;Copy-paste selected output and describe your observations&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;What is unuwual about each of the following objects?&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;num_char     &amp;lt;- c(1, 2, 3, &amp;quot;a&amp;quot;)
+num_logical  &amp;lt;- c(1, 2, 3, TRUE)
+char_logical &amp;lt;- c(&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;, &amp;quot;c&amp;quot;, TRUE)
+tricky       &amp;lt;- c(1, 2, 3, &amp;quot;4&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
 &lt;li&gt;Submit your homework as a text or Word document. Name your file as &#34;&lt;last_name&gt;_&lt;first_name&gt;_Hw02&#34;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Assignment 3</title>
+      <link>/assignment/05-problem-set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/assignment/05-problem-set/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#to-do-yourself-due-before-09-29-2020-class&#34;&gt;To do yourself, due before 09-29-2020 class&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-09-29-2020-500pm&#34;&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;to-do-yourself-due-before-09-29-2020-class&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To do yourself, due before 09-29-2020 class&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/exploring-data-3.html&#34;&gt;Statistical functions&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/entering-and-cleaning-data-1.html&#34;&gt;read.table, readr, Excel, SAS, SPSS, file/folder structure/paths&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;to-submit-on-blackboard-due-09-29-2020-500pm&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Install package “babynames”
+&lt;ul&gt;
+&lt;li&gt;How many values are in the &lt;code&gt;babynames&lt;/code&gt; object?&lt;/li&gt;
+&lt;li&gt;What their data types&lt;/li&gt;
+&lt;li&gt;Get an overview of &lt;code&gt;babynames&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Plot the proportion of your name usage vs. year. Choose closest or random name, if your exact spelling is not available&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Submit your homework as a text or Word document. Name your file as &#34;&lt;last_name&gt;_&lt;first_name&gt;_Hw02&#34;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Assignment 3</title>
+      <link>/assignment/09-problem-set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/assignment/09-problem-set/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#to-do-yourself-due-before-09-29-2020-class&#34;&gt;To do yourself, due before 09-29-2020 class&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-09-29-2020-500pm&#34;&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;to-do-yourself-due-before-09-29-2020-class&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To do yourself, due before 09-29-2020 class&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/exploring-data-3.html&#34;&gt;Statistical functions&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/entering-and-cleaning-data-1.html&#34;&gt;read.table, readr, Excel, SAS, SPSS, file/folder structure/paths&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;to-submit-on-blackboard-due-09-29-2020-500pm&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Install package “babynames”
+&lt;ul&gt;
+&lt;li&gt;How many values are in the &lt;code&gt;babynames&lt;/code&gt; object?&lt;/li&gt;
+&lt;li&gt;What their data types&lt;/li&gt;
+&lt;li&gt;Get an overview of &lt;code&gt;babynames&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Plot the proportion of your name usage vs. year. Choose closest or random name, if your exact spelling is not available&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Submit your homework as a text or Word document. Name your file as &#34;&lt;last_name&gt;_&lt;first_name&gt;_Hw02&#34;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Assignment 3</title>
+      <link>/assignment/10-problem-set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/assignment/10-problem-set/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#to-do-yourself-due-before-09-29-2020-class&#34;&gt;To do yourself, due before 09-29-2020 class&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-09-29-2020-500pm&#34;&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;to-do-yourself-due-before-09-29-2020-class&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To do yourself, due before 09-29-2020 class&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/exploring-data-3.html&#34;&gt;Statistical functions&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/entering-and-cleaning-data-1.html&#34;&gt;read.table, readr, Excel, SAS, SPSS, file/folder structure/paths&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;to-submit-on-blackboard-due-09-29-2020-500pm&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Install package “babynames”
+&lt;ul&gt;
+&lt;li&gt;How many values are in the &lt;code&gt;babynames&lt;/code&gt; object?&lt;/li&gt;
+&lt;li&gt;What their data types&lt;/li&gt;
+&lt;li&gt;Get an overview of &lt;code&gt;babynames&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Plot the proportion of your name usage vs. year. Choose closest or random name, if your exact spelling is not available&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Submit your homework as a text or Word document. Name your file as &#34;&lt;last_name&gt;_&lt;first_name&gt;_Hw02&#34;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Assignment 3: R base graphics, statistical functions</title>
+      <link>/assignment/03-problem-set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/assignment/03-problem-set/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#to-do-yourself-due-before-09-29-2020-class&#34;&gt;To do yourself, due before 09-29-2020 class&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-09-29-2020-500pm&#34;&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;to-do-yourself-due-before-09-29-2020-class&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To do yourself, due before 09-29-2020 class&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/exploring-data-3.html&#34;&gt;Statistical functions&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/entering-and-cleaning-data-1.html&#34;&gt;read.table, readr, Excel, SAS, SPSS, file/folder structure/paths&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;to-submit-on-blackboard-due-09-29-2020-500pm&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Install package “babynames”
+&lt;ul&gt;
+&lt;li&gt;How many values are in the &lt;code&gt;babynames&lt;/code&gt; object?&lt;/li&gt;
+&lt;li&gt;What their data types&lt;/li&gt;
+&lt;li&gt;Get an overview of &lt;code&gt;babynames&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Plot the proportion of your name usage vs. year. Choose closest or random name, if your exact spelling is not available&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Make base graphics questions, use example from &lt;a href=&#34;https://github.com/clayford/RGraphics&#34; class=&#34;uri&#34;&gt;https://github.com/clayford/RGraphics&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Assignment 4: RMarkdown</title>
+      <link>/assignment/04-problem-set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/assignment/04-problem-set/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#to-do-yourself-due-before-09-29-2020-class&#34;&gt;To do yourself, due before 09-29-2020 class&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-09-29-2020-500pm&#34;&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;to-do-yourself-due-before-09-29-2020-class&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To do yourself, due before 09-29-2020 class&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/reproducible-research-1.html&#34;&gt;RMarkdown, knitr, best code practices&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;to-submit-on-blackboard-due-09-29-2020-500pm&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/h1&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Assignment 6: Packages</title>
+      <link>/assignment/06-problem-set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/assignment/06-problem-set/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#to-do-yourself-due-before-09-29-2020-class&#34;&gt;To do yourself, due before 09-29-2020 class&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-09-29-2020-500pm&#34;&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;to-do-yourself-due-before-09-29-2020-class&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To do yourself, due before 09-29-2020 class&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/reproducible-research-3.html&#34;&gt;R packages&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/reproducible-research-3.html&#34;&gt;Package&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;to-submit-on-blackboard-due-09-29-2020-500pm&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/h1&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Assignment 7</title>
+      <link>/assignment/07-problem-set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/assignment/07-problem-set/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#to-do-yourself-due-before-xx-xx-2020-class&#34;&gt;To do yourself, due before XX-XX-2020 class&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-xx-xx-2020-500pm&#34;&gt;To submit on blackboard, due XX-XX-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;to-do-yourself-due-before-xx-xx-2020-class&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To do yourself, due before XX-XX-2020 class&lt;/h1&gt;
+&lt;/div&gt;
+&lt;div id=&#34;to-submit-on-blackboard-due-xx-xx-2020-500pm&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To submit on blackboard, due XX-XX-2020, 5:00pm&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;What is the difference between &lt;code&gt;read_xls()&lt;/code&gt; and &lt;code&gt;read_xlsx()&lt;/code&gt; functions? What message do you get if reading an &lt;code&gt;.xlsx&lt;/code&gt; file using &lt;code&gt;read_xls()&lt;/code&gt; function?&lt;/li&gt;
+&lt;li&gt;What does the skip argument do?&lt;/li&gt;
+&lt;li&gt;Do we need to refer to a sheet within an excel file as a number, or can we refer to it as the sheet name instead?&lt;/li&gt;
+&lt;li&gt;What does the guess_max argument do?&lt;/li&gt;
+&lt;li&gt;What happens if columns in the Excel worksheet are of different length?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Assignment 8: Tidyverse, data visualization</title>
+      <link>/assignment/08-problem-set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/assignment/08-problem-set/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#to-do-yourself-due-before-09-29-2020-class&#34;&gt;To do yourself, due before 09-29-2020 class&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-09-29-2020-500pm&#34;&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;to-do-yourself-due-before-09-29-2020-class&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To do yourself, due before 09-29-2020 class&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/reporting-data-results-1.html&#34;&gt;Plotting/reporting best practices&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/reporting-data-results-3.html#htmlwidgets&#34;&gt;Plotly&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;to-submit-on-blackboard-due-09-29-2020-500pm&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/h1&gt;
 &lt;/div&gt;
 </description>
     </item>

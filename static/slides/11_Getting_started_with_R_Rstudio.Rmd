@@ -176,6 +176,8 @@ https://blog.revolutionanalytics.com/2017/10/updated-history-of-r.html ]
 
 - Simple integration with Git version control system
 
+- **After you install R and RStudio, you only need to run RStudio**
+
 ---
 ## RStudio main window
 

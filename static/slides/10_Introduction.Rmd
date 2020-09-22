@@ -105,11 +105,10 @@ By the end of this course, you will be able to:
     - I'll try to allocate time at the end of each class to review the chat
     - Note chat history is gone as soon as the lecture is ended
 
-- [Slack](https://slack.com/)
-    - Install [Slack](https://slack.com/) (desktop version available). See [Slack 101](https://slack.com/resources/slack-101)
+- [Slack](https://slack.com/). See [Slack 101](https://slack.com/resources/slack-101)
     - I will send invites using your VCU e-mail addresses - use them to join the [#bios524 channel](https://dozmorovlab.slack.com/archives/C01AZANCZR9)
     - Omit formalities, but be respectful and polite
-    - Questions and answers posted there will be available for everyone - answer them, or I'll address them
+    - Questions and answers posted there will be available for everyone - answer them if you can, or I'll address them
     - Direct messages are possible - use them to ask private questions or schedule a meeting
     - I'll try to answer your questions asap, typically, within 24 hours
 
