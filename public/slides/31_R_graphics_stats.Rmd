@@ -1,0 +1,473 @@
+---
+title: "R base graphics, statistical functions"
+# subtitle: "Getting started"
+author: "Mikhail Dozmorov"
+institute: "Virginia Commonwealth University"
+# date: "`r Sys.Date()`"
+date: "09-29-2020"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["xaringan-themer.css", "xaringan-my.css"]
+    nature:
+      ratio: '16:9'
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r xaringan-themer, include = FALSE}
+library(xaringanthemer)
+mono_light(
+  base_color = "midnightblue",
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Montserrat", "500", "500i"),
+  code_font_google   = google_font("Droid Mono"),
+  link_color = "#8B1A1A", #firebrick4, "deepskyblue1"
+  text_font_size = "28px"
+)
+```
+
+## Basic plotting
+
+R graphic regions
+
+```{r echo=FALSE, fig.height=5}
+par(oma=rep(3, 4), bg="grey80")     # permanent settings, oma: outer margin defined in line spaces
+plot(c(0, 1), c(0, 1), type="n", ann=FALSE, axes=FALSE)
+box("outer", col="grey")
+
+par(xpd=TRUE)                       # set clipping to figure region   
+
+rect(-1, -1, 2, 2, col="white")     # draw a large rectangle
+box("figure")                       # set clipping back to plot region
+
+par(xpd=FALSE)                      # draw a large rectangle
+rect(-1, -1, 2, 2, col="cornsilk")
+box("plot", lty="dashed")
+
+text(.5, .5, "Plot Region")
+mtext("Figure Region/Margin", side=3, line=2)
+for (i in 1:4)   mtext(paste("Outer margin", i), side=i, line=1, outer=TRUE)
+```
+
+---
+## R graphic regions
+
+`par(mar=c(5.1, 4.1, 4.1, 2.1), mgp=c(3, 1, 0), las=0)`
+
+- `par` sets or adjusts plotting parameters. Here we consider the following three parameters: margin size (`mar`), axis label locations (`mgp`), and axis label orientation (`las`)
+
+.small[
+- `mar` – A numeric vector of length 4, which sets the margin sizes in the following order: bottom, left, top, and right. The default is `c(5.1, 4.1, 4.1, 2.1)`
+
+- `mgp` – A numeric vector of length 3, which sets the axis label locations relative to the edge of the inner plot window. The first value represents the location of the labels (i.e., xlab and ylab in plot), the second the tick-mark labels, and third the tick marks. The default is `c(3, 1, 0)`
+
+- `las` – A numeric value indicating the orientation of the tick mark labels and any other text added to a plot after its initialization. The options are as follows: always parallel to the axis (the default, 0), always horizontal (1), always perpendicular to the axis (2), and always vertical (3)
+]
+
+.small[ http://rfunction.com/archives/1302 ]
+
+---
+# Save and restore graphic parameters
+
+```{r fig.height=4}
+old.par <- par("mar")
+par(mar = c(1, 1, 1, 1))
+plot(iris$Sepal.Length)
+par(old.par)
+```
+
+---
+# Multiple plots in one region
+
+```{r fig.height=4}
+par(mfrow = c(1, 2))
+plot(iris$Sepal.Length)
+plot(iris$Sepal.Width)
+par(mfrow = c(1, 1))
+```
+
+---
+## Some functions used in plot region
+
+``` r
+text() 
+points() 
+lines()
+arrows()
+box()
+abline()
+```
+
+Some common plot settings
+
+``` r
+col: color of lines, text, ...
+lwd: line width
+lty: line type
+font: font face (plain, bold, italic)
+pch: type of plotting symbol
+srt: string rotation
+```
+
+---
+Plot examples
+
+```{r fig.height=4}
+data(cars)
+# ?cars
+plot(cars$dist) # if a single vector object is given to plot(), the values are plotted on the y-axis against the row numbers or index
+# plot(cars) # bivariate scatterplot
+# plot(cars$speed, type="o", col="blue") # graph cars using blue points overlayed by a line 
+# plot(cars$dist,cars$speed, xlab="x axis", ylab="y axis", main="my plot", ylim=c(0,20), xlim=c(0,20), pch=15, col="blue") # Set a bunch of parameters
+```
+
+---
+```{r fig.height=5}
+x <- seq(0,20,by=2)
+y <- seq(0,10,by=1)
+plot(x,y,col="blue") 
+# lines and points add graphics to the existing plot
+lines(x,y,col="green",lty="dashed")
+
+x2 <- c(0.5, 3, 5, 8, 12) 
+y2 <- c(0.8, 1, 2, 4, 6) 
+points(x2, y2, pch=16, col="green")
+```
+
+---
+```{r fig.height=5}
+# curve(expr, from, to, add = FALSE, ...)
+#       expr: an expression written as a function of 'x?
+#       from, to: the range over which the function will be plotted.
+#       add: logical; if 'TRUE' add to already existing plot.
+curve(sin(x), from = 0, to = 2*pi)        
+# curve(x^3 - 3*x, -2, 2)
+# curve(x^2 - 2, add = TRUE, col = "violet")
+```
+
+---
+```{r fig.height=5}
+# barplot(as.matrix(mtcars), main="Autos", ylab= "Total", beside=TRUE, col=rainbow(5))
+# barplot(mtcars$cyl)
+barplot(mtcars$cyl,col=rainbow(3))
+```
+
+---
+```{r fig.height=5}
+data(faithful)
+attach(faithful)
+hist(eruptions, main = "Old Faithful data", prob = T)
+# hist(eruptions, main = "Old Faithful data", prob = T, breaks=18)
+
+# boxplot(faithful)                      # same as boxplot(eruptions, waiting)
+```
+
+---
+## Add legends to plots
+
+```{r fig.height=5}
+with(iris,
+     plot(Sepal.Length, Sepal.Width, 
+          pch=as.numeric(Species), cex=1.2,ylim=c(1,6)))
+legend("topright", c("setosa", "versicolor", "virginica"), cex=1.5, pch=1:3)
+```
+
+---
+## Saving plots
+
+- Save to PDF
+
+``` r
+pdf("filename.pdf", width = 7, height = 5)
+plot(1:10, 1:10)
+dev.off()
+```
+
+- Other formats: `bmp()`, `jpg()`, `pdf()`, `png()`, or `tiff()`
+
+- Click Export in the Plots window in RStudio
+
+- Learn more `?Devices`
+
+---
+## R base graphic cheat-sheet
+
+.center[<img src="img/graphics_cheatsheet.png" width = 900>]
+
+.small[ https://github.com/nbrgraphs/mro/blob/master/BaseGraphicsCheatsheet.pdf ]
+
+---
+## Useful functions in stats
+
+```{r fig.height=5}
+data(trees) # load data to global environment
+attach(trees)
+qqnorm(Height) # A normal QQ plot 
+```
+
+---
+## Useful functions in stats
+
+```{r fig.height=5}
+# ?ecdf() # Empirical CDF(x)
+Fn <- ecdf(x <- rnorm(12))
+# plot(Fn)
+curve(Fn)
+```
+
+---
+## Useful functions in stats
+
+Prefix each R distribution name with + ‘d’ for the density or mass function, + ‘p’ for the CDF, + ‘q’ for the percentile function (also called the quantile), + ‘r’ for the generation of pseudorandom variables
+
+``` r
+dchisq()
+pchisq()
+qchisq()
+rchisq()
+```
+
+---
+## Examples of density functions
+
+| Function | Distribution |
+|:--------:|:------------:|
+| dnorm    | Normal       |
+| dpois    | Poisson      |
+| dbinom   | Binomial     |
+| dchisq   | Chi-squared  |
+| dt       | Student’s t  |
+| dunif    | Uniform      |
+
+
+---
+```{r}
+x=rnorm(100)
+y=rnorm(100)
+plot(x, y)
+```
+
+
+```{r}
+qnorm(.75,mean=10,sd=2) # 3rd quartile of N(mu = 10,sigma = 2)
+qnorm(c(0.05, 0.10, 0.20, 0.95),mean=10,sd=2)
+qt(.95,df=20) # 95th percentile of t(20)
+```
+
+---
+```{r}
+x<-rchisq(100,1)
+plot(x)
+hist(x)
+```
+
+```{r}
+x<-dbinom(3:10,size=10,prob=.25)   # P(X=3) for X ~ Bin(n=10, p=.25)
+
+barplot(x)
+plot(x) 
+plot(0:10, dbinom(0:10, size=10, prob=.25), type = "h", lwd = 30)
+plot(3:10, x, type = "h", lwd = 30, main = "Binomial Probabilities w/ n = 10, p = .25", ylab = "p(x)") # which is gives the histogram-like vertical lines 
+# lwd option (the default width is 1) controls line thickness
+```
+
+---
+```{r fig.height=5}
+dpois(0:2, lambda=4) # P(X=0), P(X=1), P(X=2) for X ~ Poisson
+x<- dpois(0:20, lambda=4)
+barplot(x)
+# plot(x)
+```
+
+---
+```{r fig.height=5}
+pbinom(3,size=10,prob=.25) # P(X <=3) in the above distribution
+x<- pbinom(3:10,size=10,prob=.25)
+plot(x)
+```
+
+---
+## More useful stats functions
+
+```{r}
+lm(Sepal.Length~Sepal.Width, data=iris) # simple linear regression
+```
+
+```{r}
+glm(ifelse(Species=="setosa",1,0)~Sepal.Width, family="binomial",data=iris)  # logistic regression
+```
+
+---
+## More useful stats functions
+
+```{r}
+t.test(iris$Sepal.Length,iris$Petal.Length)
+```
+
+```{r}
+aov(Sepal.Length~Species,data=iris)
+```
+
+---
+## More useful stats functions
+
+```{r}
+chisq.test(iris$Petal.Length,iris$Species)
+```
+
+```{r}
+fisher.test(mtcars$gear, mtcars$carb)
+```
+
+---
+## Regression models
+
+Regression models can be used to estimate how the expected value of a dependent variable changes as independent variables change.
+
+In R, regression formulas take this structure:
+
+```
+## Generic code
+[response variable] ~ [indep. var. 1] +  [indep. var. 2] + ...
+```
+
+Notice that a tilde, ~, is used to separate the independent and dependent variables and that a plus sign, +, is used to join independent variables. This format mimics the statistical notation:
+
+$Y_i \sim X_1 + X_2 + X_3$
+
+---
+## Conventions for linear models
+
+| Convention	| Meaning |
+|:-----------:|:-------:|
+| I()	| evaluate the formula inside I() before fitting (e.g., I(x1 + x2)) |
+| :	| fit the interaction between x1 and x2 variables |
+| *	| fit the main effects and interaction for both variables (e.g., x1*x2 equals x1 + x2 + x1:x2)|
+| .	| include as independent variables all variables other than the response (e.g., y ~ .) |
+| 1	| intercept (e.g., y ~ 1 for an intercept-only model) | 
+| -	|do not include a variable in the data frame as an independent variables (e.g., y ~ . - x1); usually used in conjunction with . or 1 | 
+
+---
+## Linear models
+
+To fit a linear model, you can use the function `lm()`. This function is part of the `stats` package, which comes installed with base R
+
+```{r}
+mod <- lm(mpg ~ hp, data = mtcars)
+# Check class() and str() of the mod object
+```
+
+This previous call fits the model:
+
+$Y_{i} = \beta_{0} + \beta_{1}X_{1,i} + \epsilon_{i}$
+
+---
+## Manipulating the `lm` object
+
+| Function	| Description |
+|:---------:|:-----------:|
+| summary	  | Get a variety of information on the model, including coefficients and p-values for the coefficients |
+| coefficients	| Pull out just the coefficients for a model |
+| fitted	| Get the fitted values from the model (for the data used to fit the model) | 
+| plot	| Create plots to help assess model assumptions
+| residuals	| Get the model residuals |
+
+```{r}
+class(mod)
+```
+
+
+---
+## plot(mod)
+
+```{r echo=FALSE, fig.height=4}
+plot(mod)
+```
+
+---
+## Manipulating the `lm` object
+
+```{r fig.height=4}
+mod_coef <- coefficients(mod)
+library(ggplot2)
+ggplot(mtcars, aes(x = hp, y = mpg)) + 
+  geom_point(size = 1) + 
+  xlab("Miles/(US) gallon") + ylab("Gross horsepower") + 
+  geom_abline(aes(intercept = mod_coef[1],
+                  slope = mod_coef[2]), col = "red")
+```
+
+---
+## Working with text
+
+- The `grep()` function takes as parameters the pattern and a character vector as the data to search through for the pattern. Parameters:
+    - `ignore.case = FALSE` - by default it is case sensitive
+    - `value = FALSE` - by default returns vector with index values of match; otherwise returns the values
+    - `fixed = FALSE` - by default treats pattern as regular expression; otherwise will match exact
+    - `invert = FALSE` - by default matches the pattern; otherwise returns what is not matched
+
+```{r}
+strings <- c('abcd', 'dabc', 'abcabc')
+pattern <- '^abc'
+print (grep(pattern, strings))
+```
+
+.small[- `grepl()` - grep logical, returns a vector of the same length as a string, with TRUE/FALSE pattern matching
+
+---
+## Regular expressions
+
+Some useful regular expression operators include:
+
+| Expression | Description                                                                                                                                     |
+|:----------:|-------------------------------------------------------------------------------------------------------------------------------------------------|
+|     []     | Matches a set. [abc] matches a, b, or c. [a-zA-Z] matches any letter. [0-9] matches any number. “^” negates a set, [^abc] matches d, e, f, etc. |
+|      ^     | Starting position anchor. ^abc finds lines starting with abc                                                                                    |
+|      \$     | Ending position anchor. xyz\$ finds lines ending with xyz                                                                                        |
+|      \\     | Escape symbol, to find special characters. \\\* will find \*. \\n matches new line character, \\t – tab character                                  |
+|      \*     | Match the preceding element zero or more times. a\*b matches ab, aab, aaab, etc.                                                                 |
+
+---
+## Extended regular expressions
+
+| Expression | Description                                                                    |
+|:----------:|--------------------------------------------------------------------------------|
+|      ?     | Matches the preceding element zero or one time. a*b matches b, ab, but not aab |
+|      +     | Matches the preceding element one or more times. a+b matches ab, aab, etc.     |
+|      &#124;     | OR operator. "abc&#124;def" matches abc or def                                      |
+|   .	       | Any character |
+
+---
+## Special characters
+
+| Expression | Description  |
+|:----------:|--------------|
+|   \\n       | Newline      |
+|   \\r       | Return       |
+|   \\t       | Tab          |
+
+.small[https://www.regular-expressions.info/refcharacters.html
+
+Online preview: https://regexr.com/]
+
+---
+## R is more than a programming language
+
+Numerous packages are available to extend R functionality
+
+- Publication-quality figures, documents in Word, PDF, and HTML formats (Rmarkdown). Templates for journal articles
+
+- Presentations, from basic (`ioslides`, `beamer`) to advanced (`xaringan`)
+
+- Web sites for blogs (`blogdown`), books (`bookdown`), packages (`pkgdown`)
+    - Templates for CV, resume, thesis are available
+
+- Dynamic web applications using Shiny
+
+- Interface with other languages, like C (`Rcpp`), Python (`reticulate`)
+
+- Many more cool usages...
