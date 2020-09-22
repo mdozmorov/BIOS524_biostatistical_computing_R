@@ -4,11 +4,43 @@
   
   <url>
     <loc>/assignment/01-problem-set/</loc>
-    <lastmod>2020-09-20T10:07:33-04:00</lastmod>
+    <lastmod>2020-09-20T12:10:07-04:00</lastmod>
   </url>
   
   <url>
     <loc>/assignment/02-problem-set/</loc>
+  </url>
+  
+  <url>
+    <loc>/assignment/05-problem-set/</loc>
+  </url>
+  
+  <url>
+    <loc>/assignment/09-problem-set/</loc>
+  </url>
+  
+  <url>
+    <loc>/assignment/10-problem-set/</loc>
+  </url>
+  
+  <url>
+    <loc>/assignment/03-problem-set/</loc>
+  </url>
+  
+  <url>
+    <loc>/assignment/04-problem-set/</loc>
+  </url>
+  
+  <url>
+    <loc>/assignment/06-problem-set/</loc>
+  </url>
+  
+  <url>
+    <loc>/assignment/07-problem-set/</loc>
+  </url>
+  
+  <url>
+    <loc>/assignment/08-problem-set/</loc>
   </url>
   
   <url>
@@ -32,6 +64,11 @@
   </url>
   
   <url>
+    <loc>/class/01-class/</loc>
+    <lastmod>2020-09-18T15:50:50-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/authors/mgd/</loc>
     <lastmod>2020-08-11T14:45:13-04:00</lastmod>
   </url>
@@ -47,39 +84,13 @@
   </url>
   
   <url>
-    <loc>/reading/02-reading/</loc>
-  </url>
-  
-  <url>
-    <loc>/reading/03-reading/</loc>
-  </url>
-  
-  <url>
-    <loc>/reading/04-reading/</loc>
-  </url>
-  
-  <url>
-    <loc>/reading/05-reading/</loc>
-  </url>
-  
-  <url>
-    <loc>/class/01-class/</loc>
-    <lastmod>2020-09-18T15:50:50-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/reading/01-reading/</loc>
-    <lastmod>2020-09-18T15:50:50-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/schedule/</loc>
     <lastmod>2020-08-11T14:45:13-04:00</lastmod>
   </url>
   
   <url>
     <loc>/syllabus/</loc>
-    <lastmod>2020-09-18T15:50:50-04:00</lastmod>
+    <lastmod>2020-09-20T15:18:20-04:00</lastmod>
   </url>
   
 </urlset>

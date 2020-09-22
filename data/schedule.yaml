@@ -5,8 +5,8 @@ lessons:
   - title: '**Lecture 1: Introduction to R and RStudio**'
     date: "September 22"
     # reading: "01-reading"
-    # assignment: "01-problem-set"
-    # class: "01-class"
+    assignment: "01-problem-set"
+    class: "01-class"
 
   - title: '**Lecture 2: R preliminaries**'
     date: "September 24"

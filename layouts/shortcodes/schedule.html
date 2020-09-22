@@ -9,12 +9,13 @@
 
             {{- if .header }}
 
-            <td style="width:10%;text-align:center" class="mid-table-header">Reading</td>
+<!--            <td style="width:10%;text-align:center" class="mid-table-header">Reading</td> -->
             <td style="width:10%;text-align:center" class="mid-table-header">Assignment</td>
             <td style="width:10%;text-align:center" class="mid-table-header">Class</td>
 
             {{- else }}
 
+<!--
             {{- if .reading }}
             <td align="center" style="width:10%;text-align:center"><a
                     href="{{ .Site.baseurl }}/reading/{{ .reading }}/">
@@ -25,6 +26,7 @@
                     <i class="fas fa-book-reader fa-lg"></i></font>
             </td>
             {{- end }}
+-->
 
             {{- if .assignment }}
             <td align="center" style="width:10%;text-align:center"><a

@@ -15,17 +15,11 @@
     <item>
       <title>Assignment 1</title>
       <link>/assignment/01-problem-set/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 22 Sep 2020 00:00:00 +0000</pubDate>
       <guid>/assignment/01-problem-set/</guid>
       <description>
 &lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
-&lt;div id=&#34;TOC&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#to-do-yourself-due-before-09-24-2020-class&#34;&gt;To do yourself, due before 09-24-2020 class&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-09-29-2020-500pm&#34;&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
 
 &lt;div id=&#34;to-do-yourself-due-before-09-24-2020-class&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;To do yourself, due before 09-24-2020 class&lt;/h1&gt;
@@ -53,7 +47,7 @@
 &lt;li&gt;R installation path&lt;/li&gt;
 &lt;li&gt;Copy-paste selected output and describe your observations&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Submit your homework as a text or Word document. Name your file as &#34;&lt;last_name&gt;_&lt;first_name&gt;_Hw01&#34;&lt;/li&gt;
+&lt;li&gt;Submit your homework as a text or Word document. Files should be named, e.g., &lt;code&gt;LASTNAME-FIRSTNAME-HW01&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 </description>
@@ -87,7 +81,7 @@
 &lt;div id=&#34;to-submit-on-blackboard-due-09-29-2020-500pm&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/h1&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;&lt;p&gt;Use the help functions or R documentation to look up a function that you think you will use in one of your courses this year. Provide (in words) a description of what the function is and does, the arguments that takes, and anything else that might be relevant about this function. Then, using a sample dataset in R (i.e., mtcars, iris, ToothGrowth), demonstrate (in code) the use of this function.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Use the help functions or R documentation to look up a function that you think you will use in one of your courses this year. Provide (in words) a description of what the function is and does, the arguments that takes, and anything else that might be relevant about this function. Then, using a sample dataset in R (i.e., &lt;code&gt;mtcars&lt;/code&gt;, &lt;code&gt;iris&lt;/code&gt;, &lt;code&gt;ToothGrowth&lt;/code&gt;), demonstrate (in code) the use of this function&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Create two numeric, two character, and two logical objects/variables in R. Give them descriptive names. Provide code examples&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Use some function that operates on the two numeric objects, another that operates on the two character objects, and another that operates on the two logical objects.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Look up an R package that you think might be useful to you this year. Provide all code for installing it and loading it into your R workspace for use&lt;/p&gt;&lt;/li&gt;
@@ -96,7 +90,12 @@
 &lt;li&gt;Path(s) where R packages are installed&lt;/li&gt;
 &lt;li&gt;Copy-paste selected output and describe your observations&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;What is unuwual about each of the following objects?&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;num_char     &amp;lt;- c(1, 2, 3, &amp;quot;a&amp;quot;)
+num_logical  &amp;lt;- c(1, 2, 3, TRUE)
+char_logical &amp;lt;- c(&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;, &amp;quot;c&amp;quot;, TRUE)
+tricky       &amp;lt;- c(1, 2, 3, &amp;quot;4&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
 &lt;li&gt;Submit your homework as a text or Word document. Name your file as &#34;&lt;last_name&gt;_&lt;first_name&gt;_Hw02&#34;&lt;/li&gt;
 &lt;/ul&gt;
@@ -105,116 +104,267 @@
     </item>
     
     <item>
-      <title>Day 2: RMarkdown and GitHub</title>
-      <link>/reading/02-reading/</link>
+      <title>Assignment 3</title>
+      <link>/assignment/05-problem-set/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/reading/02-reading/</guid>
+      <guid>/assignment/05-problem-set/</guid>
       <description>
 &lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#to-do-yourself-due-before-09-29-2020-class&#34;&gt;To do yourself, due before 09-29-2020 class&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-09-29-2020-500pm&#34;&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 
-&lt;div id=&#34;references&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;References&lt;/h2&gt;
+&lt;div id=&#34;to-do-yourself-due-before-09-29-2020-class&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To do yourself, due before 09-29-2020 class&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/steps2rr/pages/reports.html&#34;&gt;Turn scripts into reproducible reports&lt;/a&gt; by Karl Broman&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/knitr_knutshell/pages/markdown.html&#34;&gt;R Markdown&lt;/a&gt; and &lt;a href=&#34;http://kbroman.org/knitr_knutshell/pages/Rmarkdown.html&#34;&gt;Knitr with R Markdown&lt;/a&gt; tutorials by Karl Broman&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://support.rstudio.com/hc/en-us/articles/205368677-R-Markdown-Dynamic-Documents-for-R&#34;&gt;R Markdown - Dynamic Documents for R&lt;/a&gt; from RStudio&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf&#34;&gt;R markdown cheat sheet&lt;/a&gt; and &lt;a href=&#34;https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf&#34;&gt;R Markdown Reference Guide&lt;/a&gt; from RStudio&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://rmarkdown.rstudio.com/lesson-1.html&#34;&gt;RMarkdown from RStudio&lt;/a&gt; - illustrated guide to RMarkdown&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://rmd4sci.njtierney.com/&#34;&gt;Rmarkdown for Scientists&lt;/a&gt; book by Nicholas Tierney. &lt;a href=&#34;https://github.com/njtierney/rmd4sci&#34;&gt;GitHub&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/garrettgman/rmarkdown-the-bigger-picture&#34;&gt;R Markdown: The Bigger Picture&lt;/a&gt; slides for a talk at rstudio::conf 2019, by Garrett Grolemund. &lt;a href=&#34;https://rstudio.com/resources/rstudioconf-2019/r-markdown-the-bigger-picture/&#34;&gt;Video&lt;/a&gt;, 19 min&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://pandoc-scholar.github.io&#34;&gt;Create beautiful and semantically meaningful articles with pandoc&lt;/a&gt;, how to xreate scholar articles&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://ropenscilabs.github.io/vitae/&#34;&gt;Templates and tools for making a Résumé/CV, vitae R package&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/darwiin/yaac-another-awesome-cv&#34;&gt;YAAC: Another Awesome CV is a template using Font Awesome and Adobe Source Font, LaTeX&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;RMarkdown CV built using the &lt;a href=&#34;https://pagedown.rbind.io/&#34;&gt;pagedown&lt;/a&gt; R package:&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/exploring-data-3.html&#34;&gt;Statistical functions&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/entering-and-cleaning-data-1.html&#34;&gt;read.table, readr, Excel, SAS, SPSS, file/folder structure/paths&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;to-submit-on-blackboard-due-09-29-2020-500pm&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/GuangchuangYu/cv&#34;&gt;Guangchuang Yu’s CV&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/nstrayer/cv&#34;&gt;Nick Strayer’s CV&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Install package “babynames”
+&lt;ul&gt;
+&lt;li&gt;How many values are in the &lt;code&gt;babynames&lt;/code&gt; object?&lt;/li&gt;
+&lt;li&gt;What their data types&lt;/li&gt;
+&lt;li&gt;Get an overview of &lt;code&gt;babynames&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Plot the proportion of your name usage vs. year. Choose closest or random name, if your exact spelling is not available&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://manubot.org/&#34;&gt;Manubot&lt;/a&gt; - collaborative manuscripts in Markdown, flexible citations, Pandoc backend, Travis CI. &lt;a href=&#34;https://manubot.org/&#34; class=&#34;uri&#34;&gt;https://manubot.org/&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;Submit your homework as a text or Word document. Name your file as &#34;&lt;last_name&gt;_&lt;first_name&gt;_Hw02&#34;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Assignment 3</title>
+      <link>/assignment/09-problem-set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/assignment/09-problem-set/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;Himmelstein, Daniel S., Vincent Rubinetti, David R. Slochower, Dongbo Hu, Venkat S. Malladi, Casey S. Greene, and Anthony Gitter. “&lt;a href=&#34;https://doi.org/10.1371/journal.pcbi.1007128&#34;&gt;Open Collaborative Writing with Manubot&lt;/a&gt;.” PLoS Computational Biology 15, no. 6 (June 24, 2019)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-do-yourself-due-before-09-29-2020-class&#34;&gt;To do yourself, due before 09-29-2020 class&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-09-29-2020-500pm&#34;&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;to-do-yourself-due-before-09-29-2020-class&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To do yourself, due before 09-29-2020 class&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/exploring-data-3.html&#34;&gt;Statistical functions&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/entering-and-cleaning-data-1.html&#34;&gt;read.table, readr, Excel, SAS, SPSS, file/folder structure/paths&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;to-submit-on-blackboard-due-09-29-2020-500pm&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Install package “babynames”
+&lt;ul&gt;
+&lt;li&gt;How many values are in the &lt;code&gt;babynames&lt;/code&gt; object?&lt;/li&gt;
+&lt;li&gt;What their data types&lt;/li&gt;
+&lt;li&gt;Get an overview of &lt;code&gt;babynames&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Plot the proportion of your name usage vs. year. Choose closest or random name, if your exact spelling is not available&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Submit your homework as a text or Word document. Name your file as &#34;&lt;last_name&gt;_&lt;first_name&gt;_Hw02&#34;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 </description>
     </item>
     
     <item>
-      <title>Day 3: Functions, Packages</title>
-      <link>/reading/03-reading/</link>
+      <title>Assignment 3</title>
+      <link>/assignment/10-problem-set/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/reading/03-reading/</guid>
+      <guid>/assignment/10-problem-set/</guid>
       <description>
 &lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
-
-&lt;div id=&#34;references&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;References&lt;/h2&gt;
-&lt;div id=&#34;functions&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Functions&lt;/h3&gt;
+&lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;Resources by Karl Broman: &lt;a href=&#34;http://kbroman.org/steps2rr/pages/functions.html&#34;&gt;Transform repeated code into functions&lt;/a&gt;, &lt;a href=&#34;http://kbroman.org/steps2rr/pages/packages.html&#34;&gt;Package functions for reuse&lt;/a&gt;, &lt;a href=&#34;http://kbroman.org/pkg_primer/&#34;&gt;R package primer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-do-yourself-due-before-09-29-2020-class&#34;&gt;To do yourself, due before 09-29-2020 class&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-09-29-2020-500pm&#34;&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div id=&#34;r-packages&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;R packages&lt;/h3&gt;
+
+&lt;div id=&#34;to-do-yourself-due-before-09-29-2020-class&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To do yourself, due before 09-29-2020 class&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/jtleek/rpackages&#34;&gt;R package development - the Leek group way!&lt;/a&gt; - Jeff Leek on developing R packages, links to resources&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/&#34;&gt;Writing an R package from scratch&lt;/a&gt; tutorial by Hillary Parker&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://r-pkgs.had.co.nz/&#34;&gt;R packages&lt;/a&gt; book by Hadley Wickham&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/isteves/r-pkg-intro&#34;&gt;How to create an R package&#34; example and links&lt;/a&gt; - R package example and links to resources&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/yonicd/sinew&#34;&gt;sinew&lt;/a&gt; - an R package for generating roxygen2 skeletons populated with information scraped from the function script&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/lockedata/pRojects&#34;&gt;pRojects&lt;/a&gt; - R package for making project templates&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/jennybc/pkg-dev-tutorial&#34;&gt;Package Development tutorial for useR! 2019 Toulouse&lt;/a&gt; by Jenny Bryant&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kayla-morrell.github.io/CreateAPackage/&#34;&gt;Create A Package&lt;/a&gt; - Bioconductor 2020 workshop by Kayla Interdonato, Lori Shepherd&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://combine-australia.github.io/r-pkg-dev/&#34;&gt;R package workshop&lt;/a&gt; by COMBINE, an association for Australian students in bioinformatics,&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/exploring-data-3.html&#34;&gt;Statistical functions&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/entering-and-cleaning-data-1.html&#34;&gt;read.table, readr, Excel, SAS, SPSS, file/folder structure/paths&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 4: Data management, tidyverse</title>
-      <link>/reading/04-reading/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/reading/04-reading/</guid>
-      <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;div id=&#34;references&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;References&lt;/h2&gt;
+&lt;div id=&#34;to-submit-on-blackboard-due-09-29-2020-500pm&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://datacarpentry.org/R-ecology-lesson/03-dplyr.html&#34;&gt;Manipulating, analyzing and exporting data with tidyverse&lt;/a&gt; by Data Carpentry&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://datascienceplus.com/data-manipulation-with-dplyr/&#34;&gt;Data Manipulation with dplyr&lt;/a&gt; - a short blog post demonstrating dplyr’s functionality, by Teja Kodali&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;[Introduction to dplyr for Faster Data Manipulation in R] (&lt;a href=&#34;https://rpubs.com/justmarkham/dplyr-tutorial&#34; class=&#34;uri&#34;&gt;https://rpubs.com/justmarkham/dplyr-tutorial&lt;/a&gt;) - another dplyr tutorial, with a 40 min &lt;a href=&#34;https://youtu.be/jWjqLW-u3hc&#34;&gt;video&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;Install package “babynames”
+&lt;ul&gt;
+&lt;li&gt;How many values are in the &lt;code&gt;babynames&lt;/code&gt; object?&lt;/li&gt;
+&lt;li&gt;What their data types&lt;/li&gt;
+&lt;li&gt;Get an overview of &lt;code&gt;babynames&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Plot the proportion of your name usage vs. year. Choose closest or random name, if your exact spelling is not available&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Submit your homework as a text or Word document. Name your file as &#34;&lt;last_name&gt;_&lt;first_name&gt;_Hw02&#34;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 </description>
     </item>
     
     <item>
-      <title>Day 5: Data visualization, ggplot2</title>
-      <link>/reading/05-reading/</link>
+      <title>Assignment 3: R base graphics, statistical functions</title>
+      <link>/assignment/03-problem-set/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/reading/05-reading/</guid>
+      <guid>/assignment/03-problem-set/</guid>
       <description>
 &lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
-
-&lt;div id=&#34;references&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;References&lt;/h2&gt;
+&lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://lgatto.github.io/VisualisingBiomolecularData/index.html&#34;&gt;Visualisation of biomolecular data&lt;/a&gt; by Laurent Gatto&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;O’Donoghue, Sen I., Benedetta Frida Baldi, Susan J. Clark, Aaron E. Darling, James M. Hogan, Sandeep Kaur, Lena Maier-Hein, et al. “&lt;a href=&#34;https://doi.org/10.1146/annurev-biodatasci-080917-013424&#34;&gt;Visualization of Biomedical Data&lt;/a&gt;.” Annual Review of Biomedical Data Science 1, no. 1 (July 20, 2018) - Visualization best practices (the use of length, area, color etc.)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://datacarpentry.org/R-genomics/05-data-visualization.html&#34;&gt;Data visualization in R&lt;/a&gt; by Data Carpentry&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/jennybc/ggplot2-tutorial&#34;&gt;Teaching materials for the R package ggplot2&lt;/a&gt; by Jenny Bryant&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://davetang.org/muse/2018/05/18/interactive-plots-in-r/&#34;&gt;Interactive plots in R&lt;/a&gt; by Dave Tang&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.r-graph-gallery.com/all-graphs/&#34;&gt;The R Graph Gallery, all graphs&lt;/a&gt;, visuals with code examples&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://zevross.com/blog/2014/08/04/beautiful-plotting-in-r-a-ggplot2-cheatsheet-3/&#34;&gt;Beautiful plotting in R: A ggplot2 cheatsheet&lt;/a&gt; - illustrated ggplot2 modifications&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-do-yourself-due-before-09-29-2020-class&#34;&gt;To do yourself, due before 09-29-2020 class&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-09-29-2020-500pm&#34;&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;to-do-yourself-due-before-09-29-2020-class&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To do yourself, due before 09-29-2020 class&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/exploring-data-3.html&#34;&gt;Statistical functions&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/entering-and-cleaning-data-1.html&#34;&gt;read.table, readr, Excel, SAS, SPSS, file/folder structure/paths&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;to-submit-on-blackboard-due-09-29-2020-500pm&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Install package “babynames”
+&lt;ul&gt;
+&lt;li&gt;How many values are in the &lt;code&gt;babynames&lt;/code&gt; object?&lt;/li&gt;
+&lt;li&gt;What their data types&lt;/li&gt;
+&lt;li&gt;Get an overview of &lt;code&gt;babynames&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Plot the proportion of your name usage vs. year. Choose closest or random name, if your exact spelling is not available&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Make base graphics questions, use example from &lt;a href=&#34;https://github.com/clayford/RGraphics&#34; class=&#34;uri&#34;&gt;https://github.com/clayford/RGraphics&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Assignment 4: RMarkdown</title>
+      <link>/assignment/04-problem-set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/assignment/04-problem-set/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#to-do-yourself-due-before-09-29-2020-class&#34;&gt;To do yourself, due before 09-29-2020 class&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-09-29-2020-500pm&#34;&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;to-do-yourself-due-before-09-29-2020-class&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To do yourself, due before 09-29-2020 class&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/reproducible-research-1.html&#34;&gt;RMarkdown, knitr, best code practices&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;to-submit-on-blackboard-due-09-29-2020-500pm&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/h1&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Assignment 6: Packages</title>
+      <link>/assignment/06-problem-set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/assignment/06-problem-set/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#to-do-yourself-due-before-09-29-2020-class&#34;&gt;To do yourself, due before 09-29-2020 class&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-09-29-2020-500pm&#34;&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;to-do-yourself-due-before-09-29-2020-class&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To do yourself, due before 09-29-2020 class&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/reproducible-research-3.html&#34;&gt;R packages&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/reproducible-research-3.html&#34;&gt;Package&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;to-submit-on-blackboard-due-09-29-2020-500pm&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/h1&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Assignment 7</title>
+      <link>/assignment/07-problem-set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/assignment/07-problem-set/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#to-do-yourself-due-before-xx-xx-2020-class&#34;&gt;To do yourself, due before XX-XX-2020 class&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-xx-xx-2020-500pm&#34;&gt;To submit on blackboard, due XX-XX-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;to-do-yourself-due-before-xx-xx-2020-class&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To do yourself, due before XX-XX-2020 class&lt;/h1&gt;
+&lt;/div&gt;
+&lt;div id=&#34;to-submit-on-blackboard-due-xx-xx-2020-500pm&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To submit on blackboard, due XX-XX-2020, 5:00pm&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;What is the difference between &lt;code&gt;read_xls()&lt;/code&gt; and &lt;code&gt;read_xlsx()&lt;/code&gt; functions? What message do you get if reading an &lt;code&gt;.xlsx&lt;/code&gt; file using &lt;code&gt;read_xls()&lt;/code&gt; function?&lt;/li&gt;
+&lt;li&gt;What does the skip argument do?&lt;/li&gt;
+&lt;li&gt;Do we need to refer to a sheet within an excel file as a number, or can we refer to it as the sheet name instead?&lt;/li&gt;
+&lt;li&gt;What does the guess_max argument do?&lt;/li&gt;
+&lt;li&gt;What happens if columns in the Excel worksheet are of different length?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Assignment 8: Tidyverse, data visualization</title>
+      <link>/assignment/08-problem-set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/assignment/08-problem-set/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#to-do-yourself-due-before-09-29-2020-class&#34;&gt;To do yourself, due before 09-29-2020 class&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-09-29-2020-500pm&#34;&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;to-do-yourself-due-before-09-29-2020-class&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To do yourself, due before 09-29-2020 class&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/reporting-data-results-1.html&#34;&gt;Plotting/reporting best practices&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/reporting-data-results-3.html#htmlwidgets&#34;&gt;Plotly&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;to-submit-on-blackboard-due-09-29-2020-500pm&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/h1&gt;
 &lt;/div&gt;
 </description>
     </item>
@@ -222,62 +372,26 @@
     <item>
       <title>Lecture 1. Introduction to R and RStudio</title>
       <link>/class/01-class/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 22 Sep 2020 00:00:00 +0000</pubDate>
       <guid>/class/01-class/</guid>
       <description>
 &lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;!--
-## Slides
-
-### Getting started with R and RStudio
-
-&lt;a href=&#34;../../slides/00_Getting_started_with_R_Rstudio.html#1&#34; target=&#34;_blank&#34;&gt;Lecture slides in HTML format&lt;/a&gt;
-
-&lt;iframe src=&#34;../../slides/00_Getting_started_with_R_Rstudio.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;&lt;/iframe&gt;
---&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Lecture 1: Introduction to R and RStudio</title>
-      <link>/reading/01-reading/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/reading/01-reading/</guid>
-      <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;div id=&#34;r&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;R&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://cran.r-project.org/doc/contrib/Torfs+Brauer-Short-R-Intro.pdf&#34;&gt;A very short R introduction&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://bigbookofr.netlify.app/&#34;&gt;Big Book of R&lt;/a&gt;, by Oscar Baruffa. A bookdown bookmarking links to everything R for data science, from basics, visualization, tidyverse to distributed computing, spatial data science, machine learning, and more. &lt;a href=&#34;https://github.com/oscarbaruffa/BigBookofR&#34;&gt;GitHub&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://swirlstats.com/&#34;&gt;swirl&lt;/a&gt; - R package for interactive R leaning&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/matloff/fasteR&#34;&gt;FasteR&lt;/a&gt; - Fast Lane to Learning R, learn R language in R console by following examples, by Norm Matloff&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://rstudio-education.github.io/hopr&#34;&gt;Hands-On Programming with R&lt;/a&gt; - introductory book how to program in R, with hands-on examples, by Garrett Grolemund&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://r4ds.had.co.nz/&#34;&gt;R for Data Science&lt;/a&gt; - a Tidyverse-oriented introduction to R online book, by Garrett Grolemund and Hadley Wickham&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://adv-r.hadley.nz/&#34;&gt;Advanced R&lt;/a&gt; and &lt;a href=&#34;https://advanced-r-solutions.rbind.io&#34;&gt;Advanced R Solutions&lt;/a&gt; - Advanced R programming, book and solutions, by Hadley Wickham and others&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://rc2e.com&#34;&gt;R Cookbook, 2nd Edition&lt;/a&gt; - statistics-oriented R introduction, by James Long and Paul Teetor&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://bookdown.org/csgillespie/efficientR/&#34;&gt;Efficient R programming&lt;/a&gt; - advanced concepts for efficient (R) programming, by Colin Gillespie &amp;amp; Robin Lovelace&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://bookdown.org/rdpeng/RProgDA/&#34;&gt;Mastering Software Development in R&lt;/a&gt;, book by Roger D. Peng, Sean Kross, and Brooke Anderson. From R basics to package development&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ucb-stat133/stat133-cheatsheets&#34;&gt;ucb-stat133/stat133-cheatsheets&lt;/a&gt; - Cheat sheets on R, tidyverse, shiny, git, and more&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/rsquaredacademy-education/online-courses/&#34;&gt;Free Online R Courses&lt;/a&gt; - video and course materials, by rsquaredacademy.com&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/rstudio-education/rstats-ed&#34;&gt;List of courses teaching R&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.r-bloggers.com/how-to-learn-r-2/&#34;&gt;Tutorials for learning R&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/c/marinstatlectures/playlists&#34;&gt;MarinStatsLectures-R Programming &amp;amp; Statistics&lt;/a&gt; - collections of short (~5min) video tutorials on statistics and data analysis in R, by Mike Marin&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/index.html&#34;&gt;R Programming For Research&lt;/a&gt; course by Brooke Anderson, Rachel Severson, and Nicholas Good, Colorado State University. Basic, intermediate, and advanced data analysis in R. &lt;a href=&#34;https://github.com/geanders/RProgrammingForResearch&#34;&gt;GitHub&lt;/a&gt;, &lt;a href=&#34;https://www.youtube.com/playlist?list=PLuGPtwgRXxqK1d-3V2MKCad24h-v75k8P&#34;&gt;Youtube playlist&lt;/a&gt; with short videos on R-related topics&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://pagepiccinini.com/r-course/&#34;&gt;R course&lt;/a&gt; by Page Piccinini. Six lessons with lecture notes and videos, introduction to R statistical computing&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://laderast.github.io/&#34;&gt;Ted Laderas&lt;/a&gt; and his &lt;a href=&#34;https://ready4r.netlify.app/&#34;&gt;Ready for R&lt;/a&gt; course, the accompanying &lt;a href=&#34;https://ready4r.netlify.app/labbook/&#34;&gt;Ready for R: Notebook Reference&lt;/a&gt; bookdown, and the &lt;a href=&#34;https://r-bootcamp.netlify.app&#34;&gt;R Bootcamp&lt;/a&gt; tidyverse exercises&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;div id=&#34;introduction&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;../../slides/10_Introduction.html#1&#34; target=&#34;_blank&#34;&gt;Lecture slides in HTML format&lt;/a&gt;&lt;/p&gt;
+&lt;iframe src=&#34;../../slides/10_Introduction.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;div id=&#34;rstudio&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;RStudio&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://rstudio.cloud&#34;&gt;rstudio.cloud&lt;/a&gt; - a web-based instance of R/RStudio. &lt;a href=&#34;https://docs.google.com/presentation/d/1Lc0_hLgLUh0KSS5DIEZBUfE4KzeU8kH25nGY4w2kE1o/edit#slide=id.g606317e658_0_167&#34;&gt;RStudio cloud cheatsheet and notes&lt;/a&gt;, from &lt;a href=&#34;https://twitter.com/lobrowR/status/1295114281428684806?s=20&#34;&gt;Twitter&lt;/a&gt; source. &lt;a href=&#34;https://youtu.be/PviVimazpz8&#34;&gt;RStudio Cloud for education - Mel Gregory&lt;/a&gt; - 24 min video with all the essense of using RStudio cloud for education&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://drdoane.com/my-rstudio-configuration/&#34;&gt;Tips how to configure RStudio&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;div id=&#34;getting-started-with-r-and-rstudio&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Getting started with R and RStudio&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;../../slides/11_Getting_started_with_R_Rstudio.html#1&#34; target=&#34;_blank&#34;&gt;Lecture slides in HTML format&lt;/a&gt;&lt;/p&gt;
+&lt;iframe src=&#34;../../slides/11_Getting_started_with_R_Rstudio.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 </description>
     </item>
@@ -305,33 +419,26 @@
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;&lt;span class=&#34;fake-header-table&#34;&gt;Biostatistical computing with R&lt;/span&gt;&lt;/td&gt;
 
-            &lt;td style=&#34;width:10%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Reading&lt;/td&gt;
+
             &lt;td style=&#34;width:10%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Assignment&lt;/td&gt;
             &lt;td style=&#34;width:10%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Class&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;September 22&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;&lt;strong&gt;Lecture 1: Introduction to R and RStudio&lt;/strong&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-chalkboard-teacher fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
+
+
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
+                    href=&#34;/assignment/01-problem-set/&#34;&gt;
+                    &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;/class/01-class/&#34;&gt;
+                    &lt;i class=&#34;fas fa-chalkboard-teacher fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;September 24&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;&lt;strong&gt;Lecture 2: R preliminaries&lt;/strong&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
+
+
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
                 &lt;font color=&#34;f1f1f1&#34;&gt;
                     &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;
@@ -344,10 +451,8 @@
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;September 29&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;&lt;strong&gt;Lecture 3: R base graphics, statistical functions&lt;/strong&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
+
+
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
                 &lt;font color=&#34;f1f1f1&#34;&gt;
                     &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;
@@ -360,10 +465,8 @@
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;October 1&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;&lt;strong&gt;Lecture 4: RMarkdown&lt;/strong&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
+
+
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
                 &lt;font color=&#34;f1f1f1&#34;&gt;
                     &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;
@@ -376,10 +479,8 @@
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;October 6&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;&lt;strong&gt;Lecture 5: Data management/code best practices&lt;/strong&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
+
+
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
                 &lt;font color=&#34;f1f1f1&#34;&gt;
                     &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;
@@ -392,10 +493,8 @@
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;October 8&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;&lt;strong&gt;Lecture 6: Packages&lt;/strong&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
+
+
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
                 &lt;font color=&#34;f1f1f1&#34;&gt;
                     &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;
@@ -408,10 +507,8 @@
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;October 13&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;&lt;strong&gt;Lecture 7: Tidyverse, data manipulation&lt;/strong&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
+
+
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
                 &lt;font color=&#34;f1f1f1&#34;&gt;
                     &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;
@@ -424,10 +521,8 @@
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;October 15&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;&lt;strong&gt;Lecture 8: Tidyverse, data visualization&lt;/strong&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
+
+
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
                 &lt;font color=&#34;f1f1f1&#34;&gt;
                     &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;
@@ -440,10 +535,8 @@
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;October 20&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;&lt;strong&gt;Lecture 9: Git/GitHub&lt;/strong&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
+
+
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
                 &lt;font color=&#34;f1f1f1&#34;&gt;
                     &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;
@@ -456,10 +549,8 @@
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;October 22&lt;/td&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;&lt;strong&gt;Lecture 10: Interactive web apps with Shiny&lt;/strong&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
+
+
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
                 &lt;font color=&#34;f1f1f1&#34;&gt;
                     &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;
@@ -594,7 +685,7 @@
 &lt;p&gt;Attendance is not checked, but students are responsible for all announcements made in class.&lt;/p&gt;
 &lt;div id=&#34;homework&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Homework&lt;/h3&gt;
-&lt;p&gt;Homework will consist of problem sets for material covered. Homework will need to be submitted via a GitHub repository named as &lt;code&gt;BIOS524_R_2020_&amp;lt;student last name&amp;gt;&lt;/code&gt;. Files should be named, e.g., &lt;code&gt;HW01.Rmd&lt;/code&gt;. Homework due date is one week after the lecture. Late homework will NOT be accepted unless permission was given by the instructor. Assignments that are not well organized/documented will receive no credit. Working in small groups is allowed. However, you must do the final writing-up of solutions entirely by yourself. Any two assignments which are word-for-word exactly the same or highly similar in coding style will both receive zero credit. There will be no extra credit projects available.&lt;/p&gt;
+&lt;p&gt;Homework will consist of problem sets for material covered. Files should be named, e.g., &lt;code&gt;LASTNAME-FIRSTNAME-HW01.Rmd&lt;/code&gt;. Homework due date is one week after the lecture. Late homework will NOT be accepted unless permission was given by the instructor. Assignments that are not well organized/documented will receive no credit. Working in small groups is allowed. However, you must do the final writing-up of solutions entirely by yourself. Any two assignments which are word-for-word exactly the same or highly similar in coding style will both receive zero credit. There will be no extra credit projects available.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;final-project&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Final project&lt;/h3&gt;
