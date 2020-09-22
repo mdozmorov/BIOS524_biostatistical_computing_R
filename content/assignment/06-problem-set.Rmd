@@ -1,0 +1,27 @@
+---
+title: "Assignment 6: Packages"
+# date: "2020-06-08"
+# due_date: "2020-06-08"
+# due_time: "11:59 PM"
+# menu:
+#   assignment:
+#     parent: Assignments
+#     weight: 2
+type: docs
+weight: 1
+output:
+  blogdown::html_page:
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+# To do yourself, due before 09-29-2020 class
+
+- [R packages](https://geanders.github.io/RProgrammingForResearch/reproducible-research-3.html)
+
+- [Package](https://geanders.github.io/RProgrammingForResearch/reproducible-research-3.html)
+
+
+# To submit on blackboard, due 09-29-2020, 5:00pm
+

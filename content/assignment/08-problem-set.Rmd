@@ -1,0 +1,28 @@
+---
+title: "Assignment 8: Tidyverse, data visualization"
+# date: "2020-06-08"
+# due_date: "2020-06-08"
+# due_time: "11:59 PM"
+# menu:
+#   assignment:
+#     parent: Assignments
+#     weight: 2
+type: docs
+weight: 1
+output:
+  blogdown::html_page:
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+# To do yourself, due before 09-29-2020 class
+
+- [Plotting/reporting best practices](https://geanders.github.io/RProgrammingForResearch/reporting-data-results-1.html) 
+
+- [Plotly](https://geanders.github.io/RProgrammingForResearch/reporting-data-results-3.html#htmlwidgets)
+
+
+
+# To submit on blackboard, due 09-29-2020, 5:00pm
+

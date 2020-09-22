@@ -1,0 +1,30 @@
+---
+title: "Assignment 7"
+# date: "2020-06-08"
+# due_date: "2020-06-08"
+# due_time: "11:59 PM"
+# menu:
+#   assignment:
+#     parent: Assignments
+#     weight: 2
+type: docs
+weight: 1
+output:
+  blogdown::html_page:
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+# To do yourself, due before XX-XX-2020 class
+
+
+# To submit on blackboard, due XX-XX-2020, 5:00pm
+
+- What is the difference between `read_xls()` and `read_xlsx()` functions? What message do you get if reading an `.xlsx` file using `read_xls()` function?
+- What does the skip argument do?
+- Do we need to refer to a sheet within an excel file as a number, or can we refer to it as the sheet name instead?
+- What does the guess_max argument do?
+- What happens if columns in the Excel worksheet are of different length?
+
+
