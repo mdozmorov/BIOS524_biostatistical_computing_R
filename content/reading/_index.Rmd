@@ -94,6 +94,14 @@ weight: 1
 
 - [Tips how to configure RStudio](https://drdoane.com/my-rstudio-configuration/)
 
+## Datasets in R
+
+- `library(help = "datasets")` - shows built-in R datasets
+
+- A list of over 1,000 datasets available in R packages, curated by @VincentAB. https://vincentarelbundock.github.io/Rdatasets/datasets.html
+
+
+
 <!--
 - [Turn scripts into reproducible reports](http://kbroman.org/steps2rr/pages/reports.html) by Karl Broman 
 

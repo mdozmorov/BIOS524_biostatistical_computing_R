@@ -11,8 +11,8 @@ lessons:
   - title: '**Lecture 2: R preliminaries**'
     date: "September 24"
     # reading: "02-reading"
-    # assignment: "02-problem-set"
-    # class: "02-class"
+    assignment: "02-problem-set"
+    class: "02-class"
 
   - title: '**Lecture 3: R base graphics, statistical functions**'
     date: "September 29"
