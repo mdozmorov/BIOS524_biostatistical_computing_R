@@ -22,7 +22,7 @@ editor_options:
 
 ### R base graphics, statistical functions
 
-<a href="../../slides/21_R_basics.html#1" target="_blank">Lecture slides in HTML format</a>
+<a href="../../slides/31_R_graphics_stats.html#1" target="_blank">Lecture slides in HTML format</a>
 
 ```{r echo=FALSE}
 knitr::include_url('../../slides/31_R_graphics_stats.html#1')
