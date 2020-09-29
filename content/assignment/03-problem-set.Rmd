@@ -18,6 +18,10 @@ editor_options:
   
 # To do yourself, due before 10-02-2020 class
 
+- Subscribe to [R-bloggers](https://www.r-bloggers.com/) mailing list or RSS feed
+
+- Watch playlists/videos from [Brooke Anderson's channel](https://www.youtube.com/channel/UC73v_zCdNE2aZrFZsG22JBw/playlists), as well as her [R Programming for Research](https://geanders.github.io/RProgrammingForResearch/) course
+
 - Install [swirl](https://swirlstats.com/students.html) R package
     - For statistical functions, install and run "Mathematical_Biostatistics_Boot_Camp", "Statistical_Inference", "Regression_Models" courses
     - Explore [other swirl courses](https://github.com/swirldev/swirl_courses)
