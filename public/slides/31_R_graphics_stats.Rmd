@@ -416,7 +416,7 @@ pattern <- '^abc'
 print (grep(pattern, strings))
 ```
 
-.small[- `grepl()` - grep logical, returns a vector of the same length as a string, with TRUE/FALSE pattern matching
+.small[`grepl()` - grep logical, returns a vector of the same length as a string, with TRUE/FALSE pattern matching]
 
 ---
 ## Regular expressions

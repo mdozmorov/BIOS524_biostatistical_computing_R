@@ -1,5 +1,5 @@
 ---
-title: "Assignment 2"
+title: "Assignment 2. R preliminaries"
 date: "2020-09-24"
 due_date: "2020-10-01"
 due_time: "5:00 PM"

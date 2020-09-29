@@ -17,8 +17,8 @@ lessons:
   - title: '**Lecture 3: R base graphics, statistical functions**'
     date: "September 29"
     # reading: "03-reading"
-    # assignment: "03-problem-set"
-    # class: "03-class"
+    assignment: "03-problem-set"
+    class: "03-class"
 
   - title: '**Lecture 4: RMarkdown**'
     date: "October 1"
