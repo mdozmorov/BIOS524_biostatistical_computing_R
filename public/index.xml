@@ -63,7 +63,7 @@
 &lt;li&gt;Fit a linear regression model of tooth length on the variables ‘supp’ and ‘dose’. Change the graphics parameters back to just one plot, not several. Plot &lt;em&gt;only&lt;/em&gt; the QQ-plot of residuals from this regression model, filled in with blue circles.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Set a seed to ensure reproducibility. Then, generate &lt;span class=&#34;math inline&#34;&gt;\(n=100\)&lt;/span&gt; random variables from a a &lt;span class=&#34;math inline&#34;&gt;\(Exponential(\lambda=5)\)&lt;/span&gt; distribution. Plot the empirical CDF (cumulative distribution function) of this data with informative axes labels. Make a really long title - so long that you must use a special character to get the title to go on two lines.&lt;/li&gt;
+&lt;li&gt;Set a seed to ensure reproducibility. Then, generate n=100 random variables from an Exponential distribution with lambda=5 parameter. Plot the empirical CDF (cumulative distribution function) of this data with informative axes labels. Make a really long title - so long that you must use a special character to get the title to go on two lines.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 </description>
