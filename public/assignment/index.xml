@@ -28,8 +28,8 @@
 &lt;li&gt;&lt;p&gt;Watch playlists/videos from &lt;a href=&#34;https://www.youtube.com/channel/UC73v_zCdNE2aZrFZsG22JBw/playlists&#34;&gt;Brooke Anderson’s channel&lt;/a&gt;, as well as her &lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/&#34;&gt;R Programming for Research&lt;/a&gt; course&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Install &lt;a href=&#34;https://swirlstats.com/students.html&#34;&gt;swirl&lt;/a&gt; R package&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;For statistical functions, install and run “Mathematical_Biostatistics_Boot_Camp”, “Statistical_Inference”, “Regression_Models” courses&lt;/li&gt;
-&lt;li&gt;Explore &lt;a href=&#34;https://github.com/swirldev/swirl_courses&#34;&gt;other swirl courses&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;For statistical functions, install and run “Statistical Inference”, “Regression Models” courses (&lt;a href=&#34;https://github.com/swirldev/swirl_courses#install-and-run-a-course-automatically-from-swirl&#34;&gt;Installation instructions&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Explore &lt;a href=&#34;https://swirlstats.com/scn/title.html&#34;&gt;other swirl courses&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/exploring-data-3.html&#34;&gt;Statistical functions&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/entering-and-cleaning-data-1.html&#34;&gt;read.table, readr, Excel, SAS, SPSS, file/folder structure/paths&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;

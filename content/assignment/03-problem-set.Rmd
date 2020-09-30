@@ -23,8 +23,8 @@ editor_options:
 - Watch playlists/videos from [Brooke Anderson's channel](https://www.youtube.com/channel/UC73v_zCdNE2aZrFZsG22JBw/playlists), as well as her [R Programming for Research](https://geanders.github.io/RProgrammingForResearch/) course
 
 - Install [swirl](https://swirlstats.com/students.html) R package
-    - For statistical functions, install and run "Mathematical_Biostatistics_Boot_Camp", "Statistical_Inference", "Regression_Models" courses
-    - Explore [other swirl courses](https://github.com/swirldev/swirl_courses)
+    - For statistical functions, install and run "Statistical Inference", "Regression Models" courses ([Installation instructions](https://github.com/swirldev/swirl_courses#install-and-run-a-course-automatically-from-swirl))
+    - Explore [other swirl courses](https://swirlstats.com/scn/title.html)
     
 - [Statistical functions](https://geanders.github.io/RProgrammingForResearch/exploring-data-3.html)
 
