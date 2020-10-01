@@ -16,9 +16,48 @@ editor_options:
   chunk_output_type: console
 ---
 
+# To submit on Blackboard, due 10-13-2020, 5:00pm
 # To do yourself
 
+### Question One
+#### Spreadsheets, Summarization, and Naming Conventions
 
-# To submit on blackboard, due XX-XX-2020, 5:00pm
+##### Part A
 
+Create a spreadsheet with 5 columns and 10 rows, following proper spreadsheet conventions discussed in class. Read it into R. 
+
+- Let the first column be an ID number. 
+- Let the second column be a set of integers between 20 and 30, denoting the number of teeth someone has.
+- Let the third column be a set of real numbers between 1.0 and 4.0, denoting GPA in school. 
+- Let the fourth column be a mix of "H" and "T" character values, denoting the tosses of a coin.
+
+##### Part B
+In one line of code, calculate the mean of the second column and the third column. 
+Then, print out the frequency distribution of the fourth column. 
+
+##### Part C
+Now, name the columns something descriptive. What variable naming convention are you using (refer to Code Organization Best Practices slides)? 
+
+### Question Two
+#### Summarizing Quickly
+
+Load the ChickWeight dataset that comes with R. Install the skimr package. 
+Use this package to summarize the dataset in one line of code.
+
+### Question Three 
+#### File Save Naming Conventions
+
+Type a list of 5 files with good naming conventions (they could have an R file extension, a SAS file extension, etc.)
+Let the files represent tasks in some project. Explain why your naming conventions are good and helpful to future you.
+Refer to slides 12-14 (refer to Data Organization Best Practices).
+
+### Question Four
+#### Efficiency and Timing
+
+Make an empty vector of length 10 million. Set a seed for reproducibility. Populate the vector in two ways and compare:
+
+- Use a for loop to enter a randomly-generated Exponential variable with rate parameter 3 in each position in the vector. 
+- Use a more efficient method, possibly writing a function, to populate the vector with randomly-generated numbers from the same distribution. 
+
+Time both methods, and make a conclusion. 
 
