@@ -215,44 +215,6 @@ tricky       &amp;lt;- c(1, 2, 3, &amp;quot;4&amp;quot;)&lt;/code&gt;&lt;/pre&gt
     
     <item>
       <title>Assignment 3</title>
-      <link>/assignment/05-problem-set/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/assignment/05-problem-set/</guid>
-      <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-
-&lt;div id=&#34;TOC&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#to-do-yourself-due-before-09-29-2020-class&#34;&gt;To do yourself, due before 09-29-2020 class&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-09-29-2020-500pm&#34;&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-
-&lt;div id=&#34;to-do-yourself-due-before-09-29-2020-class&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;To do yourself, due before 09-29-2020 class&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/exploring-data-3.html&#34;&gt;Statistical functions&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/entering-and-cleaning-data-1.html&#34;&gt;read.table, readr, Excel, SAS, SPSS, file/folder structure/paths&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id=&#34;to-submit-on-blackboard-due-09-29-2020-500pm&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Install package “babynames”
-&lt;ul&gt;
-&lt;li&gt;How many values are in the &lt;code&gt;babynames&lt;/code&gt; object?&lt;/li&gt;
-&lt;li&gt;What their data types&lt;/li&gt;
-&lt;li&gt;Get an overview of &lt;code&gt;babynames&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Plot the proportion of your name usage vs. year. Choose closest or random name, if your exact spelling is not available&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Submit your homework as a text or Word document. Name your file as &#34;&lt;last_name&gt;_&lt;first_name&gt;_Hw02&#34;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Assignment 3</title>
       <link>/assignment/09-problem-set/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/assignment/09-problem-set/</guid>
@@ -328,6 +290,30 @@ tricky       &amp;lt;- c(1, 2, 3, &amp;quot;4&amp;quot;)&lt;/code&gt;&lt;/pre&gt
     </item>
     
     <item>
+      <title>Assignment 5: Data management/code best practices</title>
+      <link>/assignment/05-problem-set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/assignment/05-problem-set/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#to-do-yourself&#34;&gt;To do yourself&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-xx-xx-2020-500pm&#34;&gt;To submit on blackboard, due XX-XX-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;to-do-yourself&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To do yourself&lt;/h1&gt;
+&lt;/div&gt;
+&lt;div id=&#34;to-submit-on-blackboard-due-xx-xx-2020-500pm&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To submit on blackboard, due XX-XX-2020, 5:00pm&lt;/h1&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Assignment 6: Packages</title>
       <link>/assignment/06-problem-set/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -337,20 +323,20 @@ tricky       &amp;lt;- c(1, 2, 3, &amp;quot;4&amp;quot;)&lt;/code&gt;&lt;/pre&gt
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#to-do-yourself-due-before-09-29-2020-class&#34;&gt;To do yourself, due before 09-29-2020 class&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-09-29-2020-500pm&#34;&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-do-yourself&#34;&gt;To do yourself&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-xx-xx-2020-500pm&#34;&gt;To submit on blackboard, due XX-XX-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 
-&lt;div id=&#34;to-do-yourself-due-before-09-29-2020-class&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;To do yourself, due before 09-29-2020 class&lt;/h1&gt;
+&lt;div id=&#34;to-do-yourself&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To do yourself&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/reproducible-research-3.html&#34;&gt;R packages&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/reproducible-research-3.html&#34;&gt;Package&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div id=&#34;to-submit-on-blackboard-due-09-29-2020-500pm&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/h1&gt;
+&lt;div id=&#34;to-submit-on-blackboard-due-xx-xx-2020-500pm&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To submit on blackboard, due XX-XX-2020, 5:00pm&lt;/h1&gt;
 &lt;/div&gt;
 </description>
     </item>

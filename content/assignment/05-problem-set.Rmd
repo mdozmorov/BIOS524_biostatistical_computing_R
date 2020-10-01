@@ -1,5 +1,5 @@
 ---
-title: "Assignment 3"
+title: "Assignment 5: Data management/code best practices"
 # date: "2020-06-08"
 # due_date: "2020-06-08"
 # due_time: "11:59 PM"
@@ -16,19 +16,9 @@ editor_options:
   chunk_output_type: console
 ---
 
-# To do yourself, due before 09-29-2020 class
-
-- [Statistical functions](https://geanders.github.io/RProgrammingForResearch/exploring-data-3.html)
-
-- [read.table, readr, Excel, SAS, SPSS, file/folder structure/paths](https://geanders.github.io/RProgrammingForResearch/entering-and-cleaning-data-1.html)
+# To do yourself
 
 
-# To submit on blackboard, due 09-29-2020, 5:00pm
+# To submit on blackboard, due XX-XX-2020, 5:00pm
 
-- Install package "babynames"
-    - How many values are in the `babynames` object?
-    - What their data types
-    - Get an overview of `babynames`
-    - Plot the proportion of your name usage vs. year. Choose closest or random name, if your exact spelling is not available
 
-- Submit your homework as a text or Word document. Name your file as "<last_name>_<first_name>_Hw02"

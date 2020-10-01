@@ -16,12 +16,12 @@ editor_options:
   chunk_output_type: console
 ---
 
-# To do yourself, due before 09-29-2020 class
+# To do yourself
 
 - [R packages](https://geanders.github.io/RProgrammingForResearch/reproducible-research-3.html)
 
 - [Package](https://geanders.github.io/RProgrammingForResearch/reproducible-research-3.html)
 
 
-# To submit on blackboard, due 09-29-2020, 5:00pm
+# To submit on blackboard, due XX-XX-2020, 5:00pm
 
