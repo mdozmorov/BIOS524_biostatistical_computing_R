@@ -1,8 +1,8 @@
 ---
 title: "Assignment 5: Data management/code best practices"
-# date: "2020-06-08"
-# due_date: "2020-06-08"
-# due_time: "11:59 PM"
+# date: "2020-10-05"
+# due_date: "2020-10-13"
+# due_time: "5:00 PM"
 # menu:
 #   assignment:
 #     parent: Assignments
