@@ -76,10 +76,22 @@ Please, evaluate the course Friday afternoon, June 12, 2020. All evaluations are
 
 ### Grading Policy
 
-- Homework: 60% of grade
-- Final Project: 40% of grade
+- Each homework is graded on the scale 0-10, 10 points being the best
+- Total homework grade possible - 100 points
+  - Missed deadline - minus 3 points
+  - Missed deadline and not submitted later - minus 6 points
+- Final Project is graded on the scale 0-100, 100 points being the best
 
-This course will be graded on a Pass/Fail basis. Pass is defined as a grade of at least 70%
+Homework and final project grades will be averaged.
+
+Standard A-F grading system will be applied:
+
+- A: 90-100
+- B: 80-89
+- C: 70-79
+- D: 60-69
+- F: 0-59
+
 
 ## Copyright
 
