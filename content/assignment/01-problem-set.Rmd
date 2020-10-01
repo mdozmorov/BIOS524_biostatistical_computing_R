@@ -16,7 +16,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-# To do yourself, due before 09-24-2020 class
+# To do yourself
 
 - Join [Slack #bios524 channel](https://dozmorovlab.slack.com/archives/C01AZANCZR9), invite to be sent
 

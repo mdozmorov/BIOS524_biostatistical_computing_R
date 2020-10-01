@@ -16,7 +16,7 @@ editor_options:
   chunk_output_type: console
 ---
   
-# To do yourself, due before 10-02-2020 class
+# To do yourself
 
 - Subscribe to [R-bloggers](https://www.r-bloggers.com/) mailing list or RSS feed
 

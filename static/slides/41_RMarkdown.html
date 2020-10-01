@@ -15,7 +15,7 @@ class: center, middle, inverse, title-slide
 # Reproducible reports with Markdown, knitr
 ### Mikhail Dozmorov
 ### Virginia Commonwealth University
-### 08-13-2020
+### 10-01-2020
 
 ---
 
@@ -101,16 +101,13 @@ This is abstract text: This simple document shows very basic features of
 ## Sweave example
 
 - Sweave files typically have an `.Rnw` extension
-- LaTeX syntax for text, `&lt;&lt;chunk_name&gt;&gt;= &lt;code&gt; @` syntax outlines code blocks
+- LaTeX for text, `&lt;&lt;chunk_name&gt;&gt;= &lt;code&gt; @` syntax outlines code blocks
 
 .small[
 ``` latex
 \documentclass{article}
 
 \usepackage{amsmath}
-
-\usepackage{natbib}
-\usepackage{indentfirst}
 
 \DeclareMathOperator{\logit}{logit}
 
@@ -276,6 +273,9 @@ Marked with triple backticks
      # R code here 
      ``` 
 
+- `Command+Option+I` (`Ctrl+Alt+I` on Windows) inserts R code chunk
+- `Insert` button 
+
 ---
 ## Creating R markdown document
 
@@ -283,6 +283,9 @@ Marked with triple backticks
 - Regular text file with `.Rmd` extension
 
 - Create manually, or use RStudio
+
+- "File -&gt; New File" menu provides options for creating various R documents
+
 ]
 
 .pull-right[&lt;img src="img/create_rmarkdown.png" height=450 &gt; ]
@@ -327,7 +330,7 @@ output: html_document
 ---
 title: "Reproducible reports with Markdown, knitr"
 author: "Mikhail Dozmorov"
-date: "2020-09-22"
+date: "2020-10-01"
 output:
   beamer_presentation:
     # colortheme: seahorse
@@ -420,26 +423,14 @@ knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='img/’, cache.path=
 install.packages('knitr', dependencies = TRUE)
 ```
 
-.small[ https://github.com/yihui/knitr, http://yihui.name/knitr/]
-
----
-## Templates
-
-"File -&gt; New File" menu provides options for creating various R documents
-
 To render a pdf from R Markdown, you need to have a version of TeX installed on your computer. Like R, TeX is open source software. RStudio recommends the following installations by system:
 
 For Macs: MacTeX
 For PCs: MiKTeX
 Links for installing both can be found at http://www.latex-project.org/ftp.html
 
-The rticles package has templates for several journals:
 
-Journal of Statistical Software
-The R Journal
-Association for Computing Machinery
-ACS publications (Journal of the American Chemical Society, Environmental Science &amp; Technology)
-Elsevier publications
+.small[ https://github.com/yihui/knitr, http://yihui.name/knitr/]
 
 ---
 ## Displaying data as tables
@@ -572,6 +563,13 @@ You can create your own templates which set-up packages, fonts, default chunk op
 - http://rmarkdown.rstudio.com/developer_document_templates.html 
 
 - Some packages (e.g `rticles`) provide templates that meet journal requirements or provide other.
+    - Journal of Statistical Software
+    - The R Journal
+    - Association for Computing Machinery
+    - ACS publications (Journal of the American Chemical Society, Environmental Science &amp; Technology)
+    - Elsevier publications
+
+.small[https://github.com/mdozmorov/MDtemplate]
 
 ---
 ## Parameters

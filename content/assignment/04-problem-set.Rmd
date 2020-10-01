@@ -1,15 +1,27 @@
 ---
 title: "Assignment 4: RMarkdown"
+date: "2020-10-10"
+due_date: "2020-10-08"
+due_time: "5:00 PM"
+menu:
+  assignment:
+    parent: Assignments
+    weight: 4
 type: docs
-output: html_document
 weight: 1
+output:
+  blogdown::html_page:
+    toc: false
 editor_options: 
   chunk_output_type: console
+
 ---
 
-# To do yourself, due before 10-01-2020 class
+# To do yourself
 
 - [RMarkdown, knitr, best code practices](https://geanders.github.io/RProgrammingForResearch/reproducible-research-1.html)
+
+- [RStudio v1.4 Preview: Visual Markdown Editing](https://blog.rstudio.com/2020/09/30/rstudio-v1-4-preview-visual-markdown-editing/)
 
 # To submit on blackboard, due 10-08-2020, 5:00pm
 

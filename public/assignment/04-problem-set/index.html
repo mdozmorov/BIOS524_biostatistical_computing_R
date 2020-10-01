@@ -33,10 +33,14 @@
   
     
   
-  <meta name="description" content="To do yourself  Install swirl R package  Install and run the R Programming course Explore other swirl courses  Download IntroR code, create a project in the code’s repository, run through the Intro_R_workshop.R code   To submit on blackboard, due 10-01-2020, 5:00pm Use the help functions or R documentation to look up a function that you think you will use. Provide (in words) a description of what the function is and does, the arguments that takes, and why you find this function useful.">
+  <meta name="description" content="To do yourself  RMarkdown, knitr, best code practices
+ RStudio v1.4 Preview: Visual Markdown Editing
+   To submit on blackboard, due 10-08-2020, 5:00pm First, create an R Markdown document in which you will complete this assignment. Demonstrate your knowledge of R Markdown in the following ways:
+ Produce a section header that says “R Markdown” and is bigger than normal text.
+ Within this section, produce a subsection header that is smaller than the section header and says “R Markdown features”.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/assignment/02-problem-set/">
+  <link rel="alternate" hreflang="en-us" href="/assignment/04-problem-set/">
 
   
 
@@ -235,7 +239,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="/assignment/02-problem-set/">
+  <link rel="canonical" href="/assignment/04-problem-set/">
 
   
   
@@ -253,15 +257,19 @@
   <meta property="twitter:creator" content="@mikhaildozmorov">
   
   <meta property="og:site_name" content="Biostatistical Computing with R">
-  <meta property="og:url" content="/assignment/02-problem-set/">
-  <meta property="og:title" content="Assignment 2. R preliminaries | Biostatistical Computing with R">
-  <meta property="og:description" content="To do yourself  Install swirl R package  Install and run the R Programming course Explore other swirl courses  Download IntroR code, create a project in the code’s repository, run through the Intro_R_workshop.R code   To submit on blackboard, due 10-01-2020, 5:00pm Use the help functions or R documentation to look up a function that you think you will use. Provide (in words) a description of what the function is and does, the arguments that takes, and why you find this function useful."><meta property="og:image" content="/media/social-image.png">
+  <meta property="og:url" content="/assignment/04-problem-set/">
+  <meta property="og:title" content="Assignment 4: RMarkdown | Biostatistical Computing with R">
+  <meta property="og:description" content="To do yourself  RMarkdown, knitr, best code practices
+ RStudio v1.4 Preview: Visual Markdown Editing
+   To submit on blackboard, due 10-08-2020, 5:00pm First, create an R Markdown document in which you will complete this assignment. Demonstrate your knowledge of R Markdown in the following ways:
+ Produce a section header that says “R Markdown” and is bigger than normal text.
+ Within this section, produce a subsection header that is smaller than the section header and says “R Markdown features”."><meta property="og:image" content="/media/social-image.png">
   <meta property="twitter:image" content="/media/social-image.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2020-09-24T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2020-10-10T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-09-29T10:21:58-04:00">
+    <meta property="article:modified_time" content="2020-10-10T00:00:00&#43;00:00">
   
 
   
@@ -288,7 +296,7 @@
   <meta name="msapplication-TileImage" content="/img/mstile-144x144.png" />
 
 
-  <title>Assignment 2. R preliminaries | Biostatistical Computing with R</title>
+  <title>Assignment 4: RMarkdown | Biostatistical Computing with R</title>
 
 </head>
 
@@ -570,7 +578,7 @@
         <a href="/assignment/01-problem-set/">Assignment 1. Introduction to R and RStudio</a>
       </li>
       
-      <li class="active">
+      <li >
         <a href="/assignment/02-problem-set/">Assignment 2. R preliminaries</a>
       </li>
       
@@ -578,7 +586,7 @@
         <a href="/assignment/03-problem-set/">Assignment 3: R base graphics, statistical functions</a>
       </li>
       
-      <li >
+      <li class="active">
         <a href="/assignment/04-problem-set/">Assignment 4: RMarkdown</a>
       </li>
       
@@ -599,11 +607,11 @@
             <article class="article">
 
                 <div class="docs-article-container">
-                    <h1>Assignment 2. R preliminaries</h1>
+                    <h1>Assignment 4: RMarkdown</h1>
 
                     
                     <div class="due-date p-2 mb-3 bg-primary text-white">
-                        Due by <strong>5:00 PM</strong> on Thursday, October 1, 2020
+                        Due by <strong>5:00 PM</strong> on Thursday, October 8, 2020
                     </div>
                     
 
@@ -619,34 +627,47 @@
 <div id="to-do-yourself" class="section level1">
 <h1>To do yourself</h1>
 <ul>
-<li>Install <a href="https://swirlstats.com/students.html">swirl</a> R package
-<ul>
-<li>Install and run the <a href="https://github.com/swirldev/R_Programming_E">R Programming</a> course</li>
-<li>Explore <a href="https://github.com/swirldev/swirl_courses">other swirl courses</a></li>
-</ul></li>
-<li>Download <a href="https://github.com/mdozmorov/IntroR">IntroR</a> code, create a project in the code’s repository, run through the <a href="https://raw.githubusercontent.com/mdozmorov/IntroR/master/Intro_R_workshop.R">Intro_R_workshop.R</a> code</li>
+<li><p><a href="https://geanders.github.io/RProgrammingForResearch/reproducible-research-1.html">RMarkdown, knitr, best code practices</a></p></li>
+<li><p><a href="https://blog.rstudio.com/2020/09/30/rstudio-v1-4-preview-visual-markdown-editing/">RStudio v1.4 Preview: Visual Markdown Editing</a></p></li>
 </ul>
 </div>
-<div id="to-submit-on-blackboard-due-10-01-2020-500pm" class="section level1">
-<h1>To submit on blackboard, due 10-01-2020, 5:00pm</h1>
-<ol style="list-style-type: decimal">
-<li><p>Use the help functions or R documentation to look up a function that you think you will use. Provide (in words) a description of what the function is and does, the arguments that takes, and why you find this function useful. Then, using a sample dataset in R (i.e., <code>mtcars</code>, <code>iris</code>, <code>ToothGrowth</code>), demonstrate (in code) the use of this function.</p></li>
-<li><p>Create two numeric, two character, and two logical objects/variables in R. Give them descriptive names. Provide code examples.</p></li>
-<li><p>Use some function that operates on the two numeric objects, another that operates on the two character objects, and another that operates on the two logical objects.</p></li>
-<li><p>Describe different ways to install R packages. Test each method by installing packages of your choice (e.g., <code>Hmisc</code>, <code>lme4</code>, <code>MASS</code>, <code>dslabs</code>). Install a GitHub package (e.g., <code>jokergoo/ComplexHeatmap</code>)</p></li>
-<li><p>Describe all ways how to find:</p>
+<div id="to-submit-on-blackboard-due-10-08-2020-500pm" class="section level1">
+<h1>To submit on blackboard, due 10-08-2020, 5:00pm</h1>
+<p>First, create an R Markdown document in which you will complete this assignment. Demonstrate your knowledge of R Markdown in the following ways:</p>
 <ul>
-<li>Path(s) where R packages are installed</li>
-<li>Copy-paste selected output and describe your observations</li>
+<li><p>Produce a section header that says “R Markdown” and is bigger than normal text.</p>
+<ul>
+<li>Within this section, produce a subsection header that is smaller than the section header and says “R Markdown features”.</li>
+<li>Write a sentence that includes bold text, italicized text, and normal text. (This will not be in a code chunk.)</li>
+<li>Write a sentence that includes one inline R code in the sentence.</li>
+<li>Link an image from your computer - that is school-appropriate - to be output when the document is knitted together.</li>
+<li>Produce a 3x3 table with column headers just using text - no code chunk. (See Lecture 4 for a hint).</li>
 </ul></li>
-<li><p>What is unusual about each of the following objects?</p></li>
-</ol>
-<pre class="r"><code>num_char     &lt;- c(1, 2, 3, &quot;a&quot;)
-num_logical  &lt;- c(1, 2, 3, TRUE)
-char_logical &lt;- c(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, TRUE)
-tricky       &lt;- c(1, 2, 3, &quot;4&quot;)</code></pre>
+<li><p>Produce a section header that says “Statistical functions” and is bigger than normal text.</p>
 <ul>
-<li>Submit your homework as a text or Word document. Files should be named, e.g., <code>LASTNAME-FIRSTNAME-HW02</code>.</li>
+<li>Read in the dataset ‘warpbreaks’. It comes as a default with R.
+<ul>
+<li>Fit a regression model of the number of breaks on the type of wool, the level of tension, and the interaction between wool and tension.</li>
+<li>Look at the summary. Interpret the results.</li>
+<li>Plot only the QQ-plot of this model. Then, provide code that would save it as a pdf to your computer.</li>
+</ul></li>
+<li>Now, read in the ‘UCBAdmissions’ dataset, which comes as default with R.
+<ul>
+<li>Only keep the admissions data from Department A.</li>
+<li>Run a chi-squared test of independence between gender and admittance. Comment on the results.</li>
+</ul></li>
+<li>Going to simulate some data now. Set a seed for reproducibility.
+<ul>
+<li>Generate <span class="math inline">\(1000\)</span> observations from a Normal distribution with parameters <span class="math inline">\(\mu=5, \sigma=2\)</span>.</li>
+<li>Plot the empirical cdf of these data. Add a horizontal line in red at the <span class="math inline">\(0.8\)</span> mark on the y-axis.</li>
+<li>Use R’s statistical distribution functions to determine the <span class="math inline">\(80^{th}\)</span> percentile of the above normal distribution, and store it in a variable called q80.
+<ul>
+<li>Add a point to the plot that has x-coordinate equal to the <span class="math inline">\(80^{th}\)</span> percentile of your sample data and y-coordinate equal to <span class="math inline">\(0.8\)</span>. Fill it in with some color.</li>
+<li>Add another point that has x-coordinate equal to q80 and y-coordinate equal to <span class="math inline">\(0.8\)</span>. Fill it in with another color.</li>
+<li>Think about what all this means.</li>
+</ul></li>
+</ul></li>
+</ul></li>
 </ul>
 </div>
 
@@ -660,7 +681,7 @@ tricky       &lt;- c(1, 2, 3, &quot;4&quot;)</code></pre>
                 </div>
 
                 <div class="body-footer">
-                    <p>Last updated on September 29, 2020</p>
+                    <p>Last updated on October 10, 2020</p>
 
                     
 
@@ -673,7 +694,7 @@ tricky       &lt;- c(1, 2, 3, &quot;4&quot;)</code></pre>
   
 
 <p class="edit-page">
-  <a href="https://github.com/mdozmorov/BIOS524_biostatistical_computing_R/edit/master/content/assignment/02-problem-set.html">
+  <a href="https://github.com/mdozmorov/BIOS524_biostatistical_computing_R/edit/master/content/assignment/04-problem-set.html">
     <i class="fas fa-pen pr-2"></i>Edit this page
   </a>
 </p>

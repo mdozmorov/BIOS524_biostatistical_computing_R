@@ -16,7 +16,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-# To do yourself, due before 09-29-2020 class
+# To do yourself
 
 - Install [swirl](https://swirlstats.com/students.html) R package
     - Install and run the [R Programming](https://github.com/swirldev/R_Programming_E) course

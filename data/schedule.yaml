@@ -22,8 +22,8 @@ lessons:
 
   - title: '**Lecture 4: RMarkdown**'
     date: "October 1"
-    # reading: "04-reading"
-    # assignment: "04-problem-set"
+    reading: "04-reading"
+    assignment: "04-problem-set"
     # class: "04-class"
 
   - title: "**Lecture 5: Data management/code best practices**"

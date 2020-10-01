@@ -13,6 +13,64 @@
     </image>
     
     <item>
+      <title>Assignment 4: RMarkdown</title>
+      <link>/assignment/04-problem-set/</link>
+      <pubDate>Sat, 10 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/assignment/04-problem-set/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;to-do-yourself&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To do yourself&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/reproducible-research-1.html&#34;&gt;RMarkdown, knitr, best code practices&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://blog.rstudio.com/2020/09/30/rstudio-v1-4-preview-visual-markdown-editing/&#34;&gt;RStudio v1.4 Preview: Visual Markdown Editing&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;to-submit-on-blackboard-due-10-08-2020-500pm&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To submit on blackboard, due 10-08-2020, 5:00pm&lt;/h1&gt;
+&lt;p&gt;First, create an R Markdown document in which you will complete this assignment. Demonstrate your knowledge of R Markdown in the following ways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Produce a section header that says “R Markdown” and is bigger than normal text.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Within this section, produce a subsection header that is smaller than the section header and says “R Markdown features”.&lt;/li&gt;
+&lt;li&gt;Write a sentence that includes bold text, italicized text, and normal text. (This will not be in a code chunk.)&lt;/li&gt;
+&lt;li&gt;Write a sentence that includes one inline R code in the sentence.&lt;/li&gt;
+&lt;li&gt;Link an image from your computer - that is school-appropriate - to be output when the document is knitted together.&lt;/li&gt;
+&lt;li&gt;Produce a 3x3 table with column headers just using text - no code chunk. (See Lecture 4 for a hint).&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Produce a section header that says “Statistical functions” and is bigger than normal text.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Read in the dataset ‘warpbreaks’. It comes as a default with R.
+&lt;ul&gt;
+&lt;li&gt;Fit a regression model of the number of breaks on the type of wool, the level of tension, and the interaction between wool and tension.&lt;/li&gt;
+&lt;li&gt;Look at the summary. Interpret the results.&lt;/li&gt;
+&lt;li&gt;Plot only the QQ-plot of this model. Then, provide code that would save it as a pdf to your computer.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Now, read in the ‘UCBAdmissions’ dataset, which comes as default with R.
+&lt;ul&gt;
+&lt;li&gt;Only keep the admissions data from Department A.&lt;/li&gt;
+&lt;li&gt;Run a chi-squared test of independence between gender and admittance. Comment on the results.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Going to simulate some data now. Set a seed for reproducibility.
+&lt;ul&gt;
+&lt;li&gt;Generate &lt;span class=&#34;math inline&#34;&gt;\(1000\)&lt;/span&gt; observations from a Normal distribution with parameters &lt;span class=&#34;math inline&#34;&gt;\(\mu=5, \sigma=2\)&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;Plot the empirical cdf of these data. Add a horizontal line in red at the &lt;span class=&#34;math inline&#34;&gt;\(0.8\)&lt;/span&gt; mark on the y-axis.&lt;/li&gt;
+&lt;li&gt;Use R’s statistical distribution functions to determine the &lt;span class=&#34;math inline&#34;&gt;\(80^{th}\)&lt;/span&gt; percentile of the above normal distribution, and store it in a variable called q80.
+&lt;ul&gt;
+&lt;li&gt;Add a point to the plot that has x-coordinate equal to the &lt;span class=&#34;math inline&#34;&gt;\(80^{th}\)&lt;/span&gt; percentile of your sample data and y-coordinate equal to &lt;span class=&#34;math inline&#34;&gt;\(0.8\)&lt;/span&gt;. Fill it in with some color.&lt;/li&gt;
+&lt;li&gt;Add another point that has x-coordinate equal to q80 and y-coordinate equal to &lt;span class=&#34;math inline&#34;&gt;\(0.8\)&lt;/span&gt;. Fill it in with another color.&lt;/li&gt;
+&lt;li&gt;Think about what all this means.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Assignment 3: R base graphics, statistical functions</title>
       <link>/assignment/03-problem-set/</link>
       <pubDate>Tue, 29 Sep 2020 00:00:00 +0000</pubDate>
@@ -21,8 +79,8 @@
 &lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;div id=&#34;to-do-yourself-due-before-10-02-2020-class&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;To do yourself, due before 10-02-2020 class&lt;/h1&gt;
+&lt;div id=&#34;to-do-yourself&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To do yourself&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Subscribe to &lt;a href=&#34;https://www.r-bloggers.com/&#34;&gt;R-bloggers&lt;/a&gt; mailing list or RSS feed&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Watch playlists/videos from &lt;a href=&#34;https://www.youtube.com/channel/UC73v_zCdNE2aZrFZsG22JBw/playlists&#34;&gt;Brooke Anderson’s channel&lt;/a&gt;, as well as her &lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/&#34;&gt;R Programming for Research&lt;/a&gt; course&lt;/p&gt;&lt;/li&gt;
@@ -78,8 +136,8 @@
 &lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;div id=&#34;to-do-yourself-due-before-09-29-2020-class&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;To do yourself, due before 09-29-2020 class&lt;/h1&gt;
+&lt;div id=&#34;to-do-yourself&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To do yourself&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Install &lt;a href=&#34;https://swirlstats.com/students.html&#34;&gt;swirl&lt;/a&gt; R package
 &lt;ul&gt;
@@ -123,8 +181,8 @@ tricky       &amp;lt;- c(1, 2, 3, &amp;quot;4&amp;quot;)&lt;/code&gt;&lt;/pre&gt
 &lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;div id=&#34;to-do-yourself-due-before-09-24-2020-class&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;To do yourself, due before 09-24-2020 class&lt;/h1&gt;
+&lt;div id=&#34;to-do-yourself&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To do yourself&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Join &lt;a href=&#34;https://dozmorovlab.slack.com/archives/C01AZANCZR9&#34;&gt;Slack #bios524 channel&lt;/a&gt;, invite to be sent&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Download/install R, RStudio&lt;/p&gt;&lt;/li&gt;
@@ -264,63 +322,6 @@ tricky       &amp;lt;- c(1, 2, 3, &amp;quot;4&amp;quot;)&lt;/code&gt;&lt;/pre&gt
 &lt;li&gt;Plot the proportion of your name usage vs. year. Choose closest or random name, if your exact spelling is not available&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Submit your homework as a text or Word document. Name your file as &#34;&lt;last_name&gt;_&lt;first_name&gt;_Hw02&#34;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Assignment 4: RMarkdown</title>
-      <link>/assignment/04-problem-set/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/assignment/04-problem-set/</guid>
-      <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;div id=&#34;to-do-yourself-due-before-10-01-2020-class&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;To do yourself, due before 10-01-2020 class&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/reproducible-research-1.html&#34;&gt;RMarkdown, knitr, best code practices&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id=&#34;to-submit-on-blackboard-due-10-08-2020-500pm&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;To submit on blackboard, due 10-08-2020, 5:00pm&lt;/h1&gt;
-&lt;p&gt;First, create an R Markdown document in which you will complete this assignment. Demonstrate your knowledge of R Markdown in the following ways:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Produce a section header that says “R Markdown” and is bigger than normal text.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Within this section, produce a subsection header that is smaller than the section header and says “R Markdown features”.&lt;/li&gt;
-&lt;li&gt;Write a sentence that includes bold text, italicized text, and normal text. (This will not be in a code chunk.)&lt;/li&gt;
-&lt;li&gt;Write a sentence that includes one inline R code in the sentence.&lt;/li&gt;
-&lt;li&gt;Link an image from your computer - that is school-appropriate - to be output when the document is knitted together.&lt;/li&gt;
-&lt;li&gt;Produce a 3x3 table with column headers just using text - no code chunk. (See Lecture 4 for a hint).&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Produce a section header that says “Statistical functions” and is bigger than normal text.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Read in the dataset ‘warpbreaks’. It comes as a default with R.
-&lt;ul&gt;
-&lt;li&gt;Fit a regression model of the number of breaks on the type of wool, the level of tension, and the interaction between wool and tension.&lt;/li&gt;
-&lt;li&gt;Look at the summary. Interpret the results.&lt;/li&gt;
-&lt;li&gt;Plot only the QQ-plot of this model. Then, provide code that would save it as a pdf to your computer.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Now, read in the ‘UCBAdmissions’ dataset, which comes as default with R.
-&lt;ul&gt;
-&lt;li&gt;Only keep the admissions data from Department A.&lt;/li&gt;
-&lt;li&gt;Run a chi-squared test of independence between gender and admittance. Comment on the results.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Going to simulate some data now. Set a seed for reproducibility.
-&lt;ul&gt;
-&lt;li&gt;Generate &lt;span class=&#34;math inline&#34;&gt;\(1000\)&lt;/span&gt; observations from a Normal distribution with parameters &lt;span class=&#34;math inline&#34;&gt;\(\mu=5, \sigma=2\)&lt;/span&gt;.&lt;/li&gt;
-&lt;li&gt;Plot the empirical cdf of these data. Add a horizontal line in red at the &lt;span class=&#34;math inline&#34;&gt;\(0.8\)&lt;/span&gt; mark on the y-axis.&lt;/li&gt;
-&lt;li&gt;Use R’s statistical distribution functions to determine the &lt;span class=&#34;math inline&#34;&gt;\(80^{th}\)&lt;/span&gt; percentile of the above normal distribution, and store it in a variable called q80.
-&lt;ul&gt;
-&lt;li&gt;Add a point to the plot that has x-coordinate equal to the &lt;span class=&#34;math inline&#34;&gt;\(80^{th}\)&lt;/span&gt; percentile of your sample data and y-coordinate equal to &lt;span class=&#34;math inline&#34;&gt;\(0.8\)&lt;/span&gt;. Fill it in with some color.&lt;/li&gt;
-&lt;li&gt;Add another point that has x-coordinate equal to q80 and y-coordinate equal to &lt;span class=&#34;math inline&#34;&gt;\(0.8\)&lt;/span&gt;. Fill it in with another color.&lt;/li&gt;
-&lt;li&gt;Think about what all this means.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 </description>
