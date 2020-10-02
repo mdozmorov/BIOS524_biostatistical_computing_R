@@ -11,20 +11,23 @@ type: docs
 weight: 1
 output:
   blogdown::html_page:
-    toc: true
+    toc: false
 editor_options: 
   chunk_output_type: console
 ---
 
 # To submit on Blackboard, due 10-13-2020, 5:00pm
+
 # To do yourself
+
+Read the [vignette for DataExplorer](https://cran.r-project.org/web/packages/DataExplorer/vignettes/dataexplorer-intro.html) R package, to know what it is capable of
 
 ### Question One
 #### Spreadsheets, Summarization, and Naming Conventions
 
 ##### Part A
 
-Create a spreadsheet with 5 columns and 10 rows, following proper spreadsheet conventions discussed in class. Read it into R. 
+Create an Excel spreadsheet with 5 columns and 10 rows, following proper spreadsheet conventions discussed in class. Read it into R. 
 
 - Let the first column be an ID number. 
 - Let the second column be a set of integers between 20 and 30, denoting the number of teeth someone has.
@@ -36,7 +39,9 @@ In one line of code, calculate the mean of the second column and the third colum
 Then, print out the frequency distribution of the fourth column. 
 
 ##### Part C
-Now, name the columns something descriptive. What variable naming convention are you using (refer to Code Organization Best Practices slides)? 
+Now, rename the columns into something descriptive using R code. What variable naming convention are you using (refer to Code Organization Best Practices slides)? 
+
+Save the data into .csv format and submit along with the code file
 
 ### Question Two
 #### Summarizing Quickly
@@ -44,12 +49,20 @@ Now, name the columns something descriptive. What variable naming convention are
 Load the ChickWeight dataset that comes with R. Install the skimr package. 
 Use this package to summarize the dataset in one line of code.
 
+Explore at least one of the following functions. Compare it with the skimr functionality, which one would you prefer?
+
+- describe, from the Hmisc package
+- stat.desc from pastecs
+- describe from psych
+- descr and dfSummary from summarytools
+
 ### Question Three 
 #### File Save Naming Conventions
 
 Type a list of 5 files with good naming conventions (they could have an R file extension, a SAS file extension, etc.)
+
 Let the files represent tasks in some project. Explain why your naming conventions are good and helpful to future you.
-Refer to slides 12-14 (refer to Data Organization Best Practices).
+
 
 ### Question Four
 #### Efficiency and Timing

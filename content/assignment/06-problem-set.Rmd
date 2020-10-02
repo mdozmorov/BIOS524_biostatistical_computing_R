@@ -11,18 +11,16 @@ type: docs
 weight: 1
 output:
   blogdown::html_page:
-    toc: true
+    toc: false
 editor_options: 
   chunk_output_type: console
 ---
-
-# To submit on blackboard, due 10-15-2020, 5:00pm
 
 # To do yourself
 
 - [R packages](https://geanders.github.io/RProgrammingForResearch/reproducible-research-3.html)
 
-- [Package](https://geanders.github.io/RProgrammingForResearch/reproducible-research-3.html)
+# To submit on blackboard, due 10-15-2020, 5:00pm
 
 ## Functions
 All of your functions should be written clearly, with commented code, readable spacing, and be as non-repetitive as possible 
