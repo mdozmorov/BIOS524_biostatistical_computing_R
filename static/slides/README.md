@@ -4,21 +4,7 @@
 
 # Reading 
 
-- Exploring data #3 - https://geanders.github.io/RProgrammingForResearch/exploring-data-3.html - statistical functions
-
-- Entering and cleanind data, https://geanders.github.io/RProgrammingForResearch/entering-and-cleaning-data-1.html - read.table, readr, Excel, SAS, SPSS, file/folder structure/paths. Dplyr, 
-
-- Reporting data results - https://geanders.github.io/RProgrammingForResearch/reporting-data-results-1.html - good plot guidelines
-
-- Reproducible research #1 https://geanders.github.io/RProgrammingForResearch/reproducible-research-1.html - RMarkdown, knitr, best code practices
-
-- Reproducible research #3 - https://geanders.github.io/RProgrammingForResearch/reproducible-research-3.html - R packages
-
-- Plotly https://geanders.github.io/RProgrammingForResearch/reporting-data-results-3.html#htmlwidgets
-
-- Package https://geanders.github.io/RProgrammingForResearch/reproducible-research-3.html
-
--Quizes https://geanders.github.io/RProgrammingForResearch/appendix-a-vocabulary.html
+- Quizes https://geanders.github.io/RProgrammingForResearch/appendix-a-vocabulary.html
 
 - Homework https://geanders.github.io/RProgrammingForResearch/appendix-b-homework.html
 
@@ -39,11 +25,6 @@
 
 
 # ToDo
-
-- MathJax https://www.codecogs.com/latex/eqneditor.php
-- RegEx https://regexr.com/
-
-- Awesome ggplot2 https://github.com/erikgahner/awesome-ggplot2
 
 - [Managing Data Frames with the Tidyverse](https://rdpeng.github.io/Biostat776/lecture-managing-data-frames-with-the-tidyverse.html) by Roger Peng
 

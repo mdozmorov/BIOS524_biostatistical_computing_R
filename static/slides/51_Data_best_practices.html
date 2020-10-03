@@ -62,6 +62,23 @@ class: center, middle, inverse, title-slide
 https://www.theverge.com/2020/8/6/21355674/human-genes-rename-microsoft-excel-misreading-dates]
 
 ---
+## Variable naming conventions
+
+- Avoid using spaces in column/row names. Use some filler instead, e.g., "." or "_"
+
+- Note that `read.csv()`, `read.table` and the like functions will silently replace spases with dots in column names
+
+
+```r
+column_names_with_spaces &lt;- c("First column", "Second column")
+make.names(column_names_with_spaces)
+```
+
+```
+## [1] "First.column"  "Second.column"
+```
+
+---
 ## Spreadsheet horror stories
 
 &lt;img src="http://www.eusprig.org/images/logo.jpg" height=100&gt;

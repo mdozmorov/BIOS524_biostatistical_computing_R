@@ -297,18 +297,85 @@ tricky       &amp;lt;- c(1, 2, 3, &amp;quot;4&amp;quot;)&lt;/code&gt;&lt;/pre&gt
       <description>
 &lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
-&lt;div id=&#34;TOC&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#to-do-yourself&#34;&gt;To do yourself&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-xx-xx-2020-500pm&#34;&gt;To submit on blackboard, due XX-XX-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
 
+&lt;div id=&#34;to-submit-on-blackboard-due-10-13-2020-500pm&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To submit on Blackboard, due 10-13-2020, 5:00pm&lt;/h1&gt;
+&lt;/div&gt;
 &lt;div id=&#34;to-do-yourself&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;To do yourself&lt;/h1&gt;
+&lt;p&gt;Read the &lt;a href=&#34;https://cran.r-project.org/web/packages/DataExplorer/vignettes/dataexplorer-intro.html&#34;&gt;vignette for DataExplorer&lt;/a&gt; R package, to know what it is capable of&lt;/p&gt;
+&lt;p&gt;Read the &lt;a href=&#34;https://cran.r-project.org/web/packages/doParallel/vignettes/gettingstartedParallel.pdf&#34;&gt;vignette for doParaller&lt;/a&gt; R package, go through code examples there&lt;/p&gt;
+&lt;div id=&#34;question-one&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Question One&lt;/h3&gt;
+&lt;div id=&#34;spreadsheets-summarization-and-naming-conventions&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Spreadsheets, Summarization, and Naming Conventions&lt;/h4&gt;
+&lt;div id=&#34;part-a&#34; class=&#34;section level5&#34;&gt;
+&lt;h5&gt;Part A&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Create an Excel spreadsheet with 5 columns and 10 rows, following proper spreadsheet conventions discussed in class.
+&lt;ul&gt;
+&lt;li&gt;Let the first column be an ID number.&lt;/li&gt;
+&lt;li&gt;Let the second column be a set of integers between 20 and 30, denoting the number of teeth someone has.&lt;/li&gt;
+&lt;li&gt;Let the third column be a set of real numbers between 1.0 and 4.0, denoting GPA in school.&lt;/li&gt;
+&lt;li&gt;Let the fourth column be a mix of “H” and “T” character values, denoting the tosses of a coin.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Read it into R. What is the class of this object?&lt;/li&gt;
+&lt;li&gt;Create a new object with the same content, but with the class &lt;code&gt;list&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Address the fifth element of the list object. Address the content of the fifth element&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
-&lt;div id=&#34;to-submit-on-blackboard-due-xx-xx-2020-500pm&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;To submit on blackboard, due XX-XX-2020, 5:00pm&lt;/h1&gt;
+&lt;div id=&#34;part-b&#34; class=&#34;section level5&#34;&gt;
+&lt;h5&gt;Part B&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;In one line of code, calculate the mean of the second column and the third column. Do the same for the list object.&lt;/li&gt;
+&lt;li&gt;Print out the frequency distribution of the fourth column.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;part-c&#34; class=&#34;section level5&#34;&gt;
+&lt;h5&gt;Part C&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Rename the columns into something descriptive using R code. What variable naming convention are you using (refer to Code Organization Best Practices slides)?&lt;/li&gt;
+&lt;li&gt;Save the data into .csv format and submit along with the code file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;question-two&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Question Two&lt;/h3&gt;
+&lt;div id=&#34;summarizing-quickly&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Summarizing Quickly&lt;/h4&gt;
+&lt;p&gt;Load the ChickWeight dataset that comes with R. Install the skimr package.
+Use this package to summarize the dataset in one line of code.&lt;/p&gt;
+&lt;p&gt;Explore at least one of the following functions. Compare it with the skimr functionality, which one would you prefer?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;describe, from the Hmisc package&lt;/li&gt;
+&lt;li&gt;stat.desc from pastecs&lt;/li&gt;
+&lt;li&gt;describe from psych&lt;/li&gt;
+&lt;li&gt;descr and dfSummary from summarytools&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;question-three&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Question Three&lt;/h3&gt;
+&lt;div id=&#34;file-save-naming-conventions&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;File Save Naming Conventions&lt;/h4&gt;
+&lt;p&gt;Type a list of 5 files with good naming conventions (they could have an R file extension, a SAS file extension, etc.)&lt;/p&gt;
+&lt;p&gt;Let the files represent tasks in some project. Explain why your naming conventions are good and helpful to future you.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;question-four&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Question Four&lt;/h3&gt;
+&lt;div id=&#34;efficiency-and-timing&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Efficiency and Timing&lt;/h4&gt;
+&lt;p&gt;Make an empty vector of length 10 million. Set a seed for reproducibility. Populate the vector in two ways and compare:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use a for loop to enter a randomly-generated Exponential variable with rate parameter 3 in each position in the vector.&lt;/li&gt;
+&lt;li&gt;Use a more efficient method, possibly writing a function, to populate the vector with randomly-generated numbers from the same distribution.&lt;/li&gt;
+&lt;li&gt;Try parallelization approaches.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Time all methods, and make a conclusion.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 </description>
     </item>
@@ -321,22 +388,32 @@ tricky       &amp;lt;- c(1, 2, 3, &amp;quot;4&amp;quot;)&lt;/code&gt;&lt;/pre&gt
       <description>
 &lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
-&lt;div id=&#34;TOC&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#to-do-yourself&#34;&gt;To do yourself&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-xx-xx-2020-500pm&#34;&gt;To submit on blackboard, due XX-XX-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
 
 &lt;div id=&#34;to-do-yourself&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;To do yourself&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/reproducible-research-3.html&#34;&gt;R packages&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/reproducible-research-3.html&#34;&gt;Package&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/reproducible-research-3.html&#34;&gt;R packages&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div id=&#34;to-submit-on-blackboard-due-xx-xx-2020-500pm&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;To submit on blackboard, due XX-XX-2020, 5:00pm&lt;/h1&gt;
+&lt;div id=&#34;to-submit-on-blackboard-due-10-15-2020-500pm&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To submit on blackboard, due 10-15-2020, 5:00pm&lt;/h1&gt;
+&lt;div id=&#34;functions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Functions&lt;/h2&gt;
+&lt;p&gt;All of your functions should be written clearly, with commented code, readable spacing, and be as non-repetitive as possible&lt;/p&gt;
+&lt;div id=&#34;question-one-confidence-intervals&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Question One: Confidence Intervals&lt;/h3&gt;
+&lt;p&gt;Set a seed for reproducibility. Generate a random sample of size &lt;span class=&#34;math inline&#34;&gt;\(50\)&lt;/span&gt; from a standard normal distribution and compute the usual &lt;span class=&#34;math inline&#34;&gt;\(95\%\)&lt;/span&gt; confidence interval using the t-distribution. Write your own function to generate a random sample of size &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; from a normal distribution with mean equal to &lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt; and standard deviation equal to &lt;span class=&#34;math inline&#34;&gt;\(\sigma\)&lt;/span&gt; and compute the usual &lt;span class=&#34;math inline&#34;&gt;\(100(1−\alpha)\%\)&lt;/span&gt; t confidence interval. Compare your results to that from t.test.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;question-two-pythagorean-theorem&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Question Two: Pythagorean Theorem&lt;/h3&gt;
+&lt;p&gt;The Pythagorean theorem states that the square of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two side: &lt;span class=&#34;math inline&#34;&gt;\(c^2=a^2+b^2\)&lt;/span&gt;. Write a function that, given the lengths of two sides of the triangle, calculates the length of the third side.&lt;/p&gt;
+&lt;p&gt;Note: This function should be flexible - that is, the function works if I give it values for &lt;span class=&#34;math inline&#34;&gt;\(a\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(b\)&lt;/span&gt;, or &lt;span class=&#34;math inline&#34;&gt;\(b\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(c\)&lt;/span&gt;, or &lt;span class=&#34;math inline&#34;&gt;\(a\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(c\)&lt;/span&gt;. If the user only provides the length of one side, the function should throw an error. Likewise, if the user provides the lengths of all three sides, the function should throw an error. If the user provides any values other than numeric values, the function should throw an error.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;question-three-trimmed-mean&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Question Three: Trimmed Mean&lt;/h3&gt;
+&lt;p&gt;Write your own trimmed mean function that calculates the mean of a numeric vector &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;, ignoring the &lt;span class=&#34;math inline&#34;&gt;\(s\)&lt;/span&gt; smallest and &lt;span class=&#34;math inline&#34;&gt;\(l\)&lt;/span&gt; largest values (this is a trimmed mean). For example, if &lt;span class=&#34;math inline&#34;&gt;\(x=c(1,7,3,2,5,0.5,9,10)\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(s=1\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(l=2\)&lt;/span&gt;, your function would return the mean of &lt;span class=&#34;math inline&#34;&gt;\(c(1,7,3,2,5)\)&lt;/span&gt; (this is &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; with the &lt;span class=&#34;math inline&#34;&gt;\(1\)&lt;/span&gt; smallest value and the &lt;span class=&#34;math inline&#34;&gt;\(2\)&lt;/span&gt; largest values removed). Note: Your function should check if &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; has at least &lt;span class=&#34;math inline&#34;&gt;\(s+l+1\)&lt;/span&gt; values. If not, return some error message with stop().&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 </description>
     </item>

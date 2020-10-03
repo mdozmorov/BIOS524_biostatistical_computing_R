@@ -33,9 +33,8 @@
   
     
   
-  <meta name="description" content="   To do yourself To submit on blackboard, due XX-XX-2020, 5:00pm   To do yourself  R packages
- Package
-   To submit on blackboard, due XX-XX-2020, 5:00pm  ">
+  <meta name="description" content="To do yourself  R packages   To submit on blackboard, due 10-15-2020, 5:00pm Functions All of your functions should be written clearly, with commented code, readable spacing, and be as non-repetitive as possible
+Question One: Confidence Intervals Set a seed for reproducibility. Generate a random sample of size \(50\) from a standard normal distribution and compute the usual \(95\%\) confidence interval using the t-distribution. Write your own function to generate a random sample of size \(n\) from a normal distribution with mean equal to \(\mu\) and standard deviation equal to \(\sigma\) and compute the usual \(100(1−\alpha)\%\) t confidence interval.">
 
   
   <link rel="alternate" hreflang="en-us" href="/assignment/06-problem-set/">
@@ -257,13 +256,12 @@
   <meta property="og:site_name" content="Biostatistical Computing with R">
   <meta property="og:url" content="/assignment/06-problem-set/">
   <meta property="og:title" content="Assignment 6: Packages | Biostatistical Computing with R">
-  <meta property="og:description" content="   To do yourself To submit on blackboard, due XX-XX-2020, 5:00pm   To do yourself  R packages
- Package
-   To submit on blackboard, due XX-XX-2020, 5:00pm  "><meta property="og:image" content="/media/social-image.png">
+  <meta property="og:description" content="To do yourself  R packages   To submit on blackboard, due 10-15-2020, 5:00pm Functions All of your functions should be written clearly, with commented code, readable spacing, and be as non-repetitive as possible
+Question One: Confidence Intervals Set a seed for reproducibility. Generate a random sample of size \(50\) from a standard normal distribution and compute the usual \(95\%\) confidence interval using the t-distribution. Write your own function to generate a random sample of size \(n\) from a normal distribution with mean equal to \(\mu\) and standard deviation equal to \(\sigma\) and compute the usual \(100(1−\alpha)\%\) t confidence interval."><meta property="og:image" content="/media/social-image.png">
   <meta property="twitter:image" content="/media/social-image.png"><meta property="og:locale" content="en-us">
   
     
-    
+    <meta property="article:modified_time" content="2020-10-01T09:16:52-04:00">
   
 
   
@@ -609,22 +607,32 @@
                         
 <script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
-<div id="TOC">
-<ul>
-<li><a href="#to-do-yourself">To do yourself</a></li>
-<li><a href="#to-submit-on-blackboard-due-xx-xx-2020-500pm">To submit on blackboard, due XX-XX-2020, 5:00pm</a></li>
-</ul>
-</div>
 
 <div id="to-do-yourself" class="section level1">
 <h1>To do yourself</h1>
 <ul>
-<li><p><a href="https://geanders.github.io/RProgrammingForResearch/reproducible-research-3.html">R packages</a></p></li>
-<li><p><a href="https://geanders.github.io/RProgrammingForResearch/reproducible-research-3.html">Package</a></p></li>
+<li><a href="https://geanders.github.io/RProgrammingForResearch/reproducible-research-3.html">R packages</a></li>
 </ul>
 </div>
-<div id="to-submit-on-blackboard-due-xx-xx-2020-500pm" class="section level1">
-<h1>To submit on blackboard, due XX-XX-2020, 5:00pm</h1>
+<div id="to-submit-on-blackboard-due-10-15-2020-500pm" class="section level1">
+<h1>To submit on blackboard, due 10-15-2020, 5:00pm</h1>
+<div id="functions" class="section level2">
+<h2>Functions</h2>
+<p>All of your functions should be written clearly, with commented code, readable spacing, and be as non-repetitive as possible</p>
+<div id="question-one-confidence-intervals" class="section level3">
+<h3>Question One: Confidence Intervals</h3>
+<p>Set a seed for reproducibility. Generate a random sample of size <span class="math inline">\(50\)</span> from a standard normal distribution and compute the usual <span class="math inline">\(95\%\)</span> confidence interval using the t-distribution. Write your own function to generate a random sample of size <span class="math inline">\(n\)</span> from a normal distribution with mean equal to <span class="math inline">\(\mu\)</span> and standard deviation equal to <span class="math inline">\(\sigma\)</span> and compute the usual <span class="math inline">\(100(1−\alpha)\%\)</span> t confidence interval. Compare your results to that from t.test.</p>
+</div>
+<div id="question-two-pythagorean-theorem" class="section level3">
+<h3>Question Two: Pythagorean Theorem</h3>
+<p>The Pythagorean theorem states that the square of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two side: <span class="math inline">\(c^2=a^2+b^2\)</span>. Write a function that, given the lengths of two sides of the triangle, calculates the length of the third side.</p>
+<p>Note: This function should be flexible - that is, the function works if I give it values for <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, or <span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span>, or <span class="math inline">\(a\)</span> and <span class="math inline">\(c\)</span>. If the user only provides the length of one side, the function should throw an error. Likewise, if the user provides the lengths of all three sides, the function should throw an error. If the user provides any values other than numeric values, the function should throw an error.</p>
+</div>
+<div id="question-three-trimmed-mean" class="section level3">
+<h3>Question Three: Trimmed Mean</h3>
+<p>Write your own trimmed mean function that calculates the mean of a numeric vector <span class="math inline">\(x\)</span>, ignoring the <span class="math inline">\(s\)</span> smallest and <span class="math inline">\(l\)</span> largest values (this is a trimmed mean). For example, if <span class="math inline">\(x=c(1,7,3,2,5,0.5,9,10)\)</span>, <span class="math inline">\(s=1\)</span>, and <span class="math inline">\(l=2\)</span>, your function would return the mean of <span class="math inline">\(c(1,7,3,2,5)\)</span> (this is <span class="math inline">\(x\)</span> with the <span class="math inline">\(1\)</span> smallest value and the <span class="math inline">\(2\)</span> largest values removed). Note: Your function should check if <span class="math inline">\(x\)</span> has at least <span class="math inline">\(s+l+1\)</span> values. If not, return some error message with stop().</p>
+</div>
+</div>
 </div>
 
                     </div>
@@ -637,7 +645,7 @@
                 </div>
 
                 <div class="body-footer">
-                    <p>Last updated on January 1, 0001</p>
+                    <p>Last updated on October 1, 2020</p>
 
                     
 
