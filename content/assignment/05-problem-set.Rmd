@@ -1,12 +1,12 @@
 ---
 title: "Assignment 5: Data management/code best practices"
-# date: "2020-10-05"
-# due_date: "2020-10-13"
-# due_time: "5:00 PM"
-# menu:
-#   assignment:
-#     parent: Assignments
-#     weight: 2
+date: "2020-10-06"
+due_date: "2020-10-13"
+due_time: "5:00 PM"
+menu:
+  assignment:
+    parent: Assignments
+    weight: 5
 type: docs
 weight: 1
 output:
@@ -16,13 +16,13 @@ editor_options:
   chunk_output_type: console
 ---
 
-# To submit on Blackboard, due 10-13-2020, 5:00pm
-
 # To do yourself
 
 Read the [vignette for DataExplorer](https://cran.r-project.org/web/packages/DataExplorer/vignettes/dataexplorer-intro.html) R package, to know what it is capable of
 
 Read the [vignette for doParaller](https://cran.r-project.org/web/packages/doParallel/vignettes/gettingstartedParallel.pdf) R package, go through code examples there
+
+# To submit on Blackboard
 
 ### Question One
 #### Spreadsheets, Summarization, and Naming Conventions

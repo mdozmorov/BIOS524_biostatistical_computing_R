@@ -29,7 +29,7 @@ lessons:
   - title: "**Lecture 5: Data management/code best practices**"
     date: "October 6"
     # reading: "05-reading"
-      assignment: "05-problem-set"
+    assignment: "05-problem-set"
     class: "05-class"
 
   - title: "**Lecture 6: Packages**"
