@@ -165,21 +165,6 @@ Refactoring – making better code
 - **Globally search-and-replace bad variable/function names**
 
 ---
-## Principles of good code development
-
-- **DRY**
-    - Don't Repeat Yourself
-    - Do everything to avoid code repetition!
-
-- **WET**
-    - Write Everything (more than) Twice
-    - The first time you write a code, you are writing it for the solution, second for comprehension, third for efficiency and last for your sake
-
-- **KISS**
-    - Keep It Small and Simple
-    - Simplicity over complicity, shorter over longer
-
----
 ## Computational reproducibility in plain language
 
 - **Write code that uses relative paths.**
@@ -195,7 +180,22 @@ Refactoring – making better code
     - Record **software** version info with `session_info()`
     - Use dynamic documentation to make your life easier
 
----
+&lt;!--
+## Principles of good code development
+
+- **DRY**
+    - Don't Repeat Yourself
+    - Do everything to avoid code repetition!
+
+- **WET**
+    - Write Everything (more than) Twice
+    - The first time you write a code, you are writing it for the solution, second for comprehension, third for efficiency and last for your sake
+
+- **KISS**
+    - Keep It Small and Simple
+    - Simplicity over complicity, shorter over longer
+
+
 ## Summary of good software development practices
 
 1. Place a brief explanatory comment at the start of every program
@@ -211,7 +211,7 @@ Refactoring – making better code
 
 The core realization in these practices is that being readable, reusable, and testable are all side effects of writing modular code, i.e., of building programs out of short, single-purpose functions with clearly-defined inputs and outputs 
 
----
+
 ## Ensure long-time usability and stability
 
 1. Host software and resources on archivally stable services
@@ -224,6 +224,7 @@ The core realization in these practices is that being readable, reusable, and te
 8. Create agnostic installation platform or distribute different versions for each platform
 
 .small[ Mangul, Serghei, Thiago Mosqueiro, Dat Duong, Keith Mitchell, Varuni Sarwal, Brian Hill, Jaqueline Brito, et al. “[A Comprehensive Analysis of the Usability and Archival Stability of Omics Computational Tools and Resources](https://doi.org/10.1101/452532),” October 25, 2018.]
+--&gt;
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

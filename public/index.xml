@@ -478,6 +478,39 @@ Use this package to summarize the dataset in one line of code.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Lecture 5: Data management/code best practices</title>
+      <link>/class/05-class/</link>
+      <pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/class/05-class/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;div id=&#34;data-organization-best-practices&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Data organization best practices&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;../../slides/51_Data_best_practices#1&#34; target=&#34;_blank&#34;&gt;Lecture slides in HTML format&lt;/a&gt;&lt;/p&gt;
+&lt;iframe src=&#34;../../slides/51_Data_best_practices.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div id=&#34;code-organization-best-practices&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Code organization best practices&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;../../slides/52_Code_best_practices#1&#34; target=&#34;_blank&#34;&gt;Lecture slides in HTML format&lt;/a&gt;&lt;/p&gt;
+&lt;iframe src=&#34;../../slides/52_Code_best_practices.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div id=&#34;code-optimization-best-practices&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Code optimization best practices&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;../../slides/53_Optimization_best_practices#1&#34; target=&#34;_blank&#34;&gt;Lecture slides in HTML format&lt;/a&gt;&lt;/p&gt;
+&lt;iframe src=&#34;../../slides/53_Optimization_best_practices.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Lecture 4. Reproducible reports with Markdown, knitr</title>
       <link>/class/04-class/</link>
       <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
@@ -643,14 +676,11 @@ Use this package to summarize the dataset in one line of code.&lt;/p&gt;
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;&lt;strong&gt;Lecture 5: Data management/code best practices&lt;/strong&gt;&lt;/td&gt;
 
 
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-chalkboard-teacher fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
+                    href=&#34;/assignment/05-problem-set/&#34;&gt;
+                    &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;/class/05-class/&#34;&gt;
+                    &lt;i class=&#34;fas fa-chalkboard-teacher fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;October 8&lt;/td&gt;
