@@ -27,6 +27,9 @@ editor_options:
 - [Interactive plots in R](https://davetang.org/muse/2018/05/18/interactive-plots-in-r/) by Dave Tang
 
 - [The R Graph Gallery, all graphs](http://www.r-graph-gallery.com/all-graphs/) with code
+
+- [Collection of ggplot2 materials](https://github.com/Z3tt/ggplot-courses)
+
 - [Plotting/reporting best practices](https://geanders.github.io/RProgrammingForResearch/reporting-data-results-1.html) 
 
 - [Plotly](https://geanders.github.io/RProgrammingForResearch/reporting-data-results-3.html#htmlwidgets)

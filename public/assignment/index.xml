@@ -445,6 +445,16 @@ tricky       &amp;lt;- c(1, 2, 3, &amp;quot;4&amp;quot;)&lt;/code&gt;&lt;/pre&gt
 
 &lt;div id=&#34;to-do-yourself&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;To do yourself&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://ramnarasimhan.files.wordpress.com/2014/10/data-manipulation-using-r_acm2014.pdf&#34;&gt;Data Manipulation Using R (&amp;amp; dplyr)&lt;/a&gt; by Ram Narasimhan, PDF slides&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://datascienceplus.com/data-manipulation-with-dplyr/&#34;&gt;Data Manipulation with dplyr&lt;/a&gt; brief tutorial&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.datacarpentry.org/R-genomics/04-dplyr.html&#34;&gt;Aggregating and analyzing data with dplyr&lt;/a&gt; tutorial by Data Carpentry&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://rpubs.com/justmarkham/dplyr-tutorial&#34;&gt;Introduction to dplyr for Faster Data Manipulation in R&lt;/a&gt; tutorial and a 40 min video &lt;a href=&#34;https://www.youtube.com/watch?v=jWjqLW-u3hc&#34;&gt;Hands-on dplyr tutorial for faster data manipulation in R&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/gadenbuie/tidy-animated-verbs&#34;&gt;Animations of tidyverse verbs using R, the tidyverse, and gganimate&lt;/a&gt; - visual explanation of dplyr operations&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://tidyr.tidyverse.org/dev/articles/pivot.html&#34;&gt;Pivoting, reformatting data into long/wide formats&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://speakerdeck.com/yutannihilation/a-graphical-introduction-to-tidyrs-pivot-star&#34;&gt;A graphical introduction to tidyr’s pivot&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://speakerdeck.com/lionelhenry/reusing-tidyverse-code&#34;&gt;Reusing Tidyverse code&lt;/a&gt; - dplyr/tidyverse data manipulation lecture slides&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 &lt;div id=&#34;to-submit-on-blackboard-due-xx-xx-2020-500pm&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;To submit on blackboard, due XX-XX-2020, 5:00pm&lt;/h1&gt;
@@ -482,6 +492,7 @@ tricky       &amp;lt;- c(1, 2, 3, &amp;quot;4&amp;quot;)&lt;/code&gt;&lt;/pre&gt
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/jennybc/ggplot2-tutorial&#34;&gt;ggplot2 tutorial/slides/code examples/references&lt;/a&gt; by Jenny Bryan&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://davetang.org/muse/2018/05/18/interactive-plots-in-r/&#34;&gt;Interactive plots in R&lt;/a&gt; by Dave Tang&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.r-graph-gallery.com/all-graphs/&#34;&gt;The R Graph Gallery, all graphs&lt;/a&gt; with code&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/Z3tt/ggplot-courses&#34;&gt;Collection of ggplot2 materials&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/reporting-data-results-1.html&#34;&gt;Plotting/reporting best practices&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/reporting-data-results-3.html#htmlwidgets&#34;&gt;Plotly&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;

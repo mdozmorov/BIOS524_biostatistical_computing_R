@@ -16,12 +16,9 @@ editor_options:
   chunk_output_type: console
 ---
 
-# To do yourself, due before 09-29-2020 class
+# To do yourself
 
-- [Statistical functions](https://geanders.github.io/RProgrammingForResearch/exploring-data-3.html)
-
-- [read.table, readr, Excel, SAS, SPSS, file/folder structure/paths](https://geanders.github.io/RProgrammingForResearch/entering-and-cleaning-data-1.html)
-
+- [How to Deploy R Shiny App for Free on Shinyapps.io](https://www.r-bloggers.com/2020/10/how-to-deploy-r-shiny-app-for-free-on-shinyapps-io-video/) 14 min video and links
 
 # To submit on blackboard, due 09-29-2020, 5:00pm
 
