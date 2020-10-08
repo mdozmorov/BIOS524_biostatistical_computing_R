@@ -1,5 +1,5 @@
 ---
-title: "Assignment 7"
+title: "Assignment 7: Tidyverse, data manipulation"
 # date: "2020-06-08"
 # due_date: "2020-06-08"
 # due_time: "11:59 PM"
@@ -16,7 +16,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-# To do yourself, due before XX-XX-2020 class
+# To do yourself
 
 
 # To submit on blackboard, due XX-XX-2020, 5:00pm

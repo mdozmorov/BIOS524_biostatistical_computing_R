@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Tidyverse, data visualization</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Mikhail Dozmorov" />
+    <script src="libs/header-attrs-2.3/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="xaringan-my.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Tidyverse, data visualization
+### Mikhail Dozmorov
+### Virginia Commonwealth University
+### 10-15-2020
+
+---
+
+
+
+
+
+
+## Why visualize data?
+
+- Anscombe's quartet comprises four datasets that have nearly identical simple descriptive statistics, yet appear very different when graphed. (See Wikipedia link below)
+
+- 11 observations (x, y) per group
+
+.center[&lt;img src="img/anscombe01.png" width = 800&gt;]
+
+.small[ https://en.wikipedia.org/wiki/Anscombe%27s_quartet ]
+
+---
+## Why visualize data?
+
+- Four groups
+
+- 11 observations (x, y) per group
+
+.center[&lt;img src="img/anscombe02.png" width = 500&gt;]
+
+.small[ https://en.wikipedia.org/wiki/Anscombe%27s_quartet ]
+
+---
+## Why visualized data?
+
+.center[&lt;img src="https://github.com/lockedata/datasauRus/raw/master/README/README-unnamed-chunk-2-1.png" width = 400&gt;]
+
+.small[ https://github.com/stephlocke/datasauRus ]
+
+---
+## R base graphics
+
+- `plot()` 			generic x-y plotting
+- `barplot()` 	bar plots
+- `boxplot()` 	box-and-whisker plot
+- `hist()` 			histograms
+
+.center[&lt;img src="img/bar_box_hist.png" width = 800&gt;]
+
+.small[ http://manuals.bioinformatics.ucr.edu/home/R_BioCondManual#TOC-Graphical-Procedures ]
+
+---
+## Other useful plots
+
+- `qqnorm()`, `qqline()`, `qqplot()` - distribution comparison plots
+
+- `pairs()` - pair-wise plot of multivariate data
+
+&amp;nbsp;
+
+.small[ http://manuals.bioinformatics.ucr.edu/home/R_BioCondManual#TOC-Some-Great-R-Functions ]
+
+---
+## Don't use barplots
+
+.center[&lt;img src="https://cogtales.files.wordpress.com/2016/06/originalmeme1.png" width = 700&gt;]
+
+.small[ Weissgerber T et.al., "[Beyond Bar and Line Graphs: Time for a New Data Presentation Paradigm](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002128)", PLOS Biology,2015
+
+https://cogtales.wordpress.com/2016/06/06/congratulations-barbarplots/ ]
+
+---
+## R base graphics
+
+- `stats::heatmap()` - basic heatmap
+
+Alternatives: 
+
+- `gplots::heatmap.2()` - an extension of heatmap
+- `heatmap3::heatmap3()` - another extension of heatmap
+- `ComplexHeatmap::Heatmap()` - highly customizable, interactive heatmap
+
+Other options:
+
+- `pheatmap::pheatmap()` - grid-based heatmap
+- `NMF::aheatmap()` - another grid-based heatmap
+
+.small[	[ComplexHeatmap Complete Reference](https://jokergoo.github.io/ComplexHeatmap-reference/book/) by Zuguang Gu
+
+https://bioconductor.org/packages/ComplexHeatmap/ ]
+
+---
+## Interactive heatmaps
+
+- `d3heatmap::d3heatmap()` - interactive heatmap in d3
+
+- `heatmaply::heatmaply()` - interactive heatmap with better dendrograms
+
+- `plotly` - make ggplot2 plots interactive
+
+.small[ [Heatmaps in R](https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/Heatmaps-in-R-Overview-and-best-practices) 20 min video by Tal Galili
+
+[Interactive plots in R](https://davetang.org/muse/2018/05/18/interactive-plots-in-r/) blog post by Dave Tang ]
+
+---
+## Special plots
+
+- `vioplot()`: Violin plot
+- `PiratePlot()`: violin plot enhanced 
+- `beeswarm()`: The Bee Swarm Plot, an Alternative to Stripchart
+
+.center[&lt;img src="img/violin_plots.png" width = 800&gt;]
+
+.small[ https://CRAN.R-project.org/package=vioplot 
+
+[YaRrr! The Pirate’s Guide to R](https://bookdown.org/ndphillips/YaRrr/)
+
+https://CRAN.R-project.org/package=beeswarm ]
+
+---
+class: inverse, center, middle
+
+# ggplot2 - the grammar of graphics
+
+---
+## ggplot2 package
+
+- `ggplot2` is a widely used R package that extends R's visualization capabilities. It takes the hassle out of things like creating legends, mapping other variables to scales like color, or faceting plots
+
+- _Where does the "gg" in ggplot2 come from?_ The `ggplot2` package provides an R implementation of Leland Wilkinson's *Grammar of Graphics* (1999)
+    - The *Grammar of Graphics* allows you to think beyond the garden variety plot types (e.g. scatterplot, barplot) and the consider the components that make up a plot or graphic, such as how data are represented on the plot (as lines, points, etc.), how variables are mapped to coordinates or plotting shape or color, what transformation or statistical summary is required, and so on
+
+.small[ https://ggplot2.tidyverse.org/ ]
+
+---
+## The basics of ggplot2 graphics
+
+Specifically, **ggplot2** allows you to build a plot layer-by-layer by specifying:
+
+- a **geom**, which specifies how the data are represented on the plot (points, lines, bars, etc.),
+
+- **aesthetics** that map variables in the data to axes on the plot or to plotting size, shape, color, etc.,
+
+- a **stat**, a statistical transformation or summary of the data applied prior to plotting,
+
+- **facets**, which we've already seen above, that allow the data to be divided into chunks on the basis of other categorical or continuous variables and the same plot drawn for each chunk.
+
+---
+## The basics of ggplot2 graphics
+
+- Data mapped to graphical elements
+- Add graphical layers and transformations
+- Commands are chained with "+" sign
+
+| Object     |       | Description                                                        |
+|------------|-------|--------------------------------------------------------------------|
+| Data       |       | The raw data that you want to plot                                 |
+| Aethetics  | aes() | How to map your data on x, y axis, color, size, shape (aesthetics) |
+| Geometries | geom_ | The geometric shapes that will represent the data                  |
+
+``` text
+data +   
+aesthetic mappings of data to plot coordinates +  
+geometry to represent the data
+```
+
+---
+## Basic ggplot2 syntax
+
+**Specify data, aesthetics and geometric shapes** 
+
+`ggplot(data, aes(x=, y=, color=, shape=, size=, fill=)) +`   
+`geom_point()`, or `geom_histogram()`, or `geom_boxplot()`, etc.   
+
+- This combination is very effective for exploratory graphs. 
+
+- The data must be a data frame in a **long** (not wide) format
+
+- The `aes()` function maps **columns** of the data frame to aesthetic properties of geometric shapes to be plotted.
+
+- `ggplot()` defines the plot; the `geoms` show the data; layers are added with `+` 
+
+---
+## Examples of ggplot2 graphics
+
+``` r
+diamonds %&gt;% filter(cut == "Good", color == "E") %&gt;% 
+  ggplot(aes(x = price, y = carat)) +
+  geom_point()  # aes(size = price) +
+```
+
+Try other geoms
+
+``` r
+  geom_smooth() # method = lm
+  geom_line()
+  geom_boxplot()
+  geom_bar(stat="identity")
+  geom_histogram()
+```
+
+---
+## Moving beyond `ggplot` + `geoms`
+
+Customizing scales
+
+* Scales control the mapping from data to aesthetics and provide tools to read the plot (ie, axes and legends).
+
+* Every aesthetic has a default scale. To add or modify a scale, use a `scale` function. 
+
+* All scale functions have a common naming scheme:
+`scale` `_` name of aesthetic `_` name of scale
+
+* Examples: `scale_y_continuous`, `scale_color_discrete`, `scale_fill_manual`
+
+---
+## ggplot2 example - update scale for y-axis
+
+
+```r
+ggplot(iris, aes(x = Petal.Width, y = Sepal.Width, 
+                 color=Species)) + geom_point() +
+  scale_y_continuous(limits=c(0,5), breaks=seq(0,5,0.5))
+```
+
+![](81_Tidyverse_ggplot2_files/figure-html/unnamed-chunk-2-1.png)&lt;!-- --&gt;
+
+---
+## ggplot2 example - update scale for color
+
+
+```r
+ggplot(iris, aes(x = Petal.Width, y = Sepal.Width, 
+                 color=Species)) + geom_point() +
+  scale_color_manual(name="Iris Species", 
+                     values=c("red","blue","black"))
+```
+
+![](81_Tidyverse_ggplot2_files/figure-html/unnamed-chunk-3-1.png)&lt;!-- --&gt;
+
+---
+## Split plots
+
+* A natural next step in exploratory graphing is to create plots of subsets of data. These are called facets in ggplot2.
+
+* Use `facet_wrap()` if you want to facet by one variable and have `ggplot2` control the layout. Example:   
+     + `+ facet_wrap( ~ var)`
+
+- Use `facet_grid()` if you want to facet by one and/or two variables and control layout yourself.     
+
+Examples:    
++ `facet_grid(. ~ var1)` - facets in columns   
++ `facet_grid(var1 ~ .)` - facets in rows   
++ `facet_grid(var1 ~ var2)` - facets in rows and columns   
+
+---
+## ggplot2 example - `facet_wrap` 
+
+Note free x scales
+
+
+```r
+ggplot(iris, aes(x = Petal.Width, y = Sepal.Width)) + 
+  geom_point() + geom_smooth(method="lm") +
+  facet_wrap(~ Species, scales = "free_x")
+```
+
+![](81_Tidyverse_ggplot2_files/figure-html/unnamed-chunk-4-1.png)&lt;!-- --&gt;
+
+---
+## stat functions
+
+- All `geoms` perform a default statistical transformation. 
+
+- For example, `geom_histogram()` bins the data before plotting. `geom_smooth()` fits a line through the data according to a specified method.
+
+- In some cases the transformation is the "identity", which just means plot the raw data. For example, `geom_point()`
+
+- These transformations are done by `stat` functions. The naming scheme is `stat_` followed by the name of the transformation. For example, `stat_bin`, `stat_smooth`, `stat_boxplot`
+
+- **Every geom has a default stat, every stat has a default geom.**
+
+---
+## Update themes and labels
+
+* The default ggplot2 theme is excellent. It follows the advice of several landmark papers regarding statistics and visual perception. (Wickham 2009, p. 141)
+
+* However you can change the theme using ggplot2's themeing system. To date, there are seven built-in themes: `theme_gray` (_default_), `theme_bw`, `theme_linedraw`, `theme_light`, `theme_dark`, `theme_minimal`, `theme_classic`
+
+* Explore the `cowplot` R package by Claus Wilke, and its themes `theme_cowplot()`, `theme_half_open()`, `theme_minimal_grid()`, etc.
+
+* You can also update axis labels and titles using the `labs` function
+
+.small[https://wilkelab.org/cowplot/index.html]
+
+---
+## ggplot2 example - update labels
+
+
+```r
+ggplot(iris, aes(x = Petal.Width, y = Sepal.Width, 
+                 color=Species)) + geom_point() +
+  labs(title="Sepal vs. Petal", 
+       x="Petal Width (cm)", y="Sepal Width (cm)") 
+```
+
+![](81_Tidyverse_ggplot2_files/figure-html/unnamed-chunk-5-1.png)&lt;!-- --&gt;
+
+---
+## ggplot2 example - change theme
+
+
+```r
+ggplot(iris, aes(x = Petal.Width, y = Sepal.Width, 
+                 shape=Species)) + geom_point() +
+  theme_bw()
+```
+
+![](81_Tidyverse_ggplot2_files/figure-html/unnamed-chunk-6-1.png)&lt;!-- --&gt;
+
+---
+## Barplot
+
+
+```r
+data(mpg)
+ggplot(mpg, aes(x = class)) + geom_bar()
+```
+
+![](81_Tidyverse_ggplot2_files/figure-html/unnamed-chunk-7-1.png)&lt;!-- --&gt;
+
+---
+## Barplot
+
+
+```r
+class_agg &lt;- data.frame(table(mpg$class))
+names(class_agg) &lt;- c("class", "count")
+ggplot(class_agg, aes(x = class, y = count)) + 
+  geom_bar(aes(fill = class), stat = "identity")
+```
+
+![](81_Tidyverse_ggplot2_files/figure-html/unnamed-chunk-8-1.png)&lt;!-- --&gt;
+
+---
+## Density plot
+
+
+```r
+ggplot(mpg, aes(x = hwy)) + geom_density()
+```
+
+![](81_Tidyverse_ggplot2_files/figure-html/unnamed-chunk-9-1.png)&lt;!-- --&gt;
+
+---
+## Histogram
+
+
+```r
+ggplot(mpg, aes(x = hwy)) +
+  geom_histogram() +
+  geom_density(aes(y=2 * ..count..))
+```
+
+```
+## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+```
+
+![](81_Tidyverse_ggplot2_files/figure-html/unnamed-chunk-10-1.png)&lt;!-- --&gt;
+
+---
+## Stacked histogram
+
+
+```r
+ggplot(mpg, aes(x = hwy, fill = class)) + geom_histogram(position = "stack")
+```
+
+```
+## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+```
+
+![](81_Tidyverse_ggplot2_files/figure-html/unnamed-chunk-11-1.png)&lt;!-- --&gt;
+
+---
+## Side-by-side histogram
+
+
+```r
+ggplot(mpg, aes(x = hwy, fill = class)) + geom_histogram(position = "dodge")
+```
+
+```
+## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+```
+
+![](81_Tidyverse_ggplot2_files/figure-html/unnamed-chunk-12-1.png)&lt;!-- --&gt;
+
+---
+## Proportions
+
+
+```r
+# useful for assessing percentages
+ggplot(mpg, aes(x = hwy, fill = class)) + geom_histogram(position = "fill")
+```
+
+```
+## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+```
+
+```
+## Warning: Removed 35 rows containing missing values (geom_bar).
+```
+
+![](81_Tidyverse_ggplot2_files/figure-html/unnamed-chunk-13-1.png)&lt;!-- --&gt;
+
+
+---
+## Smoothing
+
+
+```r
+ggplot(iris, aes(x = Sepal.Width, y = Petal.Width)) +
+  geom_smooth() +
+  geom_smooth(method = "lm", color = "seagreen", se=FALSE)
+```
+
+```
+## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
+```
+
+```
+## `geom_smooth()` using formula 'y ~ x'
+```
+
+![](81_Tidyverse_ggplot2_files/figure-html/unnamed-chunk-14-1.png)&lt;!-- --&gt;
+
+---
+## Additional aesthetic mapping
+
+
+```r
+ggplot(iris, aes(x = Sepal.Width, y = Petal.Width)) +
+  geom_point(aes(color = Species))
+```
+
+![](81_Tidyverse_ggplot2_files/figure-html/unnamed-chunk-15-1.png)&lt;!-- --&gt;
+
+---
+## Summary: Fine tuning ggplot2 graphics
+
+| Parameter                   |        | Description                                                                                                                     | 
+|-----------------------------|--------|---------------------------------------------------------------------------------------------------------------------------------| 
+| Facets                      | facet_ | Split one plot into multiple plots based on a grouping variable                                                                 | 
+| Scales                      | scale_ | Maps between the data ranges and the dimensions of the plot                                                                     | 
+| Visual Themes               | theme  | The overall visual defaults of a plot: background, grids, axe, default typeface, sizes, colors, etc.                            | 
+| Statistical transformations | stat_  | Statistical summaries of the data that can be plotted, such as quantiles, fitted curves (loess, linear models, etc.), sums etc. | 
+| Coordinate systems          | coord_ | Expressing coordinates in a system other than Cartesian                                                                         | 
+
+---
+## Putting it all together
+
+
+```r
+diamonds %&gt;%                 # Start with the 'diamonds' dataset
+  filter(cut == "Ideal") %&gt;% # Then, filter rows where cut == Ideal
+  ggplot(aes(price)) +       # Then, plot using ggplot
+  geom_histogram() +         # and plot histograms
+  facet_wrap(~ color) +      # in a 'small multiple' plot, broken out by 'color' 
+  ggtitle("Diamond price distribution per color") +
+  labs(x="Price", y="Count") +
+  theme(panel.background = element_rect(fill="lightblue")) +
+  theme(plot.title = element_text(family="Trebuchet MS", size=28, face="bold", hjust=0, color="#777777")) +
+  theme(axis.title.y = element_text(angle=0)) +
+  theme(panel.grid.minor = element_blank())
+```
+
+---
+## Other resources
+
+- [Awesome ggplot2](https://github.com/erikgahner/awesome-ggplot2)
+
+- **Plotly** for R, interactive plots as an extension of ggplot2 objects
+
+- **GoogleVis** for R, GoogleVis charts in R
+
+- **ggbio** - Visualization tools for genomic data
+
+.small[ https://plot.ly/r/
+
+https://CRAN.R-project.org/package=googleVis 
+
+https://bioconductor.org/packages/ggbio/ ]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

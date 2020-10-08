@@ -16,12 +16,20 @@ editor_options:
   chunk_output_type: console
 ---
 
-# To do yourself, due before 09-29-2020 class
+# To do yourself
 
+- O'Donoghue, Sen I., Benedetta Frida Baldi, Susan J. Clark, Aaron E. Darling, James M. Hogan, Sandeep Kaur, Lena Maier-Hein, et al. "[Visualization of Biomedical Data](https://doi.org/10.1146/annurev-biodatasci-080917-013424)." Annual Review of Biomedical Data Science 1, no. 1 (July 20, 2018) - Visualization best practices (the use of length, area, color etc.)
+
+- [Data visualization in R](http://www.datacarpentry.org/R-genomics/05-data-visualization.html) by Data Carpentry
+
+- [ggplot2 tutorial/slides/code examples/references](https://github.com/jennybc/ggplot2-tutorial) by Jenny Bryan 
+
+- [Interactive plots in R](https://davetang.org/muse/2018/05/18/interactive-plots-in-r/) by Dave Tang
+
+- [The R Graph Gallery, all graphs](http://www.r-graph-gallery.com/all-graphs/) with code
 - [Plotting/reporting best practices](https://geanders.github.io/RProgrammingForResearch/reporting-data-results-1.html) 
 
 - [Plotly](https://geanders.github.io/RProgrammingForResearch/reporting-data-results-3.html#htmlwidgets)
-
 
 
 # To submit on blackboard, due 09-29-2020, 5:00pm

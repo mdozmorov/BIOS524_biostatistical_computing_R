@@ -109,7 +109,7 @@
 &lt;ul&gt;
 &lt;li&gt;Write your own trimmed mean function that calculates the mean of a numeric vector &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;, ignoring the &lt;span class=&#34;math inline&#34;&gt;\(s\)&lt;/span&gt; smallest and &lt;span class=&#34;math inline&#34;&gt;\(l\)&lt;/span&gt; largest values (this is a trimmed mean). For example, if &lt;span class=&#34;math inline&#34;&gt;\(x=c(1,7,3,2,5,0.5,9,10)\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(s=1\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(l=2\)&lt;/span&gt;, your function would return the mean of &lt;span class=&#34;math inline&#34;&gt;\(c(1,7,3,2,5)\)&lt;/span&gt; (this is &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; with the &lt;span class=&#34;math inline&#34;&gt;\(1\)&lt;/span&gt; smallest value and the &lt;span class=&#34;math inline&#34;&gt;\(2\)&lt;/span&gt; largest values removed). Note: Your function should check if &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; has at least &lt;span class=&#34;math inline&#34;&gt;\(s+l+1\)&lt;/span&gt; values. If not, return some error message with stop().&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Document your functions in the package using Roxygen2 syntax.&lt;/p&gt;
+&lt;p&gt;Document your functions in the package using Roxygen2 syntax. Submit your package as a ZIP archive containing all subfolders and code.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -429,7 +429,7 @@ tricky       &amp;lt;- c(1, 2, 3, &amp;quot;4&amp;quot;)&lt;/code&gt;&lt;/pre&gt
     </item>
     
     <item>
-      <title>Assignment 7</title>
+      <title>Assignment 7: Tidyverse, data manipulation</title>
       <link>/assignment/07-problem-set/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/assignment/07-problem-set/</guid>
@@ -438,13 +438,13 @@ tricky       &amp;lt;- c(1, 2, 3, &amp;quot;4&amp;quot;)&lt;/code&gt;&lt;/pre&gt
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#to-do-yourself-due-before-xx-xx-2020-class&#34;&gt;To do yourself, due before XX-XX-2020 class&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-do-yourself&#34;&gt;To do yourself&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-xx-xx-2020-500pm&#34;&gt;To submit on blackboard, due XX-XX-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 
-&lt;div id=&#34;to-do-yourself-due-before-xx-xx-2020-class&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;To do yourself, due before XX-XX-2020 class&lt;/h1&gt;
+&lt;div id=&#34;to-do-yourself&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To do yourself&lt;/h1&gt;
 &lt;/div&gt;
 &lt;div id=&#34;to-submit-on-blackboard-due-xx-xx-2020-500pm&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;To submit on blackboard, due XX-XX-2020, 5:00pm&lt;/h1&gt;
@@ -469,14 +469,19 @@ tricky       &amp;lt;- c(1, 2, 3, &amp;quot;4&amp;quot;)&lt;/code&gt;&lt;/pre&gt
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#to-do-yourself-due-before-09-29-2020-class&#34;&gt;To do yourself, due before 09-29-2020 class&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-do-yourself&#34;&gt;To do yourself&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-09-29-2020-500pm&#34;&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 
-&lt;div id=&#34;to-do-yourself-due-before-09-29-2020-class&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;To do yourself, due before 09-29-2020 class&lt;/h1&gt;
+&lt;div id=&#34;to-do-yourself&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To do yourself&lt;/h1&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;O’Donoghue, Sen I., Benedetta Frida Baldi, Susan J. Clark, Aaron E. Darling, James M. Hogan, Sandeep Kaur, Lena Maier-Hein, et al. “&lt;a href=&#34;https://doi.org/10.1146/annurev-biodatasci-080917-013424&#34;&gt;Visualization of Biomedical Data&lt;/a&gt;.” Annual Review of Biomedical Data Science 1, no. 1 (July 20, 2018) - Visualization best practices (the use of length, area, color etc.)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.datacarpentry.org/R-genomics/05-data-visualization.html&#34;&gt;Data visualization in R&lt;/a&gt; by Data Carpentry&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/jennybc/ggplot2-tutorial&#34;&gt;ggplot2 tutorial/slides/code examples/references&lt;/a&gt; by Jenny Bryan&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://davetang.org/muse/2018/05/18/interactive-plots-in-r/&#34;&gt;Interactive plots in R&lt;/a&gt; by Dave Tang&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.r-graph-gallery.com/all-graphs/&#34;&gt;The R Graph Gallery, all graphs&lt;/a&gt; with code&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/reporting-data-results-1.html&#34;&gt;Plotting/reporting best practices&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/reporting-data-results-3.html#htmlwidgets&#34;&gt;Plotly&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
