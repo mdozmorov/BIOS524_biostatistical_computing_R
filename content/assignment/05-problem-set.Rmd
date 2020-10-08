@@ -18,9 +18,11 @@ editor_options:
 
 # To do yourself
 
-Read the [vignette for DataExplorer](https://cran.r-project.org/web/packages/DataExplorer/vignettes/dataexplorer-intro.html) R package, to know what it is capable of
+- Read the [vignette for DataExplorer](https://cran.r-project.org/web/packages/DataExplorer/vignettes/dataexplorer-intro.html) R package, to know what it is capable of
 
-Read the [vignette for doParaller](https://cran.r-project.org/web/packages/doParallel/vignettes/gettingstartedParallel.pdf) R package, go through code examples there
+- Read the [vignette for doParaller](https://cran.r-project.org/web/packages/doParallel/vignettes/gettingstartedParallel.pdf) R package, go through code examples there
+
+- [Parallelization in R](https://www.r-bloggers.com/speed-boosting-in-r-writing-efficient-code-parallel-programming/)
 
 # To submit on Blackboard
 

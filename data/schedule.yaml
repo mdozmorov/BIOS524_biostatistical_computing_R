@@ -35,8 +35,8 @@ lessons:
   - title: "**Lecture 6: Packages**"
     date: "October 8"
     # reading: "05-reading"
-    # assignment: "05-problem-set"
-    # class: "05-class"
+    assignment: "06-problem-set"
+    class: "06-class"
 
   - title: "**Lecture 7: Tidyverse, data manipulation**"
     date: "October 13"
