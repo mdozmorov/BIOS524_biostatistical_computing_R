@@ -12,7 +12,7 @@ output:
 
 ## Course Description
 
-This is a first-year graduate level course in biostatistical computing. This course is designed to provide an introduction to R programming. We will cover the data management/manipulation, common graphical and statistical procedures both in R. No knowledge of calculus/algebra is required although some vector/matrix operations will be discussed. 
+This is a first-year graduate level course in biostatistical computing. This course is an introduction to R programming. It covers R fundamentals and statistical functions, R packages, data management/manipulation and plotting using Tidyverse, reproducible research with GitHub, interactive apps with Shiny. No knowledge of calculus/algebra is required although some statistical operations will be discussed. 
 
 ## Topics
 

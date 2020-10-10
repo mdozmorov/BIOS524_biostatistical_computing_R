@@ -31,7 +31,7 @@ editor_options:
 
 ##### Part A
 
-- Create an Excel spreadsheet with 5 columns and 10 rows, following proper spreadsheet conventions discussed in class.
+- Create an Excel spreadsheet with 4 columns and 10 rows, following proper spreadsheet conventions discussed in class.
     - Let the first column be an ID number. 
     - Let the second column be a set of integers between 20 and 30, denoting the number of teeth someone has.
     - Let the third column be a set of real numbers between 1.0 and 4.0, denoting GPA in school. 
