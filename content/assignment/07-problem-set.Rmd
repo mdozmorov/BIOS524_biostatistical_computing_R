@@ -1,7 +1,7 @@
 ---
 title: "Assignment 7: Tidyverse, data manipulation"
-# date: "2020-06-08"
-# due_date: "2020-06-08"
+# date: "2020-10-13"
+# due_date: "2020-10-20"
 # due_time: "11:59 PM"
 # menu:
 #   assignment:
@@ -34,7 +34,7 @@ editor_options:
 
 - [Reusing Tidyverse code](https://speakerdeck.com/lionelhenry/reusing-tidyverse-code) - dplyr/tidyverse data manipulation lecture slides
 
-# To submit on blackboard, due XX-XX-2020, 5:00pm
+# To submit on blackboard, due 10-20-2020, 5:00pm
 
 - What is the difference between `read_xls()` and `read_xlsx()` functions? What message do you get if reading an `.xlsx` file using `read_xls()` function?
 - What does the skip argument do?
@@ -42,4 +42,12 @@ editor_options:
 - What does the guess_max argument do?
 - What happens if columns in the Excel worksheet are of different length?
 
-
+- Use the `starwars` dataset that is loaded with the tidyverse. Accomplish the following in one long string of pipes. 
+  - Keep only observations with weight and height recorded.
+  - Create a variable called `bmi` that calculates the character's BMI. 
+  - Summarize the BMI variable, grouping observations by homeworld. 
+  - Print this summary in decreasing order of average BMI. 
+  
+ - Read in the following data into R. This data is from the American Community Survey and references the population of three cities in Virginia between 2009 and 2012.
+ `cities <- data.frame(name = rep(c("richmond", "norfolk", "charlottesville")), pop2009 = c(1202494,236071,191515), pop2010 = c(1235565,242143,197279), pop2011 = c(1248271,241943,199675), pop2012 = c(1260202,243056,210909))`
+   In one long string of pipes, convert the data from wide (2009 to 2012 population values) to long format, naming the new column of populations `pop`, group by city, create a summary variable that is the ratio of the largest population value to smallest population value for the city, and arrange by this ratio value in decreasing order. 
