@@ -1,7 +1,7 @@
 ---
 title: "Assignment 8: Tidyverse, data visualization"
-# date: "2020-06-08"
-# due_date: "2020-06-08"
+# date: "2020-10-15"
+# due_date: "2020-10-22"
 # due_time: "11:59 PM"
 # menu:
 #   assignment:
@@ -21,7 +21,7 @@ editor_options:
 <div id="TOC">
 <ul>
 <li><a href="#to-do-yourself">To do yourself</a></li>
-<li><a href="#to-submit-on-blackboard-due-09-29-2020-500pm">To submit on blackboard, due 09-29-2020, 5:00pm</a></li>
+<li><a href="#to-submit-on-blackboard-due-10-22-2020-500pm">To submit on blackboard, due 10-22-2020, 5:00pm</a></li>
 </ul>
 </div>
 
@@ -38,6 +38,11 @@ editor_options:
 <li><p><a href="https://geanders.github.io/RProgrammingForResearch/reporting-data-results-3.html#htmlwidgets">Plotly</a></p></li>
 </ul>
 </div>
-<div id="to-submit-on-blackboard-due-09-29-2020-500pm" class="section level1">
-<h1>To submit on blackboard, due 09-29-2020, 5:00pm</h1>
+<div id="to-submit-on-blackboard-due-10-22-2020-500pm" class="section level1">
+<h1>To submit on blackboard, due 10-22-2020, 5:00pm</h1>
+<ul>
+<li><p>We will start with a very basic ggplot. Read in the <code>mtcars</code> dataset that comes with R. Produce a histogram of the MPG variable for each value of the cylinders variable (there are 3) in a 1 row by 3 column grid. You may notice that the plots appear ‘sideways’. If so, correct it using a ggplot command. Give the plot an informative title.</p></li>
+<li><p>Read in the <code>diamonds</code> dataset in R. In one long string of pipe operations, keep only those observations with <code>price</code> less than the 80th percentile of the <code>price</code> variable, group observations by <code>Clarity</code> type, and create a summary dataframe that summarizes the median <code>price</code> in one column and summarizes the median <code>x</code> value in another column. Using this dataset, create a ggplot scatterplot with <code>x</code> on the x-axis and <code>price</code> on the y-axis. Label the plot with values of Clarity and adjust the labels slightly so that they do not overlap the points.</p></li>
+<li><p>Again using the <code>diamonds</code> dataset, starting from the full dataset. First remove all diamonds with an ‘Ideal’ cut. Then make a ggplot of the data that displays the density estimate of price for each of the (now 4) values of cut, separately, arranged in a 4 row by 1 column grid. Fill in the area below the density curve in each plot with some color. Give the plot a title.</p></li>
+</ul>
 </div>

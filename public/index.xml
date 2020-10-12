@@ -151,7 +151,7 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Read it into R. What is the class of this object?&lt;/li&gt;
 &lt;li&gt;Create a new object with the same content, but with the class &lt;code&gt;list&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Address the fifth element of the list object. Address the content of the fifth element&lt;/li&gt;
+&lt;li&gt;Address the fourth element of the list object. Address the content of the fourth element&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div id=&#34;part-b&#34; class=&#34;section level5&#34;&gt;
@@ -439,7 +439,7 @@ tricky       &amp;lt;- c(1, 2, 3, &amp;quot;4&amp;quot;)&lt;/code&gt;&lt;/pre&gt
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#to-do-yourself&#34;&gt;To do yourself&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-xx-xx-2020-500pm&#34;&gt;To submit on blackboard, due XX-XX-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-10-20-2020-500pm&#34;&gt;To submit on blackboard, due 10-20-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 
@@ -456,14 +456,24 @@ tricky       &amp;lt;- c(1, 2, 3, &amp;quot;4&amp;quot;)&lt;/code&gt;&lt;/pre&gt
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://speakerdeck.com/lionelhenry/reusing-tidyverse-code&#34;&gt;Reusing Tidyverse code&lt;/a&gt; - dplyr/tidyverse data manipulation lecture slides&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div id=&#34;to-submit-on-blackboard-due-xx-xx-2020-500pm&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;To submit on blackboard, due XX-XX-2020, 5:00pm&lt;/h1&gt;
+&lt;div id=&#34;to-submit-on-blackboard-due-10-20-2020-500pm&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To submit on blackboard, due 10-20-2020, 5:00pm&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;What is the difference between &lt;code&gt;read_xls()&lt;/code&gt; and &lt;code&gt;read_xlsx()&lt;/code&gt; functions? What message do you get if reading an &lt;code&gt;.xlsx&lt;/code&gt; file using &lt;code&gt;read_xls()&lt;/code&gt; function?&lt;/li&gt;
-&lt;li&gt;What does the skip argument do?&lt;/li&gt;
-&lt;li&gt;Do we need to refer to a sheet within an excel file as a number, or can we refer to it as the sheet name instead?&lt;/li&gt;
-&lt;li&gt;What does the guess_max argument do?&lt;/li&gt;
-&lt;li&gt;What happens if columns in the Excel worksheet are of different length?&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;What is the difference between &lt;code&gt;read_xls()&lt;/code&gt; and &lt;code&gt;read_xlsx()&lt;/code&gt; functions? What message do you get if reading an &lt;code&gt;.xlsx&lt;/code&gt; file using &lt;code&gt;read_xls()&lt;/code&gt; function?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;What does the skip argument do?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Do we need to refer to a sheet within an excel file as a number, or can we refer to it as the sheet name instead?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;What does the guess_max argument do?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;What happens if columns in the Excel worksheet are of different length?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Use the &lt;code&gt;starwars&lt;/code&gt; dataset that is loaded with the tidyverse. Accomplish the following in one long string of pipes.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Keep only observations with weight and height recorded.&lt;/li&gt;
+&lt;li&gt;Create a variable called &lt;code&gt;bmi&lt;/code&gt; that calculates the character’s BMI.&lt;/li&gt;
+&lt;li&gt;Summarize the BMI variable, grouping observations by homeworld.&lt;/li&gt;
+&lt;li&gt;Print this summary in decreasing order of average BMI.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Read in the following data into R. This data is from the American Community Survey and references the population of three cities in Virginia between 2009 and 2012.
+&lt;code&gt;cities &amp;lt;- data.frame(name = rep(c(&#34;richmond&#34;, &#34;norfolk&#34;, &#34;charlottesville&#34;)), pop2009 = c(1202494,236071,191515), pop2010 = c(1235565,242143,197279), pop2011 = c(1248271,241943,199675), pop2012 = c(1260202,243056,210909))&lt;/code&gt;
+In one long string of pipes, convert the data from wide (2009 to 2012 population values) to long format, naming the new column of populations &lt;code&gt;pop&lt;/code&gt;, group by city, create a summary variable that is the ratio of the largest population value to smallest population value for the city, and arrange by this ratio value in decreasing order.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 </description>
@@ -480,7 +490,7 @@ tricky       &amp;lt;- c(1, 2, 3, &amp;quot;4&amp;quot;)&lt;/code&gt;&lt;/pre&gt
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#to-do-yourself&#34;&gt;To do yourself&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-09-29-2020-500pm&#34;&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-10-22-2020-500pm&#34;&gt;To submit on blackboard, due 10-22-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 
@@ -497,9 +507,27 @@ tricky       &amp;lt;- c(1, 2, 3, &amp;quot;4&amp;quot;)&lt;/code&gt;&lt;/pre&gt
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/reporting-data-results-3.html#htmlwidgets&#34;&gt;Plotly&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div id=&#34;to-submit-on-blackboard-due-09-29-2020-500pm&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/h1&gt;
+&lt;div id=&#34;to-submit-on-blackboard-due-10-22-2020-500pm&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To submit on blackboard, due 10-22-2020, 5:00pm&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;We will start with a very basic ggplot. Read in the &lt;code&gt;mtcars&lt;/code&gt; dataset that comes with R. Produce a histogram of the MPG variable for each value of the cylinders variable (there are 3) in a 1 row by 3 column grid. You may notice that the plots appear ‘sideways’. If so, correct it using a ggplot command. Give the plot an informative title.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Read in the &lt;code&gt;diamonds&lt;/code&gt; dataset in R. In one long string of pipe operations, keep only those observations with &lt;code&gt;price&lt;/code&gt; less than the 80th percentile of the &lt;code&gt;price&lt;/code&gt; variable, group observations by &lt;code&gt;Clarity&lt;/code&gt; type, and create a summary dataframe that summarizes the median &lt;code&gt;price&lt;/code&gt; in one column and summarizes the median &lt;code&gt;x&lt;/code&gt; value in another column. Using this dataset, create a ggplot scatterplot with &lt;code&gt;x&lt;/code&gt; on the x-axis and &lt;code&gt;price&lt;/code&gt; on the y-axis. Label the plot with values of Clarity and adjust the labels slightly so that they do not overlap the points.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Again using the &lt;code&gt;diamonds&lt;/code&gt; dataset, starting from the full dataset. First remove all diamonds with an ‘Ideal’ cut. Then make a ggplot of the data that displays the density estimate of price for each of the (now 4) values of cut, separately, arranged in a 4 row by 1 column grid. Fill in the area below the density curve in each plot with some color. Give the plot a title.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Final project</title>
+      <link>/assignment/11-problem-set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/assignment/11-problem-set/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;TBD&lt;/p&gt;
 </description>
     </item>
     

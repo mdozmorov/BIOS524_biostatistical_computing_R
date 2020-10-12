@@ -39,7 +39,7 @@ editor_options:
 
 - Read it into R. What is the class of this object?
 - Create a new object with the same content, but with the class `list`
-- Address the fifth element of the list object. Address the content of the fifth element
+- Address the fourth element of the list object. Address the content of the fourth element
  
 ##### Part B
 

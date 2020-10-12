@@ -1,7 +1,7 @@
 ---
 title: "Assignment 7: Tidyverse, data manipulation"
-# date: "2020-06-08"
-# due_date: "2020-06-08"
+# date: "2020-10-13"
+# due_date: "2020-10-20"
 # due_time: "11:59 PM"
 # menu:
 #   assignment:
@@ -21,7 +21,7 @@ editor_options:
 <div id="TOC">
 <ul>
 <li><a href="#to-do-yourself">To do yourself</a></li>
-<li><a href="#to-submit-on-blackboard-due-xx-xx-2020-500pm">To submit on blackboard, due XX-XX-2020, 5:00pm</a></li>
+<li><a href="#to-submit-on-blackboard-due-10-20-2020-500pm">To submit on blackboard, due 10-20-2020, 5:00pm</a></li>
 </ul>
 </div>
 
@@ -38,13 +38,23 @@ editor_options:
 <li><p><a href="https://speakerdeck.com/lionelhenry/reusing-tidyverse-code">Reusing Tidyverse code</a> - dplyr/tidyverse data manipulation lecture slides</p></li>
 </ul>
 </div>
-<div id="to-submit-on-blackboard-due-xx-xx-2020-500pm" class="section level1">
-<h1>To submit on blackboard, due XX-XX-2020, 5:00pm</h1>
+<div id="to-submit-on-blackboard-due-10-20-2020-500pm" class="section level1">
+<h1>To submit on blackboard, due 10-20-2020, 5:00pm</h1>
 <ul>
-<li>What is the difference between <code>read_xls()</code> and <code>read_xlsx()</code> functions? What message do you get if reading an <code>.xlsx</code> file using <code>read_xls()</code> function?</li>
-<li>What does the skip argument do?</li>
-<li>Do we need to refer to a sheet within an excel file as a number, or can we refer to it as the sheet name instead?</li>
-<li>What does the guess_max argument do?</li>
-<li>What happens if columns in the Excel worksheet are of different length?</li>
+<li><p>What is the difference between <code>read_xls()</code> and <code>read_xlsx()</code> functions? What message do you get if reading an <code>.xlsx</code> file using <code>read_xls()</code> function?</p></li>
+<li><p>What does the skip argument do?</p></li>
+<li><p>Do we need to refer to a sheet within an excel file as a number, or can we refer to it as the sheet name instead?</p></li>
+<li><p>What does the guess_max argument do?</p></li>
+<li><p>What happens if columns in the Excel worksheet are of different length?</p></li>
+<li><p>Use the <code>starwars</code> dataset that is loaded with the tidyverse. Accomplish the following in one long string of pipes.</p>
+<ul>
+<li>Keep only observations with weight and height recorded.</li>
+<li>Create a variable called <code>bmi</code> that calculates the character’s BMI.</li>
+<li>Summarize the BMI variable, grouping observations by homeworld.</li>
+<li>Print this summary in decreasing order of average BMI.</li>
+</ul></li>
+<li><p>Read in the following data into R. This data is from the American Community Survey and references the population of three cities in Virginia between 2009 and 2012.
+<code>cities &lt;- data.frame(name = rep(c("richmond", "norfolk", "charlottesville")), pop2009 = c(1202494,236071,191515), pop2010 = c(1235565,242143,197279), pop2011 = c(1248271,241943,199675), pop2012 = c(1260202,243056,210909))</code>
+In one long string of pipes, convert the data from wide (2009 to 2012 population values) to long format, naming the new column of populations <code>pop</code>, group by city, create a summary variable that is the ratio of the largest population value to smallest population value for the city, and arrange by this ratio value in decreasing order.</p></li>
 </ul>
 </div>
