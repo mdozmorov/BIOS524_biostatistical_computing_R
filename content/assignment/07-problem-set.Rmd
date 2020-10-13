@@ -1,12 +1,12 @@
 ---
 title: "Assignment 7: Tidyverse, data manipulation"
-# date: "2020-10-13"
-# due_date: "2020-10-20"
-# due_time: "11:59 PM"
-# menu:
-#   assignment:
-#     parent: Assignments
-#     weight: 2
+date: "2020-10-13"
+due_date: "2020-10-20"
+due_time: "05:00 PM"
+menu:
+  assignment:
+    parent: Assignments
+    weight: 7
 type: docs
 weight: 1
 output:

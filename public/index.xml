@@ -13,6 +13,57 @@
     </image>
     
     <item>
+      <title>Assignment 7: Tidyverse, data manipulation</title>
+      <link>/assignment/07-problem-set/</link>
+      <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/assignment/07-problem-set/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#to-do-yourself&#34;&gt;To do yourself&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-10-20-2020-500pm&#34;&gt;To submit on blackboard, due 10-20-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;to-do-yourself&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To do yourself&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://ramnarasimhan.files.wordpress.com/2014/10/data-manipulation-using-r_acm2014.pdf&#34;&gt;Data Manipulation Using R (&amp;amp; dplyr)&lt;/a&gt; by Ram Narasimhan, PDF slides&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://datascienceplus.com/data-manipulation-with-dplyr/&#34;&gt;Data Manipulation with dplyr&lt;/a&gt; brief tutorial&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.datacarpentry.org/R-genomics/04-dplyr.html&#34;&gt;Aggregating and analyzing data with dplyr&lt;/a&gt; tutorial by Data Carpentry&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://rpubs.com/justmarkham/dplyr-tutorial&#34;&gt;Introduction to dplyr for Faster Data Manipulation in R&lt;/a&gt; tutorial and a 40 min video &lt;a href=&#34;https://www.youtube.com/watch?v=jWjqLW-u3hc&#34;&gt;Hands-on dplyr tutorial for faster data manipulation in R&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/gadenbuie/tidy-animated-verbs&#34;&gt;Animations of tidyverse verbs using R, the tidyverse, and gganimate&lt;/a&gt; - visual explanation of dplyr operations&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://tidyr.tidyverse.org/dev/articles/pivot.html&#34;&gt;Pivoting, reformatting data into long/wide formats&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://speakerdeck.com/yutannihilation/a-graphical-introduction-to-tidyrs-pivot-star&#34;&gt;A graphical introduction to tidyr’s pivot&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://speakerdeck.com/lionelhenry/reusing-tidyverse-code&#34;&gt;Reusing Tidyverse code&lt;/a&gt; - dplyr/tidyverse data manipulation lecture slides&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;to-submit-on-blackboard-due-10-20-2020-500pm&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To submit on blackboard, due 10-20-2020, 5:00pm&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;What is the difference between &lt;code&gt;read_xls()&lt;/code&gt; and &lt;code&gt;read_xlsx()&lt;/code&gt; functions? What message do you get if reading an &lt;code&gt;.xlsx&lt;/code&gt; file using &lt;code&gt;read_xls()&lt;/code&gt; function?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;What does the skip argument do?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Do we need to refer to a sheet within an excel file as a number, or can we refer to it as the sheet name instead?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;What does the guess_max argument do?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;What happens if columns in the Excel worksheet are of different length?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Use the &lt;code&gt;starwars&lt;/code&gt; dataset that is loaded with the tidyverse. Accomplish the following in one long string of pipes.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Keep only observations with weight and height recorded.&lt;/li&gt;
+&lt;li&gt;Create a variable called &lt;code&gt;bmi&lt;/code&gt; that calculates the character’s BMI.&lt;/li&gt;
+&lt;li&gt;Summarize the BMI variable, grouping observations by homeworld.&lt;/li&gt;
+&lt;li&gt;Print this summary in decreasing order of average BMI.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Read in the following data into R. This data is from the American Community Survey and references the population of three cities in Virginia between 2009 and 2012.
+&lt;code&gt;cities &amp;lt;- data.frame(name = rep(c(&#34;richmond&#34;, &#34;norfolk&#34;, &#34;charlottesville&#34;)), pop2009 = c(1202494,236071,191515), pop2010 = c(1235565,242143,197279), pop2011 = c(1248271,241943,199675), pop2012 = c(1260202,243056,210909))&lt;/code&gt;
+In one long string of pipes, convert the data from wide (2009 to 2012 population values) to long format, naming the new column of populations &lt;code&gt;pop&lt;/code&gt;, group by city, create a summary variable that is the ratio of the largest population value to smallest population value for the city, and arrange by this ratio value in decreasing order.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Assignment 4: RMarkdown</title>
       <link>/assignment/04-problem-set/</link>
       <pubDate>Sat, 10 Oct 2020 00:00:00 +0000</pubDate>
@@ -429,57 +480,6 @@ tricky       &amp;lt;- c(1, 2, 3, &amp;quot;4&amp;quot;)&lt;/code&gt;&lt;/pre&gt
     </item>
     
     <item>
-      <title>Assignment 7: Tidyverse, data manipulation</title>
-      <link>/assignment/07-problem-set/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/assignment/07-problem-set/</guid>
-      <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-
-&lt;div id=&#34;TOC&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#to-do-yourself&#34;&gt;To do yourself&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-10-20-2020-500pm&#34;&gt;To submit on blackboard, due 10-20-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-
-&lt;div id=&#34;to-do-yourself&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;To do yourself&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://ramnarasimhan.files.wordpress.com/2014/10/data-manipulation-using-r_acm2014.pdf&#34;&gt;Data Manipulation Using R (&amp;amp; dplyr)&lt;/a&gt; by Ram Narasimhan, PDF slides&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://datascienceplus.com/data-manipulation-with-dplyr/&#34;&gt;Data Manipulation with dplyr&lt;/a&gt; brief tutorial&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.datacarpentry.org/R-genomics/04-dplyr.html&#34;&gt;Aggregating and analyzing data with dplyr&lt;/a&gt; tutorial by Data Carpentry&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://rpubs.com/justmarkham/dplyr-tutorial&#34;&gt;Introduction to dplyr for Faster Data Manipulation in R&lt;/a&gt; tutorial and a 40 min video &lt;a href=&#34;https://www.youtube.com/watch?v=jWjqLW-u3hc&#34;&gt;Hands-on dplyr tutorial for faster data manipulation in R&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/gadenbuie/tidy-animated-verbs&#34;&gt;Animations of tidyverse verbs using R, the tidyverse, and gganimate&lt;/a&gt; - visual explanation of dplyr operations&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://tidyr.tidyverse.org/dev/articles/pivot.html&#34;&gt;Pivoting, reformatting data into long/wide formats&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://speakerdeck.com/yutannihilation/a-graphical-introduction-to-tidyrs-pivot-star&#34;&gt;A graphical introduction to tidyr’s pivot&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://speakerdeck.com/lionelhenry/reusing-tidyverse-code&#34;&gt;Reusing Tidyverse code&lt;/a&gt; - dplyr/tidyverse data manipulation lecture slides&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id=&#34;to-submit-on-blackboard-due-10-20-2020-500pm&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;To submit on blackboard, due 10-20-2020, 5:00pm&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;What is the difference between &lt;code&gt;read_xls()&lt;/code&gt; and &lt;code&gt;read_xlsx()&lt;/code&gt; functions? What message do you get if reading an &lt;code&gt;.xlsx&lt;/code&gt; file using &lt;code&gt;read_xls()&lt;/code&gt; function?&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;What does the skip argument do?&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Do we need to refer to a sheet within an excel file as a number, or can we refer to it as the sheet name instead?&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;What does the guess_max argument do?&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;What happens if columns in the Excel worksheet are of different length?&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Use the &lt;code&gt;starwars&lt;/code&gt; dataset that is loaded with the tidyverse. Accomplish the following in one long string of pipes.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Keep only observations with weight and height recorded.&lt;/li&gt;
-&lt;li&gt;Create a variable called &lt;code&gt;bmi&lt;/code&gt; that calculates the character’s BMI.&lt;/li&gt;
-&lt;li&gt;Summarize the BMI variable, grouping observations by homeworld.&lt;/li&gt;
-&lt;li&gt;Print this summary in decreasing order of average BMI.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Read in the following data into R. This data is from the American Community Survey and references the population of three cities in Virginia between 2009 and 2012.
-&lt;code&gt;cities &amp;lt;- data.frame(name = rep(c(&#34;richmond&#34;, &#34;norfolk&#34;, &#34;charlottesville&#34;)), pop2009 = c(1202494,236071,191515), pop2010 = c(1235565,242143,197279), pop2011 = c(1248271,241943,199675), pop2012 = c(1260202,243056,210909))&lt;/code&gt;
-In one long string of pipes, convert the data from wide (2009 to 2012 population values) to long format, naming the new column of populations &lt;code&gt;pop&lt;/code&gt;, group by city, create a summary variable that is the ratio of the largest population value to smallest population value for the city, and arrange by this ratio value in decreasing order.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Assignment 8: Tidyverse, data visualization</title>
       <link>/assignment/08-problem-set/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -528,6 +528,31 @@ In one long string of pipes, convert the data from wide (2009 to 2012 population
 
 
 &lt;p&gt;TBD&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lecture 7: Tidyverse, data manipulation</title>
+      <link>/class/07-class/</link>
+      <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/class/07-class/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;div id=&#34;tidyverse-data-manipulation&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Tidyverse, data manipulation&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;../../slides/71_Tidyverse_dplyr#1&#34; target=&#34;_blank&#34;&gt;Lecture slides in HTML format&lt;/a&gt;&lt;/p&gt;
+&lt;iframe src=&#34;../../slides/71_Tidyverse_dplyr.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div id=&#34;code-for-dplyr-tutorial&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Code for dplyr tutorial&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;../../slides/72_dplyr.R&#34; target=&#34;_blank&#34;&gt;72_dplyr.R&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -773,14 +798,11 @@ In one long string of pipes, convert the data from wide (2009 to 2012 population
             &lt;td style=&#34;width:50%;text-align:left&#34;&gt;&lt;strong&gt;Lecture 7: Tidyverse, data manipulation&lt;/strong&gt;&lt;/td&gt;
 
 
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-chalkboard-teacher fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
+                    href=&#34;/assignment/07-problem-set/&#34;&gt;
+                    &lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a href=&#34;/class/07-class/&#34;&gt;
+                    &lt;i class=&#34;fas fa-chalkboard-teacher fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;October 15&lt;/td&gt;

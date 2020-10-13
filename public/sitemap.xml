@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/assignment/07-problem-set/</loc>
+    <lastmod>2020-10-12T14:40:50-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/assignment/04-problem-set/</loc>
     <lastmod>2020-10-01T08:26:36-04:00</lastmod>
   </url>
@@ -14,7 +19,7 @@
   
   <url>
     <loc>/assignment/05-problem-set/</loc>
-    <lastmod>2020-10-09T20:20:39-04:00</lastmod>
+    <lastmod>2020-10-12T14:40:50-04:00</lastmod>
   </url>
   
   <url>
@@ -41,13 +46,8 @@
   </url>
   
   <url>
-    <loc>/assignment/07-problem-set/</loc>
-    <lastmod>2020-10-08T19:12:27-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/assignment/08-problem-set/</loc>
-    <lastmod>2020-10-08T19:12:27-04:00</lastmod>
+    <lastmod>2020-10-12T14:40:50-04:00</lastmod>
   </url>
   
   <url>
@@ -72,6 +72,11 @@
   <url>
     <loc>/reference/</loc>
     <lastmod>2020-08-11T14:45:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/class/07-class/</loc>
+    <lastmod>2020-10-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
