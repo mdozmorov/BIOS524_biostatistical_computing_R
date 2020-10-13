@@ -178,6 +178,29 @@ tail(dat)
 ```
 
 ---
+## Inspecting data.frame objects
+
+There are several built-in functions that are useful for working with data frames.
+
+* Content:
+    * `head()`: shows the first few rows
+    * `tail()`: shows the last few rows
+
+* Size:
+    * `dim()`: returns a 2-element vector with the number of rows in the first element, and the number of columns as the second element (the dimensions of the object)
+    * `nrow()`: returns the number of rows
+    * `ncol()`: returns the number of columns
+
+---
+## Inspecting data.frame objects
+
+* `colnames()` (or just `names()`): returns the column names
+
+* `str()`: structure of the object and information about the class, length and content of each column
+
+* `summary()`: works differently depending on what kind of object you pass to it. Passing a data frame to the `summary()` function prints out useful summary statistics about numeric column (min, max, median, mean, etc.)
+
+---
 ## Lists
 
 - **Lists**: objects containing elements of different types
@@ -404,6 +427,27 @@ https://CRAN.R-project.org/package=writexl]
 .small[https://developer.r-project.org/Blog/public/2020/02/16/stringsasfactors/]
 
 ---
+## Save/load R objects
+
+- `save()`, `load()` - saves/loads R objects to the specified file
+``` r
+x <- stats::runif(20)
+y <- list(a = 1, b = TRUE, c = "oops")
+save(x, y, file = "xy.rda")
+load(file = "xy.rda")
+```
+
+- `saveRDS()`, `readRDS()` - saves/loads a _representation_ of the object
+``` r
+x <- stats::runif(20)
+saveRDS(x, file = "x.rds")
+x2 <- readRDS(file = "x.rds")
+identical(x, x2, ignore.environment = TRUE)
+```
+
+.small[https://fromthebottomoftheheap.net/2012/04/01/saving-and-loading-r-objects/]
+
+---
 ## R datasets
 
 R contains many datasets (stored as data frames) that are built-in to the software
@@ -489,6 +533,11 @@ if (condition) {
   # do something else
 }
 ```
+
+- `==`: Equal to
+- `!=`: Not equal to
+- `>`, `>=`: Greater than, greater than or equal to
+- `<`, `<=`: Less than, less than or equal to
 
 ```{r}
 x <- 1:15

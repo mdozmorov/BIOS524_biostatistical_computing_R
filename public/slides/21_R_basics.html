@@ -306,6 +306,29 @@ tail(dat)
 ```
 
 ---
+## Inspecting data.frame objects
+
+There are several built-in functions that are useful for working with data frames.
+
+* Content:
+    * `head()`: shows the first few rows
+    * `tail()`: shows the last few rows
+
+* Size:
+    * `dim()`: returns a 2-element vector with the number of rows in the first element, and the number of columns as the second element (the dimensions of the object)
+    * `nrow()`: returns the number of rows
+    * `ncol()`: returns the number of columns
+
+---
+## Inspecting data.frame objects
+
+* `colnames()` (or just `names()`): returns the column names
+
+* `str()`: structure of the object and information about the class, length and content of each column
+
+* `summary()`: works differently depending on what kind of object you pass to it. Passing a data frame to the `summary()` function prints out useful summary statistics about numeric column (min, max, median, mean, etc.)
+
+---
 ## Lists
 
 - **Lists**: objects containing elements of different types
@@ -580,6 +603,27 @@ https://CRAN.R-project.org/package=writexl]
 .small[https://developer.r-project.org/Blog/public/2020/02/16/stringsasfactors/]
 
 ---
+## Save/load R objects
+
+- `save()`, `load()` - saves/loads R objects to the specified file
+``` r
+x &lt;- stats::runif(20)
+y &lt;- list(a = 1, b = TRUE, c = "oops")
+save(x, y, file = "xy.rda")
+load(file = "xy.rda")
+```
+
+- `saveRDS()`, `readRDS()` - saves/loads a _representation_ of the object
+``` r
+x &lt;- stats::runif(20)
+saveRDS(x, file = "x.rds")
+x2 &lt;- readRDS(file = "x.rds")
+identical(x, x2, ignore.environment = TRUE)
+```
+
+.small[https://fromthebottomoftheheap.net/2012/04/01/saving-and-loading-r-objects/]
+
+---
 ## R datasets
 
 R contains many datasets (stored as data frames) that are built-in to the software
@@ -744,6 +788,11 @@ if (condition) {
   # do something else
 }
 ```
+
+- `==`: Equal to
+- `!=`: Not equal to
+- `&gt;`, `&gt;=`: Greater than, greater than or equal to
+- `&lt;`, `&lt;=`: Less than, less than or equal to
 
 
 ```r
@@ -1028,16 +1077,16 @@ lapply(x, runif)
 
 ```
 ## [[1]]
-## [1] 0.9084087
+## [1] 0.7103501
 ## 
 ## [[2]]
-## [1] 0.3019253 0.2485544
+## [1] 0.3951038 0.4184131
 ## 
 ## [[3]]
-## [1] 0.8532230 0.9490973 0.3771063
+## [1] 0.3217766 0.1780726 0.8919266
 ## 
 ## [[4]]
-## [1] 0.9387564 0.8465615 0.9111001 0.6025494
+## [1] 0.60705926 0.05831400 0.09485927 0.83428037
 ```
 
 
@@ -1047,8 +1096,8 @@ sapply(x, mean)
 ```
 
 ```
-##         a         b         c 
-## 2.5000000 0.2781057 1.0683632
+##          a          b          c 
+##  2.5000000 -0.1394352  0.9592841
 ```
 
 ---
@@ -1063,8 +1112,8 @@ sapply(x, quantile, probs = c(0.25, 0.75))
 
 ```
 ##           [,1]      [,2] [,3]
-## 25% -0.5865655 0.3503243    0
-## 75%  0.6749463 0.7135924    2
+## 25% -0.4512676 0.3318313    0
+## 75%  0.7023871 0.7364010    1
 ```
 
 
@@ -1074,10 +1123,10 @@ apply(x, 1, sum)
 ```
 
 ```
-##  [1]  1.29593557 -2.78266757  1.36776316 -0.60588027 -3.23425419 -2.97655123
-##  [7]  2.81546095  0.22191313  7.50920383  4.65095921  2.48642811 -6.32666434
-## [13] -0.92711633  0.05188269  1.10118277  5.27820042  0.05317381  7.14525581
-## [19] -4.60361274  3.71743481
+##  [1] -1.8750636 -5.7395261 -1.3897511  2.8761932  0.6523308 -1.2598896
+##  [7]  3.6839290 -3.9213112  6.7922807 -1.2603816  1.9749202 -1.6921166
+## [13] -0.9821136  3.3275777  3.5328862  1.8707953  9.2495361  1.7392953
+## [19] -2.0882412  0.9703799
 ```
 
 ```r
@@ -1085,8 +1134,8 @@ apply(x, 2, mean)
 ```
 
 ```
-##  [1]  0.15113646  0.39305712  0.29559937  0.54260288 -0.04980758  0.03231835
-##  [7] -0.18982439 -0.29549208 -0.19328628  0.12559854
+##  [1]  0.45098333 -0.19774551 -0.13381431  0.50200787  0.13881266 -0.27666766
+##  [7]  0.28958605  0.07532345 -0.12001035  0.09461095
 ```
 
 ---
@@ -1126,8 +1175,8 @@ tapply(x, f, mean)
 ```
 
 ```
-##         1         2         3 
-## 0.1145544 0.4993193 1.5509622
+##          1          2          3 
+## -0.7883378  0.4986981  1.1900419
 ```
 
 ---

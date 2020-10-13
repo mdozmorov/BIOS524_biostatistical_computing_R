@@ -68,27 +68,6 @@ class: center, middle
 - "File -> Import Dataset" in RStudio
 
 ---
-## Save/load R objects
-
-- `save()`, `load()` - saves/loads R objects to the specified file
-``` r
-x <- stats::runif(20)
-y <- list(a = 1, b = TRUE, c = "oops")
-save(x, y, file = "xy.rda")
-load(file = "xy.rda")
-```
-
-- `saveRDS()`, `readRDS()` - saves/loads a _representation_ of the object
-``` r
-x <- stats::runif(20)
-saveRDS(x, file = "x.rds")
-x2 <- readRDS(file = "xy.rda")
-identical(x, x2, ignore.environment = TRUE)
-```
-
-.small[https://fromthebottomoftheheap.net/2012/04/01/saving-and-loading-r-objects/]
-
----
 ## readr
 
 - There are some built-in functions for reading in data in text files. These functions are _read-dot-something_, for example, `read.csv()` reads in comma-delimited text data; `read.delim()` reads in tab-delimited text, etc. 
@@ -100,29 +79,6 @@ identical(x, x2, ignore.environment = TRUE)
 - Play nicely with `dplyr` - data manipulation package
 
 .small[ http://readr.tidyverse.org/ ]
-
----
-## Inspecting data.frame objects
-
-There are several built-in functions that are useful for working with data frames.
-
-* Content:
-    * `head()`: shows the first few rows
-    * `tail()`: shows the last few rows
-
-* Size:
-    * `dim()`: returns a 2-element vector with the number of rows in the first element, and the number of columns as the second element (the dimensions of the object)
-    * `nrow()`: returns the number of rows
-    * `ncol()`: returns the number of columns
-
----
-## Inspecting data.frame objects
-
-* `colnames()` (or just `names()`): returns the column names
-
-* `str()`: structure of the object and information about the class, length and content of each column
-
-* `summary()`: works differently depending on what kind of object you pass to it. Passing a data frame to the `summary()` function prints out useful summary statistics about numeric column (min, max, median, mean, etc.)
 
 ---
 ## tibbles
@@ -187,11 +143,12 @@ class: center, middle
 80% of your work will be data preparation
 
 - getting data (from databases, spreadsheets, flat-files)
-- performing exploratory/diagnostic data analysis
-- reshaping data
-- visualizing data
 
-.small[ http://www.gettinggeneticsdone.com/2014/08/do-your-data-janitor-work-like-boss.html ]
+- performing exploratory/diagnostic data analysis
+
+- reshaping data
+
+- visualizing data
 
 ---
 ## dplyr: data manipulation with R
@@ -199,10 +156,15 @@ class: center, middle
 80% of your work will be data preparation
 
 - Filtering rows (to create a subset)
+
 - Selecting columns of data (i.e., selecting variables)
+
 - Adding new variables
+
 - Sorting
+
 - Aggregating 
+
 - Joining
 
 ---
@@ -225,7 +187,7 @@ class: center, middle
 ---
 ## The pipe %>% operator
 
-- Pipe `%>` output of one command into an input of another command - chain commands together. (Think about the "|" operator in Linux)
+- Pipe `%>%` output of one command into an input of another command - chain commands together. (Think about the "|" operator in Linux)
 - Imported from `magrittr` package
 - Read as "then". Take the dataset (or object), _then_ do ...
 
@@ -402,13 +364,18 @@ diamonds %>% filter(cut == "Ideal") %>% arrange(price) %>%
 ---
 ## Working with factors tidyverse way
 
-- `library(forcats)`
-    - `fct_rev()` - Reverse order of factor levels
-    - `fct_reorder()` - Reordering a factor by another variable
-    - `fct_collapse()` - Collapse multiple categories into one category
-    - `fct_lump()` - Collapsing the least/most frequent values of a factor into “other”
-    - `fct_infreq()` - Reordering a factor by the frequency of values
-    - `fct_relevel()` - Changing the order of a factor by hand
+`library(forcats)`
 
+- `fct_rev()` - Reverse order of factor levels
+
+- `fct_reorder()` - Reordering a factor by another variable
+
+- `fct_collapse()` - Collapse multiple categories into one category
+
+- `fct_lump()` - Collapsing the least/most frequent values of a factor into “other”
+
+- `fct_infreq()` - Reordering a factor by the frequency of values
+
+- `fct_relevel()` - Changing the order of a factor by hand
 
 .small[ https://forcats.tidyverse.org/ ]
