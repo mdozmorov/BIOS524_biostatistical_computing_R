@@ -30,6 +30,7 @@
 &lt;div id=&#34;to-do-yourself&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;To do yourself&lt;/h1&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.kaggle.com/jessemostipak/dive-into-dplyr-tutorial&#34;&gt;Dive into dplyr (tutorial)&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://ramnarasimhan.files.wordpress.com/2014/10/data-manipulation-using-r_acm2014.pdf&#34;&gt;Data Manipulation Using R (&amp;amp; dplyr)&lt;/a&gt; by Ram Narasimhan, PDF slides&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://datascienceplus.com/data-manipulation-with-dplyr/&#34;&gt;Data Manipulation with dplyr&lt;/a&gt; brief tutorial&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.datacarpentry.org/R-genomics/04-dplyr.html&#34;&gt;Aggregating and analyzing data with dplyr&lt;/a&gt; tutorial by Data Carpentry&lt;/p&gt;&lt;/li&gt;
@@ -503,8 +504,7 @@ tricky       &amp;lt;- c(1, 2, 3, &amp;quot;4&amp;quot;)&lt;/code&gt;&lt;/pre&gt
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://davetang.org/muse/2018/05/18/interactive-plots-in-r/&#34;&gt;Interactive plots in R&lt;/a&gt; by Dave Tang&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.r-graph-gallery.com/all-graphs/&#34;&gt;The R Graph Gallery, all graphs&lt;/a&gt; with code&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/Z3tt/ggplot-courses&#34;&gt;Collection of ggplot2 materials&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/reporting-data-results-1.html&#34;&gt;Plotting/reporting best practices&lt;/a&gt;
-starwars %&amp;gt;%&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/reporting-data-results-1.html&#34;&gt;Plotting/reporting best practices&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/reporting-data-results-3.html#htmlwidgets&#34;&gt;Plotly&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;

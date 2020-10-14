@@ -18,6 +18,8 @@ editor_options:
 
 # To do yourself
 
+- [Dive into dplyr (tutorial)](https://www.kaggle.com/jessemostipak/dive-into-dplyr-tutorial)
+
 - [Data Manipulation Using R (& dplyr)](https://ramnarasimhan.files.wordpress.com/2014/10/data-manipulation-using-r_acm2014.pdf) by Ram	Narasimhan, PDF slides
 
 - [Data Manipulation with dplyr](http://datascienceplus.com/data-manipulation-with-dplyr/) brief tutorial

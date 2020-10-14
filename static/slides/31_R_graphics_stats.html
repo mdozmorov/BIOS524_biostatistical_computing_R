@@ -660,6 +660,87 @@ Numerous packages are available to extend R functionality
 - Interface with other languages, like C (`Rcpp`), Python (`reticulate`)
 
 - Many more cool usages...
+
+---
+## R base graphics
+
+- `plot()` 			generic x-y plotting
+- `barplot()` 	bar plots
+- `boxplot()` 	box-and-whisker plot
+- `hist()` 			histograms
+
+.center[&lt;img src="img/bar_box_hist.png" width = 800&gt;]
+
+.small[ http://manuals.bioinformatics.ucr.edu/home/R_BioCondManual#TOC-Graphical-Procedures ]
+
+---
+## Other useful plots
+
+- `qqnorm()`, `qqline()`, `qqplot()` - distribution comparison plots
+
+- `pairs()` - pair-wise plot of multivariate data
+
+&amp;nbsp;
+
+.small[ http://manuals.bioinformatics.ucr.edu/home/R_BioCondManual#TOC-Some-Great-R-Functions ]
+
+---
+## Don't use barplots
+
+.center[&lt;img src="https://cogtales.files.wordpress.com/2016/06/originalmeme1.png" width = 700&gt;]
+
+.small[ Weissgerber T et.al., "[Beyond Bar and Line Graphs: Time for a New Data Presentation Paradigm](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002128)", PLOS Biology,2015
+
+https://cogtales.wordpress.com/2016/06/06/congratulations-barbarplots/ ]
+
+---
+## R base graphics
+
+- `stats::heatmap()` - basic heatmap
+
+Alternatives: 
+
+- `gplots::heatmap.2()` - an extension of heatmap
+- `heatmap3::heatmap3()` - another extension of heatmap
+- `ComplexHeatmap::Heatmap()` - highly customizable, interactive heatmap
+
+Other options:
+
+- `pheatmap::pheatmap()` - grid-based heatmap
+- `NMF::aheatmap()` - another grid-based heatmap
+
+.small[	[ComplexHeatmap Complete Reference](https://jokergoo.github.io/ComplexHeatmap-reference/book/) by Zuguang Gu
+
+https://bioconductor.org/packages/ComplexHeatmap/ ]
+
+---
+## Interactive heatmaps
+
+- `d3heatmap::d3heatmap()` - interactive heatmap in d3
+
+- `heatmaply::heatmaply()` - interactive heatmap with better dendrograms
+
+- `plotly` - make ggplot2 plots interactive
+
+.small[ [Heatmaps in R](https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/Heatmaps-in-R-Overview-and-best-practices) 20 min video by Tal Galili
+
+[Interactive plots in R](https://davetang.org/muse/2018/05/18/interactive-plots-in-r/) blog post by Dave Tang ]
+
+---
+## Special plots
+
+- `vioplot()`: Violin plot
+- `PiratePlot()`: violin plot enhanced 
+- `beeswarm()`: The Bee Swarm Plot, an Alternative to Stripchart
+
+.center[&lt;img src="img/violin_plots.png" width = 800&gt;]
+
+.small[ https://CRAN.R-project.org/package=vioplot 
+
+[YaRrr! The Pirate’s Guide to R](https://bookdown.org/ndphillips/YaRrr/)
+
+https://CRAN.R-project.org/package=beeswarm ]
+
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

@@ -31,7 +31,7 @@ editor_options:
 - [Collection of ggplot2 materials](https://github.com/Z3tt/ggplot-courses)
 
 - [Plotting/reporting best practices](https://geanders.github.io/RProgrammingForResearch/reporting-data-results-1.html) 
-starwars %>% 
+
 - [Plotly](https://geanders.github.io/RProgrammingForResearch/reporting-data-results-3.html#htmlwidgets)
 
 
