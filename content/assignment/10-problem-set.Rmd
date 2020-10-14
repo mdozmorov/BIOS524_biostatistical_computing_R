@@ -18,14 +18,10 @@ editor_options:
 
 # To do yourself
 
+- [Mastering Shiny](https://mastering-shiny.org/) book by Hadley Wickham. [GitHub](https://github.com/jcheng5/shiny-book)
+
 - [How to Deploy R Shiny App for Free on Shinyapps.io](https://www.r-bloggers.com/2020/10/how-to-deploy-r-shiny-app-for-free-on-shinyapps-io-video/) 14 min video and links
 
-# To submit on blackboard, due 09-29-2020, 5:00pm
+# To submit on blackboard
 
-- Install package "babynames"
-    - How many values are in the `babynames` object?
-    - What their data types
-    - Get an overview of `babynames`
-    - Plot the proportion of your name usage vs. year. Choose closest or random name, if your exact spelling is not available
-
-- Submit your homework as a text or Word document. Name your file as "<last_name>_<first_name>_Hw02"
+Open [r-shiny.Rmd](../../r-shiny.Rmd) in RStudio. Review the code chunks and create an `app.R` file from them. Ensure the app runs. Submit the file.

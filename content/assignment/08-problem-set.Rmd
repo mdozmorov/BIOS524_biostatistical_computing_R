@@ -20,6 +20,8 @@ editor_options:
 
 - O'Donoghue, Sen I., Benedetta Frida Baldi, Susan J. Clark, Aaron E. Darling, James M. Hogan, Sandeep Kaur, Lena Maier-Hein, et al. "[Visualization of Biomedical Data](https://doi.org/10.1146/annurev-biodatasci-080917-013424)." Annual Review of Biomedical Data Science 1, no. 1 (July 20, 2018) - Visualization best practices (the use of length, area, color etc.)
 
+- [RStudio Webinars](https://github.com/rstudio/webinars) - Code and slides for RStudio webinars
+
 - [Data visualization in R](http://www.datacarpentry.org/R-genomics/05-data-visualization.html) by Data Carpentry
 
 - [ggplot2 tutorial/slides/code examples/references](https://github.com/jennybc/ggplot2-tutorial) by Jenny Bryan 

@@ -454,28 +454,20 @@ tricky       &amp;lt;- c(1, 2, 3, &amp;quot;4&amp;quot;)&lt;/code&gt;&lt;/pre&gt
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#to-do-yourself&#34;&gt;To do yourself&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-09-29-2020-500pm&#34;&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard&#34;&gt;To submit on blackboard&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 
 &lt;div id=&#34;to-do-yourself&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;To do yourself&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.r-bloggers.com/2020/10/how-to-deploy-r-shiny-app-for-free-on-shinyapps-io-video/&#34;&gt;How to Deploy R Shiny App for Free on Shinyapps.io&lt;/a&gt; 14 min video and links&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://mastering-shiny.org/&#34;&gt;Mastering Shiny&lt;/a&gt; book by Hadley Wickham. &lt;a href=&#34;https://github.com/jcheng5/shiny-book&#34;&gt;GitHub&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.r-bloggers.com/2020/10/how-to-deploy-r-shiny-app-for-free-on-shinyapps-io-video/&#34;&gt;How to Deploy R Shiny App for Free on Shinyapps.io&lt;/a&gt; 14 min video and links&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div id=&#34;to-submit-on-blackboard-due-09-29-2020-500pm&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;To submit on blackboard, due 09-29-2020, 5:00pm&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Install package “babynames”
-&lt;ul&gt;
-&lt;li&gt;How many values are in the &lt;code&gt;babynames&lt;/code&gt; object?&lt;/li&gt;
-&lt;li&gt;What their data types&lt;/li&gt;
-&lt;li&gt;Get an overview of &lt;code&gt;babynames&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Plot the proportion of your name usage vs. year. Choose closest or random name, if your exact spelling is not available&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Submit your homework as a text or Word document. Name your file as &#34;&lt;last_name&gt;_&lt;first_name&gt;_Hw02&#34;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;div id=&#34;to-submit-on-blackboard&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To submit on blackboard&lt;/h1&gt;
+&lt;p&gt;Open &lt;a href=&#34;../../r-shiny.Rmd&#34;&gt;r-shiny.Rmd&lt;/a&gt; in RStudio. Review the code chunks and create an &lt;code&gt;app.R&lt;/code&gt; file from them. Ensure the app runs. Submit the file.&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>
@@ -499,6 +491,7 @@ tricky       &amp;lt;- c(1, 2, 3, &amp;quot;4&amp;quot;)&lt;/code&gt;&lt;/pre&gt
 &lt;h1&gt;To do yourself&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;O’Donoghue, Sen I., Benedetta Frida Baldi, Susan J. Clark, Aaron E. Darling, James M. Hogan, Sandeep Kaur, Lena Maier-Hein, et al. “&lt;a href=&#34;https://doi.org/10.1146/annurev-biodatasci-080917-013424&#34;&gt;Visualization of Biomedical Data&lt;/a&gt;.” Annual Review of Biomedical Data Science 1, no. 1 (July 20, 2018) - Visualization best practices (the use of length, area, color etc.)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/rstudio/webinars&#34;&gt;RStudio Webinars&lt;/a&gt; - Code and slides for RStudio webinars&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.datacarpentry.org/R-genomics/05-data-visualization.html&#34;&gt;Data visualization in R&lt;/a&gt; by Data Carpentry&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/jennybc/ggplot2-tutorial&#34;&gt;ggplot2 tutorial/slides/code examples/references&lt;/a&gt; by Jenny Bryan&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://davetang.org/muse/2018/05/18/interactive-plots-in-r/&#34;&gt;Interactive plots in R&lt;/a&gt; by Dave Tang&lt;/p&gt;&lt;/li&gt;
