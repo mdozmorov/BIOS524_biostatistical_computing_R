@@ -53,7 +53,7 @@ lessons:
   - title: "**Lecture 9: Git/GitHub**"
     date: "October 20"
     # reading: "05-reading"
-    # assignment: "05-problem-set"
+    # assignment: "09-problem-set"
     # class: "05-class"
 
   - title: "**Lecture 10: Interactive web apps with Shiny**"
