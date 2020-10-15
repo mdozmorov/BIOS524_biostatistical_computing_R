@@ -3,6 +3,7 @@
 .Rhistory
 themes/hugo-academic
 WIP
-*_files*
 *cache/
+static/slides/*_files/*
+static/assignment
 
