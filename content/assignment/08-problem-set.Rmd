@@ -1,12 +1,12 @@
 ---
 title: "Assignment 8: Tidyverse, data visualization"
-# date: "2020-10-15"
-# due_date: "2020-10-22"
-# due_time: "11:59 PM"
-# menu:
-#   assignment:
-#     parent: Assignments
-#     weight: 2
+date: "2020-10-15"
+due_date: "2020-10-22"
+due_time: "05:00 PM"
+menu:
+  assignment:
+    parent: Assignments
+    weight: 8
 type: docs
 weight: 1
 output:
