@@ -2,23 +2,63 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Assignment details | Biostatistical Computing with R</title>
-    <link>/assignment/</link>
-      <atom:link href="/assignment/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://bios524-biostatistical-computing-r.netlify.app/assignment/</link>
+      <atom:link href="https://bios524-biostatistical-computing-r.netlify.app/assignment/index.xml" rel="self" type="application/rss+xml" />
     <description>Assignment details</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <image>
-      <url>/media/social-image.png</url>
+      <url>https://bios524-biostatistical-computing-r.netlify.app/media/social-image.png</url>
       <title>Assignment details</title>
-      <link>/assignment/</link>
+      <link>https://bios524-biostatistical-computing-r.netlify.app/assignment/</link>
     </image>
     
     <item>
-      <title>Assignment 7: Tidyverse, data manipulation</title>
-      <link>/assignment/07-problem-set/</link>
-      <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>/assignment/07-problem-set/</guid>
+      <title>Assignment 8: Tidyverse, data visualization</title>
+      <link>https://bios524-biostatistical-computing-r.netlify.app/assignment/08-problem-set/</link>
+      <pubDate>Thu, 15 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>https://bios524-biostatistical-computing-r.netlify.app/assignment/08-problem-set/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://bios524-biostatistical-computing-r.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#to-do-yourself&#34;&gt;To do yourself&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-10-22-2020-500pm&#34;&gt;To submit on blackboard, due 10-22-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;to-do-yourself&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To do yourself&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;O’Donoghue, Sen I., Benedetta Frida Baldi, Susan J. Clark, Aaron E. Darling, James M. Hogan, Sandeep Kaur, Lena Maier-Hein, et al. “&lt;a href=&#34;https://doi.org/10.1146/annurev-biodatasci-080917-013424&#34;&gt;Visualization of Biomedical Data&lt;/a&gt;.” Annual Review of Biomedical Data Science 1, no. 1 (July 20, 2018) - Visualization best practices (the use of length, area, color etc.)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/rstudio/webinars&#34;&gt;RStudio Webinars&lt;/a&gt; - Code and slides for RStudio webinars&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.datacarpentry.org/R-genomics/05-data-visualization.html&#34;&gt;Data visualization in R&lt;/a&gt; by Data Carpentry&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/jennybc/ggplot2-tutorial&#34;&gt;ggplot2 tutorial/slides/code examples/references&lt;/a&gt; by Jenny Bryan&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://davetang.org/muse/2018/05/18/interactive-plots-in-r/&#34;&gt;Interactive plots in R&lt;/a&gt; by Dave Tang&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.r-graph-gallery.com/all-graphs/&#34;&gt;The R Graph Gallery, all graphs&lt;/a&gt; with code&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/Z3tt/ggplot-courses&#34;&gt;Collection of ggplot2 materials&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/reporting-data-results-1.html&#34;&gt;Plotting/reporting best practices&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/reporting-data-results-3.html#htmlwidgets&#34;&gt;Plotly&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;to-submit-on-blackboard-due-10-22-2020-500pm&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;To submit on blackboard, due 10-22-2020, 5:00pm&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;We will start with a very basic ggplot. Read in the &lt;code&gt;mtcars&lt;/code&gt; dataset that comes with R. Produce a histogram of the MPG variable for each value of the cylinders variable (there are 3) in a 1 row by 3 column grid. You may notice that the plots appear ‘sideways’. If so, correct it using a ggplot command. Give the plot an informative title.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Read in the &lt;code&gt;diamonds&lt;/code&gt; dataset in R. In one long string of pipe operations, keep only those observations with &lt;code&gt;price&lt;/code&gt; less than the 80th percentile of the &lt;code&gt;price&lt;/code&gt; variable, group observations by &lt;code&gt;Clarity&lt;/code&gt; type, and create a summary dataframe that summarizes the median &lt;code&gt;price&lt;/code&gt; in one column and summarizes the median &lt;code&gt;x&lt;/code&gt; value in another column. Using this dataset, create a ggplot scatterplot with &lt;code&gt;x&lt;/code&gt; on the x-axis and &lt;code&gt;price&lt;/code&gt; on the y-axis. Label the plot with values of Clarity and adjust the labels slightly so that they do not overlap the points.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Again using the &lt;code&gt;diamonds&lt;/code&gt; dataset, starting from the full dataset. First remove all diamonds with an ‘Ideal’ cut. Then make a ggplot of the data that displays the density estimate of price for each of the (now 4) values of cut, separately, arranged in a 4 row by 1 column grid. Fill in the area below the density curve in each plot with some color. Give the plot a title.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Assignment 7: Tidyverse, data manipulation</title>
+      <link>https://bios524-biostatistical-computing-r.netlify.app/assignment/07-problem-set/</link>
+      <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>https://bios524-biostatistical-computing-r.netlify.app/assignment/07-problem-set/</guid>
+      <description>
+&lt;script src=&#34;https://bios524-biostatistical-computing-r.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -66,11 +106,11 @@ In one long string of pipes, convert the data from wide (2009 to 2012 population
     
     <item>
       <title>Assignment 4: RMarkdown</title>
-      <link>/assignment/04-problem-set/</link>
+      <link>https://bios524-biostatistical-computing-r.netlify.app/assignment/04-problem-set/</link>
       <pubDate>Sat, 10 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>/assignment/04-problem-set/</guid>
+      <guid>https://bios524-biostatistical-computing-r.netlify.app/assignment/04-problem-set/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://bios524-biostatistical-computing-r.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;to-do-yourself&#34; class=&#34;section level1&#34;&gt;
@@ -124,11 +164,11 @@ In one long string of pipes, convert the data from wide (2009 to 2012 population
     
     <item>
       <title>Assignment 6: Packages</title>
-      <link>/assignment/06-problem-set/</link>
+      <link>https://bios524-biostatistical-computing-r.netlify.app/assignment/06-problem-set/</link>
       <pubDate>Thu, 08 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>/assignment/06-problem-set/</guid>
+      <guid>https://bios524-biostatistical-computing-r.netlify.app/assignment/06-problem-set/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://bios524-biostatistical-computing-r.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;to-do-yourself&#34; class=&#34;section level1&#34;&gt;
@@ -170,11 +210,11 @@ In one long string of pipes, convert the data from wide (2009 to 2012 population
     
     <item>
       <title>Assignment 5: Data management/code best practices</title>
-      <link>/assignment/05-problem-set/</link>
+      <link>https://bios524-biostatistical-computing-r.netlify.app/assignment/05-problem-set/</link>
       <pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>/assignment/05-problem-set/</guid>
+      <guid>https://bios524-biostatistical-computing-r.netlify.app/assignment/05-problem-set/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://bios524-biostatistical-computing-r.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;to-do-yourself&#34; class=&#34;section level1&#34;&gt;
@@ -264,11 +304,11 @@ Use this package to summarize the dataset in one line of code.&lt;/p&gt;
     
     <item>
       <title>Assignment 3: R base graphics, statistical functions</title>
-      <link>/assignment/03-problem-set/</link>
+      <link>https://bios524-biostatistical-computing-r.netlify.app/assignment/03-problem-set/</link>
       <pubDate>Tue, 29 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>/assignment/03-problem-set/</guid>
+      <guid>https://bios524-biostatistical-computing-r.netlify.app/assignment/03-problem-set/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://bios524-biostatistical-computing-r.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;to-do-yourself&#34; class=&#34;section level1&#34;&gt;
@@ -321,11 +361,11 @@ Use this package to summarize the dataset in one line of code.&lt;/p&gt;
     
     <item>
       <title>Assignment 2. R preliminaries</title>
-      <link>/assignment/02-problem-set/</link>
+      <link>https://bios524-biostatistical-computing-r.netlify.app/assignment/02-problem-set/</link>
       <pubDate>Thu, 24 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>/assignment/02-problem-set/</guid>
+      <guid>https://bios524-biostatistical-computing-r.netlify.app/assignment/02-problem-set/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://bios524-biostatistical-computing-r.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;to-do-yourself&#34; class=&#34;section level1&#34;&gt;
@@ -366,11 +406,11 @@ tricky       &amp;lt;- c(1, 2, 3, &amp;quot;4&amp;quot;)&lt;/code&gt;&lt;/pre&gt
     
     <item>
       <title>Assignment 1. Introduction to R and RStudio</title>
-      <link>/assignment/01-problem-set/</link>
+      <link>https://bios524-biostatistical-computing-r.netlify.app/assignment/01-problem-set/</link>
       <pubDate>Tue, 22 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>/assignment/01-problem-set/</guid>
+      <guid>https://bios524-biostatistical-computing-r.netlify.app/assignment/01-problem-set/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://bios524-biostatistical-computing-r.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;to-do-yourself&#34; class=&#34;section level1&#34;&gt;
@@ -407,11 +447,11 @@ tricky       &amp;lt;- c(1, 2, 3, &amp;quot;4&amp;quot;)&lt;/code&gt;&lt;/pre&gt
     
     <item>
       <title>Assignment 3</title>
-      <link>/assignment/09-problem-set/</link>
+      <link>https://bios524-biostatistical-computing-r.netlify.app/assignment/09-problem-set/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/assignment/09-problem-set/</guid>
+      <guid>https://bios524-biostatistical-computing-r.netlify.app/assignment/09-problem-set/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://bios524-biostatistical-computing-r.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -445,11 +485,11 @@ tricky       &amp;lt;- c(1, 2, 3, &amp;quot;4&amp;quot;)&lt;/code&gt;&lt;/pre&gt
     
     <item>
       <title>Assignment 3</title>
-      <link>/assignment/10-problem-set/</link>
+      <link>https://bios524-biostatistical-computing-r.netlify.app/assignment/10-problem-set/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/assignment/10-problem-set/</guid>
+      <guid>https://bios524-biostatistical-computing-r.netlify.app/assignment/10-problem-set/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://bios524-biostatistical-computing-r.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -473,52 +513,12 @@ tricky       &amp;lt;- c(1, 2, 3, &amp;quot;4&amp;quot;)&lt;/code&gt;&lt;/pre&gt
     </item>
     
     <item>
-      <title>Assignment 8: Tidyverse, data visualization</title>
-      <link>/assignment/08-problem-set/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/assignment/08-problem-set/</guid>
-      <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-
-&lt;div id=&#34;TOC&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#to-do-yourself&#34;&gt;To do yourself&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#to-submit-on-blackboard-due-10-22-2020-500pm&#34;&gt;To submit on blackboard, due 10-22-2020, 5:00pm&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-
-&lt;div id=&#34;to-do-yourself&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;To do yourself&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;O’Donoghue, Sen I., Benedetta Frida Baldi, Susan J. Clark, Aaron E. Darling, James M. Hogan, Sandeep Kaur, Lena Maier-Hein, et al. “&lt;a href=&#34;https://doi.org/10.1146/annurev-biodatasci-080917-013424&#34;&gt;Visualization of Biomedical Data&lt;/a&gt;.” Annual Review of Biomedical Data Science 1, no. 1 (July 20, 2018) - Visualization best practices (the use of length, area, color etc.)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/rstudio/webinars&#34;&gt;RStudio Webinars&lt;/a&gt; - Code and slides for RStudio webinars&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.datacarpentry.org/R-genomics/05-data-visualization.html&#34;&gt;Data visualization in R&lt;/a&gt; by Data Carpentry&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/jennybc/ggplot2-tutorial&#34;&gt;ggplot2 tutorial/slides/code examples/references&lt;/a&gt; by Jenny Bryan&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://davetang.org/muse/2018/05/18/interactive-plots-in-r/&#34;&gt;Interactive plots in R&lt;/a&gt; by Dave Tang&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.r-graph-gallery.com/all-graphs/&#34;&gt;The R Graph Gallery, all graphs&lt;/a&gt; with code&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/Z3tt/ggplot-courses&#34;&gt;Collection of ggplot2 materials&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/reporting-data-results-1.html&#34;&gt;Plotting/reporting best practices&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://geanders.github.io/RProgrammingForResearch/reporting-data-results-3.html#htmlwidgets&#34;&gt;Plotly&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id=&#34;to-submit-on-blackboard-due-10-22-2020-500pm&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;To submit on blackboard, due 10-22-2020, 5:00pm&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;We will start with a very basic ggplot. Read in the &lt;code&gt;mtcars&lt;/code&gt; dataset that comes with R. Produce a histogram of the MPG variable for each value of the cylinders variable (there are 3) in a 1 row by 3 column grid. You may notice that the plots appear ‘sideways’. If so, correct it using a ggplot command. Give the plot an informative title.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Read in the &lt;code&gt;diamonds&lt;/code&gt; dataset in R. In one long string of pipe operations, keep only those observations with &lt;code&gt;price&lt;/code&gt; less than the 80th percentile of the &lt;code&gt;price&lt;/code&gt; variable, group observations by &lt;code&gt;Clarity&lt;/code&gt; type, and create a summary dataframe that summarizes the median &lt;code&gt;price&lt;/code&gt; in one column and summarizes the median &lt;code&gt;x&lt;/code&gt; value in another column. Using this dataset, create a ggplot scatterplot with &lt;code&gt;x&lt;/code&gt; on the x-axis and &lt;code&gt;price&lt;/code&gt; on the y-axis. Label the plot with values of Clarity and adjust the labels slightly so that they do not overlap the points.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Again using the &lt;code&gt;diamonds&lt;/code&gt; dataset, starting from the full dataset. First remove all diamonds with an ‘Ideal’ cut. Then make a ggplot of the data that displays the density estimate of price for each of the (now 4) values of cut, separately, arranged in a 4 row by 1 column grid. Fill in the area below the density curve in each plot with some color. Give the plot a title.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Final project</title>
-      <link>/assignment/11-problem-set/</link>
+      <link>https://bios524-biostatistical-computing-r.netlify.app/assignment/11-problem-set/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/assignment/11-problem-set/</guid>
+      <guid>https://bios524-biostatistical-computing-r.netlify.app/assignment/11-problem-set/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://bios524-biostatistical-computing-r.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;TBD&lt;/p&gt;

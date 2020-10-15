@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Class details | Biostatistical Computing with R</title>
-    <link>/class/</link>
-      <atom:link href="/class/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://bios524-biostatistical-computing-r.netlify.app/class/</link>
+      <atom:link href="https://bios524-biostatistical-computing-r.netlify.app/class/index.xml" rel="self" type="application/rss+xml" />
     <description>Class details</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <image>
-      <url>/media/social-image.png</url>
+      <url>https://bios524-biostatistical-computing-r.netlify.app/media/social-image.png</url>
       <title>Class details</title>
-      <link>/class/</link>
+      <link>https://bios524-biostatistical-computing-r.netlify.app/class/</link>
     </image>
     
     <item>
       <title>Lecture 7: Tidyverse, data manipulation</title>
-      <link>/class/07-class/</link>
+      <link>https://bios524-biostatistical-computing-r.netlify.app/class/07-class/</link>
       <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>/class/07-class/</guid>
+      <guid>https://bios524-biostatistical-computing-r.netlify.app/class/07-class/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://bios524-biostatistical-computing-r.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
@@ -38,12 +38,37 @@
     </item>
     
     <item>
-      <title>Lecture 6: Packages</title>
-      <link>/class/06-class/</link>
-      <pubDate>Thu, 08 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>/class/06-class/</guid>
+      <title>Lecture 8: Tidyverse, data visualization</title>
+      <link>https://bios524-biostatistical-computing-r.netlify.app/class/08-class/</link>
+      <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>https://bios524-biostatistical-computing-r.netlify.app/class/08-class/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://bios524-biostatistical-computing-r.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;div id=&#34;tidyverse-data-visualization&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Tidyverse, data visualization&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;../../slides/81_Tidyverse_ggplot2#1&#34; target=&#34;_blank&#34;&gt;Lecture slides in HTML format&lt;/a&gt;&lt;/p&gt;
+&lt;iframe src=&#34;../../slides/81_Tidyverse_ggplot2.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div id=&#34;code-for-dplyr-tutorial&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Code for dplyr tutorial&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;../../slides/72_dplyr.R&#34; target=&#34;_blank&#34;&gt;72_dplyr.R&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lecture 6: Packages</title>
+      <link>https://bios524-biostatistical-computing-r.netlify.app/class/06-class/</link>
+      <pubDate>Thu, 08 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>https://bios524-biostatistical-computing-r.netlify.app/class/06-class/</guid>
+      <description>
+&lt;script src=&#34;https://bios524-biostatistical-computing-r.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
@@ -60,11 +85,11 @@
     
     <item>
       <title>Lecture 5: Data management/code best practices</title>
-      <link>/class/05-class/</link>
+      <link>https://bios524-biostatistical-computing-r.netlify.app/class/05-class/</link>
       <pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>/class/05-class/</guid>
+      <guid>https://bios524-biostatistical-computing-r.netlify.app/class/05-class/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://bios524-biostatistical-computing-r.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
@@ -93,11 +118,11 @@
     
     <item>
       <title>Lecture 4. Reproducible reports with Markdown, knitr</title>
-      <link>/class/04-class/</link>
+      <link>https://bios524-biostatistical-computing-r.netlify.app/class/04-class/</link>
       <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>/class/04-class/</guid>
+      <guid>https://bios524-biostatistical-computing-r.netlify.app/class/04-class/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://bios524-biostatistical-computing-r.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
@@ -114,11 +139,11 @@
     
     <item>
       <title>Lecture 3. R base graphics, statistical functions</title>
-      <link>/class/03-class/</link>
+      <link>https://bios524-biostatistical-computing-r.netlify.app/class/03-class/</link>
       <pubDate>Tue, 29 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>/class/03-class/</guid>
+      <guid>https://bios524-biostatistical-computing-r.netlify.app/class/03-class/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://bios524-biostatistical-computing-r.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
@@ -135,11 +160,11 @@
     
     <item>
       <title>Lecture 2. R preliminaries</title>
-      <link>/class/02-class/</link>
+      <link>https://bios524-biostatistical-computing-r.netlify.app/class/02-class/</link>
       <pubDate>Thu, 24 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>/class/02-class/</guid>
+      <guid>https://bios524-biostatistical-computing-r.netlify.app/class/02-class/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://bios524-biostatistical-computing-r.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;
@@ -156,11 +181,11 @@
     
     <item>
       <title>Lecture 1. Introduction to R and RStudio</title>
-      <link>/class/01-class/</link>
+      <link>https://bios524-biostatistical-computing-r.netlify.app/class/01-class/</link>
       <pubDate>Tue, 22 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>/class/01-class/</guid>
+      <guid>https://bios524-biostatistical-computing-r.netlify.app/class/01-class/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://bios524-biostatistical-computing-r.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;slides&#34; class=&#34;section level2&#34;&gt;

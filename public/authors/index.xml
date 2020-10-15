@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors | Biostatistical Computing with R</title>
-    <link>/authors/</link>
-      <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://bios524-biostatistical-computing-r.netlify.app/authors/</link>
+      <atom:link href="https://bios524-biostatistical-computing-r.netlify.app/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <image>
-      <url>/media/social-image.png</url>
+      <url>https://bios524-biostatistical-computing-r.netlify.app/media/social-image.png</url>
       <title>Authors</title>
-      <link>/authors/</link>
+      <link>https://bios524-biostatistical-computing-r.netlify.app/authors/</link>
     </image>
     
   </channel>
