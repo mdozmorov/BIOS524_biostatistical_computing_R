@@ -1,8 +1,8 @@
 ---
-title: "Assignment 3"
-# date: "2020-06-08"
-# due_date: "2020-06-08"
-# due_time: "11:59 PM"
+title: "Assignment 10"
+# date: "2020-10-22"
+# due_date: "2020-10-29"
+# due_time: " PM"
 # menu:
 #   assignment:
 #     parent: Assignments
@@ -22,6 +22,6 @@ editor_options:
 
 - [How to Deploy R Shiny App for Free on Shinyapps.io](https://www.r-bloggers.com/2020/10/how-to-deploy-r-shiny-app-for-free-on-shinyapps-io-video/) 14 min video and links
 
-# To submit on blackboard
+# To submit on Blackboard, before 5:00pm on 2020-10-29
 
 Open [r-shiny.Rmd](../../r-shiny.Rmd) in RStudio. Review the code chunks and create an `app.R` file from them. Ensure the app runs. Submit the file.
