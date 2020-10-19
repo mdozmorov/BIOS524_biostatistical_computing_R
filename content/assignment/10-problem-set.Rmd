@@ -2,7 +2,7 @@
 title: "Assignment 10"
 # date: "2020-10-22"
 # due_date: "2020-10-29"
-# due_time: " PM"
+# due_time: "5:00 PM"
 # menu:
 #   assignment:
 #     parent: Assignments
