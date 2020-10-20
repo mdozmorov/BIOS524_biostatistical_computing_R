@@ -6,4 +6,6 @@ WIP
 *cache/
 static/slides/*_files/*
 static/assignment
-
+static/rmarkdown-libs
+static/slides/libs
+Untitled*

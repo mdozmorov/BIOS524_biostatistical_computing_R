@@ -4,7 +4,7 @@
     <title>Version control with Git and GitHub</title>
     <meta charset="utf-8" />
     <meta name="author" content="Mikhail Dozmorov" />
-    <script src="libs/header-attrs-2.3/header-attrs.js"></script>
+    <script src="libs/header-attrs-2.4/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="xaringan-my.css" type="text/css" />
   </head>
@@ -15,7 +15,7 @@ class: center, middle, inverse, title-slide
 # Version control with Git and GitHub
 ### Mikhail Dozmorov
 ### Virginia Commonwealth University
-### 08-13-2020
+### 10-20-2020
 
 ---
 
@@ -26,20 +26,19 @@ class: center, middle, inverse, title-slide
 
 Good science is built on research that may be reproduced (or copied) by other researchers (and yourself!)
 
-* If another researchers read your report, could they reproduce your work?
+- If another researchers read your report, could they reproduce your work?
 
-* Could you reproduce your own analysis after a year? two?
+- Could you reproduce your own analysis after a year? two?
+
+#### Tips for Reproducible Research
+
+- Document all you do and use your code as the documentation
+
+- Make figures, tables, and statistics the result of scripts
+
+- Keep an entire project in a single directory that is version controlled 
 
 .small[ Intro to version control: https://rpubs.com/marschmi/ear523_Feb02 ]
-
----
-## Tips for Reproducible Research
-
-* Document all you do and use your code as the documentation
-
-* Make figures, tables, and statistics the result of scripts
-
-* Keep an entire project in a single directory that is version controlled 
 
 ---
 ## Keeping History of Changes
@@ -48,13 +47,13 @@ Good science is built on research that may be reproduced (or copied) by other re
 
 .pull-right[The Lame Method
 
-* Multiple dated files with largely the same content
+- Multiple dated files with largely the same content
 
-* Periodically zipping files up into numbered/dated archives
+- Periodically zipping files up into numbered/dated archives
 
-* Multiple dated files with largely the same content
+- Multiple dated files with largely the same content
 
-* Periodically zipping files up into numbered/dated archives
+- Periodically zipping files up into numbered/dated archives
 
 .small[ Jorge Cham, http://www.phdcomics.com] ]
 
@@ -64,17 +63,17 @@ Good science is built on research that may be reproduced (or copied) by other re
 
 Version control is the only reasonable way to keep track of changes in code, manuscripts, presentations, and data analysis projects
 
-* Backup of your entire project
+- Backup of your entire project
 
-* Promotes transparency
+- Promotes transparency
 
-* Facilitates reproducibility
+- Facilitates reproducibility
 
-* Faster recovery from errors
+- Faster recovery from errors
 
-* Easier collaborations
+- Easier collaborations
 
----
+&lt;!--
 ## Why Version Control?
 
 - Version control is not strictly necessary for reproducible research, and it’s admittedly some extra work (to learn and to use) in the short term, but the long term benefits are enormous
@@ -82,30 +81,31 @@ Version control is the only reasonable way to keep track of changes in code, man
 - People are more resistant to version control than to any other tool, because of the short-term effort and the lack of recognition of the long-term benefits
 
 - Imagine that some aspect of your code has stopped working at somepoint. You know it was working in the past, but it’s not working now. How easy is it to figure out where the problem was introduced?
+--&gt;
 
 ---
 ## What is Git?
 
-* Git is an open-source distributed version control system
+- Git is an open-source distributed version control system
     * Developed by Linus Torvalds (developer of Linux)
     
-* Distributed, distinct from centralized (subversion)
+- Distributed, distinct from centralized (subversion)
     * Authors can work asynchronously without being connected to a central server and synchronize their changes when possible
     
-* Complete audit trail of changes, including authorship
+- Complete audit trail of changes, including authorship
 
-* Freedom to explore new ideas without disturbing the main line of work
+- Freedom to explore new ideas without disturbing the main line of work
 
-* Collaborate with elegance – on any file at any time
+- Collaborate with elegance – on any file at any time
 
 ---
 ## Advantages of version control:
 
-* It’s easy to set up
+- It’s easy to set up
 
-* Every copy of a Git repository is a full backup of a project and its history
+- Every copy of a Git repository is a full backup of a project and its history
 
-* A few easy-to-remember commands are all you need for most day-to-day version control tasks
+- A few easy-to-remember commands are all you need for most day-to-day version control tasks
 
 ---
 ## Git lifecycle
@@ -121,22 +121,23 @@ Download and install Git, https://git-scm.com/downloads
 
 Do not install GUI client
 
-* `man git` - not always good
-* `git --help [&lt;command&gt;]`
+- `man git` - not always good
+- `git --help [&lt;command&gt;]`
 
 ---
 ## Setting up git (once)
 
-* `git config --global user.name "Your name here”`
-* `git config --global user.email your_email@example.com`
-* `git config --global color.ui “auto”`
-* `git config core.fileMode false`
-* `git config --list`
+- `git config --global user.name "Your name here”`
+- `git config --global user.email your_email@example.com`
+- `git config --global color.ui “auto”`
+- `git config core.fileMode false`
+- `git config --list`
 
----
+&lt;!--
 ## Configuring Text Editor
 
 .center[&lt;img src="img/Gittable.png" height=550 &gt;]
+--&gt;
 
 ---
 ## Git Concepts
@@ -166,7 +167,7 @@ Exercise:
 ---
 ## How the files travel
 
-**Lifecycle of files in Git repository**
+-*Lifecycle of files in Git repository**
 
 - Untracked
 
@@ -179,13 +180,13 @@ Exercise:
 ---
 ## Tracking Changes
 
-* `git add` - puts files in the staging area
+- `git add` - puts files in the staging area
 
-* `git commit` - saves the changes in the files on staging area to the local repository
+- `git commit` - saves the changes in the files on staging area to the local repository
 
-* Always write an informative commit message when committing changes, "-m" flag
+- Always write an informative commit message when committing changes, "-m" flag
 
-* `git status` - shows the status of a repository
+- `git status` - shows the status of a repository
 
 .center[&lt;img src="img/Gitflow.png" height=250 &gt;]
 
@@ -200,33 +201,33 @@ The first file to create (and `add` and `commit`) is probably a `README.md` file
 
 Say you’ve got an existing project that you want to start tracking with git. Go into the directory containing the project
 
-* Type `git init` – itinializes empty repository
-* Type `git add &lt;file&gt; [&lt;file&gt; &lt;file&gt; …]` - start tracking all the relevant files
-* Type `git commit` – saves the snapshot of your current files
+- Type `git init` – itinializes empty repository
+- Type `git add &lt;file&gt; [&lt;file&gt; &lt;file&gt; …]` - start tracking all the relevant files
+- Type `git commit` – saves the snapshot of your current files
 
 ---
 ## What NOT to Add
 
 `git add`, `git add –u` – add all the changes (updates) in your files
 
-* Things not to version control are large data files that never change, binary files (including Word and Excel documents), and the output of your code
+- Things not to version control are large data files that never change, binary files (including Word and Excel documents), and the output of your code
 
-* Git works best with text files, like code, you can see differences
+- Git works best with text files, like code, you can see differences
 
-* Exercise: commit an image file, overwrite it with another, do `git diff`
+- Exercise: commit an image file, overwrite it with another, do `git diff`
 
-* `git rm &lt;file&gt;` - removes a file from the current and future commits, but it remains in history/repository
+- `git rm &lt;file&gt;` - removes a file from the current and future commits, but it remains in history/repository
 
-* The `.gitignore` file tells Git what files to ignore. `git add -f` forces adding
+- The `.gitignore` file tells Git what files to ignore. `git add -f` forces adding
 
 ---
 ## Ignoring Unnecessary Files
 
-* The various files in your project directory that you may not want to track will show up as such in `git status`
+- The various files in your project directory that you may not want to track will show up as such in `git status`
 
-* Unnecessary files should be indicated in a `.gitignore` file
+- Unnecessary files should be indicated in a `.gitignore` file
 
-* Each subdirectory can have its own `.gitignore` file
+- Each subdirectory can have its own `.gitignore` file
 
 ---
 ## Ignoring Unnecessary Files
@@ -262,11 +263,11 @@ You have to tell git about the global `.gitignore_global` file: `git config --gl
 ---
 ## When to Commit
 
-* In the same way that it is wise to often save a document that you are working on, so too is it wise to save numerous revisions of your code
+- In the same way that it is wise to often save a document that you are working on, so too is it wise to save numerous revisions of your code
 
-* More frequent commits increase the granularity of your “undo” button
+- More frequent commits increase the granularity of your “undo” button
 
-* Good commits are atomic: they are the smallest change that remain meaningful
+- Good commits are atomic: they are the smallest change that remain meaningful
 
 .center[&lt;img src="img/Gitflow.png" height=250 &gt;]
 
@@ -288,9 +289,9 @@ As a rule of thumb, a good size for a single change is a group of edits that you
 ---
 ## Best Practices
 
-* A good commit message usually contains a one-line description of the changes since the last commit and indicating their purpose
+- A good commit message usually contains a one-line description of the changes since the last commit and indicating their purpose
 
-* Informative commit messages will serve you well someday, so make a habit of never committing changes without at least a one-sentence description
+- Informative commit messages will serve you well someday, so make a habit of never committing changes without at least a one-sentence description
 
 .center[&lt;img src="https://imgs.xkcd.com/comics/git_commit_2x.png" height=250 &gt;]
 
@@ -299,15 +300,15 @@ As a rule of thumb, a good size for a single change is a group of edits that you
 ---
 ## Anatomy of Git Commits
 
-* Each commit is identified by a unique “name” - SHA-1 hashtag
+- Each commit is identified by a unique “name” - SHA-1 hashtag
 
-* SHA-1 is an algorithm that takes some data and generates a unique string from it
+- SHA-1 is an algorithm that takes some data and generates a unique string from it
 
-* SHA-1 hashes are 40 characters long
+- SHA-1 hashes are 40 characters long
 
-* Different data will always produce different hashes
+- Different data will always produce different hashes
 
-* The same data will produce exactly the same hash
+- The same data will produce exactly the same hash
 
 ---
 ## Exploring History
@@ -326,28 +327,28 @@ Flags       | Function
 ---
 ## Exactly what changes have you made?
 
-* `git diff` – shows all changes that have been made from a previous commit, in all files
+- `git diff` – shows all changes that have been made from a previous commit, in all files
 
-* `git diff R/modified.R` - see your changes of a particular file
+- `git diff R/modified.R` - see your changes of a particular file
 
-* To see the differences between commits, use hashtags: `git diff 0da42ba  5m5lpac`
+- To see the differences between commits, use hashtags: `git diff 0da42ba  5m5lpac`
 
-* The differences between commits for a specific file can be checked using `git diff HEAD~2 HEAD -- &lt;file&gt;`
+- The differences between commits for a specific file can be checked using `git diff HEAD~2 HEAD -- &lt;file&gt;`
 
 ---
 ## Undoing/Unstaging
 
-* There are a number of ways that you may accidentally stage a file that you don't want to commit
+- There are a number of ways that you may accidentally stage a file that you don't want to commit
 
 `git add password.txt`
 
-* Check with status to see that it is added but not committed
+- Check with status to see that it is added but not committed
 
-* You can now unstage that file with:
+- You can now unstage that file with:
 
 `git reset password.txt`
 
-* Check with `git status`
+- Check with `git status`
 
 ---
 ## Undoing: Discarding Changes
@@ -371,7 +372,7 @@ If you want to correct the last commit message, do
 ---
 ## Undoing: removing from the repo
 
-Sometimes you may want to remove a file from the repository after it has been committed. Create a file called `READYOU.md`, and add/commit it to the repository
+Sometimes you want to remove a file from the repository after committing. Create a file called `READYOU.md`, and add/commit it to the repository
 
 You can now remove the file from the repository with:
 
@@ -401,11 +402,11 @@ Importantly, this will not erase the intervening commits. This will create a new
 ---
 ## Branches
 
-Branches are parallel instances of a repository that can be edited and version controlled in parallel, without disturbing the master branch
+Branches are parallel instances of a repository that can be edited and version controlled in parallel, without disturbing the main branch
 
 They are useful for developing a feature, working on a bug, trying out an idea
 
-If it works out, you can merge it back into the master and if it doesn’t, you can trash it
+If it works out, you can merge it back into the main and if it doesn’t, you can trash it
 
 .center[&lt;img src="https://hades.github.io/media/git/git-history.png" height=300 &gt;]
 
@@ -422,9 +423,9 @@ If it works out, you can merge it back into the master and if it doesn’t, you 
 
 Make various modifications, and then add and commit.
 
-`git checkout master` - go back to the master branch
+`git checkout main` - go back to the main branch
 
-`git merge test_feature` – combine changes made in the test_feature branch with the master branch
+`git merge test_feature` – combine changes made in the test_feature branch with the main branch
 
 `git branch –d test_feature` – deletes the test_feature branch
 
@@ -483,20 +484,22 @@ class: center, middle
 ---
 ## GitHub
 
-* GitHub is a hosting service where many people store their open (and closed) source code repositories. It provides tools for browsing, collaborating on and documenting code
+- GitHub is a hosting service where many people store their open (and closed) source code repositories. It provides tools for browsing, collaborating on and documenting code
 
-* Like facebook for programmers
+- Like facebook for programmers
 
-* Free 2-year ”micro” account for students - https://education.github.com/ - free private repositories. Alternatively - Bitbucket, GitLab, gitolite
+- Free 2-year ”micro” account for students - https://education.github.com/ - free private repositories. Alternatively - Bitbucket, GitLab, gitolite
 
-* Exercise: Create a GitHub account, https://github.com/
+- Exercise: Create a GitHub account, https://github.com/
+
+.small[ [Bitbucket vs GitHub vs GitLab](https://www.geeksforgeeks.org/bitbucket-vs-github-vs-gitlab/) ]
 
 ---
 ## Why use GitHub?
 
 - True open source
 
-- Graphical user interface for git
+- Graphical user interface for git is built into RStudio
 
 - Exploring code and its history
 
@@ -505,6 +508,31 @@ class: center, middle
 - Facilitates: Learning from others, seeing what people are up to, and contributing to others’ code
 
 - Lowers the barrier to collaboration: ”There’s a typo in your documentation.” vs.”Here’s a correction for your documentation.”
+
+---
+## RStudio and GitHub
+
+RStudio has built-in facilities for git and GitHub. See "Tools -&gt; Global Options"
+
+.center[&lt;img src="img/rstudiogithub.png" height=250 &gt;]
+
+- Your Rstudio project can be your git repository
+- Create a project with checkbox “Create a git repository” checked
+- Add existing project to version control by selecting git in "Tools -&gt; Version control -&gt; Project setup"
+
+---
+## RStudio and GitHub
+
+Basic commands are available:
+
+- See which files are untracked, modified, stage
+- What branch you are in
+- Add files, commit, push/pull
+- See differences, history
+- Revert changes, ignore files
+- For heavy lifting git, use shell
+
+.center[&lt;img src="img/rstudiogithub2.png" height=250 &gt;]
 
 ---
 ## Adding collaborators to your repository
@@ -529,22 +557,22 @@ Check your work `git remote -v`
 
 Use the `https://` protocol (not `git@github.com`) to connect to remote repositories until you have learned how to set up SSH
 
-`git push origin master` - copies changes from a local repository to a remote repository
+`git push origin main` - copies changes from a local repository to a remote repository
 
-`git pull origin master` - copies changes from a remote repository to a local repository
+`git pull origin main` - copies changes from a remote repository to a local repository
 
 ---
 ## Asynchronous Collaboration
 
-* "FORK" someone’s repository on GitHub – this is now YOUR copy
+- "FORK" someone’s repository on GitHub – this is now YOUR copy
 
-* `git clone` it on your computer
+- `git clone` it on your computer
 
-* Make changes, `git add`, `git commit`
+- Make changes, `git add`, `git commit`
 
-* `git push` changes to your copy
+- `git push` changes to your copy
 
-* Create "NEW PULL REQUEST" on GitHub
+- Create "NEW PULL REQUEST" on GitHub
 
 .small[ https://help.github.com/articles/about-pull-requests/ ]
 
@@ -557,11 +585,11 @@ Add a connection to the original owner’s repository
 
 `git remote –v` - check what you have
 
-`git pull upstream master` – pull changes from the owner’s repo
+`git pull upstream main` – pull changes from the owner’s repo
 
 Make changes, `git add`, `git commit`, `git push`
 
-Question: Where will they go? Can you do git push upstream master?
+Question: Where will they go? Can you do git push upstream main?
 
 ---
 ## Create Pull Request
@@ -590,13 +618,13 @@ If the owner loves the idea, he clicks the “Merge pull request”
 ---
 ## Track and Resolve Issues
 
-* Issues keep track of tasks, enhancements, and bugs for your projects
-* They can be shared and discussed with the rest of your team
-* Written in Markdown, can refer to @collaborator, #other_issue
+- Issues keep track of tasks, enhancements, and bugs for your projects
+- They can be shared and discussed with the rest of your team
+- Written in Markdown, can refer to @collaborator, #other_issue
 
 .center[&lt;img src="img/issues.png" height=250 &gt;]
 
-* Can use commit messages to fix issues, e.g., `“Add missing tab, fix #100”`. Use any keyword, `“Fixes”, “Fixed”, “Fix”, “Closes”, “Closed”, or “Close”`
+- Can use commit messages to fix issues, e.g., `“Add missing tab, fix #100”`. Use any keyword, `“Fixes”, “Fixed”, “Fix”, “Closes”, “Closed”, or “Close”`
 
 ---
 ## Be a stargazer, or a watcher, or both
@@ -608,31 +636,6 @@ If the owner loves the idea, he clicks the “Merge pull request”
     - Knowledge gained is much deeper
 
 .small[ Sheoran, Jyoti, Kelly Blincoe, Eirini Kalliamvakou, Daniela Damian, and Jordan Ell. “[Understanding ‘Watchers’ on GitHub](https://doi.org/10.1145/2597073.2597114),” 336–39. ACM Press, 2014.]
-
----
-## RStudio and GitHub
-
-RStudio has built-in facilities for git and GitHub. See "Tools -&gt; Global Options"
-
-.center[&lt;img src="img/rstudiogithub.png" height=250 &gt;]
-
-* Your Rstudio project can be your git repository
-* Create a project with checkbox “Create a git repository” checked
-* Add existing project to version control by selecting git in "Tools -&gt; Version control -&gt; Project setup"
-
----
-## RStudio and GitHub
-
-Basic commands are available:
-
-* See which files are untracked, modified, stage
-* What branch you are in
-* Add files, commit, push/pull
-* See differences, history
-* Revert changes, ignore files
-* For heavy lifting git, use shell
-
-.center[&lt;img src="img/rstudiogithub2.png" height=250 &gt;]
 
 ---
 ## Connecting to GitHub with SSH
@@ -650,13 +653,13 @@ Basic commands are available:
 ---
 ## Encryption Concepts
 
-* Both public and private keys are generated by one individual – they are yours
+- Both public and private keys are generated by one individual – they are yours
 
-* A public key is a “lock” that can be opened with the corresponding private key
+- A public key is a “lock” that can be opened with the corresponding private key
 
-* Public key can be placed on any other computer you want to connect to, Private key stays private on any machine you’ll be connecting from
+- Public key can be placed on any other computer you want to connect to, Private key stays private on any machine you’ll be connecting from
 
-* Only your private key can “open” your public key
+- Only your private key can “open” your public key
 
 .center[&lt;img src="img/keys.png" height=200 &gt;]
 
@@ -691,11 +694,11 @@ If not, generate:
 
 Go to your GitHub Account Settings
 
-* Click “SSH and GPG keys” on the left, then “New SSH Key” on the right
+- Click “SSH and GPG keys” on the left, then “New SSH Key” on the right
 
-* Add a label (like “My laptop”) and paste your public key into the text box
+- Add a label (like “My laptop”) and paste your public key into the text box
 
-* Test it, `ssh -T git@github.com`. You should see something like “Hi username! You've successfully authenticated but Github does not provide shell access.”
+- Test it, `ssh -T git@github.com`. You should see something like “Hi username! You've successfully authenticated but Github does not provide shell access.”
 
 .center[&lt;img src="img/GitHubkey.png" height=250 &gt;]
 
@@ -706,11 +709,11 @@ https://www.cs.utah.edu/~bigler/code/sshkeys.html ]
 ---
 ## Add Public Key to any Machine
 
-* Copy your public key `~/.ssh/id_dsa.pub` to a remote machine 
+- Copy your public key `~/.ssh/id_dsa.pub` to a remote machine 
 
-* Add the content of your public key to `~/.ssh/authorized_keys` on the remote machine
+- Add the content of your public key to `~/.ssh/authorized_keys` on the remote machine
 
-* Make sure the `.ssh/authorized_keys` has the right permissions (read+write for user, nothing for group and all)
+- Make sure the `.ssh/authorized_keys` has the right permissions (read+write for user, nothing for group and all)
 
 `cat ~/.ssh/id_dsa.pub | ssh user@remote.machine.com 'mkdir -p .ssh; cat &gt;&gt; .ssh/authorized_keys; chmod 600 authorized_keys'`
 
