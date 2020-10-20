@@ -1,4 +1,4 @@
-baseurl: https://bios524-biostatistical-computing-r.netlify.app/
+baseurl: "https://bios524-biostatistical-computing-r.netlify.app/"
 defaultContentLanguage: en
 title: "Biostatistical Computing with R"
 theme: hugo-academic

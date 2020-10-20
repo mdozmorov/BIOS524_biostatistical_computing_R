@@ -3,7 +3,7 @@
 .Rhistory
 themes/hugo-academic
 WIP
-*cache/
+#*cache/
 static/slides/*_files/*
 static/assignment
 static/rmarkdown-libs
