@@ -53,7 +53,7 @@ editor_options:
 
 - Create a repository out of the R package you created in Homework 6. Add all your files, push to GitHub. Make sure your package can be installed from GitHub (Hint: `devtools::install_github()`). Submit the link to your repository
 
-- In command line, go to the hidden `.git` folder, list all files/folders. Document your observations.
+- In command line, go to the hidden `.git` folder, list all files/folders. Document your observations. 
 
 - What do the words 'minimal' (aka `atomic') and 'complete' mean in the context of Git commits? 
     

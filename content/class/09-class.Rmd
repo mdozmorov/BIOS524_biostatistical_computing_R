@@ -28,6 +28,3 @@ editor_options:
 knitr::include_url('../../slides/91_Git.html#1')
 ```
 
-### Code for dplyr tutorial
-
-<a href="../../slides/72_dplyr.R" target="_blank">72_dplyr.R</a>

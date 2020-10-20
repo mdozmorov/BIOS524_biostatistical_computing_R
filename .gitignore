@@ -8,4 +8,5 @@ static/slides/*_files/*
 static/assignment
 static/rmarkdown-libs
 static/slides/libs
+static/slides/*_cache/
 Untitled*

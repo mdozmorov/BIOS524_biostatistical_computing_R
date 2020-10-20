@@ -46,6 +46,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Install Git, and create a Github account. Update your Github profile to include some relevant information about yourself, such as your program and/or interests. Submit the link to your profile&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Create a repository out of the R package you created in Homework 6. Add all your files, push to GitHub. Make sure your package can be installed from GitHub (Hint: &lt;code&gt;devtools::install_github()&lt;/code&gt;). Submit the link to your repository&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;In command line, go to the hidden &lt;code&gt;.git&lt;/code&gt; folder, list all files/folders. Document your observations.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;What do the words ‘minimal’ (aka `atomic’) and ‘complete’ mean in the context of Git commits?&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Fork this repository (&lt;a href=&#34;https://github.com/mdozmorov/R_notes&#34; class=&#34;uri&#34;&gt;https://github.com/mdozmorov/R_notes&lt;/a&gt;) to your account, so that you will have references for this course. This is for your information only&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
