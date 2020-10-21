@@ -1,17 +1,17 @@
 ---
 title: "Assignment 10"
-# date: "2020-10-22"
-# due_date: "2020-10-29"
-# due_time: "5:00 PM"
-# menu:
-#   assignment:
-#     parent: Assignments
-#     weight: 2
+date: "2020-10-22"
+due_date: "2020-10-29"
+due_time: "5:00 PM"
+menu:
+  assignment:
+    parent: Assignments
+    weight: 10
 type: docs
 weight: 1
 output:
   blogdown::html_page:
-    toc: true
+    toc: false
 editor_options: 
   chunk_output_type: console
 ---
@@ -19,6 +19,8 @@ editor_options:
 # To do yourself
 
 - [Mastering Shiny](https://mastering-shiny.org/) book by Hadley Wickham. [GitHub](https://github.com/jcheng5/shiny-book)
+
+- [awesome-rshiny](https://github.com/grabear/awesome-rshiny) - a list of resources to learn R Shiny
 
 - [How to Deploy R Shiny App for Free on Shinyapps.io](https://www.r-bloggers.com/2020/10/how-to-deploy-r-shiny-app-for-free-on-shinyapps-io-video/) 14 min video and links
 
