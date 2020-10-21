@@ -58,6 +58,6 @@ lessons:
 
   - title: "**Lecture 10: Interactive web apps with Shiny**"
     date: "October 22"
-    # reading: "05-reading"
+    # reading: "05-reading" 
     assignment: "10-problem-set"
     class: "10-class"

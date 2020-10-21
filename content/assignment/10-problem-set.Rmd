@@ -1,12 +1,12 @@
 ---
-title: "Assignment 10"
+title: "Assignment 10: Interactive web apps with Shiny"
 date: "2020-10-22"
 due_date: "2020-10-29"
 due_time: "5:00 PM"
 menu:
   assignment:
     parent: Assignments
-    weight: 10
+    weight: 11
 type: docs
 weight: 1
 output:
@@ -26,7 +26,7 @@ editor_options:
 
 # To submit on Blackboard, before 5:00pm on 2020-10-29
 
-- Open [r-shiny.Rmd](../../r-shiny.Rmd) in RStudio. Review the code chunks and create an `app.R` file from them. Ensure the app runs. Submit the file.
+- Open [r-shiny.Rmd](../../slides/r-shiny.Rmd) in RStudio. Review the code chunks and create an `app.R` file from them. Ensure the app runs. Submit the file.
 
 - Create a very small and limited Shiny app, using some default dataset in R. The only requirements are that the app:
   - Has a descriptive title

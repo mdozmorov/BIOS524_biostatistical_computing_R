@@ -9,7 +9,7 @@ output:
 menu:
   class:
     parent: Class sessions
-    weight: 9
+    weight: 11
 type: docs
 # weight: 1 
 # pdf: 
@@ -20,11 +20,14 @@ editor_options:
 
 ## Slides
 
-### Version control with Git and GitHub
+### Interactive web apps with Shiny
 
-<a href="../../slides/91_Git#1" target="_blank">Lecture slides in HTML format</a>
+<a href="../../slides/101_Shiny#1" target="_blank">Lecture slides in HTML format</a>
 
 ```{r echo=FALSE}
-knitr::include_url('../../slides/91_Git.html#1')
+knitr::include_url('../../slides/101_Shiny.html#1')
 ```
 
+### Sniny tutorial and code
+
+<a href="../../slides/r-shiny.Rmd" target="_blank">r-shiny.Rmd</a>
