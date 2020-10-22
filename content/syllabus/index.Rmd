@@ -63,7 +63,7 @@ Homework will consist of problem sets for material covered. Files should be name
 
 - A take-home final project  
 - Final project should be submitted as a fully reproducible GitHub repository
-- The due date to be determined. [Final project page](../class/final_project)
+- The due date is 5:00pm, November 22, 2020. [Final project page](../assignment/11-problem-set)
 
 <!--
 ### Class evaluation
