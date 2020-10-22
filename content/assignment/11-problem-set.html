@@ -1,22 +1,74 @@
 ---
-title: "Final project"
-# date: "2020-06-08"
-# due_date: "2020-06-08"
-# due_time: "11:59 PM"
-# menu:
-#   assignment:
-#     parent: Assignments
-#     weight: 2
+title: "Final Project"
+date: "2020-10-22"
+due_date: "2020-11-22"
+due_time: "05:00 PM"
+menu:
+  assignment:
+    parent: Assignments
+    weight: 11
 type: docs
 weight: 1
 output:
   blogdown::html_page:
-    toc: true
+    toc: false
 editor_options: 
   chunk_output_type: console
 ---
 
 <script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
 
 
-<p>TBD</p>
+<p>This exam is worth 100 points. It has two plotting questions and three function-writing questions.</p>
+<p>Display your function code and output in an Rmarkdown document.</p>
+<p>Make a package that includes your code for the three functions. Your package should be installable from Github. Document your functions properly when making the package.</p>
+<div id="plotting-1-scatterplots-with-ggplot" class="section level2">
+<h2>Plotting 1: Scatterplots with ggplot</h2>
+<p>Use the ChickWeight dataset provided as default in R. The data describes the weight of chicks in four different diet groups over a number of days. Generate <span class="math inline">\(4\)</span> plots in ggplot shown in a <span class="math inline">\(2×2\)</span> layout of weight versus time of the chicks in each diet group. Also, in one long string of pipes, determine the average weight of chicks by diet group on the <span class="math inline">\(20^{th}\)</span> day of the study. Give your plots informative titles and labels.</p>
+</div>
+<div id="plotting-2-histograms-with-ggplot" class="section level2">
+<h2>Plotting 2: Histograms with ggplot</h2>
+<p>Use the CO2 dataset provided as default in R. The data describes carbon dioxide concentration and uptake values for a certain type of grass species.</p>
+<p>Create a <span class="math inline">\(1\)</span> row by <span class="math inline">\(2\)</span> column set of ggplots. On the left panel, include only data from plants from Quebec; on the right, only from Mississippi. In each plot, show a boxplot of carbon dioxide concentrations for each of the two treatments: Chilled and Non-Chilled. Fill in the boxplot with colors: one color for Non-Chilled, for both origins, another color for Chilled, for both origins. Give your plots informative titles and labels.</p>
+</div>
+<div id="function-1-mixture-normal-distribution." class="section level2">
+<h2>Function 1: Mixture Normal Distribution.</h2>
+<p>Write an R function to do the following. Generate n observations from a mixture of two normal distributions, i.e., generate U from a Bernoulli(<span class="math inline">\(p\)</span>) distribution and if <span class="math inline">\(U=1\)</span>, then draw <span class="math inline">\(Y\)</span> from a normal distribution with mean <span class="math inline">\(\mu_1\)</span> and standard deviation <span class="math inline">\(\sigma_1\)</span>, or if <span class="math inline">\(U=0\)</span>, draw Y from the other normal distribution with mean <span class="math inline">\(\mu_2\)</span> and standard deviation <span class="math inline">\(\sigma_2\)</span>.</p>
+<p>In this context, there is a probability (<span class="math inline">\(p\)</span>) that <span class="math inline">\(Y\)</span> is drawn from a normal distribution <span class="math inline">\(N(\mu_1,\sigma_1)\)</span>, and there is a probability <span class="math inline">\(1−p\)</span> that <span class="math inline">\(Y\)</span> is drawn from the other normal distribution <span class="math inline">\(N(\mu_2,\sigma_2)\)</span>. Note that the density of <span class="math inline">\(Y\)</span> is the sum of weighted density of two normal distributions.</p>
+<p>Write a function with five arguments <span class="math inline">\((p,\mu_1,\mu_2,\sigma_1,\sigma_2)\)</span> to sample <span class="math inline">\(Y\)</span> from the mixture normal distribution.</p>
+<p>Draw <span class="math inline">\(1000\)</span> samples from mixture normal <span class="math inline">\((0.5,−2,3,2,1.5)\)</span> and store in vector <span class="math inline">\(Y1\)</span> and draw <span class="math inline">\(1000\)</span> samples from mixture normal <span class="math inline">\((0.2,−2,3,2,1.5)\)</span> and store in vector <span class="math inline">\(Y2\)</span>. Set a seed for reproducibility.</p>
+<p>Generate a two-panel plot in ggplot with the left panel containing the histogram and a fitted density for <span class="math inline">\(Y1\)</span> and the right panel containing the same for <span class="math inline">\(Y2\)</span>.</p>
+</div>
+<div id="function-2-poker-simulation." class="section level2">
+<h2>Function 2: Poker Simulation.</h2>
+<p>Write an R function to create a simplified three-player poker game. In poker, all players receive five cards and bet money on their ‘hand’, the cards they have been dealt. We will not bet money in this function, though. Consider the ace to be the high card for purposes of this exercise. Specifically, write a function to do the following tasks:</p>
+<ul>
+<li>Sample from a standard deck of <span class="math inline">\(52\)</span> playing cards – no Joker card - such that each player receives 5 cards, a full hand. Make it equally likely that any card is drawn. (Do not make it possible for the same card to be dealt to two players, though!)</li>
+<li>Determine what the ‘rank’ is of each player’s hand, using ranks 1-9 from this link (<a href="https://en.wikipedia.org/wiki/List_of_poker_hands#Hand-ranking_categories" class="uri">https://en.wikipedia.org/wiki/List_of_poker_hands#Hand-ranking_categories</a>). Record the highest (best) rank for each player.</li>
+<li>Let the function print out, in an organized manner, the cards of each player, the ‘rank’ of each player’s hand, and a sentence/phrase indicating which player wins the hand. Run this function three times, printing the output each time.</li>
+</ul>
+</div>
+<div id="function-3-weather-simulation." class="section level2">
+<h2>Function 3: Weather Simulation.</h2>
+<p>Write a function to simulate the weather forecast in Richmond. Assume there are two states of weather in Richmond: sunny and rainy. If a day is sunny, the probability that the next day is sunny is <span class="math inline">\(0.85\)</span>. If a day is rainy, the probability that the next day is rainy is <span class="math inline">\(0.35\)</span>. If a day is rainy, the amount of rainfall accumulation in the city is governed by an <span class="math inline">\(\text{Exponential}(\lambda = 2)\)</span> distribution, where the value from that distribution is the rainfall in inches. If a day is sunny, there can be no rain.</p>
+<p>Specifically, given an initial day’s weather conditions, simulate the following <span class="math inline">\(10\)</span> days of weather and calculate the projected rainfall accumulation in inches.</p>
+<ul>
+<li>Write a function describing this process.</li>
+<li>First, assume sunny conditions on the initial day. Output the number of projected sunny days in the next <span class="math inline">\(10\)</span> days, as well as the projected rainfall accumulation. Repeat this <span class="math inline">\(1000\)</span> times and return the average of all these simulations.</li>
+<li>Now, assume rainy conditions on the initial day. Output the number of projected sunny days in the next <span class="math inline">\(10\)</span> days, as well as the projected rainfall accumulation. Repeat this <span class="math inline">\(1000\)</span> times and return the average of all these simulations.</li>
+</ul>
+</div>
+<div id="grading" class="section level1">
+<h1>Grading</h1>
+<p>A general rubric is below, in terms of points:</p>
+<p><strong>Plotting 1</strong>: 10 points<br />
+<strong>Plotting 2</strong>: 15 points<br />
+<strong>Function 1</strong>: 20 points<br />
+<strong>Function 2</strong>: 20 points<br />
+<strong>Function 3</strong>: 20 points<br />
+<strong>Package on Github</strong>: 10 points<br />
+<strong>Code is clear and commented</strong>: 5 points<br />
+<strong>Total</strong>: 100 Points</p>
+</div>
