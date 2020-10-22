@@ -16,7 +16,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-This exam has two plotting questions and three function-writing questions.
+This exam is worth 100 points. It has two plotting questions and three function-writing questions.
 
 Display your function code and output in an Rmarkdown document. 
 
@@ -60,3 +60,13 @@ Specifically, given an initial day’s weather conditions, simulate the followin
 - Write a function describing this process.
 - First, assume sunny conditions on the initial day. Output the number of projected sunny days in the next $10$ days, as well as the projected rainfall accumulation. Repeat this $1000$ times and return the average of all these simulations. 
 - Now, assume rainy conditions on the initial day. Output the number of projected sunny days in the next $10$ days, as well as the projected rainfall accumulation. Repeat this $1000$ times and return the average of all these simulations.
+
+A general rubric is below, in terms of points:
+__Plotting 1__: 10 points
+__Plotting 2__: 15 points
+__Function 1__: 20 points
+__Function 2__: 20 points
+__Function 3__: 20 points
+__Package on Github__: 10 points
+__Code is clear and commented__: 5 points
+__Total__: 100 Points
