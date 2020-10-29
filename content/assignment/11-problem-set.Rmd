@@ -46,7 +46,7 @@ Draw $1000$ samples from mixture normal $(0.5,−2,3,2,1.5)$ and store in vector
 
 Generate a two-panel plot in ggplot with the left panel containing the histogram and a fitted density for $Y1$ and the right panel containing the same for $Y2$.
 
-
+<!--
 ## Function 2: Poker Simulation. 
 
 Write an R function to create a simplified three-player poker game. In poker, all players receive five cards and bet money on their ‘hand’, the cards they have been dealt. We will not bet money in this function, though. Consider the ace to be the high card for purposes of this exercise. Specifically, write a function to do the following tasks:
@@ -54,9 +54,9 @@ Write an R function to create a simplified three-player poker game. In poker, al
 - Sample from a standard deck of $52$ playing cards – no Joker card - such that each player receives 5 cards, a full hand. Make it equally likely that any card is drawn. (Do not make it possible for the same card to be dealt to two players, though!) 
 - Determine what the ‘rank’ is of each player’s hand, using ranks 1-9 from this link (https://en.wikipedia.org/wiki/List_of_poker_hands#Hand-ranking_categories). Record the highest (best) rank for each player.
 - Let the function print out, in an organized manner, the cards of each player, the ‘rank’ of each player’s hand, and a sentence/phrase indicating which player wins the hand. Run this function three times, printing the output each time. 
+-->
 
-
-## Function 3: Weather Simulation. 
+## Function 2: Weather Simulation. 
 
 Write a function to simulate the weather forecast in Richmond. Assume there are two states of weather in Richmond: sunny and rainy. If a day is sunny, the probability that the next day is sunny is $0.85$. If a day is rainy, the probability that the next day is rainy is $0.35$. If a day is rainy, the amount of rainfall accumulation in the city is governed by an $\text{Exponential}(\lambda = 2)$ distribution, where the value from that distribution is the rainfall in inches. If a day is sunny, there can be no rain. 
 
@@ -72,9 +72,9 @@ A general rubric is below, in terms of points:
 
 __Plotting 1__: 10 points  
 __Plotting 2__: 15 points  
-__Function 1__: 20 points  
-__Function 2__: 20 points  
-__Function 3__: 20 points  
+__Function 1__: 30 points  
+<!--__Function 2__: 20 points  -->
+__Function 2__: 30 points  
 __Package on Github__: 10 points  
 __Code is clear and commented__: 5 points  
 __Total__: 100 Points  
