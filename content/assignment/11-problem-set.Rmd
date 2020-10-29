@@ -31,7 +31,7 @@ Use the ChickWeight dataset provided as default in R. The data describes the wei
 
 Use the CO2 dataset provided as default in R. The data describes carbon dioxide concentration and uptake values for a certain type of grass species. 
 
-Create a $1$ row by $2$ column set of ggplots. On the left panel, include only data from plants from Quebec; on the right, only from Mississippi. In each plot, show a boxplot of carbon dioxide concentrations for each of the two treatments: Chilled and Non-Chilled. Fill in the boxplot with colors: one color for Non-Chilled, for both origins, another color for Chilled, for both origins. Give your plots informative titles and labels. 
+Create a $1$ row by $2$ column set of ggplots. On the left panel, include only data from plants from Quebec; on the right, only from Mississippi. In each plot, show a boxplot of carbon dioxide uptake rates for each of the two treatments: Chilled and Non-Chilled. Fill in the boxplot with colors: one color for Non-Chilled, for both origins, another color for Chilled, for both origins. Give your plots informative titles and labels. 
 
 
 ## Function 1: Mixture Normal Distribution. 
