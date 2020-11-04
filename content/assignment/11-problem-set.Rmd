@@ -16,11 +16,11 @@ editor_options:
   chunk_output_type: console
 ---
 
-This exam is worth 100 points. It has two plotting questions and three function-writing questions.
+This exam is worth 100 points. It has two plotting questions and two function-writing questions.
 
 Display your function code and output in an Rmarkdown document. 
 
-Make a package that includes your code for the three functions. Your package should be installable from Github. Document your functions properly when making the package.
+Make a package that includes your code for the two functions. Your package should be installable from Github. Document your functions properly when making the package.
 
 ## Plotting 1: Scatterplots with ggplot 
 
